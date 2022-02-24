@@ -26,7 +26,6 @@ namespace POC
                 XmlDocument doc = new XmlDocument();
                 doc.Load(ediFile.Item2);
 
-                //Display all the book titles.
                 foreach (var listEdiXpath in listEdiXpaths)
                 {
                     var SlipedXpath = listEdiXpath.Trim('{','}').Split(@"/");
