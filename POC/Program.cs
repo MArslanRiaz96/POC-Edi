@@ -31,11 +31,14 @@ namespace POC
                 {
                     var SlipedXpath = listEdiXpath.Trim('{','}').Split(@"/");
                     var trmipedXpath = SlipedXpath[1].Replace("}}", string.Empty).Replace(" ", string.Empty);
-
-                    
                     if (trmipedXpath.Contains("-"))
                     {
-                        var elemListById = doc.SelectSingleNode("//+"DTM02 + "[@ID='+"0150:18"+']");
+                        var slipttrmipedXpathForNode = trmipedXpath.Split('-');
+                        var elemListById = doc.SelectSingleNode("//"+ slipttrmipedXpathForNode[0] + "[@ID='"+ slipttrmipedXpathForNode[1]+ "']");
+                        if (!listEdiXPathValues.Any(z => z.Item2 == elemListById.InnerXml && z.Item1 == listEdiXpath))
+                        {
+                            listEdiXPathValues.Add(Tuple.Create(listEdiXpath, elemListById.InnerXml));
+                        }
                         Console.WriteLine(elemListById.InnerXml);
                     }
                     else
@@ -51,9 +54,6 @@ namespace POC
 
                         }
                     }
-                    
-                    //  Console.WriteLine(elemListById.OuterXml);
-                    
                 }
                 WebClient webClient = new WebClient();
                 string html = webClient.DownloadString(ediFile.Item3).ToString();
