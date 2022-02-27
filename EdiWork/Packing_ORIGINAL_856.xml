@@ -1,0 +1,398 @@
+<X12_00501_856 xml:space="preserve" ID="1">
+  <ISA ID="2" SegmentPosition="00">
+    <ISA01 ID="00:3">00</ISA01>
+    <ISA02 ID="00:4">          </ISA02>
+    <ISA03 ID="00:5">00</ISA03>
+    <ISA04 ID="00:6">          </ISA04>
+    <ISA05 ID="00:7">12</ISA05>
+    <ISA06 ID="00:8">7182504000     </ISA06>
+    <ISA07 ID="00:9">08</ISA07>
+    <ISA08 ID="00:10">925485US00     </ISA08>
+    <ISA09 ID="00:11">220223</ISA09>
+    <ISA10 ID="00:12">1321</ISA10>
+    <ISA11 ID="00:13">U</ISA11>
+    <ISA12 ID="00:14">00501</ISA12>
+    <ISA13 ID="00:15">209983750</ISA13>
+    <ISA14 ID="00:16">1</ISA14>
+    <ISA15 ID="00:17">P</ISA15>
+    <ISA16 ID="00:18">&gt;</ISA16>
+  </ISA>
+  <GS ID="19" SegmentPosition="00">
+    <GS01 ID="00:20">SH</GS01>
+    <GS02 ID="00:21">3039565790</GS02>
+    <GS03 ID="00:22">8028623330</GS03>
+    <GS04 ID="00:23">20220223</GS04>
+    <GS05 ID="00:24">132103</GS05>
+    <GS06 ID="00:25">9467</GS06>
+    <GS07 ID="00:26">X</GS07>
+    <GS08 ID="00:27">005010</GS08>
+  </GS>
+  <ST ID="28" SegmentPosition="00">
+    <ST01 ID="00:29">856</ST01>
+    <ST02 ID="00:30">0001</ST02>
+  </ST>
+  <BSN ID="31" SegmentPosition="00">
+    <BSN01 ID="00:32">00</BSN01>
+    <BSN02 ID="00:33">SO-040217</BSN02>
+    <BSN03 ID="00:34">20220223</BSN03>
+    <BSN04 ID="00:35">2:24:28 PM</BSN04>
+    <BSN05 ID="00:36">0001</BSN05>
+  </BSN>
+  <HLLoop1 ID="37" SegmentPosition="00">
+    <HL ID="38" SegmentPosition="00">
+      <HL01 ID="00:39">1</HL01>
+      <HL02 ID="00:40" />
+      <HL03 ID="00:41">S</HL03>
+    </HL>
+    <TD1 ID="42" SegmentPosition="00">
+      <TD101 ID="00:43">Pieces</TD101>
+      <TD102 ID="00:44">2</TD102>
+      <TD103 ID="00:45"> </TD103>
+      <TD104 ID="00:46">60.310</TD104>
+      <TD105 ID="00:47">Pound</TD105>
+      <TD106 ID="00:48">G</TD106>
+      <TD107 ID="00:49">784.53</TD107>
+      <TD108 ID="00:50">LB</TD108>
+    </TD1>
+    <TD5 ID="51" SegmentPosition="00">
+      <TD501 ID="00:52" />
+      <TD502 ID="00:53">XXXX</TD502>
+      <TD503 ID="00:54">XXXX</TD503>
+      <TD504 ID="00:55">M</TD504>
+    </TD5>
+    <REF ID="56" SegmentPosition="00">
+      <REF01 ID="00:57">CN</REF01>
+      <REF02 ID="00:58">999999-001</REF02>
+    </REF>
+    <REF ID="59" SegmentPosition="00">
+      <REF01 ID="00:60">BM</REF01>
+      <REF02 ID="00:61">5787970539</REF02>
+    </REF>
+    <REF ID="62" SegmentPosition="00">
+      <REF01 ID="00:63">AO</REF01>
+      <REF02 ID="00:64">32776434</REF02>
+    </REF>
+    <DTM_2 ID="65" SegmentPosition="00">
+      <DTM01 ID="00:66">011</DTM01>
+      <DTM02 ID="00:67">20220223</DTM02>
+      <DTM03 ID="00:68">0000</DTM03>
+    </DTM_2>
+    <DTM_2 ID="69" SegmentPosition="00">
+      <DTM01 ID="00:70">067</DTM01>
+      <DTM02 ID="00:71">20220219</DTM02>
+      <DTM03 ID="00:72">0000</DTM03>
+    </DTM_2>
+    <FOB ID="73" SegmentPosition="00">
+      <FOB01 ID="00:74">PP</FOB01>
+    </FOB>
+    <N1Loop1 ID="75" SegmentPosition="00">
+      <N1 ID="76" SegmentPosition="00">
+        <N101 ID="00:77">SF</N101>
+        <N102 ID="00:78">ITO EN (North America) Inc</N102>
+        <N103 ID="00:79">9</N103>
+        <N104 ID="00:80">053476755</N104>
+      </N1>
+      <N3 ID="81" SegmentPosition="00">
+        <N301 ID="00:82">20 Jay Street, Suite 530</N301>
+      </N3>
+     <N3 ID="300" SegmentPosition="00">
+        <N301 ID="00:301">20 Jay Street, Suite 590</N301>
+      </N3>
+    <N3 ID="302" SegmentPosition="00">
+        <N301 ID="00:303">20 Jay Street, Suite </N301>
+      </N3>
+      <N4 ID="83" SegmentPosition="00">
+        <N401 ID="00:84">Brooklyn</N401>
+        <N402 ID="00:85">NY</N402>
+        <N403 ID="00:86">31139-0020</N403>
+        <N404 ID="00:87">US</N404>
+        <N405 ID="00:88">9999</N405>
+      </N4>
+     <N4 ID="289" SegmentPosition="00">
+        <N401 ID="00:295">Brooklyn</N401>
+        <N402 ID="00:296">NY</N402>
+        <N403 ID="00:297">31139-0020</N403>
+        <N404 ID="00:298">US</N404>
+        <N405 ID="00:299">9999</N405>
+      </N4>
+    <N4 ID="305" SegmentPosition="00">
+        <N401 ID="00:306">Brooklyn</N401>
+        <N402 ID="00:307">NY</N402>
+        <N403 ID="00:308">31139-034</N403>
+        <N404 ID="00:309">US</N404>
+        <N405 ID="00:310">9999</N405>
+      </N4>
+    </N1Loop1>
+    <N1Loop1 ID="88" SegmentPosition="00">
+      <N1 ID="89" SegmentPosition="00">
+        <N101 ID="00:90">ST</N101>
+        <N102 ID="00:91">WAL-MART DC 6017A-ASM DIS</N102>
+        <N103 ID="00:92">UL</N103>
+        <N104 ID="00:93">0078742029276</N104>
+      </N1>
+    </N1Loop1>
+  </HLLoop1>
+  <HLLoop1 ID="94" SegmentPosition="00">
+    <HL ID="95" SegmentPosition="00">
+      <HL01 ID="00:96">2</HL01>
+      <HL02 ID="00:97">1</HL02>
+      <HL03 ID="00:98">O</HL03>
+    </HL>
+    <PRF ID="99" SegmentPosition="00">
+      <PRF01 ID="00:100">9026286184</PRF01>
+      <PRF02 ID="00:101">20220215</PRF02>
+      <PRF03 ID="00:102" />
+      <PRF04 ID="00:103">20220216</PRF04>
+    </PRF>
+    <TD1 ID="104" SegmentPosition="00">
+      <TD101 ID="00:105">CAS</TD101>
+      <TD102 ID="00:106">55</TD102>
+    </TD1>
+    <REF ID="107" SegmentPosition="00">
+      <REF01 ID="00:108">IA</REF01>
+      <REF02 ID="00:109">543341921</REF02>
+    </REF>
+  </HLLoop1>
+  <HLLoop1 ID="110" SegmentPosition="00">
+    <HL ID="111" SegmentPosition="00">
+      <HL01 ID="00:112">3</HL01>
+      <HL02 ID="00:113">2</HL02>
+      <HL03 ID="00:114">T</HL03>
+    </HL>
+  </HLLoop1>
+  <HLLoop1 ID="115" SegmentPosition="00">
+    <HL ID="116" SegmentPosition="00">
+      <HL01 ID="00:117">4</HL01>
+      <HL02 ID="00:118">3</HL02>
+      <HL03 ID="00:119">P</HL03>
+    </HL>
+    <N1Loop1 ID="120" SegmentPosition="00">
+      <N1 ID="121" SegmentPosition="00">
+        <N101 ID="00:122">BY</N101>
+        <N102 ID="00:123">WAL-MART DC 6017A-ASM DIS</N102>
+        <N103 ID="00:124">UL</N103>
+        <N104 ID="00:125">0078742029276</N104>
+      </N1>
+    </N1Loop1>
+  </HLLoop1>
+  <HLLoop1 ID="126" SegmentPosition="00">
+    <HL ID="127" SegmentPosition="00">
+      <HL01 ID="00:128">5</HL01>
+      <HL02 ID="00:129">4</HL02>
+      <HL03 ID="00:130">I</HL03>
+    </HL>
+    <LIN ID="131" SegmentPosition="00">
+      <LIN01 ID="00:132" />
+      <LIN02 ID="00:133">UP</LIN02>
+      <LIN03 ID="00:134">835143001795</LIN03>
+      <LIN04 ID="00:135">IN</LIN04>
+      <LIN05 ID="00:136">576162328</LIN05>
+      <LIN06 ID="00:137">UK</LIN06>
+      <LIN07 ID="00:138">20835143001805</LIN07>
+    </LIN>
+    <SN1 ID="139" SegmentPosition="00">
+      <SN101 ID="00:140">1</SN101>
+      <SN102 ID="00:141">24</SN102>
+      <SN103 ID="00:142">CA</SN103>
+    </SN1>
+    <PID ID="143" SegmentPosition="00">
+      <PID01 ID="00:144">F</PID01>
+      <PID02 ID="00:145" />
+      <PID03 ID="00:146">RED WIDGET</PID03>
+      <PID04 ID="00:147" />
+      <PID05 ID="00:148">Jasmine Green 500mL</PID05>
+    </PID>
+    <DTM_2 ID="149" SegmentPosition="00">
+      <DTM01 ID="00:150">036</DTM01>
+      <DTM02 ID="00:151">20221102</DTM02>
+    </DTM_2>
+  </HLLoop1>
+  <HLLoop1 ID="152" SegmentPosition="00">
+    <HL ID="153" SegmentPosition="00">
+      <HL01 ID="00:154">6</HL01>
+      <HL02 ID="00:155">2</HL02>
+      <HL03 ID="00:156">T</HL03>
+    </HL>
+  </HLLoop1>
+  <HLLoop1 ID="157" SegmentPosition="00">
+    <HL ID="158" SegmentPosition="00">
+      <HL01 ID="00:159">7</HL01>
+      <HL02 ID="00:160">6</HL02>
+      <HL03 ID="00:161">P</HL03>
+    </HL>
+    <N1Loop1 ID="162" SegmentPosition="00">
+      <N1 ID="163" SegmentPosition="00">
+        <N101 ID="00:164">BY</N101>
+        <N102 ID="00:165">WAL-MART DC 6017A-ASM DIS</N102>
+        <N103 ID="00:166">UL</N103>
+        <N104 ID="00:167">0078742029276</N104>
+      </N1>
+    </N1Loop1>
+  </HLLoop1>
+  <HLLoop1 ID="168" SegmentPosition="00">
+    <HL ID="169" SegmentPosition="00">
+      <HL01 ID="00:170">8</HL01>
+      <HL02 ID="00:171">7</HL02>
+      <HL03 ID="00:172">I</HL03>
+    </HL>
+    <LIN ID="173" SegmentPosition="00">
+      <LIN01 ID="00:174" />
+      <LIN02 ID="00:175">UP</LIN02>
+      <LIN03 ID="00:176">835143001047</LIN03>
+      <LIN04 ID="00:177">IN</LIN04>
+      <LIN05 ID="00:178">576162329</LIN05>
+      <LIN06 ID="00:179">UK</LIN06>
+      <LIN07 ID="00:180">20835143001058</LIN07>
+    </LIN>
+    <SN1 ID="181" SegmentPosition="00">
+      <SN101 ID="00:182" />
+      <SN102 ID="00:183">26</SN102>
+      <SN103 ID="00:184">CA</SN103>
+    </SN1>
+    <PID ID="185" SegmentPosition="00">
+      <PID01 ID="00:186">F</PID01>
+      <PID02 ID="00:187" />
+      <PID03 ID="00:188" />
+      <PID04 ID="00:189" />
+      <PID05 ID="00:190">Oi Ocha 500mL</PID05>
+    </PID>
+    <DTM_2 ID="191" SegmentPosition="00">
+      <DTM01 ID="00:192">036</DTM01>
+      <DTM02 ID="00:193">20221118</DTM02>
+    </DTM_2>
+  </HLLoop1>
+  <HLLoop1 ID="194" SegmentPosition="00">
+    <HL ID="195" SegmentPosition="00">
+      <HL01 ID="00:196">9</HL01>
+      <HL02 ID="00:197">2</HL02>
+      <HL03 ID="00:198">T</HL03>
+    </HL>
+  </HLLoop1>
+  <HLLoop1 ID="199" SegmentPosition="00">
+    <HL ID="200" SegmentPosition="00">
+      <HL01 ID="00:201">10</HL01>
+      <HL02 ID="00:202">9</HL02>
+      <HL03 ID="00:203">P</HL03>
+    </HL>
+    <N1Loop1 ID="204" SegmentPosition="00">
+      <N1 ID="205" SegmentPosition="00">
+        <N101 ID="00:206">BY</N101>
+        <N102 ID="00:207">WAL-MART DC 6017A-ASM DIS</N102>
+        <N103 ID="00:208">UL</N103>
+        <N104 ID="00:209">0078742029276</N104>
+      </N1>
+    </N1Loop1>
+  </HLLoop1>
+  <HLLoop1 ID="210" SegmentPosition="00">
+    <HL ID="211" SegmentPosition="00">
+      <HL01 ID="00:212">11</HL01>
+      <HL02 ID="00:213">10</HL02>
+      <HL03 ID="00:214">I</HL03>
+    </HL>
+    <LIN ID="215" SegmentPosition="00">
+      <LIN01 ID="00:216" />
+      <LIN02 ID="00:217">UP</LIN02>
+      <LIN03 ID="00:218">835143010834</LIN03>
+      <LIN04 ID="00:219">IN</LIN04>
+      <LIN05 ID="00:220">587721960</LIN05>
+      <LIN06 ID="00:221">UK</LIN06>
+      <LIN07 ID="00:222">10835143010831</LIN07>
+    </LIN>
+    <SN1 ID="223" SegmentPosition="00">
+      <SN101 ID="00:224" />
+      <SN102 ID="00:225">1</SN102>
+      <SN103 ID="00:226">CA</SN103>
+    </SN1>
+    <PID ID="227" SegmentPosition="00">
+      <PID01 ID="00:228">F</PID01>
+      <PID02 ID="00:229" />
+      <PID03 ID="00:230" />
+      <PID04 ID="00:231" />
+      <PID05 ID="00:232">ML TB Matcha+Green </PID05>
+    </PID>
+    <DTM_2 ID="233" SegmentPosition="00">
+      <DTM01 ID="00:234">036</DTM01>
+      <DTM02 ID="00:235">20231110</DTM02>
+    </DTM_2>
+  </HLLoop1>
+  <HLLoop1 ID="236" SegmentPosition="00">
+    <HL ID="237" SegmentPosition="00">
+      <HL01 ID="00:238">12</HL01>
+      <HL02 ID="00:239">2</HL02>
+      <HL03 ID="00:240">T</HL03>
+    </HL>
+  </HLLoop1>
+  <HLLoop1 ID="241" SegmentPosition="00">
+    <HL ID="242" SegmentPosition="00">
+      <HL01 ID="00:243">13</HL01>
+      <HL02 ID="00:244">12</HL02>
+      <HL03 ID="00:245">P</HL03>
+    </HL>
+    <N1Loop1 ID="246" SegmentPosition="00">
+      <N1 ID="247" SegmentPosition="00">
+        <N101 ID="00:248">BY</N101>
+        <N102 ID="00:249">WAL-MART DC 6017A-ASM DIS</N102>
+        <N103 ID="00:250">UL</N103>
+        <N104 ID="00:251">0078742029276</N104>
+      </N1>
+    </N1Loop1>
+  </HLLoop1>
+  <HLLoop1 ID="252" SegmentPosition="00">
+    <HL ID="253" SegmentPosition="00">
+      <HL01 ID="00:254">14</HL01>
+      <HL02 ID="00:255">13</HL02>
+      <HL03 ID="00:256">I</HL03>
+    </HL>
+    <LIN ID="257" SegmentPosition="00">
+      <LIN01 ID="00:258" />
+      <LIN02 ID="00:259">UP</LIN02>
+      <LIN03 ID="00:260">835143013484</LIN03>
+      <LIN04 ID="00:261">IN</LIN04>
+      <LIN05 ID="00:262">587721962</LIN05>
+      <LIN06 ID="00:263">UK</LIN06>
+      <LIN07 ID="00:264">10835143013481</LIN07>
+    </LIN>
+    <SN1 ID="265" SegmentPosition="00">
+      <SN101 ID="00:266" />
+      <SN102 ID="00:267">1</SN102>
+      <SN103 ID="00:268">CA</SN103>
+    </SN1>
+    <PID ID="269" SegmentPosition="00">
+      <PID01 ID="00:270">F</PID01>
+      <PID02 ID="00:271" />
+      <PID03 ID="00:272" />
+      <PID04 ID="00:273" />
+      <PID05 ID="00:274">ML TB  Blueberry + Lavender</PID05>
+    </PID>
+    <DTM_2 ID="275" SegmentPosition="00">
+      <DTM01 ID="00:276">036</DTM01>
+      <DTM02 ID="00:277">20231206</DTM02>
+    </DTM_2>
+  </HLLoop1>
+  <CTT ID="278" SegmentPosition="00">
+    <CTT01 ID="00:279">4</CTT01>
+    <CTT02 ID="00:280">30</CTT02>
+  </CTT>
+  <SE ID="280" SegmentPosition="00">
+    <SE01 ID="00:281">1</SE01>
+    <SE02 ID="00:282">0001</SE02>
+  </SE>
+  <GE ID="283" SegmentPosition="00">
+    <GE01 ID="00:284">3</GE01>
+    <GE02 ID="00:285">9467</GE02>
+  </GE>
+   <IEA ID="286" SegmentPosition="00">
+    <IEA01 ID="00:287">1</IEA01>
+    <IEA02 ID="00:288">209983750</IEA02>
+   </IEA>
+   <PO4 ID="287" SegmentPosition="00">
+    <PO401 ID="00:289">1</PO401>
+    <PO402 ID="00:290">2</PO402>
+    <PO403 ID="00:291">Each</PO403>
+  </PO4>
+<PO4 ID="288" SegmentPosition="00">
+    <PO401 ID="00:292">2</PO401>
+    <PO402 ID="00:293">3</PO402>
+    <PO403 ID="00:294">Each</PO403>
+  </PO4>
+</X12_00501_856>
