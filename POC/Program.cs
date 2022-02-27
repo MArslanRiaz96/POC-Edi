@@ -17,6 +17,8 @@ namespace POC
             var listEdiFiles = new List<Tuple<string, string,string,string>>();
             listEdiFiles.Add(Tuple.Create(@"C:\Users\Dell\Desktop\EdiWork\ListLoad850.txt", @"C:\Users\Dell\Desktop\EdiWork\Packing_ORIGINAL_850.xml", @"C:\Users\Dell\Desktop\EdiWork\XpathLoad850.html", @"C:\Users\Dell\Desktop\EdiWork\XpathLoad850Updated.html"));
             listEdiFiles.Add(Tuple.Create(@"C:\Users\Dell\Desktop\EdiWork\ListLoad856.txt", @"C:\Users\Dell\Desktop\EdiWork\Packing_ORIGINAL_856.xml", @"C:\Users\Dell\Desktop\EdiWork\XpathLoad856.html", @"C:\Users\Dell\Desktop\EdiWork\XpathLoad856Updated.html"));
+            listEdiFiles.Add(Tuple.Create(@"C:\Users\Dell\Desktop\EdiWork\ListLoad990.txt", @"C:\Users\Dell\Desktop\EdiWork\Packing_ORIGINAL_990.xml", @"C:\Users\Dell\Desktop\EdiWork\XpathLoad990.html", @"C:\Users\Dell\Desktop\EdiWork\XpathLoad990Updated.html"));
+            listEdiFiles.Add(Tuple.Create(@"C:\Users\Dell\Desktop\EdiWork\ListLoad810.txt", @"C:\Users\Dell\Desktop\EdiWork\Packing_ORIGINAL_810.xml", @"C:\Users\Dell\Desktop\EdiWork\XpathLoad810.html", @"C:\Users\Dell\Desktop\EdiWork\XpathLoad810Updated.html"));
             XPathHelper.XPathMapper(listEdiFiles);
         }
         
