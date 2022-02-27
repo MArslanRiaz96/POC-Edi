@@ -61,7 +61,7 @@ namespace POC
                 }
                 if (!File.Exists(ediFile.Item4))
                 {
-                    File.Create(ediFile.Item4);
+                    File.Create(ediFile.Item4).Dispose();
                     using (var tw = new StreamWriter(ediFile.Item4, false))
                     {
                         tw.WriteLine(html);
