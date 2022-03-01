@@ -4,4 +4,6 @@
 {{DTM/DTM02-DTM01 = '064'}}
 {{DTM/DTM02-DTM01 = '063'}}
 {{N1/N104}}
-<tr> <td VALIGN="TOP" width="5%"><br>{{PO1/PO101}}</td>  <td width="50%"><br> <b>Vendor's (Seller's) Item Number</b>: {{PO1/PO107}}<br> </td>  <td VALIGN="TOP" width="10%"><br>{{PO1/PO102}}</td> <td VALIGN="TOP" width="5%"><br>{{PO1/PO103}}</td> <td VALIGN="TOP" width="12%"><br>{{PO1/PO104}}</td> <td VALIGN="TOP" width="10%"><br>{{PO1/PO105}}</td>  <td VALIGN="TOP" width="15%"><br>{{PO1/PO106}}</td> </tr> 
+<tr> <td VALIGN="TOP" width="5%"><br>{{PO1/PO101}}</td>  <td width="50%"><br> <b>Vendor's (Seller's) Item Number</b>: {{PO1/PO107}}<br> </td>  <td VALIGN="TOP" width="10%"><br>{{PO1/PO102}}</td> <td VALIGN="TOP" width="5%"><br>{{PO1/PO103}}</td> <td VALIGN="TOP" width="12%"><br>{{PO1/PO104}}</td> <td VALIGN="TOP" width="10%"><br>{{PO1/PO105}}</td>  <td VALIGN="TOP" width="15%"><br>{{PO1/PO106}}</td> </tr>
+{{CTT/CTT01}}
+{{CTT/CTT02}} 
