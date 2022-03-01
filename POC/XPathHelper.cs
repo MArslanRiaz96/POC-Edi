@@ -13,6 +13,7 @@ namespace POC
 {
     public static class XPathHelper
     {
+        public static string htmlArray = "";
         public static void XPathMapper(List<Tuple<string, string, string, string>> tuples)
         {
             var listEdiXPathValues = new List<Tuple<string, string>>();
@@ -27,30 +28,49 @@ namespace POC
 
                 foreach (var listEdiXpath in listEdiXpaths)
                 {
-                    var SlipedXpath = listEdiXpath.Trim('{', '}').Split(@"/");
-                    var trmipedXpath = SlipedXpath[1].Replace("}}", string.Empty).Replace(" ", string.Empty);
-                    if (trmipedXpath.Contains("-"))
+                    if (listEdiXpath.Contains("<tr>"))
                     {
-                        var slipttrmipedXpathForNode = trmipedXpath.Split('-');
-                        var elemListById = doc.SelectSingleNode("//" + slipttrmipedXpathForNode[0] + "[@ID='" + slipttrmipedXpathForNode[1] + "']");
-                        if (!listEdiXPathValues.Any(z => z.Item2 == elemListById.InnerXml && z.Item1 == listEdiXpath))
+                        XmlNodeList baseNodes = doc.SelectNodes("//PO1Loop1/PO1");
+                        foreach (XmlNode baseNode in baseNodes)
                         {
-                            listEdiXPathValues.Add(Tuple.Create(listEdiXpath, elemListById.InnerXml));
+                            var htmltemplate = listEdiXpath;
+                            foreach (XmlNode childNode in baseNode)
+                            {
+                                var makeXPath = "{{"+ baseNode.Name + "/"+ childNode.Name + "}}";
+                                htmltemplate = Regex.Replace(htmltemplate, makeXPath, childNode.InnerXml);
+                                
+                            }
+                            htmlArray = htmlArray + htmltemplate;
                         }
-                        Console.WriteLine(elemListById.InnerXml);
                     }
                     else
                     {
-                        XmlNodeList elemList = doc.GetElementsByTagName(trmipedXpath);
-                        for (int i = 0; i < elemList.Count; i++)
+                        var SlipedXpath = listEdiXpath.Trim('{', '}').Split(@"/");
+                        var trmipedXpath = SlipedXpath[1].Replace("}}", string.Empty).Replace(" ", string.Empty);
+                        if (trmipedXpath.Contains("-"))
                         {
-                            Console.WriteLine(elemList[i].InnerXml);
-                            if (!listEdiXPathValues.Any(z => z.Item2 == elemList[i].InnerXml && z.Item1 == listEdiXpath))
+                            var slipttrmipedXpathForNode = trmipedXpath.Split('-');
+                            var elemListById = doc.SelectSingleNode("//" + slipttrmipedXpathForNode[0] + "[@ID='" + slipttrmipedXpathForNode[1] + "']");
+                            if (!listEdiXPathValues.Any(z => z.Item2 == elemListById.InnerXml && z.Item1 == listEdiXpath))
                             {
-                                listEdiXPathValues.Add(Tuple.Create(listEdiXpath, elemList[i].InnerXml));
+                                listEdiXPathValues.Add(Tuple.Create(listEdiXpath, elemListById.InnerXml));
                             }
-
+                            Console.WriteLine(elemListById.InnerXml);
                         }
+                        else
+                        {
+                            XmlNodeList elemList = doc.GetElementsByTagName(trmipedXpath);
+                            for (int i = 0; i < elemList.Count; i++)
+                            {
+                                Console.WriteLine(elemList[i].InnerXml);
+                                if (!listEdiXPathValues.Any(z => z.Item2 == elemList[i].InnerXml && z.Item1 == listEdiXpath))
+                                {
+                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath, elemList[i].InnerXml));
+                                }
+
+                            }
+                        }
+                    
                     }
                 }
                 WebClient webClient = new WebClient();
@@ -59,6 +79,7 @@ namespace POC
                 {
                     html = Regex.Replace(html, listEdiXPathValue.Item1, listEdiXPathValue.Item2);
                 }
+                html = Regex.Replace(html, "{{LinesHtml}}", htmlArray);
                 if (!File.Exists(ediFile.Item4))
                 {
                     File.Create(ediFile.Item4).Dispose();
@@ -74,6 +95,7 @@ namespace POC
                         tw.WriteLine(html);
                     }
                 }
+                
                 var p = new Process();
                 var p2 = new Process();
                 p.StartInfo = new ProcessStartInfo(ediFile.Item3)
