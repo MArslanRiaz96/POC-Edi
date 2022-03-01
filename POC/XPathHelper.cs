@@ -45,12 +45,11 @@ namespace POC
                     }
                     else
                     {
-                        var SlipedXpath = listEdiXpath.Trim('{', '}').Split(@"/");
-                        var trmipedXpath = SlipedXpath[1].Replace("}}", string.Empty).Replace(" ", string.Empty);
-                        if (trmipedXpath.Contains("-"))
+                        if (listEdiXpath.Contains("="))
                         {
-                            var slipttrmipedXpathForNode = trmipedXpath.Split('-');
-                            var elemListById = doc.SelectSingleNode("//" + slipttrmipedXpathForNode[0] + "[@ID='" + slipttrmipedXpathForNode[1] + "']");
+                            var slipttrmipedXpathForNode = listEdiXpath.Trim('{', '}').Split(@"/");
+                            var slipConditionalExpression = slipttrmipedXpathForNode[1].Split(@"-");
+                            var elemListById = doc.SelectSingleNode("//"+ slipttrmipedXpathForNode[0]+"["+ slipConditionalExpression[1]+"]"+"/"+ slipConditionalExpression[0]);
                             if (!listEdiXPathValues.Any(z => z.Item2 == elemListById.InnerXml && z.Item1 == listEdiXpath))
                             {
                                 listEdiXPathValues.Add(Tuple.Create(listEdiXpath, elemListById.InnerXml));
@@ -59,6 +58,8 @@ namespace POC
                         }
                         else
                         {
+                            var SlipedXpath = listEdiXpath.Trim('{', '}').Split(@"/");
+                            var trmipedXpath = SlipedXpath[1].Replace("}}", string.Empty).Replace(" ", string.Empty);
                             XmlNodeList elemList = doc.GetElementsByTagName(trmipedXpath);
                             for (int i = 0; i < elemList.Count; i++)
                             {
@@ -77,7 +78,7 @@ namespace POC
                 string html = webClient.DownloadString(ediFile.Item3).ToString();
                 foreach (var listEdiXPathValue in listEdiXPathValues)
                 {
-                    html = Regex.Replace(html, listEdiXPathValue.Item1, listEdiXPathValue.Item2);
+                    html = Regex.Replace(html, listEdiXPathValue.Item1, listEdiXPathValue.Item2,RegexOptions.None);
                 }
                 html = Regex.Replace(html, "{{LinesHtml}}", htmlArray);
                 if (!File.Exists(ediFile.Item4))
