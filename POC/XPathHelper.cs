@@ -17,8 +17,7 @@ namespace POC
         public static void XPathMapper(HumanReadableConfiguration humanReadableConfiguration)
         {
             var listEdiXPathValues = new List<Tuple<string, string>>();
-
-                //Create the XmlDocument.
+            
                 XmlDocument doc = new XmlDocument();
                 doc.Load(humanReadableConfiguration.PackingPath);
 
@@ -68,36 +67,6 @@ namespace POC
 
                     }
                 }
-                //else 
-                //{
-                //    if (listEdiXpath.Contains("="))
-                //    {
-                //        var slipttrmipedXpathForNode = listEdiXpath.Trim('{', '}').Split(@"/");
-                //        var slipConditionalExpression = slipttrmipedXpathForNode[1].Split(@"-");
-                //        var elemListById = doc.SelectSingleNode("//"+ slipttrmipedXpathForNode[0]+"["+ slipConditionalExpression[1]+"]"+"/"+ slipConditionalExpression[0]);
-                //        if (!listEdiXPathValues.Any(z => z.Item2 == elemListById.InnerXml && z.Item1 == listEdiXpath))
-                //        {
-                //            listEdiXPathValues.Add(Tuple.Create(listEdiXpath, elemListById.InnerXml));
-                //        }
-                //        Console.WriteLine(elemListById.InnerXml);
-                //    }
-                //    else
-                //    {
-                //        var SlipedXpath = listEdiXpath.Trim('{', '}').Split(@"/");
-                //        var trmipedXpath = SlipedXpath[1].Replace("}}", string.Empty).Replace(" ", string.Empty);
-                //        XmlNodeList elemList = doc.GetElementsByTagName(trmipedXpath);
-                //        for (int i = 0; i < elemList.Count; i++)
-                //        {
-                //            Console.WriteLine(elemList[i].InnerXml);
-                //            if (!listEdiXPathValues.Any(z => z.Item2 == elemList[i].InnerXml && z.Item1 == listEdiXpath))
-                //            {
-                //                listEdiXPathValues.Add(Tuple.Create(listEdiXpath, elemList[i].InnerXml));
-                //            }
-
-                //        }
-                //    }
-
-                //}
             }
                 WebClient webClient = new WebClient();
                 string html = webClient.DownloadString(humanReadableConfiguration.TemplatePath).ToString();
