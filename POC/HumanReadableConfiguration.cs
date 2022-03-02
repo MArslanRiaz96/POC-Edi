@@ -24,6 +24,7 @@ namespace POC
     {
         public string HTML { get; set; }
         public string LineLevelXPath { get; set; }
+        public string PlaceHolder { get; set; }
         public List<XPathConnfig> XPathConnfigs { get; set; }
     }
     public class XPathConnfig

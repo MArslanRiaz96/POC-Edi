@@ -61,6 +61,33 @@
 			<PO106 ID="0010:64">9.8</PO106>
 			<PO107 ID="0010:65">6744</PO107>
 		</PO1>
+            <PO1 ID="29" SegmentPosition="0010">
+			<PO101 ID="0010:30">4</PO101>
+			<PO102 ID="0010:31">1</PO102>
+			<PO103 ID="0010:32">EA</PO103>
+			<PO104 ID="0010:33">4.4</PO104>
+			<PO105 ID="0010:34">Price per Each</PO105>
+			<PO106 ID="0010:35">4.4</PO106>
+			<PO107 ID="0010:36">470144</PO107>
+		</PO1>
+                 <PO1 ID="50" SegmentPosition="0010">
+			<PO101 ID="0010:51">5</PO101>
+			<PO102 ID="0010:52">3</PO102>
+			<PO103 ID="0010:53">EA</PO103>
+			<PO104 ID="0010:54">5.4</PO104>
+			<PO105 ID="0010:55">Price per Each</PO105>
+			<PO106 ID="0010:56">6.4</PO106>
+			<PO107 ID="0010:57">70144</PO107>
+		</PO1>
+                <PO1 ID="58" SegmentPosition="0010">
+			<PO101 ID="0010:59">6</PO101>
+			<PO102 ID="0010:60">4</PO102>
+			<PO103 ID="0010:61">EA</PO103>
+			<PO104 ID="0010:62">7.9</PO104>
+			<PO105 ID="0010:63">Price per Each</PO105>
+			<PO106 ID="0010:64">9.8</PO106>
+			<PO107 ID="0010:65">6744</PO107>
+		</PO1>
 	</PO1Loop1>
 	<CTTLoop1 ID="37" SegmentPosition="00">
 		<CTT ID="38" SegmentPosition="0010">

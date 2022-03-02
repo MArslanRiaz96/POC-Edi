@@ -60,7 +60,11 @@ namespace POC
             //    Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGINAL_990.xml"),
             //    Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad990.html"),
             //    Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad990Updated.html")));
-            XPathHelper.XPathMapper(listEdiFiles);
+            foreach (var ListLoadCollection in ListLoadCollections.humanReadableConfigurations)
+            {
+
+                XPathHelper.XPathMapper(ListLoadCollection);
+            }
         }
         
     }
