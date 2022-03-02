@@ -39,6 +39,7 @@ namespace POC
                             {
                                 Console.WriteLine(elemList[i].InnerXml);
                                 htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList[i].InnerXml);
+                               
                             }
                             else
                             {
@@ -49,6 +50,9 @@ namespace POC
                         htmlArray = htmlArray + htmltemplate;
                         i++;
                     }
+
+                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.LineLevel.PlaceHolder, htmlArray));
+                        htmlArray = "";
                 } 
                 else if (listEdiXpath.XPathConnfig != null)
                 {
@@ -74,7 +78,6 @@ namespace POC
                 {
                     html = Regex.Replace(html, listEdiXPathValue.Item1, listEdiXPathValue.Item2,RegexOptions.None);
                 }
-                html = Regex.Replace(html, "{{LinesHtml}}", htmlArray);
                 if (!File.Exists(humanReadableConfiguration.TemplatePathUpdatedTemp))
                 {
                     File.Create(humanReadableConfiguration.TemplatePathUpdatedTemp).Dispose();
