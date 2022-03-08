@@ -35,7 +35,7 @@
     <BIG01 ID="00:32">20220222</BIG01>
     <BIG02 ID="00:33">SINP-43135</BIG02>
     <BIG03 ID="00:34">20220215</BIG03>
-    <BIG04 ID="00:35">1HMNMTMF</BIG04>
+    <BIG04 ID="00:35">P792940</BIG04>
   </BIG>
   <CUR ID="36" SegmentPosition="00">
     <CUR01 ID="00:37">BT</CUR01>
@@ -45,7 +45,12 @@
     <N1 ID="40" SegmentPosition="00">
       <N101 ID="00:41">RI</N101>
       <N102 ID="00:42">ITO EN (North America) Inc</N102>
-      <N103 ID="00:170">123</N103>
+      <N103 ID="00:170">89475</N103>
+    </N1>
+    <N1 ID="400" SegmentPosition="00">
+      <N101 ID="00:401">ST</N101>
+      <N102 ID="00:402">ITO EN (North America) Inc</N102>
+      <N103 ID="00:403">123</N103>
     </N1>
     <N3 ID="43" SegmentPosition="00">
       <N301 ID="00:44">Lock Box 9181</N301>
@@ -206,11 +211,11 @@
     <IEA02 ID="00:149">379004908</IEA02>
   </IEA>
 <REF ID="150" SegmentPosition="00">
-    <REF01 ID="00:151">1</REF01>
+    <REF01 ID="00:151">DP</REF01>
     <REF02 ID="00:152">099</REF02>
   </REF>
 <REF ID="153" SegmentPosition="00">
-    <REF01 ID="00:154">1</REF01>
+    <REF01 ID="00:154">IA</REF01>
     <REF02 ID="00:155">99999</REF02>
   </REF>
 <CAD ID="200" SegmentPosition="00">

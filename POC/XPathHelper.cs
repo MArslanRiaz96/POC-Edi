@@ -35,7 +35,7 @@ namespace POC
 
                             var elemList = baseNode.SelectNodes(XPathConnfig.XPath);
 
-                            if (!string.IsNullOrEmpty(elemList[i].InnerXml))
+                            if (elemList.Count == 0 || !string.IsNullOrEmpty(elemList[i].InnerXml))
                             {
                                 Console.WriteLine(elemList[i].InnerXml);
                                 htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList[i].InnerXml);
@@ -73,7 +73,8 @@ namespace POC
                 }
             }
                 WebClient webClient = new WebClient();
-                string html = webClient.DownloadString(humanReadableConfiguration.TemplatePath).ToString();
+            
+            string html = webClient.DownloadString(humanReadableConfiguration.TemplatePath).ToString();
                 foreach (var listEdiXPathValue in listEdiXPathValues)
                 {
                     html = Regex.Replace(html, listEdiXPathValue.Item1, listEdiXPathValue.Item2,RegexOptions.None);

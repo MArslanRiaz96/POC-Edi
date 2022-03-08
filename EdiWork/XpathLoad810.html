@@ -353,22 +353,22 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{BIG/BIG01-00:32}}
+    : {{BIG/BIG01}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoice Number
-    : {{BIG/BIG02-00:33}}
+    : {{BIG/BIG02}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{BIG/BIG03-00:34}}
+    : {{BIG/BIG03}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number
-    : {{BIG/BIG04-00:35}}
+    : {{BIG/BIG04}}
     </td></tr>
 </table><br>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -381,11 +381,11 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number
-    : {{REF/REF02-00:152}}    </td></tr>
+    : {{REF/REF02-REF01 = 'DP'}}  </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internal Vendor Number
-    : {{REF/REF02-00:155}}    </td></tr>
+    : {{REF/REF02-REF01 = 'IA'}}    </td></tr>
 </table><br>
 <table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
@@ -394,10 +394,7 @@ H6
 <b>Ship To: </b>
 </td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Assigned by Buyer or Buyer's Agent: {{N1/N103-00:170}})</td> 
-</tr> 
+ {{ShipHtml}}
 </table>
 </td>
 </tr></table><BR>
@@ -410,22 +407,22 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Type Code
-    : {{ITD/ITD01-00:51}}
+    : {{ITD/ITD01}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Basis Date Code
-    : {{ITD/ITD02-00:52}}
+    : {{ITD/ITD02}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Discount Days Due
-    : {{ITD/ITD03-00:53}}
+    : {{ITD/ITD03}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Net Days
-    : {{ITD/ITD04-00:54}}
+    : {{ITD/ITD04}}
     </td></tr>
 </table><br>
 <table cellpadding="0" border="0" width="100%">
@@ -442,121 +439,8 @@ H6
      <td width="10%"><b>Price($)</b></td> 
      <td width="15%"><b>  Total($)</b></td> 
    </tr> 
-   <tr>
-     <td VALIGN="TOP" width="5%"><br>1</td> 
-     <td width="50%"><br>
-<b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT106-00:65}}<br>
-</td> 
-     <td VALIGN="TOP" width="10%"><br>{{IT1/IT102-00:61}}</td> 
-     <td VALIGN="TOP" width="5%"><br>{{IT1/IT103-00:62}}</td> 
-     <td VALIGN="TOP" width="12%"><br>{{IT1/IT104-00:63}}</td> 
-     <td VALIGN="TOP" width="15%"><br>{{IT1/IT105-00:64}}</td> 
-   </tr> 
-   <tr> 
-     <td width="15"></td> 
-     <td width="55%" colspan="5"> 
-</td> 
-   </tr> 
-   <tr>
-     <td VALIGN="TOP" width="5%"><br>2</td> 
-     <td width="50%"><br>
-<b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT106-00:78}}<br>
-</td> 
-     <td VALIGN="TOP" width="10%"><br>{{IT1/IT102-00:74}}</td> 
-     <td VALIGN="TOP" width="5%"><br>{{IT1/IT103-00:75}}</td> 
-     <td VALIGN="TOP" width="12%"><br>{{IT1/IT104-00:76}}</td> 
-     <td VALIGN="TOP" width="15%"><br>{{IT1/IT105-00:77}}</td> 
-   </tr> 
-   <tr> 
-     <td width="15"></td> 
-     <td width="55%" colspan="5"> 
-</td> 
-   </tr> 
-   <tr>
-     <td VALIGN="TOP" width="5%"><br>3</td> 
-     <td width="50%"><br>
-<b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT106-00:91}}<br>
-</td> 
-     <td VALIGN="TOP" width="10%"><br>{{IT1/IT102-00:87}}</td> 
-     <td VALIGN="TOP" width="5%"><br>{{IT1/IT103-00:88}}</td> 
-     <td VALIGN="TOP" width="12%"><br>{{IT1/IT104-00:89}}</td> 
-     <td VALIGN="TOP" width="15%"><br>{{IT1/IT105-00:90}}</td> 
-   </tr> 
-   <tr> 
-     <td width="15"></td> 
-     <td width="55%" colspan="5"> 
-</td> 
-   </tr> 
-   <tr>
-     <td VALIGN="TOP" width="5%"><br>4</td> 
-     <td width="50%"><br>
-<b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT106-00:104}}<br>
-</td> 
-     <td VALIGN="TOP" width="10%"><br>{{IT1/IT102-00:100}}</td> 
-     <td VALIGN="TOP" width="5%"><br>{{IT1/IT103-00:101}}</td> 
-     <td VALIGN="TOP" width="12%"><br>{{IT1/IT104-00:102}}</td> 
-     <td VALIGN="TOP" width="15%"><br>{{IT1/IT105-00:103}}</td> 
-   </tr> 
-   <tr> 
-     <td width="15"></td> 
-     <td width="55%" colspan="5"> 
-</td> 
-   </tr> 
-   <tr>
-     <td VALIGN="TOP" width="5%"><br>5</td> 
-     <td width="50%"><br>
-<b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT106-00:117}}<br>
-</td> 
-     <td VALIGN="TOP" width="10%"><br>{{IT1/IT102-00:113}}</td> 
-     <td VALIGN="TOP" width="5%"><br>{{IT1/IT103-00:114}}</td> 
-     <td VALIGN="TOP" width="12%"><br>{{IT1/IT104-00:115}}</td> 
-     <td VALIGN="TOP" width="15%"><br>{{IT1/IT105-00:116}}</td> 
-   </tr> 
-   <tr> 
-     <td width="15"></td> 
-     <td width="55%" colspan="5"> 
-</td> 
-   </tr> 
-   <tr>
-     <td VALIGN="TOP" width="5%"><br>6</td> 
-     <td width="50%"><br>
-<b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT106-00:130}}<br>
-</td> 
-     <td VALIGN="TOP" width="10%"><br>{{IT1/IT102-00:126}}</td> 
-     <td VALIGN="TOP" width="5%"><br>{{IT1/IT103-00:127}}</td> 
-     <td VALIGN="TOP" width="12%"><br>{{IT1/IT104-00:128}}</td> 
-     <td VALIGN="TOP" width="15%"><br>{{IT1/IT105-00:129}}</td> 
-   </tr> 
-   <tr> 
-     <td width="15"></td> 
-     <td width="55%" colspan="5"> 
-</td> 
-   </tr> 
-   <tr>
-     <td VALIGN="TOP" width="5%"><br>7</td> 
-     <td width="50%"><br>
-<b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT106-00:176}}<br>
-</td> 
-     <td VALIGN="TOP" width="10%"><br>{{IT1/IT102-00:172}}</td> 
-     <td VALIGN="TOP" width="5%"><br>{{IT1/IT103-00:173}}</td> 
-     <td VALIGN="TOP" width="12%"><br>{{IT1/IT104-00:174}}</td> 
-     <td VALIGN="TOP" width="15%"><br>{{IT1/IT105-00:175}}</td> 
-   </tr> 
-   <tr> 
-     <td width="15"></td> 
-     <td width="55%" colspan="5"> 
-</td> 
-   </tr> 
-   <tr>
-     <td VALIGN="TOP" width="5%"><br>8</td> 
-     <td width="50%"><br>
-<b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT106-00:189}}<br>
-</td> 
-     <td VALIGN="TOP" width="10%"><br>{{IT1/IT102-00:185}}</td> 
-     <td VALIGN="TOP" width="5%"><br>{{IT1/IT103-00:186}}</td> 
-     <td VALIGN="TOP" width="12%"><br>{{IT1/IT104-00:187}}</td> 
-     <td VALIGN="TOP" width="15%"><br>{{IT1/IT105-00:188}}</td> 
-   </tr> 
+   {{LinesHtml}}
+   
    <tr> 
      <td width="15"></td> 
      <td width="55%" colspan="5"> 
@@ -572,7 +456,7 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total: $
- {{TDS/TDS01-00:137}}
+ {{TDS/TDS01}}
     </td></tr>
 </table>
 <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
@@ -585,17 +469,17 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Routing
-    : {{CAD/CAD01-00:201}}
+    : {{CAD/CAD01}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
-    : {{CAD/CAD02-00:202}}
+    : {{CAD/CAD02}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
-    : {{CAD/CAD03-00:203}}
+    : {{CAD/CAD03}}
     </td></tr>
 </table><br>
 </td></tr></table>
@@ -604,7 +488,7 @@ H6
   <tr> 
     <td width="25%" valign="top" align="left">
     <b>Line Count: </b>
-{{CTT/CTT01-00:139}}
+{{CTT/CTT01}}
    </td></tr>
 </table>
 </table></table></table><BR><BR><BR><BR><a href="http://www.liaison.com/" target="_external" onmouseout="window.status='';return true;" onmouseover="window.status='Visit www.liaison.com';return true;" style="color:8E8E8E">&copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script> Liaison Technologies, Inc., All Rights Reserved.</a></BODY>

@@ -1,4 +1,5 @@
 ﻿using HtmlAgilityPack;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,6 +17,9 @@ namespace POC
         {
             foreach (var ListLoadCollection in ListLoadCollections.humanReadableConfigurations)
             {
+                 var tes  = JsonConvert.SerializeObject(ListLoadCollection);
+                Byte[] bytes = File.ReadAllBytes(ListLoadCollection.TemplatePath);
+                String file = Convert.ToBase64String(bytes);
                 XPathHelper.XPathMapper(ListLoadCollection);
             }
         }
