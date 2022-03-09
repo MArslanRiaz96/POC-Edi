@@ -45,17 +45,14 @@
       <HL03 ID="00:41">S</HL03>
     </HL>
     <TD1 ID="42" SegmentPosition="00">
-      <TD101 ID="00:43">Pieces</TD101>
-      <TD102 ID="00:44">2</TD102>
-      <TD103 ID="00:45"> </TD103>
-      <TD104 ID="00:46">60.310</TD104>
-      <TD105 ID="00:47">Pound</TD105>
-      <TD106 ID="00:48">G</TD106>
-      <TD107 ID="00:49">784.53</TD107>
-      <TD108 ID="00:50">LB</TD108>
-    </TD1>
+<TD101 ID="00:43">Pieces</TD101>
+<TD102 ID="00:44">2</TD102>
+<TD103 ID="00:45"> Shippers Weight</TD103>
+<TD104 ID="00:46">60.310</TD104>
+<TD105 ID="00:47">Pound</TD105>
+</TD1>
     <TD5 ID="51" SegmentPosition="00">
-      <TD501 ID="00:52" />
+      <TD501 ID="00:52">Standard Carrier Alpha Code (SCAC)</TD501>
       <TD502 ID="00:53">XXXX</TD502>
       <TD503 ID="00:54">XXXX</TD503>
       <TD504 ID="00:55">M</TD504>
@@ -77,6 +74,11 @@
       <DTM02 ID="00:67">20220223</DTM02>
       <DTM03 ID="00:68">0000</DTM03>
     </DTM_2>
+	<DTM ID="65" SegmentPosition="00">
+      <DTM01 ID="00:66">011</DTM01>
+      <DTM02 ID="00:67">20220223</DTM02>
+      <DTM03 ID="00:68">0000</DTM03>
+    </DTM>
     <DTM_2 ID="69" SegmentPosition="00">
       <DTM01 ID="00:70">067</DTM01>
       <DTM02 ID="00:71">20220219</DTM02>
@@ -86,32 +88,52 @@
       <FOB01 ID="00:74">PP</FOB01>
     </FOB>
     <N1Loop1 ID="75" SegmentPosition="00">
-      <N1 ID="76" SegmentPosition="00">
+      
+	  <N1 ID="76" SegmentPosition="00">
+        <N101 ID="00:77">SH</N101>
+        <N102 ID="00:78">1 EDI SOURCE</N102>
+        <N103 ID="00:79">9</N103>
+        <N104 ID="00:80">053476755</N104>
+      </N1>
+	  <N1 ID="76" SegmentPosition="00">
+        <N101 ID="00:77">OB</N101>
+        <N102 ID="00:78">XYZ RETAIL</N102>
+        <N103 ID="00:79">9</N103>
+        <N104 ID="00:80">053476755</N104>
+      </N1>
+	  <N1 ID="76" SegmentPosition="00">
         <N101 ID="00:77">SF</N101>
-        <N102 ID="00:78">ITO EN (North America) Inc</N102>
+        <N102 ID="00:78">1 EDI SOURCE</N102>
         <N103 ID="00:79">9</N103>
         <N104 ID="00:80">053476755</N104>
       </N1>
       <N3 ID="81" SegmentPosition="00">
-        <N301 ID="00:82">20 Jay Street, Suite 530</N301>
+        <N301 ID="00:82">31875 SOLON RD</N301>
       </N3>
      <N3 ID="300" SegmentPosition="00">
-        <N301 ID="00:301">20 Jay Street, Suite 590</N301>
+        <N301 ID="00:301">P O BOX 9999999</N301>
       </N3>
     <N3 ID="302" SegmentPosition="00">
-        <N301 ID="00:303">20 Jay Street, Suite </N301>
+        <N301 ID="00:303">31875 SOLON ROAD</N301>
       </N3>
       <N4 ID="83" SegmentPosition="00">
-        <N401 ID="00:84">Brooklyn</N401>
+        <N401 ID="00:84">SOLON</N401>
         <N402 ID="00:85">NY</N402>
-        <N403 ID="00:86">31139-0020</N403>
+        <N403 ID="00:86">SOLON, OH 44139</N403>
         <N404 ID="00:87">US</N404>
         <N405 ID="00:88">9999</N405>
       </N4>
+	  <N4 ID="83" SegmentPosition="00">
+        <N401 ID="00:84">ATLANTA</N401>
+        <N402 ID="00:85">NY</N402>
+        <N403 ID="00:86">31139-0020</N403>
+        <N404 ID="00:87">ATLANTA, GA 31139-0020</N404>
+        <N405 ID="00:88">9999</N405>
+      </N4>
      <N4 ID="289" SegmentPosition="00">
-        <N401 ID="00:295">Brooklyn</N401>
+        <N401 ID="00:295">SOLON</N401>
         <N402 ID="00:296">NY</N402>
-        <N403 ID="00:297">31139-0020</N403>
+        <N403 ID="00:297">SOLON, OH 44139</N403>
         <N404 ID="00:298">US</N404>
         <N405 ID="00:299">9999</N405>
       </N4>
@@ -139,8 +161,8 @@
       <HL03 ID="00:98">O</HL03>
     </HL>
     <PRF ID="99" SegmentPosition="00">
-      <PRF01 ID="00:100">9026286184</PRF01>
-      <PRF02 ID="00:101">20220215</PRF02>
+      <PRF01 ID="00:100">99999817</PRF01>
+      <PRF02 ID="00:101">12/5/2011</PRF02>
       <PRF03 ID="00:102" />
       <PRF04 ID="00:103">20220216</PRF04>
     </PRF>
@@ -206,6 +228,11 @@
       <DTM01 ID="00:150">036</DTM01>
       <DTM02 ID="00:151">20221102</DTM02>
     </DTM_2>
+	<PO4 ID="287" SegmentPosition="00">
+    <PO401 ID="00:289">1</PO401>
+    <PO402 ID="00:290">2</PO402>
+    <PO403 ID="00:291">Each</PO403>
+  </PO4>
   </HLLoop1>
   <HLLoop1 ID="152" SegmentPosition="00">
     <HL ID="153" SegmentPosition="00">
@@ -260,6 +287,11 @@
       <DTM01 ID="00:192">036</DTM01>
       <DTM02 ID="00:193">20221118</DTM02>
     </DTM_2>
+	<PO4 ID="288" SegmentPosition="00">
+    <PO401 ID="00:292">2</PO401>
+    <PO402 ID="00:293">3</PO402>
+    <PO403 ID="00:294">Each</PO403>
+  </PO4>
   </HLLoop1>
   <HLLoop1 ID="194" SegmentPosition="00">
     <HL ID="195" SegmentPosition="00">
@@ -385,14 +417,6 @@
     <IEA01 ID="00:287">1</IEA01>
     <IEA02 ID="00:288">209983750</IEA02>
    </IEA>
-   <PO4 ID="287" SegmentPosition="00">
-    <PO401 ID="00:289">1</PO401>
-    <PO402 ID="00:290">2</PO402>
-    <PO403 ID="00:291">Each</PO403>
-  </PO4>
-<PO4 ID="288" SegmentPosition="00">
-    <PO401 ID="00:292">2</PO401>
-    <PO402 ID="00:293">3</PO402>
-    <PO403 ID="00:294">Each</PO403>
-  </PO4>
+   
+
 </X12_00501_856>

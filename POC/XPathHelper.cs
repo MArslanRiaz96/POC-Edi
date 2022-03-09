@@ -35,13 +35,13 @@ namespace POC
 
                             var elemList = baseNode.SelectNodes(XPathConnfig.XPath);
 
-                            if (elemList.Count == 0 || !string.IsNullOrEmpty(elemList[i].InnerXml))
+                            if (elemList.Count != 0 || !string.IsNullOrEmpty(elemList[i].InnerXml))
                             {
                                 Console.WriteLine(elemList[i].InnerXml);
                                 htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList[i].InnerXml);
                                
                             }
-                            else
+                            else if (elemList.Count == 0)
                             {
                                 htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XPathConnfig.DefaultValue);
                             }
@@ -64,11 +64,14 @@ namespace POC
                         {
                             listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
                         }
-                        else if (string.IsNullOrEmpty(elemList[i].InnerXml))
+
+                    }
+                    if (elemList.Count == 0)
+                    {
+                        if (!listEdiXPathValues.Any(z => z.Item2 == "" && z.Item1 == listEdiXpath.XPathConnfig.PlaceHolder))
                         {
                             listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, listEdiXpath.XPathConnfig.DefaultValue));
                         }
-
                     }
                 }
             }
