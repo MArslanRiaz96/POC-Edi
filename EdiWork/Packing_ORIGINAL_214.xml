@@ -1,0 +1,121 @@
+<X12_00401_214 ID="1">
+	<ST ID="2" SegmentPosition="00">
+		<ST01 ID="00:3">214</ST01>
+		<ST02 ID="00:4">0012</ST02>
+	</ST>
+	<B10 ID="5" SegmentPosition="00">
+		<B1001 ID="00:6">TBC4688788</B1001>
+		<B1002 ID="00:7">17368212</B1002>
+		<B1003 ID="00:8">LRGR</B1003>
+	</B10>
+	<N1Loop1 ID="9" SegmentPosition="00">
+		<N1 ID="10" SegmentPosition="00">
+			<N101 ID="00:11">SH</N101>
+			<N102 ID="00:12">TBC Corporation</N102>
+			<N103 ID="00:13">94</N103>
+			<N104 ID="00:14">CAR</N104>
+		</N1>
+		<N3 ID="15" SegmentPosition="00">
+			<N301 ID="00:16">1501 Distribution Dr</N301>
+			<N302 ID="00:17">Ste 2</N302>
+		</N3>
+		<N4 ID="18" SegmentPosition="00">
+			<N401 ID="00:19">CARLISLE</N401>
+			<N402 ID="00:20">PA</N402>
+			<N403 ID="00:21">17013</N403>
+			<N404 ID="00:22">US</N404>
+		</N4>
+	</N1Loop1>
+	<N1Loop1 ID="23" SegmentPosition="00">
+		<N1 ID="24" SegmentPosition="00">
+			<N101 ID="00:25">CN</N101>
+			<N102 ID="00:26">NTW 3052Pb Lansdale</N102>
+			<N103 ID="00:27">94</N103>
+			<N104 ID="00:28">C040011469</N104>
+		</N1>
+		<N3 ID="29" SegmentPosition="00">
+			<N301 ID="00:30">1000 N Cannon Ave</N301>
+			<N302 ID="00:31">Ste 1300</N302>
+		</N3>
+		<N4 ID="32" SegmentPosition="00">
+			<N401 ID="00:33">LANSDALE</N401>
+			<N402 ID="00:34">PA</N402>
+			<N403 ID="00:35">19446</N403>
+			<N404 ID="00:36">US</N404>
+		</N4>
+	</N1Loop1>
+	<LXLoop1 ID="37" SegmentPosition="00">
+		<LX ID="38" SegmentPosition="00">
+			<LX01 ID="00:39">1</LX01>
+		</LX>
+		<AT7Loop1 ID="40" SegmentPosition="00">
+			<AT7 ID="41" SegmentPosition="00">
+				<AT701 ID="00:42">En Route to Delivery Location</AT701>
+				<AT702 ID="00:43">Normal Status</AT702>
+				<AT703 ID="00:44"></AT703>
+				<AT704 ID="00:45"/>
+				<AT705 ID="00:46">3/9/2022</AT705>
+				<AT706 ID="00:47">7:23:00 AM</AT706>
+				<AT707 ID="00:48">Local Time</AT707>
+			</AT7>
+			<MS1 ID="49" SegmentPosition="00">
+				<MS101 ID="00:50">Grantville</MS101>
+				<MS102 ID="00:51">PA</MS102>
+				<MS103 ID="00:52">US</MS103>
+			</MS1>
+			<MS2 ID="53" SegmentPosition="00">
+				<MS201 ID="00:54">LRGR</MS201>
+				<MS202 ID="00:55">000001</MS202>
+			</MS2>
+		</AT7Loop1>
+		
+		<L11_3 ID="56" SegmentPosition="00">
+			<L1101 ID="00:57">00</L1101>
+			<L1102 ID="00:58">QN</L1102>
+		</L11_3>
+		<L11 ID="56" SegmentPosition="00">
+			<L1101 ID="00:57">00</L1101>
+			<L1102 ID="00:58">QN</L1102>
+		</L11>
+	</LXLoop1>
+	
+	<LXLoop1 ID="37" SegmentPosition="00">
+		<LX ID="38" SegmentPosition="00">
+			<LX01 ID="00:39">2</LX01>
+		</LX>
+		<AT7Loop1 ID="40" SegmentPosition="00">
+			<AT7 ID="41" SegmentPosition="00">
+				<AT701 ID="00:42">En Route to Delivery Location</AT701>
+				<AT702 ID="00:43">Normal Status</AT702>
+				<AT703 ID="00:44"></AT703>
+				<AT704 ID="00:45"/>
+				<AT705 ID="00:46">3/11/2022</AT705>
+				<AT706 ID="00:47">7:23:00 AM</AT706>
+				<AT707 ID="00:48">Local Time</AT707>
+			</AT7>
+			<MS1 ID="49" SegmentPosition="00">
+				<MS101 ID="00:50">Grantville</MS101>
+				<MS102 ID="00:51">PA</MS102>
+				<MS103 ID="00:52">US</MS103>
+			</MS1>
+			<MS2 ID="53" SegmentPosition="00">
+				<MS201 ID="00:54">LRGR</MS201>
+				<MS202 ID="00:55">000001</MS202>
+			</MS2>
+		</AT7Loop1>
+		
+		<L11_3 ID="56" SegmentPosition="00">
+			<L1101 ID="00:57">00</L1101>
+			<L1102 ID="00:58">QN</L1102>
+		</L11_3>
+		<L11 ID="56" SegmentPosition="00">
+			<L1101 ID="00:57">00</L1101>
+			<L1102 ID="00:58">QN</L1102>
+		</L11>
+	</LXLoop1>
+	
+	<SE ID="59" SegmentPosition="00">
+		<SE01 ID="00:60">14</SE01>
+		<SE02 ID="00:61">0012</SE02>
+	</SE>
+</X12_00401_214>

@@ -1,0 +1,34 @@
+{{B10/B1001}}
+{{B10/B1002}}
+{{B10/B1003}}
+{{N1/N102-N101 = 'SH'}}//N1Loop1[N1[N101 = 'SH']]/N1/N102
+{{N1/N104-N101 = 'SH'}}//N1Loop1[N1[N101 = 'SH']]/N1/N104
+{{N3/N301-N101 = 'SH'}}//N1Loop1[N1[N101 = 'SH']]/N3/N301
+{{N3/N302-N101 = 'SH'}}//N1Loop1[N1[N101 = 'SH']]/N3/N302
+{{N4/N401-N101 = 'SH'}}//N1Loop1[N1[N101 = 'SH']]/N4/N401
+{{N4/N402-N101 = 'SH'}}//N1Loop1[N1[N101 = 'SH']]/N4/N402
+{{N4/N403-N101 = 'SH'}}//N1Loop1[N1[N101 = 'SH']]/N4/N403
+{{N4/N404-N101 = 'SH'}}//N1Loop1[N1[N101 = 'SH']]/N4/N404
+{{N1/N102-N101 = 'CN'}}//N1Loop1[N1[N101 = 'CN']]/N1/N102
+{{N1/N104-N101 = 'CN'}}//N1Loop1[N1[N101 = 'CN']]/N1/N104
+{{N3/N301-N101 = 'CN'}}//N1Loop1[N1[N101 = 'CN']]/N3/N301
+{{N3/N302-N101 = 'CN'}}//N1Loop1[N1[N101 = 'CN']]/N3/N302
+{{N4/N401-N101 = 'CN'}}//N1Loop1[N1[N101 = 'CN']]/N4/N401
+{{N4/N402-N101 = 'CN'}}//N1Loop1[N1[N101 = 'CN']]/N4/N402
+{{N4/N403-N101 = 'CN'}}//N1Loop1[N1[N101 = 'CN']]/N4/N403
+{{N4/N404-N101 = 'CN'}}//N1Loop1[N1[N101 = 'CN']]/N4/N404
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Shipment Status Details: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Status Code : {{AT7/AT701}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Status or Appointment Reason Code : {{AT7/AT702}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date : {{AT7/AT705}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time : {{AT7/AT706}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Code : {{AT7/AT707}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Equipment, Shipment, or Real Property Location: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City Name : {{MS1/MS101}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State or Province Code : {{MS1/MS102}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Country Code : {{MS1/MS103}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Equipment or Container Owner and Type: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Carrier Alpha Code : {{MS2/MS201}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equipment Number : {{MS2/MS202}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Business Instructions and Reference Number: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" >
+//AT7Loop1[AT7]
+{{ShipmentDetailHtml}}
+{{AT7/AT701}}  
+{{AT7/AT702}}
+{{AT7/AT705}}
+{{AT7/AT706}}
+{{AT7/AT707}}
+{{MS1/MS101}}
+{{MS1/MS102}}
+{{MS1/MS103}}
+{{MS2/MS201}}
+{{MS2/MS202}}
+{{L11/L1101}}
+{{L11/L1102}}

@@ -1,0 +1,149 @@
+ <?xml version="1.0" encoding="iso-8859-1" ?> 
+- <Batch>
+- <Error type="MESSAGE" ctrl="0012">
+  <ErrorMsg>The trailer reports 14 segments but there are really 19.</ErrorMsg> 
+  </Error>
+- <Interchange type="ISA" auth-qual="00" security-qual="00" sender-qual="02" sender-id="LRGR" receiver-qual="02" receiver-id="WENL" date="220309" time="0733" standard="U" version="00401" control="000127107" ack="0" test="P">
+- <FunctionalGroup type="GS" group="QM" sender="LRGR" receiver="WENL" date="20220309" time="0733" control="109550" standard="X" version="004010">
+- <Document type="214" name="Transportation Carrier Shipment Status Message">
+- <RepeatingSegment type="ST">
+- <Segment type="ST" name="Transaction Set Header">
+  <Element type="143" name="Transaction Set Identifier Code" value="Transportation Carrier Shipment Status Message">214</Element> 
+  <Element type="329" name="Transaction Set Control Number">0012</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="B10">
+- <Segment type="B10" name="Beginning Segment for Transportation Carrier Shipment Status Message">
+  <Element type="127" name="Reference Identification">TBC4688788</Element> 
+  <Element type="145" name="Shipment Identification Number">17368212</Element> 
+  <Element type="140" name="Standard Carrier Alpha Code">LRGR</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <Loop type="N1">
+- <RepeatingSegment type="N1">
+- <Segment type="N1" name="Name">
+  <Element type="98" name="Entity Identifier Code" value="Shipper">SH</Element> 
+  <Element type="93" name="Name">TBC Corporation</Element> 
+  <Element type="66" name="Identification Code Qualifier" value="Code assigned by the organization that is the ultimate destination of the">94</Element> 
+  <Element type="67" name="Identification Code">CAR</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="N3">
+- <Segment type="N3" name="Address Information">
+  <Element type="166" name="Address Information">1501 Distribution Dr</Element> 
+  <Element type="166" name="Address Information">Ste 2</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="N4">
+- <Segment type="N4" name="Geographic Location">
+  <Element type="19" name="City Name">CARLISLE</Element> 
+  <Element type="156" name="State or Province Code">PA</Element> 
+  <Element type="116" name="Postal Code">17013</Element> 
+  <Element type="26" name="Country Code">US</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="N1">
+- <Segment type="N1" name="Name">
+  <Element type="98" name="Entity Identifier Code" value="Consignee">CN</Element> 
+  <Element type="93" name="Name">NTW 3052Pb Lansdale</Element> 
+  <Element type="66" name="Identification Code Qualifier" value="Code assigned by the organization that is the ultimate destination of the">94</Element> 
+  <Element type="67" name="Identification Code">C040011469</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="N3">
+- <Segment type="N3" name="Address Information">
+  <Element type="166" name="Address Information">1000 N Cannon Ave</Element> 
+  <Element type="166" name="Address Information">Ste 1300</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="N4">
+- <Segment type="N4" name="Geographic Location">
+  <Element type="19" name="City Name">LANSDALE</Element> 
+  <Element type="156" name="State or Province Code">PA</Element> 
+  <Element type="116" name="Postal Code">19446</Element> 
+  <Element type="26" name="Country Code">US</Element> 
+  </Segment>
+  </RepeatingSegment>
+  </Loop>
+- <Loop type="LX">
+- <RepeatingSegment type="LX">
+- <Segment type="LX" name="Assigned Number">
+  <Element type="554" name="Assigned Number">1</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <Loop type="AT7">
+- <RepeatingSegment type="AT7">
+- <Segment type="AT7" name="Shipment Status Details">
+  <Element type="1650" name="Shipment Status Code" value="En Route to Delivery Location">X6</Element> 
+  <Element type="1651" name="Shipment Status or Appointment Reason Code" value="Normal Status">NS</Element> 
+  <Element type="373" name="Date">20220309</Element> 
+  <Element type="337" name="Time">0723</Element> 
+  <Element type="623" name="Time Code" value="Local Time">LT</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="MS1">
+- <Segment type="MS1" name="Equipment, Shipment, or Real Property Location">
+  <Element type="19" name="City Name">Grantville</Element> 
+  <Element type="156" name="State or Province Code">PA</Element> 
+  <Element type="26" name="Country Code">US</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="MS2">
+- <Segment type="MS2" name="Equipment or Container Owner and Type">
+  <Element type="140" name="Standard Carrier Alpha Code">LRGR</Element> 
+  <Element type="207" name="Equipment Number">000001</Element> 
+  </Segment>
+  </RepeatingSegment>
+  </Loop>
+- <RepeatingSegment type="L11">
+- <Segment type="L11" name="Business Instructions and Reference Number">
+  <Element type="127" name="Reference Identification">00</Element> 
+  <Element type="128" name="Reference Identification Qualifier" value="Stop Sequence Number">QN</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="LX">
+- <Segment type="LX" name="Assigned Number">
+  <Element type="554" name="Assigned Number">1</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <Loop type="AT7">
+- <RepeatingSegment type="AT7">
+- <Segment type="AT7" name="Shipment Status Details">
+  <Element type="1650" name="Shipment Status Code" value="En Route to Delivery Location">X6</Element> 
+  <Element type="1651" name="Shipment Status or Appointment Reason Code" value="Normal Status">NS</Element> 
+  <Element type="373" name="Date">20220311</Element> 
+  <Element type="337" name="Time">0723</Element> 
+  <Element type="623" name="Time Code" value="Local Time">LT</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="MS1">
+- <Segment type="MS1" name="Equipment, Shipment, or Real Property Location">
+  <Element type="19" name="City Name">Grantville</Element> 
+  <Element type="156" name="State or Province Code">PA</Element> 
+  <Element type="26" name="Country Code">US</Element> 
+  </Segment>
+  </RepeatingSegment>
+- <RepeatingSegment type="MS2">
+- <Segment type="MS2" name="Equipment or Container Owner and Type">
+  <Element type="140" name="Standard Carrier Alpha Code">LRGR</Element> 
+  <Element type="207" name="Equipment Number">000001</Element> 
+  </Segment>
+  </RepeatingSegment>
+  </Loop>
+- <RepeatingSegment type="L11">
+- <Segment type="L11" name="Business Instructions and Reference Number">
+  <Element type="127" name="Reference Identification">00</Element> 
+  <Element type="128" name="Reference Identification Qualifier" value="Stop Sequence Number">QN</Element> 
+  </Segment>
+  </RepeatingSegment>
+  </Loop>
+- <RepeatingSegment type="SE">
+- <Segment type="SE" name="Transaction Set Trailer">
+  <Element type="96" name="Number of Included Segments">14</Element> 
+  <Element type="329" name="Transaction Set Control Number">0012</Element> 
+  </Segment>
+  </RepeatingSegment>
+  </Document>
+  </FunctionalGroup>
+  </Interchange>
+  </Batch>
