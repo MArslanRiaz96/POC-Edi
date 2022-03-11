@@ -50,14 +50,14 @@
 		</LX>
 		<AT7Loop1 ID="40" SegmentPosition="00">
 			<AT7 ID="41" SegmentPosition="00">
-				<AT701 ID="00:42">En Route to Delivery Location</AT701>
-				<AT702 ID="00:43">Normal Status</AT702>
-				<AT703 ID="00:44"></AT703>
-				<AT704 ID="00:45"/>
-				<AT705 ID="00:46">3/9/2022</AT705>
-				<AT706 ID="00:47">7:23:00 AM</AT706>
-				<AT707 ID="00:48">Local Time</AT707>
-			</AT7>
+<AT701 ID="00:42">X6</AT701>
+<AT702 ID="00:43">NS</AT702>
+<AT703 ID="00:44"/>
+<AT704 ID="00:45"/>
+<AT705 ID="00:46">20220309</AT705>
+<AT706 ID="00:47">0723</AT706>
+<AT707 ID="00:48">LT</AT707>
+</AT7>
 			<MS1 ID="49" SegmentPosition="00">
 				<MS101 ID="00:50">Grantville</MS101>
 				<MS102 ID="00:51">PA</MS102>
@@ -85,14 +85,14 @@
 		</LX>
 		<AT7Loop1 ID="40" SegmentPosition="00">
 			<AT7 ID="41" SegmentPosition="00">
-				<AT701 ID="00:42">En Route to Delivery Location</AT701>
-				<AT702 ID="00:43">Normal Status</AT702>
-				<AT703 ID="00:44"></AT703>
-				<AT704 ID="00:45"/>
-				<AT705 ID="00:46">3/11/2022</AT705>
-				<AT706 ID="00:47">7:23:00 AM</AT706>
-				<AT707 ID="00:48">Local Time</AT707>
-			</AT7>
+<AT701 ID="00:42">X6</AT701>
+<AT702 ID="00:43">NS</AT702>
+<AT703 ID="00:44"/>
+<AT704 ID="00:45"/>
+<AT705 ID="00:46">20220309</AT705>
+<AT706 ID="00:47">0723</AT706>
+<AT707 ID="00:48">LT</AT707>
+</AT7>
 			<MS1 ID="49" SegmentPosition="00">
 				<MS101 ID="00:50">Grantville</MS101>
 				<MS102 ID="00:51">PA</MS102>

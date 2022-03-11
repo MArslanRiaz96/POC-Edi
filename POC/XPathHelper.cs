@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -37,8 +38,30 @@ namespace POC
 
                             if (elemList.Count != 0 || !string.IsNullOrEmpty(elemList[i].InnerXml))
                             {
-                                Console.WriteLine(elemList[i].InnerXml);
-                                htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList[i].InnerXml);
+                                if (XPathConnfig.MappingRequired == null)
+                                {
+                                    Console.WriteLine(elemList[i].InnerXml);
+                                    htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList[i].InnerXml);
+                                }
+                                else
+                                {
+                                    if (XPathConnfig.MappingRequired.IsMappingDb == true)
+                                    {
+                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, "db");
+                                    }
+                                    else if (XPathConnfig.MappingRequired.IsMappingDate == true)
+                                    {
+                                        var parsedDate = DateTime.ParseExact(elemList[i].InnerXml, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("MM/dd/yyyy");
+                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, parsedDate);
+                                    }
+                                    else if (XPathConnfig.MappingRequired.IsMappingTime == true)
+                                    {
+                                        var parsedTime = DateTime.ParseExact(elemList[i].InnerXml, "hhmm", CultureInfo.InvariantCulture).ToString("hh:mm tt");
+                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, parsedTime);
+                                    }
+                                        
+                                }
+                                
                                
                             }
                             else if (elemList.Count == 0)
@@ -62,7 +85,28 @@ namespace POC
                         Console.WriteLine(elemList[i].InnerXml);
                         if (!listEdiXPathValues.Any(z => z.Item2 == elemList[i].InnerXml && z.Item1 == listEdiXpath.XPathConnfig.PlaceHolder))
                         {
-                            listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
+                            if (listEdiXpath.XPathConnfig.MappingRequired == null)
+                            {
+                                listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
+                            }
+                            else
+                            {
+                                if (listEdiXpath.XPathConnfig.MappingRequired.IsMappingDb == true)
+                                {
+                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, "db"));
+                                }
+                                else if (listEdiXpath.XPathConnfig.MappingRequired.IsMappingDate == true)
+                                {
+                                    var parsedDate = DateTime.ParseExact(elemList[i].InnerXml, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("MM/dd/yyyy");
+                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, parsedDate));
+                                }
+                                else if (listEdiXpath.XPathConnfig.MappingRequired.IsMappingTime == true)
+                                {
+                                    var parsedTime = DateTime.ParseExact(elemList[i].InnerXml, "hhmm", CultureInfo.InvariantCulture).ToString("hh:mm tt");
+                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, parsedTime));
+                                }
+                            }
+
                         }
 
                     }
@@ -76,41 +120,41 @@ namespace POC
                 }
             }
                 WebClient webClient = new WebClient();
-            
+
             string html = webClient.DownloadString(humanReadableConfiguration.TemplatePath).ToString();
-                foreach (var listEdiXPathValue in listEdiXPathValues)
+            foreach (var listEdiXPathValue in listEdiXPathValues)
+            {
+                html = Regex.Replace(html, listEdiXPathValue.Item1, listEdiXPathValue.Item2, RegexOptions.None);
+            }
+            if (!File.Exists(humanReadableConfiguration.TemplatePathUpdatedTemp))
+            {
+                File.Create(humanReadableConfiguration.TemplatePathUpdatedTemp).Dispose();
+                using (var tw = new StreamWriter(humanReadableConfiguration.TemplatePathUpdatedTemp, false))
                 {
-                    html = Regex.Replace(html, listEdiXPathValue.Item1, listEdiXPathValue.Item2,RegexOptions.None);
+                    tw.WriteLine(html);
                 }
-                if (!File.Exists(humanReadableConfiguration.TemplatePathUpdatedTemp))
+            }
+            else if (File.Exists(humanReadableConfiguration.TemplatePathUpdatedTemp))
+            {
+                using (var tw = new StreamWriter(humanReadableConfiguration.TemplatePathUpdatedTemp, false))
                 {
-                    File.Create(humanReadableConfiguration.TemplatePathUpdatedTemp).Dispose();
-                    using (var tw = new StreamWriter(humanReadableConfiguration.TemplatePathUpdatedTemp, false))
-                    {
-                        tw.WriteLine(html);
-                    }
+                    tw.WriteLine(html);
                 }
-                else if (File.Exists(humanReadableConfiguration.TemplatePathUpdatedTemp))
-                {
-                    using (var tw = new StreamWriter(humanReadableConfiguration.TemplatePathUpdatedTemp, false))
-                    {
-                        tw.WriteLine(html);
-                    }
-                }
-                
-                var p = new Process();
-                var p2 = new Process();
-                p.StartInfo = new ProcessStartInfo(humanReadableConfiguration.TemplatePath)
-                {
-                    UseShellExecute = true
-                };
-                p.Start();
-                p2.StartInfo = new ProcessStartInfo(humanReadableConfiguration.TemplatePathUpdatedTemp)
-                {
-                    UseShellExecute = true
-                };
-                p2.Start();
-            
+            }
+
+            var p = new Process();
+            var p2 = new Process();
+            p.StartInfo = new ProcessStartInfo(humanReadableConfiguration.TemplatePath)
+            {
+                UseShellExecute = true
+            };
+            p.Start();
+            p2.StartInfo = new ProcessStartInfo(humanReadableConfiguration.TemplatePathUpdatedTemp)
+            {
+                UseShellExecute = true
+            };
+            p2.Start();
+
         }
     }
 }

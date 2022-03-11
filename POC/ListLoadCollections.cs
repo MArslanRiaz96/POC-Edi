@@ -646,30 +646,50 @@ namespace POC
                         XPath="//AT7Loop1[AT7]//AT7/AT701",
                         PlaceHolder="{{AT7/AT701}} ",
                         DefaultValue="",
+                        MappingRequired = new MappingRequired()
+                        {
+                            IsMappingDb = true
+                        }
                     },
                     new XPathConnfig()
                     {
                         XPath="//AT7Loop1[AT7]//AT7/AT702",
                         PlaceHolder="{{AT7/AT702}}",
                         DefaultValue="",
+                        MappingRequired = new MappingRequired()
+                        {
+                            IsMappingDb = true
+                        }
                     },
                     new XPathConnfig()
                     {
                         XPath="//AT7Loop1[AT7]//AT7/AT705",
                         PlaceHolder="{{AT7/AT705}}",
                         DefaultValue="",
+                        MappingRequired = new MappingRequired()
+                        {
+                            IsMappingDate = true
+                        }
                     },
                     new XPathConnfig()
                     {
                         XPath="//AT7Loop1[AT7]//AT7/AT706",
                         PlaceHolder="{{AT7/AT706}}",
                         DefaultValue="",
+                        MappingRequired = new MappingRequired()
+                        {
+                            IsMappingTime = true
+                        }
                     },
                     new XPathConnfig()
                     {
                         XPath="//AT7Loop1[AT7]//AT7/AT707",
                         PlaceHolder="{{AT7/AT707}}",
                         DefaultValue="",
+                        MappingRequired = new MappingRequired()
+                        {
+                            IsMappingDb = true
+                        }
                     },
                     new XPathConnfig()
                     {
@@ -712,6 +732,10 @@ namespace POC
                         XPath="//AT7Loop1[AT7]//..//L11/L1102",
                         PlaceHolder="{{L11/L1102}}",
                         DefaultValue="",
+                        MappingRequired = new MappingRequired()
+                        {
+                            IsMappingDb = true
+                        }
                     }
                     }
                 } 
