@@ -34,14 +34,14 @@ namespace POC
                         foreach (var XPathConnfig in listEdiXpath.LineLevel.XPathConnfigs)
                         {
 
-                            var elemList = baseNode.SelectNodes(XPathConnfig.XPath);
+                            var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[i];
 
-                            if (elemList.Count != 0 || !string.IsNullOrEmpty(elemList[i].InnerXml))
+                            if (elemList != null)
                             {
                                 if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null)
                                 {
-                                    Console.WriteLine(elemList[i].InnerXml);
-                                    htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList[i].InnerXml);
+                                    Console.WriteLine(elemList.InnerXml);
+                                    htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
                                 }
                                 else
                                 {
@@ -51,20 +51,35 @@ namespace POC
                                     }
                                     else if (XPathConnfig.DateFormat != null)
                                     {
-                                        var parsedDate = DateTime.ParseExact(elemList[i].InnerXml, XPathConnfig.DateFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(XPathConnfig.DateFormat.TargetFormat);
-                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, parsedDate);
+                                        try
+                                        {
+                                            var parsedDate = DateTime.ParseExact(elemList.InnerXml, XPathConnfig.DateFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(XPathConnfig.DateFormat.TargetFormat);
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, parsedDate);
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
+                                        }
+                                        
                                     }
                                     else if (XPathConnfig.TimeFormat != null)
                                     {
-                                        var parsedTime = DateTime.ParseExact(elemList[i].InnerXml, XPathConnfig.TimeFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(XPathConnfig.TimeFormat.TargetFormat);
-                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, parsedTime);
+                                        try
+                                        {
+                                            var parsedTime = DateTime.ParseExact(elemList.InnerXml, XPathConnfig.TimeFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(XPathConnfig.TimeFormat.TargetFormat);
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, parsedTime);
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
+                                        }
                                     }
                                         
                                 }
                                 
                                
                             }
-                            else if (elemList.Count == 0)
+                            else if (elemList == null)
                             {
                                 htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XPathConnfig.DefaultValue);
                             }
@@ -97,13 +112,30 @@ namespace POC
                                 }
                                 else if (listEdiXpath.XPathConnfig.DateFormat != null)
                                 {
-                                    var parsedDate = DateTime.ParseExact(elemList[i].InnerXml, listEdiXpath.XPathConnfig.DateFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(listEdiXpath.XPathConnfig.DateFormat.TargetFormat);
-                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, parsedDate));
+                                    try
+                                    {
+                                        var parsedDate = DateTime.ParseExact(elemList[i].InnerXml, listEdiXpath.XPathConnfig.DateFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(listEdiXpath.XPathConnfig.DateFormat.TargetFormat);
+                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, parsedDate));
+                                    }
+                                    catch (Exception ex)
+                                    {
+
+                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
+                                    }
+                                    
                                 }
                                 else if (listEdiXpath.XPathConnfig.TimeFormat != null)
                                 {
-                                    var parsedTime = DateTime.ParseExact(elemList[i].InnerXml, listEdiXpath.XPathConnfig.TimeFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(listEdiXpath.XPathConnfig.TimeFormat.TargetFormat);
-                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, parsedTime));
+                                    try
+                                    {
+                                        var parsedTime = DateTime.ParseExact(elemList[i].InnerXml, listEdiXpath.XPathConnfig.TimeFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(listEdiXpath.XPathConnfig.TimeFormat.TargetFormat);
+                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, parsedTime));
+                                    }
+                                    catch (Exception ex)
+                                    {
+
+                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
+                                    }
                                 }
                             }
 

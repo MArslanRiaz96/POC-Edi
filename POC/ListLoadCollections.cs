@@ -644,7 +644,7 @@ namespace POC
             //        new XPathConnfig()
             //        {
             //            XPath="//AT7Loop1[AT7]//AT7/AT701",
-            //            PlaceHolder="{{AT7/AT701}} ",
+            //            PlaceHolder="{{AT7/AT701}}",
             //            DefaultValue="",
             //            MappingRequired = true
             //        },
@@ -744,102 +744,62 @@ namespace POC
             configurations = new List<Configuration>() {
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//B10/B1001", PlaceHolder = "{{B10/B1001}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//BAK/BAK01", PlaceHolder = "{{BAK/BAK01}}", DefaultValue = "", MappingRequired = true },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//B10/B1002", PlaceHolder = "{{B10/B1002}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//BAK/BAK02", PlaceHolder = "{{BAK/BAK02}}", DefaultValue = "", MappingRequired = true  },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//B10/B1003", PlaceHolder = "{{B10/B1003}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//BAK/BAK03", PlaceHolder = "{{BAK/BAK03}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1[N101 = 'SH']/N102", PlaceHolder = "{{N1/N102-N101 = 'SH'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//BAK/BAK04", PlaceHolder = "{{BAK/BAK04}}", DefaultValue = "" , DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" } },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1[N101 = 'SH']/N104", PlaceHolder = "{{N1/N104-N101 = 'SH'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//TD5/TD505", PlaceHolder = "{{TD5/TD505}}", DefaultValue = "", MappingRequired = true  },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SH']]/N3/N301", PlaceHolder = "{{N3/N301-N101 = 'SH'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'ST']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'ST'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SH']]/N3/N302", PlaceHolder = "{{N3/N302-N101 = 'SH'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'ST']]/N1/N103", PlaceHolder = "{{N1/N103-N101 = 'ST'}}", DefaultValue = "" , MappingRequired = true },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SH']]/N4/N401", PlaceHolder = "{{N4/N401-N101 = 'SH'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'ST']]/N1/N104", PlaceHolder = "{{N1/N104-N101 = 'ST'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SH']]/N4/N402", PlaceHolder = "{{N4/N402-N101 = 'SH'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SFT']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'SF'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SH']]/N4/N403", PlaceHolder = "{{N4/N403-N101 = 'SH'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SFT']]/N4/N401", PlaceHolder = "{{N4/N401-N401 = 'SF'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SH']]/N4/N404", PlaceHolder = "{{N4/N404-N101 = 'SH'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SFT']]/N4/N402", PlaceHolder = "{{N4/N402-N401 = 'SF'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1[N101 = 'CN']/N102", PlaceHolder = "{{N1/N102-N101 = 'CN'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1[N101 = 'CN']/N104", PlaceHolder = "{{N1/N104-N101 = 'CN'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1[N101 = 'CN']/N104", PlaceHolder = "{{N1/N104-N101 = 'CN'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'CN']]/N3/N301", PlaceHolder = "{{N3/N301-N101 = 'CN'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'CN']]/N3/N302", PlaceHolder = "{{N3/N302-N101 = 'CN'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'CN']]/N4/N401", PlaceHolder = "{{N4/N401-N101 = 'CN'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'CN']]/N4/N402", PlaceHolder = "{{N4/N402-N101 = 'CN'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'CN']]/N4/N403", PlaceHolder = "{{N4/N403-N101 = 'CN'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'CN']]/N4/N404", PlaceHolder = "{{N4/N404-N101 = 'CN'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SFT']]/N4/N403", PlaceHolder = "{{N4/N403-N401 = 'SF'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
@@ -847,107 +807,42 @@ namespace POC
                 XPathConnfig = null,
                 LineLevel = new LineLevel()
                 {
-                   HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Shipment Status Details: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Status Code : {{AT7/AT701}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Status or Appointment Reason Code : {{AT7/AT702}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date : {{AT7/AT705}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time : {{AT7/AT706}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Code : {{AT7/AT707}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Equipment, Shipment, or Real Property Location: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City Name : {{MS1/MS101}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State or Province Code : {{MS1/MS102}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Country Code : {{MS1/MS103}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Equipment or Container Owner and Type: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Carrier Alpha Code : {{MS2/MS201}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Equipment Number : {{MS2/MS202}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Business Instructions and Reference Number: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{L11/L1101}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{L11/L1102}} </td></tr> </table><br>",
-                    LineLevelXPath = "//AT7Loop1[AT7]",
-                    PlaceHolder = "{{ShipmentDetailHtml}}",
+                   HTML = "<tr> <td VALIGN=\"TOP\" width=\"5%\"><br></td> <td width=\"50%\"><br> <b>U.P.C./EAN Shipping Container Code (1-2-5-5-1)</b>: {{PO1/PO107}}<br> </td> <td VALIGN=\"TOP\" width=\"10%\"><br>{{PO1/PO102}}</td> <td VALIGN=\"TOP\" width=\"5%\"><br>{{PO1/PO103}}</td> <td VALIGN=\"TOP\" width=\"12%\"><br>{{PO1/PO104}}</td> <td VALIGN=\"TOP\" width=\"15%\"><br>1535.16</td> </tr> <tr> <td width=\"15\"></td> <td width=\"55%\" colspan=\"5\"> <br><b>Line Item Description</b> <table border=\"0\" width=\"100%\" background=\"res://VistaRes.Dll/legalpad.gif\" cellspacing=\"1\" cellpadding=\"0\"  doDocumentonClick()> <tr> <td></td> <td align=\"left\" width=\"90%\"> </b> {{PID/PID05}}<br> </td> </tr> </table> </div> </td> </tr>",
+                    LineLevelXPath = "//PO1Loop1[PID]",
+                    PlaceHolder = "{{LineItemHtml}}",
                     XPathConnfigs = new List<XPathConnfig>() {
                     new XPathConnfig()
                     {
-                        XPath="//AT7Loop1[AT7]//AT7/AT701",
-                        PlaceHolder="{{AT7/AT701}} ",
-                        DefaultValue="",
-                        MappingRequired = new MappingRequired()
-                        {
-                            IsMappingDb = true
-                        }
+                        XPath="//PO1Loop1[PID]/PO1/PO107",
+                        PlaceHolder="{{PO1/PO107}}",
+                        DefaultValue=""
                     },
                     new XPathConnfig()
                     {
-                        XPath="//AT7Loop1[AT7]//AT7/AT702",
-                        PlaceHolder="{{AT7/AT702}}",
-                        DefaultValue="",
-                        MappingRequired = new MappingRequired()
-                        {
-                            IsMappingDb = true
-                        }
+                        XPath="//PO1Loop1[PID]/PO1/PO102",
+                        PlaceHolder="{{PO1/PO102}}",
+                        DefaultValue=""
                     },
                     new XPathConnfig()
                     {
-                        XPath="//AT7Loop1[AT7]//AT7/AT705",
-                        PlaceHolder="{{AT7/AT705}}",
-                        DefaultValue="",
-                        MappingRequired = new MappingRequired()
-                        {
-                            IsMappingDate = true
-                        }
+                        XPath="//PO1Loop1[PID]/PO1/PO103",
+                        PlaceHolder="{{PO1/PO103}}",
+                        DefaultValue=""
                     },
                     new XPathConnfig()
                     {
-                        XPath="//AT7Loop1[AT7]//AT7/AT706",
-                        PlaceHolder="{{AT7/AT706}}",
-                        DefaultValue="",
-                        MappingRequired = new MappingRequired()
-                        {
-                            IsMappingTime = true
-                        }
+                        XPath="//PO1Loop1[PID]/PO1/PO104",
+                        PlaceHolder="{{PO1/PO104}}",
+                        DefaultValue=""
                     },
                     new XPathConnfig()
                     {
-                        XPath="//AT7Loop1[AT7]//AT7/AT707",
-                        PlaceHolder="{{AT7/AT707}}",
-                        DefaultValue="",
-                        MappingRequired = new MappingRequired()
-                        {
-                            IsMappingDb = true
-                        }
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//AT7Loop1[AT7]//MS1/MS101",
-                        PlaceHolder="{{MS1/MS101}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//AT7Loop1[AT7]//MS1/MS102",
-                        PlaceHolder="{{MS1/MS102}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//AT7Loop1[AT7]//MS1/MS103",
-                        PlaceHolder="{{MS1/MS103}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//AT7Loop1[AT7]//MS2/MS201",
-                        PlaceHolder="{{MS2/MS201}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//AT7Loop1[AT7]//MS2/MS202",
-                        PlaceHolder="{{MS2/MS202}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//AT7Loop1[AT7]//..//L11/L1101",
-                        PlaceHolder="{{L11/L1101}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//AT7Loop1[AT7]//..//L11/L1102",
-                        PlaceHolder="{{L11/L1102}}",
-                        DefaultValue="",
-                        MappingRequired = new MappingRequired()
-                        {
-                            IsMappingDb = true
+                        XPath="//PO1Loop1[PID]/PID/PID05",
+                        PlaceHolder="{{PID/PID05}}",
+                        DefaultValue=""
                         }
                     }
-                    }
+                    
                 }
                 }
             }
