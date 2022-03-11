@@ -32,12 +32,18 @@ namespace POC
         public string XPath { get; set; }
         public string PlaceHolder { get; set; }
         public string DefaultValue { get; set; }
-        public MappingRequired MappingRequired { get; set; }
+        public bool MappingRequired { get; set; }
+        public DateFormat DateFormat { get; set; }
+        public TimeFormat TimeFormat { get; set; }
     }
-    public class MappingRequired
+    public class DateFormat
     {
-        public bool IsMappingDb { get; set; }
-        public bool IsMappingDate { get; set; }
-        public bool IsMappingTime { get; set; }
+        public string SourceFormat { get; set; }
+        public string TargetFormat { get; set; }
+    }
+    public class TimeFormat
+    {
+        public string SourceFormat { get; set; }
+        public string TargetFormat { get; set; }
     }
 }
