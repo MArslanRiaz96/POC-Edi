@@ -784,22 +784,22 @@ namespace POC
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SFT']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'SF'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SF']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'SF'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SFT']]/N4/N401", PlaceHolder = "{{N4/N401-N401 = 'SF'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SF']]/N4/N401", PlaceHolder = "{{N4/N401-N401 = 'SF'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SFT']]/N4/N402", PlaceHolder = "{{N4/N402-N401 = 'SF'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SF']]/N4/N402", PlaceHolder = "{{N4/N402-N401 = 'SF'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SFT']]/N4/N403", PlaceHolder = "{{N4/N403-N401 = 'SF'}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SF']]/N4/N403", PlaceHolder = "{{N4/N403-N401 = 'SF'}}", DefaultValue = "" },
                 LineLevel = null
                 },
                 new Configuration()
