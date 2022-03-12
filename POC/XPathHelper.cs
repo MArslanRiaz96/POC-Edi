@@ -36,9 +36,9 @@ namespace POC
 
                             var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[i];
 
-                            if (elemList != null)
+                            if (elemList != null || XPathConnfig.MutiplcationUsingXPath != null)
                             {
-                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null)
+                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null)
                                 {
                                     Console.WriteLine(elemList.InnerXml);
                                     htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
@@ -73,6 +73,24 @@ namespace POC
                                         {
                                             htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
                                         }
+                                    }
+                                    else if (XPathConnfig.MutiplcationUsingXPath != null)
+                                    {
+                                        List<int> XpathValues = new List<int>();
+                                        foreach (var Xpath in XPathConnfig.MutiplcationUsingXPath)
+                                        {
+                                            try
+                                            {
+                                                var elemListForMutiplication = baseNode.SelectNodes(Xpath)[i];
+                                                XpathValues.Add(Convert.ToInt32(elemListForMutiplication.InnerXml));
+                                            }
+                                            catch (Exception ex)
+                                            {
+
+                                            }
+                                            
+                                        }
+                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XpathValues.Aggregate((a, x) => a * x).ToString());
                                     }
                                         
                                 }

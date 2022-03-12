@@ -35,6 +35,7 @@ namespace POC
         public bool MappingRequired { get; set; }
         public DateFormat DateFormat { get; set; }
         public TimeFormat TimeFormat { get; set; }
+        public List<string> MutiplcationUsingXPath { get; set; }
     }
     public class DateFormat
     {
