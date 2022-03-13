@@ -1,0 +1,106 @@
+<X12_00401_945 ID="1">
+	<ST ID="2" SegmentPosition="00">
+		<ST01 ID="00:3">945</ST01>
+		<ST02 ID="00:4">0010</ST02>
+	</ST>
+	<W06 ID="5" SegmentPosition="00">
+		<W0601 ID="00:6">F</W0601>
+		<W0602 ID="00:7">ORD0455243</W0602>
+		<W0603 ID="00:8">20211119</W0603>
+		<W0604 ID="00:9">ORD0455243</W0604>
+	</W06>
+	<N1Loop1 ID="10" SegmentPosition="00">
+		<N1 ID="11" SegmentPosition="00">
+			<N101 ID="00:12">BT</N101>
+			<N102 ID="00:13">Test Customer</N102>
+		</N1>
+		<N3 ID="14" SegmentPosition="00">
+			<N301 ID="00:15">721 North B Street</N301>
+		</N3>
+		<N4 ID="16" SegmentPosition="00">
+			<N401 ID="00:17">Sacramento</N401>
+			<N402 ID="00:18">Ca</N402>
+			<N403 ID="00:19">958110311</N403>
+			<N404 ID="00:20">US</N404>
+		</N4>
+	</N1Loop1>
+	<N1Loop1 ID="21" SegmentPosition="00">
+		<N1 ID="22" SegmentPosition="00">
+			<N101 ID="00:23">SF</N101>
+			<N102 ID="00:24"/>
+			<N103 ID="00:25">54</N103>
+			<N104 ID="00:26">BOS</N104>
+		</N1>
+	</N1Loop1>
+	<N1Loop1 ID="27" SegmentPosition="00">
+		<N1 ID="28" SegmentPosition="00">
+			<N101 ID="00:29">ST</N101>
+			<N102 ID="00:30">TEST CUSTOMER</N102>
+		</N1>
+		<N3 ID="31" SegmentPosition="00">
+			<N301 ID="00:32">721 North B Street</N301>
+		</N3>
+		<N4 ID="33" SegmentPosition="00">
+			<N401 ID="00:34">Sacramento</N401>
+			<N402 ID="00:35">Ca</N402>
+			<N403 ID="00:36">958110311</N403>
+			<N404 ID="00:37">US</N404>
+		</N4>
+	</N1Loop1>
+	<N9 ID="38" SegmentPosition="00">
+		<N901 ID="00:39">CO</N901>
+		<N902 ID="00:40">SAMPLE</N902>
+	</N9>
+	<N9 ID="41" SegmentPosition="00">
+		<N901 ID="00:42">MB</N901>
+		<N902 ID="00:43">123123</N902>
+	</N9>
+	<G62 ID="44" SegmentPosition="00">
+		<G6201 ID="00:45">11</G6201>
+		<G6202 ID="00:46">20211119</G6202>
+		<G6203 ID="00:47">A</G6203>
+		<G6204 ID="00:48">1039</G6204>
+	</G62>
+	<W27 ID="49" SegmentPosition="00">
+		<W2701 ID="00:50">ZZ</W2701>
+		<W2702 ID="00:51">Erro</W2702>
+	</W27>
+	<LXLoop1 ID="52" SegmentPosition="00">
+		<LX ID="53" SegmentPosition="00">
+			<LX01 ID="00:54">1</LX01>
+		</LX>
+		<W12Loop1 ID="55" SegmentPosition="00">
+			<W12 ID="56" SegmentPosition="00">
+				<W1201 ID="00:57">CC</W1201>
+				<W1202 ID="00:58"/>
+				<W1203 ID="00:59">1</W1203>
+				<W1204 ID="00:60"/>
+				<W1205 ID="00:61">BX</W1205>
+				<W1206 ID="00:62"/>
+				<W1207 ID="00:63">VN</W1207>
+				<W1208 ID="00:64">EG00040</W1208>
+			</W12>
+		</W12Loop1>
+	</LXLoop1>
+	<LXLoop1 ID="52" SegmentPosition="00">
+		<LX ID="53" SegmentPosition="00">
+			<LX01 ID="00:54">2</LX01>
+		</LX>
+		<W12Loop1 ID="55" SegmentPosition="00">
+			<W12 ID="56" SegmentPosition="00">
+				<W1201 ID="00:57">CC</W1201>
+				<W1202 ID="00:58"/>
+				<W1203 ID="00:59">1</W1203>
+				<W1204 ID="00:60"/>
+				<W1205 ID="00:61">BX</W1205>
+				<W1206 ID="00:62"/>
+				<W1207 ID="00:63">VN</W1207>
+				<W1208 ID="00:64">EG00040</W1208>
+			</W12>
+		</W12Loop1>
+	</LXLoop1>
+	<SE ID="65" SegmentPosition="00">
+		<SE01 ID="00:66">16</SE01>
+		<SE02 ID="00:67">0010</SE02>
+	</SE>
+</X12_00401_945>

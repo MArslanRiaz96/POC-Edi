@@ -1,0 +1,127 @@
+{{W06/W0601}} F=Full Detail 
+{{W06/W0602}}
+{{W06/W0603}} date
+{{W06/W0604}}
+{{N1/N102-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N1/N102
+{{N3/N301-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N3/N301
+{{N4/N401-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N401
+{{N4/N402-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N402
+{{N4/N403-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N403
+{{N4/N404-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N404
+
+{{N1/N103-N101 = 'SF'}} //N1Loop1[N1[N101 = 'SF']]/N1/N103  54 = Warehouse
+{{N1/N104-N101 = 'SF'}} //N1Loop1[N1[N101 = 'SF']]/N1/N104
+
+{{N1/N102-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N1/N102
+{{N3/N301-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N3/N301
+{{N4/N401-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N401
+{{N4/N402-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N402
+{{N4/N403-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N403
+{{N4/N404-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N404
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Reference Identification: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{N9/N901}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{N9/N902}} </td></tr> </table><br>
+{{ReferenceHtml}} //N9
+{{N9/N901}} CO = Customer Order Number , MB= Master Bill of Lading 
+{{N9/N902}}
+
+{{G62/G6201}} 11=Shipped on This Date 
+{{G62/G6202}} date
+{{G62/G6203}} A=Actual Departure Time 
+{{G62/G6204}} time
+
+{{W27/W2701}} ZZ =Mutually defined 
+{{W27/W2702}}
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Warehouse Item Detail: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment/Order Status Code : {{W12/W1201}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped : {{W12/W1203}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{W12/W1205}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : {{W12/W1207}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : {{W12/W1208}} </td></tr> </table><br>
+{{WarehousDetailsHtml}} //LXLoop1[LX]
+{{W12/W1201}} //LXLoop1[LX]/W12Loop1/W12/W1201 CC=Shipment Complete on (Date)
+{{W12/W1203}}//LXLoop1[LX]/W12Loop1/W12/W1203
+{{W12/W1205}} //LXLoop1[LX]/W12Loop1/W12/W1205 BX= Box
+{{W12/W1207}} //LXLoop1[LX]/W12Loop1/W12/W1207 VN=Vendor's (Seller's) Item Number 
+{{W12/W1208}} //LXLoop1[LX]/W12Loop1/W12/W1208
+
+
+
+
+
+
+
+
+
+
+{{B3/B302}}
+{{B3/B303}}
+{{B3/B304}}  CC = Collect
+{{B3/B305}}  L = Pounds
+{{B3/B306}} date
+{{B3/B307}}
+{{B3/B309}} date
+{{B3/B310}} 140= Actual
+{{B3/B311}}
+{{B3/B312}} date
+{{C3/C301}}
+{{N9/N901-N901 = 'BM'}} //N9[N901 = 'BM']/N901 BM=Bill of Lading Number  
+{{N9/N902-N901 = 'BM'}}//N9[N901 = 'BM']/N902
+{{N1/N102-N101 = 'SH'}} //N1Loop1[N1[N101 = 'SH']]/N1/N102
+{{N3/N301-N101 = 'SH'}} //N1Loop1[N1[N101 = 'SH']]/N3/N301
+{{N4/N401-N101 = 'SH'}} //N1Loop1[N1[N101 = 'SH']]/N4/N401
+{{N4/N402-N101 = 'SH'}} //N1Loop1[N1[N101 = 'SH']]/N4/N402
+{{N4/N403-N101 = 'SH'}} //N1Loop1[N1[N101 = 'SH']]/N4/N403
+{{N4/N404-N101 = 'SH'}} //N1Loop1[N1[N101 = 'SH']]/N4/N404
+{{N1/N102-N101 = 'CN'}} //N1Loop1[N1[N101 = 'CN']]/N1/N102
+{{N3/N301-N101 = 'CN'}} //N1Loop1[N1[N101 = 'CN']]/N3/N301
+{{N4/N401-N101 = 'CN'}} //N1Loop1[N1[N101 = 'CN']]/N4/N401
+{{N4/N402-N101 = 'CN'}} //N1Loop1[N1[N101 = 'CN']]/N4/N402
+{{N4/N403-N101 = 'CN'}} //N1Loop1[N1[N101 = 'CN']]/N4/N403
+{{N4/N404-N101 = 'CN'}} //N1Loop1[N1[N101 = 'CN']]/N4/N404
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Rate and Charges: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lading Line Item Number : {{L1/L101}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Freight Rate : {{L1/L102}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rate/Value Qualifier : {{L1/L103}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charge : {{L1/L104}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Special Charge or Allowance Code : {{L1/L108}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Special Charge Description : {{L1/L112}} </td></tr> </table><br>
+{{LinesHtml}} //LXLoop1[LX]
+{{L1/L101}}
+{{L1/L102}}
+{{L1/L103}} PM = Per Mile 
+{{L1/L104}}
+{{L1/L108}} BAS= Base Charge , 405 = Fuel Surcharge 
+{{L1/L112}}
+
+
+
+
+
+
+{{BCH/BCH03}}
+{{BCH/BCH06}} date conversion
+{{BCH/BCH11}} date conversion
+{{BCH/BCH01}} 04 = Change // Db Mapping
+{{BCH/BCH02}} SA = Stand-alone Order // Db Mapping
+{{REF/REF02-REF01 = 'IA'}} //REF[REF01 = 'IA']/REF02
+{{FOB/FOB01}} CC = Collect
+{{FOB/FOB02}} OR = Origin (Shipping Point) 
+{{FOB/FOB06}} ZZ = Mutually Defined 
+{{FOB/FOB07}} 
+{{ITD/ITD03}}
+
+{{ITD/ITD05}}
+{{ITD/ITD012}}
+{{DTM/DTM02-DTM01 = '037'}} //DTM[DTM01 = '037']/DTM02 date
+{{DTM/DTM02-DTM01 = '038'}} //DTM[DTM01 = '038']/DTM02  date
+{{TD5/TD505}}
+{{N9/N901-N901 = 'PO'}} //N9Loop1[N9[N901 = 'PO']]/N9/N901 PO = Purchase Order Number
+{{N9/N902-N901 = 'PO'}} //N9Loop1[N9[N901 = 'PO']]/N9/N902
+{{MSG/MSG01-N901 = 'PO'}} //N9Loop1[N9[N901 = 'PO']]/MSG/MSG01
+ 
+
+<table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1" <tr> <td width="10%"><b>Line</b></td> <td width="47%"><b>Description</b></td> <td width="10%"><b>Quan</b></td> <td width="5%"><b>UI</b></td> <td width="10%"><b>Price($)</b></td> <td width="10%"><b>Price Basis</b></td> <td width="15%"><b>  Total($)</b></td> </tr> <table border="0" WIDTH="70%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1" > <tr> <td width="5%"><b>Line</b></td> <td width="48%"><b>Description</b></td> <td width="10%"><b>Quan Ord</b></td> <td width="10%"><b>Quan to Rec</b></td> <td width="3%"><b>UI</b></td> <td width="6%"><b>Price Basis</b></td> <td width="10%"><b>Price($)</b></td> </tr> <tr> <td VALIGN="TOP" width="5%">{{POC/POC01}}</td> <td width="48%"> <b>Vendor's Style Number</b>: {{POC/POC09}}<br> <b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{POC/POC011}}<br> <b>Buyer's Item Number</b>:{{POC/POC013}}<br> <b>Change Type</b>: {{POC/POC02}}<br> </td> <td VALIGN="TOP" width="10%">{{POC/POC03}}</td> <td VALIGN="TOP" width="10%">{{POC/POC04}}</td> <td VALIGN="TOP" width="3%">{{POC/POC05}}</td> <td VALIGN="TOP" width="6%"></td> <td VALIGN="TOP" width="10%">{{POC/POC06}}</td> </tr> <tr> <td width="15"></td> <td width="55%" colspan="5"> <br><b>     Line Item Description (Source: Product)</b> <table border="0" width="100%" background="res://VistaRes.Dll/legalpad.gif" cellspacing="1" cellpadding="0"  doDocumentonClick()> <tr> <td></td> <td align="left" width="90%"> </b>{{PID/PID05}}<br> </td> </tr> </table> </div> </td> </tr>
+{{LinedItemHtml}} //POCLoop1[POC]
+{{POC/POC01}}
+{{POC/POC09}}
+{{POC/POC11}}
+{{POC/POC013}}
+{{POC/POC02}} DI = Delete Item(s)
+{{POC/POC03}}
+{{POC/POC04}}
+{{POC/POC05}}
+{{POC/POC06}}
+{{PID/PID05}} //POCLoop1[POC]/PIDLoop1[PID]/PID/PID05
+
+
