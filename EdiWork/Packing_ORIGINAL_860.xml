@@ -1,0 +1,126 @@
+<X12_00401_860 ID="1">
+	<ST ID="2" SegmentPosition="010">
+		<ST01 ID="010:3">860</ST01>
+		<ST02 ID="010:4">0001</ST02>
+	</ST>
+	<BCH ID="5" SegmentPosition="00">
+		<BCH01 ID="00:6">04</BCH01>
+		<BCH02 ID="00:7">SA</BCH02>
+		<BCH03 ID="00:8">4513733034TST4</BCH03>
+		<BCH04 ID="00:9"/>
+		<BCH05 ID="00:10"/>
+		<BCH06 ID="00:11">20210920</BCH06>
+		<BCH07 ID="00:12"/>
+		<BCH08 ID="00:13"/>
+		<BCH09 ID="00:14"/>
+		<BCH10 ID="00:15"/>
+		<BCH11 ID="00:16">20210920</BCH11>
+	</BCH>
+	<REF ID="17" SegmentPosition="00">
+		<REF01 ID="00:18">IA</REF01>
+		<REF02 ID="00:19">0000046839</REF02>
+	</REF>
+	<FOB ID="20" SegmentPosition="00">
+		<FOB01 ID="00:21">CC</FOB01>
+		<FOB02 ID="00:22">OR</FOB02>
+		<FOB03 ID="00:23"/>
+		<FOB04 ID="00:24"/>
+		<FOB05 ID="00:25"/>
+		<FOB06 ID="00:26">ZZ</FOB06>
+		<FOB07 ID="00:27">Freight Collect</FOB07>
+	</FOB>
+	<ITD ID="28" SegmentPosition="00">
+		<ITD01 ID="00:29"/>
+		<ITD02 ID="00:30"/>
+		<ITD03 ID="00:31">0</ITD03>
+		<ITD04 ID="00:32"/>
+		<ITD05 ID="00:33">60</ITD05>
+		<ITD06 ID="00:34"/>
+		<ITD07 ID="00:35"/>
+		<ITD08 ID="00:36"/>
+		<ITD09 ID="00:37"/>
+		<ITD10 ID="00:38"/>
+		<ITD11 ID="00:39"/>
+		<ITD12 ID="00:40">Payable Net in 60 days</ITD12>
+	</ITD>
+	<DTM ID="41" SegmentPosition="00">
+		<DTM01 ID="00:42">037</DTM01>
+		<DTM02 ID="00:43">20210924</DTM02>
+	</DTM>
+	<DTM ID="44" SegmentPosition="00">
+		<DTM01 ID="00:45">038</DTM01>
+		<DTM02 ID="00:46">20210928</DTM02>
+	</DTM>
+	<TD5 ID="47" SegmentPosition="00">
+		<TD501 ID="00:48"/>
+		<TD502 ID="00:49"/>
+		<TD503 ID="00:50"/>
+		<TD504 ID="00:51"/>
+		<TD505 ID="00:52">REI Vendor Guide</TD505>
+	</TD5>
+	<N9Loop1 ID="53" SegmentPosition="00">
+		<N9 ID="54" SegmentPosition="00">
+			<N901 ID="00:55">PO</N901>
+			<N902 ID="00:56">4513733034TST4</N902>
+		</N9>
+		<MSG ID="57" SegmentPosition="00">
+			<MSG01 ID="00:58">Payable Net in 60 days</MSG01>
+		</MSG>
+	</N9Loop1>
+	<POCLoop1 ID="59" SegmentPosition="00">
+		<POC ID="60" SegmentPosition="00">
+			<POC01 ID="00:61">00010</POC01>
+			<POC02 ID="00:62">DI</POC02>
+			<POC03 ID="00:63">2</POC03>
+			<POC04 ID="00:64">2</POC04>
+			<POC05 ID="00:65">EA</POC05>
+			<POC06 ID="00:66">339.99</POC06>
+			<POC07 ID="00:67"/>
+			<POC08 ID="00:68">VA</POC08>
+			<POC09 ID="00:69">477154</POC09>
+			<POC10 ID="00:70">UP</POC10>
+			<POC11 ID="00:71">810005963015</POC11>
+			<POC12 ID="00:72">IN</POC12>
+			<POC13 ID="00:73">2042010001</POC13>
+		</POC>
+		<PIDLoop1 ID="74" SegmentPosition="00">
+			<PID ID="75" SegmentPosition="00">
+				<PID01 ID="00:76">F</PID01>
+				<PID02 ID="00:77">08</PID02>
+				<PID03 ID="00:78"/>
+				<PID04 ID="00:79"/>
+				<PID05 ID="00:80">Drive Reach OTR, No Color, One Size</PID05>
+			</PID>
+		</PIDLoop1>
+	</POCLoop1>
+	<POCLoop1 ID="81" SegmentPosition="00">
+		<POC ID="82" SegmentPosition="00">
+			<POC01 ID="00:83">00030</POC01>
+			<POC02 ID="00:84">CA</POC02>
+			<POC03 ID="00:85">1</POC03>
+			<POC04 ID="00:86">1</POC04>
+			<POC05 ID="00:87">EA</POC05>
+			<POC06 ID="00:88">37.6</POC06>
+			<POC07 ID="00:89"/>
+			<POC08 ID="00:90">VA</POC08>
+			<POC09 ID="00:91">952350</POC09>
+			<POC10 ID="00:92">UP</POC10>
+			<POC11 ID="00:93">813986006504</POC11>
+			<POC12 ID="00:94">IN</POC12>
+			<POC13 ID="00:95">2042030001</POC13>
+		</POC>
+		<PIDLoop1 ID="96" SegmentPosition="00">
+			<PID ID="97" SegmentPosition="00">
+				<PID01 ID="00:98">F</PID01>
+				<PID02 ID="00:99">08</PID02>
+				<PID03 ID="00:100"/>
+				<PID04 ID="00:101"/>
+				<PID05 ID="00:102">Ultra Low Loss Coax, No Color, One Size</PID05>
+			</PID>
+		</PIDLoop1>
+	</POCLoop1>
+	<SE ID="103" SegmentPosition="020">
+		<SE01 ID="020:104">15</SE01>
+		<SE02 ID="020:105">0001</SE02>
+	</SE>
+</X12_00401_860>
