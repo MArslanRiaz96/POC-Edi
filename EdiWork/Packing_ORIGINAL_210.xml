@@ -1,0 +1,154 @@
+<X12_00401_210 xml:space="preserve" ID="1">
+  <ISA ID="2" SegmentPosition="00">
+    <ISA01 ID="00:3">00</ISA01>
+    <ISA02 ID="00:4">          </ISA02>
+    <ISA03 ID="00:5">00</ISA03>
+    <ISA04 ID="00:6">          </ISA04>
+    <ISA05 ID="00:7">02</ISA05>
+    <ISA06 ID="00:8">WVAS           </ISA06>
+    <ISA07 ID="00:9">08</ISA07>
+    <ISA08 ID="00:10">6120930002     </ISA08>
+    <ISA09 ID="00:11">220308</ISA09>
+    <ISA10 ID="00:12">2359</ISA10>
+    <ISA11 ID="00:13">U</ISA11>
+    <ISA12 ID="00:14">00401</ISA12>
+    <ISA13 ID="00:15">985142942</ISA13>
+    <ISA14 ID="00:16">1</ISA14>
+    <ISA15 ID="00:17">P</ISA15>
+    <ISA16 ID="00:18">&gt;</ISA16>
+  </ISA>
+  <GS ID="19" SegmentPosition="00">
+    <GS01 ID="00:20">IM</GS01>
+    <GS02 ID="00:21">3039565790</GS02>
+    <GS03 ID="00:22">8028623330</GS03>
+    <GS04 ID="00:23">20220308</GS04>
+    <GS05 ID="00:24">235921</GS05>
+    <GS06 ID="00:25">9467</GS06>
+    <GS07 ID="00:26">X</GS07>
+    <GS08 ID="00:27">004010</GS08>
+  </GS>
+  <ST ID="28" SegmentPosition="00">
+    <ST01 ID="00:29">210</ST01>
+    <ST02 ID="00:30">0001</ST02>
+  </ST>
+  <B3 ID="31" SegmentPosition="00">
+    <B301 ID="00:32" />
+    <B302 ID="00:33">WLS9879634</B302>
+    <B303 ID="00:34">SH02646686</B303>
+    <B304 ID="00:35">CC</B304>
+    <B305 ID="00:36">L</B305>
+    <B306 ID="00:37">20220308</B306>
+    <B307 ID="00:38">381014</B307>
+    <B308 ID="00:39" />
+    <B309 ID="00:40">20220304</B309>
+    <B310 ID="00:41">140</B310>
+    <B311 ID="00:42">WVAS</B311>
+    <B312 ID="00:43">20220227</B312>
+  </B3>
+  <C3 ID="44" SegmentPosition="00">
+    <C301 ID="00:45">USD</C301>
+  </C3>
+  <N9 ID="46" SegmentPosition="00">
+    <N901 ID="00:47">BM</N901>
+    <N902 ID="00:48">50000000007946828</N902>
+  </N9>
+  <N1Loop1 ID="49" SegmentPosition="00">
+    <N1 ID="50" SegmentPosition="00">
+      <N101 ID="00:51">SH</N101>
+      <N102 ID="00:52">MID-AMERICA PET FOOD LLC</N102>
+      <N104 ID="00:53" />
+    </N1>
+    <N3 ID="54" SegmentPosition="00">
+      <N301 ID="00:55">2024 NORTH FRONTAGE ROAD</N301>
+      <N302 ID="00:56" />
+    </N3>
+    <N4 ID="57" SegmentPosition="00">
+      <N401 ID="00:58">MT PLEASANT</N401>
+      <N402 ID="00:59">TX</N402>
+      <N403 ID="00:60">75455</N403>
+      <N404 ID="00:61">US</N404>
+    </N4>
+  </N1Loop1>
+  <N1Loop1 ID="62" SegmentPosition="00">
+    <N1 ID="63" SegmentPosition="00">
+      <N101 ID="00:64">CN</N101>
+      <N102 ID="00:65">498 HAGERSTOWN DC</N102>
+    </N1>
+    <N3 ID="66" SegmentPosition="00">
+      <N301 ID="00:67">11935 HOPEWELLRD</N301>
+      <N302 ID="00:68" />
+    </N3>
+    <N4 ID="69" SegmentPosition="00">
+      <N401 ID="00:70">HAGERSTOWN</N401>
+      <N402 ID="00:71">MD</N402>
+      <N403 ID="00:72">21740</N403>
+      <N404 ID="00:73">US</N404>
+    </N4>
+  </N1Loop1>
+  <LXLoop1 ID="74" SegmentPosition="00">
+    <LX ID="75" SegmentPosition="00">
+      <LX01 ID="00:76">1</LX01>
+    </LX>
+    <L1 ID="77" SegmentPosition="00">
+      <L101 ID="00:78">1</L101>
+      <L102 ID="00:79">2.7</L102>
+      <L103 ID="00:80">PM</L103>
+      <L104 ID="00:81">322488</L104>
+      <L105 ID="00:82" />
+      <L106 ID="00:83" />
+      <L107 ID="00:84" />
+      <L108 ID="00:85">BAS</L108>
+      <L109 ID="00:86" />
+      <L110 ID="00:87" />
+      <L111 ID="00:88" />
+      <L112 ID="00:89">LINEHAUL</L112>
+      <L113 ID="00:90" />
+      <L114 ID="00:91" />
+      <L115 ID="00:92" />
+      <L116 ID="00:93" />
+      <L117 ID="00:94" />
+      <L118 ID="00:95" />
+      <L119 ID="00:96" />
+      <L120 ID="00:97" />
+    </L1>
+  </LXLoop1>
+  <LXLoop1 ID="98" SegmentPosition="00">
+    <LX ID="99" SegmentPosition="00">
+      <LX01 ID="00:100">2</LX01>
+    </LX>
+    <L1 ID="101" SegmentPosition="00">
+      <L101 ID="00:102">2</L101>
+      <L102 ID="00:103">0.49</L102>
+      <L103 ID="00:104">PM</L103>
+      <L104 ID="00:105">58526</L104>
+      <L105 ID="00:106" />
+      <L106 ID="00:107" />
+      <L107 ID="00:108" />
+      <L108 ID="00:109">405</L108>
+      <L109 ID="00:110" />
+      <L110 ID="00:111" />
+      <L111 ID="00:112" />
+      <L112 ID="00:113">FUEL SURCHARGE</L112>
+      <L113 ID="00:114" />
+      <L114 ID="00:115" />
+      <L115 ID="00:116" />
+      <L116 ID="00:117" />
+      <L117 ID="00:118" />
+      <L118 ID="00:119" />
+      <L119 ID="00:120" />
+      <L120 ID="00:121" />
+    </L1>
+  </LXLoop1>
+  <SE ID="122" SegmentPosition="00">
+    <SE01 ID="00:123" />
+    <SE02 ID="00:124">0001</SE02>
+  </SE>
+  <GE ID="125" SegmentPosition="00">
+    <GE01 ID="00:126">3</GE01>
+    <GE02 ID="00:127">9467</GE02>
+  </GE>
+  <IEA ID="128" SegmentPosition="00">
+    <IEA01 ID="00:129">1</IEA01>
+    <IEA02 ID="00:130">985142942</IEA02>
+  </IEA>
+</X12_00401_210>
