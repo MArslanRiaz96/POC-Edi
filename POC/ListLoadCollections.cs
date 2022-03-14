@@ -1231,75 +1231,45 @@ namespace POC
 
             new HumanReadableConfiguration()
             {
-            TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad945.html"),
-            TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad945Updated.html"),
-            PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGINAL_945.xml"),
-            TemplateSetCode = 945,
+            TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad940.html"),
+            TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad940Updated.html"),
+            PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGINAL_940.xml"),
+            TemplateSetCode = 940,
             KDIVersion = "",
             configurations = new List<Configuration>() {
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//W06/W0601", PlaceHolder = "{{W06/W0601}}", DefaultValue = "", MappingRequired= true },
+                XPathConnfig = new XPathConnfig() { XPath = "//W05[W0501 = 'N']/W0501", PlaceHolder = "{{W05/W0501-W0501 = 'N'}}", DefaultValue = "", MappingRequired= true },
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//W06/W0602", PlaceHolder = "{{W06/W0602}}", DefaultValue = ""},
+                XPathConnfig = new XPathConnfig() { XPath = "//W05[W0501 = 'N']/W0502", PlaceHolder = "{{W05/W0502-W0501 = 'N'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//W06/W0603", PlaceHolder = "{{W06/W0603}}", DefaultValue = "", DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" }},
+                XPathConnfig = new XPathConnfig() { XPath = "//W05[W0501 = 'N']/W0504", PlaceHolder = "{{W05/W0504-W0501 = 'N'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//W06/W0604", PlaceHolder = "{{W06/W0604}}", DefaultValue = ""},
+                XPathConnfig = new XPathConnfig() { XPath = "//W05[W0501 = 'N']/W0505", PlaceHolder = "{{W05/W0505-W0501 = 'N'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'BT']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'BT'}}", DefaultValue = ""},
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'ST']]/N1/N102", PlaceHolder = "{{N1/N102-N101= 'ST'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'BT']]/N3/N301", PlaceHolder = "{{N3/N301-N101 = 'BT'}}", DefaultValue = ""},
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'ST']]/N1/N103", PlaceHolder = "{{N1/N103-N101= 'ST'}}", DefaultValue = "", MappingRequired= true},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'BT']]/N4/N401", PlaceHolder = "{{N4/N401-N101 = 'BT'}}", DefaultValue = ""},
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'BT']]/N4/N402", PlaceHolder = "{{N4/N402-N101 = 'BT'}}", DefaultValue = ""},
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'BT']]/N4/N403", PlaceHolder = "{{N4/N403-N101 = 'BT'}}", DefaultValue = ""},
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'BT']]/N4/N404", PlaceHolder = "{{N4/N404-N101 = 'BT'}}", DefaultValue = ""},
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SF']]/N1/N103", PlaceHolder = "{{N1/N103-N101 = 'SF'}}", DefaultValue = "", MappingRequired= true},
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'SF']]/N1/N104", PlaceHolder = "{{N1/N104-N101 = 'SF'}}", DefaultValue = ""},
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'ST']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'ST'}}", DefaultValue = ""},
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'ST']]/N1/N104", PlaceHolder = "{{N1/N104-N101= 'ST'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
@@ -1324,37 +1294,122 @@ namespace POC
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'ST']]/N4/N404", PlaceHolder = "{{N4/N404-N101 = 'ST'}}", DefaultValue = ""},
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DE']]/N1/N102", PlaceHolder = "{{N1/N102-N101= 'DE'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//G62/G6201", PlaceHolder = "{{G62/G6201}}", DefaultValue = "" , MappingRequired = true},
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DE']]/N1/N103", PlaceHolder = "{{N1/N103-N101= 'DE'}}", DefaultValue = "", MappingRequired= true},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//G62/G6202", PlaceHolder = "{{G62/G6202}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" } },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DE']]/N1/N104", PlaceHolder = "{{N1/N104-N101= 'DE'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//G62/G6203", PlaceHolder = "{{G62/G6203}}", DefaultValue = "" , MappingRequired= true},
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DE']]/N3/N301", PlaceHolder = "{{N3/N301-N101 = 'DE'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//G62/G6204", PlaceHolder = "{{G62/G6204}}", DefaultValue = "" , TimeFormat= new TimeFormat() { SourceFormat = "hhmm",TargetFormat = "hh:mm tt"} },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DE']]/N4/N401", PlaceHolder = "{{N4/N401-N101 = 'DE'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//W27/W2701", PlaceHolder = "{{W27/W2701}}", DefaultValue = "", MappingRequired= true },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DE']]/N4/N402", PlaceHolder = "{{N4/N402-N101 = 'DE'}}", DefaultValue = ""},
                 LineLevel = null
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//W27/W2702", PlaceHolder = "{{W27/W2702}}", DefaultValue = "" },
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DE']]/N4/N403", PlaceHolder = "{{N4/N403-N101 = 'DE'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'WH']]/N1/N102", PlaceHolder = "{{N1/N102-N101= 'WH'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'WH']]/N1/N103", PlaceHolder = "{{N1/N103-N101= 'WH'}}", DefaultValue = "",MappingRequired= true},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'WH']]/N1/N104", PlaceHolder = "{{N1/N104-N101= 'WH'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'WH']]/N4/N401", PlaceHolder = "{{N4/N401-N101 = 'WH'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'WH']]/N4/N402", PlaceHolder = "{{N4/N402-N101 = 'WH'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'WH']]/N4/N403", PlaceHolder = "{{N4/N403-N101 = 'WH'}}", DefaultValue = "" },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N9[N901 = 'BR']/N901", PlaceHolder = "{{N9/N901-N901 = 'BR'}}", DefaultValue = "", MappingRequired = true },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N9[N901 = 'BR']/N902", PlaceHolder = "{{N9/N902-N901 = 'BR'}}", DefaultValue = "" },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//NTE[NTE01 = 'WHI']/NTE02", PlaceHolder = "{{NTE/NTE02-NTE01 = 'WHI'}}", DefaultValue = "" },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//W66[W6601 = 'PP']/W6601", PlaceHolder = "{{W66/W6601-W6601 = 'PP'}}", DefaultValue = "" , MappingRequired = true},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//W66[W6601 = 'PP']/W6602", PlaceHolder = "{{W66/W6602-W6601 = 'PP'}}", DefaultValue = "" , MappingRequired = true},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//W66[W6601 = 'PP']/W6605", PlaceHolder = "{{W66/W6605-W6601 = 'PP'}}", DefaultValue = "" },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//W76/W7601", PlaceHolder = "{{W76/W7601}}", DefaultValue = "" },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//W76/W7602", PlaceHolder = "{{W76/W7602}}", DefaultValue = "" },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//W76/W7603", PlaceHolder = "{{W76/W7603}}", DefaultValue = "" , MappingRequired = true},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//W76/W7604", PlaceHolder = "{{W76/W7604}}", DefaultValue = "" },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//W76/W7605", PlaceHolder = "{{W76/W7605}}", DefaultValue = "" , MappingRequired = true },
                 LineLevel = null
                 },
                 new Configuration()
@@ -1362,41 +1417,78 @@ namespace POC
                 XPathConnfig = null,
                 LineLevel = new LineLevel()
                 {
-                   HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Warehouse Item Detail: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment/Order Status Code : {{W12/W1201}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped : {{W12/W1203}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{W12/W1205}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : {{W12/W1207}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : {{W12/W1208}} </td></tr> </table><br>",
+                   HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Line Item Detail - Warehouse: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Ordered : {{W01/W0101}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{W01/W0102}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : {{W01/W0103}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : {{W01/W0104}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : {{W01/W0105}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : {{W01/W0106}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : {{W01/W0107}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Warehouse Lot Number : {{W01/W0113}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Line Item Detail - Description: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : {{G69/G6901}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Reference Identification: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{N9/N901}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{N9/N902}} </td></tr> </table><br>",
                     LineLevelXPath = "//LXLoop1[LX]",
-                    PlaceHolder = "{{WarehousDetailsHtml}}",
+                    PlaceHolder = "{{LinesItemHtml}}",
                     XPathConnfigs = new List<XPathConnfig>() {
                     new XPathConnfig()
                     {
-                        XPath="//LXLoop1[LX]/W12Loop1/W12/W1201",
-                        PlaceHolder="{{W12/W1201}}",
-                        DefaultValue="",
-                        MappingRequired= true
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//LXLoop1[LX]/W12Loop1/W12/W1203",
-                        PlaceHolder="{{W12/W1203}}",
+                        XPath="//LXLoop1[LX]/W01Loop1/W01/W0101",
+                        PlaceHolder="{{W01/W0101}}",
                         DefaultValue=""
                     },
                     new XPathConnfig()
                     {
-                        XPath="//LXLoop1[LX]/W12Loop1/W12/W1205",
-                        PlaceHolder="{{W12/W1205}}",
+                        XPath="//LXLoop1[LX]/W01Loop1/W01/W0102",
+                        PlaceHolder="{{W01/W0102}}",
+                        DefaultValue="",
+                        MappingRequired = true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LXLoop1[LX]/W01Loop1/W01/W0103",
+                        PlaceHolder="{{W01/W0103}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LXLoop1[LX]/W01Loop1/W01/W0104",
+                        PlaceHolder="{{W01/W0104}}",
                         DefaultValue="",
                         MappingRequired= true
                     },
                     new XPathConnfig()
                     {
-                        XPath="//LXLoop1[LX]/W12Loop1/W12/W1207",
-                        PlaceHolder="{{W12/W1207}}",
-                        DefaultValue="",
-                        MappingRequired= true
+                        XPath="//LXLoop1[LX]/W01Loop1/W01/W0105",
+                        PlaceHolder="{{W01/W0105}}",
+                        DefaultValue=""
                     },
                     new XPathConnfig()
                     {
-                        XPath="//LXLoop1[LX]/W12Loop1/W12/W1208",
-                        PlaceHolder="{{W12/W1208}}",
+                        XPath="//LXLoop1[LX]/W01Loop1/W01/W0106",
+                        PlaceHolder="{{W01/W0106}}",
+                        DefaultValue="",
+                        MappingRequired = true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LXLoop1[LX]/W01Loop1/W01/W0107",
+                        PlaceHolder="{{W01/W0107}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LXLoop1[LX]/W01Loop1/W01/W0113",
+                        PlaceHolder="{{W01/W0113}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LXLoop1[LX]/W01Loop1/G69/G6901",
+                        PlaceHolder="{{G69/G6901}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LXLoop1[LX]/N9/N901",
+                        PlaceHolder="{{N9/N901}}",
+                        DefaultValue="",
+                        MappingRequired = true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LXLoop1[LX]/N9/N902",
+                        PlaceHolder="{{N9/N902}}",
                         DefaultValue=""
                     }
 
@@ -1408,22 +1500,28 @@ namespace POC
                 XPathConnfig = null,
                 LineLevel = new LineLevel()
                 {
-                   HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Reference Identification: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{N9/N901}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{N9/N902}} </td></tr> </table><br>",
-                    LineLevelXPath = "//N9",
-                    PlaceHolder = "{{ReferenceHtml}}",
+                   HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Date/Time: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Qualifier : {{G62/G6201}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date : {{G62/G6202}} </td></tr> </table><br>",
+                    LineLevelXPath = "//G62",
+                    PlaceHolder = "{{DateTimeHtml}}",
                     XPathConnfigs = new List<XPathConnfig>() {
                     new XPathConnfig()
                     {
-                        XPath="//N9/N901",
-                        PlaceHolder="{{N9/N901}}",
+                        XPath="//G62/G6201",
+                        PlaceHolder="{{G62/G6201}}",
                         DefaultValue="",
                         MappingRequired= true
                     },
                     new XPathConnfig()
                     {
-                        XPath="//N9/N902",
-                        PlaceHolder="{{N9/N902}}",
-                        DefaultValue=""
+                        XPath="//G62/G6202",
+                        PlaceHolder="{{G62/G6202}}",
+                        DefaultValue="",
+                        DateFormat = new DateFormat()
+                        {
+                             SourceFormat = "yyyyMMdd",
+                             TargetFormat = "MM/dd/yyyy"
+                        }
+
                     }
 
                 }

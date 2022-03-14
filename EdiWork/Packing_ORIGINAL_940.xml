@@ -1,0 +1,244 @@
+<X12_00401_940 xml:space="preserve" ID="1">
+  <ISA ID="2" SegmentPosition="00">
+    <ISA01 ID="00:3">00</ISA01>
+    <ISA02 ID="00:4">          </ISA02>
+    <ISA03 ID="00:5">00</ISA03>
+    <ISA04 ID="00:6">          </ISA04>
+    <ISA05 ID="00:7">01</ISA05>
+    <ISA06 ID="00:8">118084153      </ISA06>
+    <ISA07 ID="00:9">ZZ</ISA07>
+    <ISA08 ID="00:10">CWLB2BGWT      </ISA08>
+    <ISA09 ID="00:11">211118</ISA09>
+    <ISA10 ID="00:12">1533</ISA10>
+    <ISA11 ID="00:13">U</ISA11>
+    <ISA12 ID="00:14">00401</ISA12>
+    <ISA13 ID="00:15">380224095</ISA13>
+    <ISA14 ID="00:16">1</ISA14>
+    <ISA15 ID="00:17">P</ISA15>
+    <ISA16 ID="00:18">&gt;</ISA16>
+  </ISA>
+  <GS ID="19" SegmentPosition="00">
+    <GS01 ID="00:20">OW</GS01>
+    <GS02 ID="00:21">3039565790</GS02>
+    <GS03 ID="00:22">8028623330</GS03>
+    <GS04 ID="00:23">20211118</GS04>
+    <GS05 ID="00:24">153301</GS05>
+    <GS06 ID="00:25">9467</GS06>
+    <GS07 ID="00:26">X</GS07>
+    <GS08 ID="00:27">004010</GS08>
+  </GS>
+  <ST ID="28" SegmentPosition="00">
+    <ST01 ID="00:29">940</ST01>
+    <ST02 ID="00:30">0001</ST02>
+  </ST>
+  <W05 ID="31" SegmentPosition="00">
+    <W0501 ID="00:32">N</W0501>
+    <W0502 ID="00:33">538686</W0502>
+    <W0503 ID="00:34"></W0503>
+	<W0504 ID="00:32">001001</W0504>
+    <W0505 ID="00:33">538686</W0505>
+  </W05>
+  <N1Loop1 ID="35" SegmentPosition="00">
+    <N1 ID="36" SegmentPosition="00">
+      <N101 ID="00:37">DE</N101>
+      <N102 ID="00:38">Elgen Manufacturing Company</N102>
+      <N103 ID="00:39">9</N103>
+      <N104 ID="00:40">606687601</N104>
+    </N1>
+    <N2 ID="41" SegmentPosition="00">
+      <N201 ID="00:42">Elgen Manufacturing Company</N201>
+      <N202 ID="00:43">Elgen Manufacturing Company</N202>
+    </N2>
+    <N3 ID="44" SegmentPosition="00">
+      <N301 ID="00:45">CORPORATE OFFICE</N301>
+      <N302 ID="00:46">10 Railroad Avenue</N302>
+    </N3>
+    <N4 ID="47" SegmentPosition="00">
+      <N401 ID="00:48">Closter</N401>
+      <N402 ID="00:49">NJ</N402>
+      <N403 ID="00:50">07624</N403>
+      <N404 ID="00:51">US</N404>
+    </N4>
+  </N1Loop1>
+  <N1Loop1 ID="52" SegmentPosition="00">
+    <N1 ID="53" SegmentPosition="00">
+      <N101 ID="00:54">ST</N101>
+      <N102 ID="00:55">GRITS BREAD COMPANY</N102>
+      <N103 ID="00:56">ZZ</N103>
+      <N104 ID="00:57">00046349</N104>
+    </N1>
+    <N2 ID="58" SegmentPosition="00">
+      <N201 ID="00:59">TEST CUSTOMER</N201>
+    </N2>
+    <N3 ID="60" SegmentPosition="00">
+      <N301 ID="00:61">721 North B Street</N301>
+      <N302 ID="00:62">Suite 100</N302>
+    </N3>
+    <N4 ID="63" SegmentPosition="00">
+      <N401 ID="00:64">Sacramento</N401>
+      <N402 ID="00:65">Ca</N402>
+      <N403 ID="00:66">958110311</N403>
+      <N404 ID="00:67">US</N404>
+    </N4>
+  </N1Loop1>
+  <N1Loop1 ID="68" SegmentPosition="00">
+    <N1 ID="69" SegmentPosition="00">
+      <N101 ID="00:70">WH</N101>
+      <N102 ID="00:71">BOSTONMA</N102>
+      <N103 ID="00:72">9</N103>
+      <N104 ID="00:73">0581493780140</N104>
+    </N1>
+	<N4 ID="63" SegmentPosition="00">
+      <N401 ID="00:64">Sacramento</N401>
+      <N402 ID="00:65">Ca</N402>
+      <N403 ID="00:66">958110311</N403>
+      <N404 ID="00:67">US</N404>
+    </N4>
+  </N1Loop1>
+  <N9 ID="80" SegmentPosition="00">
+    <N901 ID="00:81">BR</N901>
+    <N902 ID="00:82">R1121</N902>
+  </N9>
+  <G62 ID="83" SegmentPosition="00">
+    <G6201 ID="00:84">10</G6201>
+    <G6202 ID="00:85">20000204</G6202>
+  </G62>
+  <G62 ID="86" SegmentPosition="00">
+    <G6201 ID="00:87">02</G6201>
+    <G6202 ID="00:88">20000207</G6202>
+  </G62>
+  <NTE ID="89" SegmentPosition="00">
+    <NTE01 ID="00:90">WHI</NTE01>
+    <NTE02 ID="00:91">SHIP ON CHEP PALLETS</NTE02>
+  </NTE>
+  <W66 ID="92" SegmentPosition="00">
+    <W6601 ID="00:93">PP</W6601>
+    <W6602 ID="00:94">M</W6602>
+    <W6603 ID="00:95" />
+    <W6604 ID="00:96" />
+    <W6605 ID="00:97" >MTEN</W6605>
+    <W6606 ID="00:98" />
+    <W6607 ID="00:99" />
+    <W6608 ID="00:100" />
+    <W6609 ID="00:101" />
+    <W6610 ID="00:102">UNKN</W6610>
+  </W66>
+  <W6 ID="103" SegmentPosition="00">
+    <W601 ID="00:104">AC</W601>
+  </W6>
+  <LXLoop1 ID="105" SegmentPosition="00">
+    <LX ID="106" SegmentPosition="00">
+      <LX01 ID="00:107">1</LX01>
+    </LX>
+    <W01Loop1 ID="108" SegmentPosition="00">
+      <W01 ID="109" SegmentPosition="00">
+        <W0101 ID="00:110">12</W0101>
+        <W0102 ID="00:111">CA</W0102>
+        <W0103 ID="00:112" >000100011110</W0103>
+        <W0104 ID="00:113">VN</W0104>
+        <W0105 ID="00:114">000100</W0105>
+        <W0106 ID="00:114">UC</W0106>
+        <W0107 ID="00:114">DEC0199</W0107>
+        <W0108 ID="00:114"></W0108>
+        <W0109 ID="00:114"></W0109>
+        <W0110 ID="00:114"></W0110>
+        <W0111 ID="00:114"></W0111>
+        <W0112 ID="00:114"></W0112>
+        <W0113 ID="00:114">19991205</W0113>
+      </W01>
+      <G69 ID="115" SegmentPosition="00">
+        <G6901 ID="00:116">11.500 STRUD BLUBRY</G6901>
+      </G69>
+    </W01Loop1>
+	<N9 ID="109" SegmentPosition="00">
+        <N901 ID="00:110">PC</N901>
+        <N902 ID="00:111">DEC0199</N902>
+        <N903 ID="00:112" />
+        <N904 ID="00:113"></N904>
+        <N905 ID="00:114"></N905>
+      </N9>
+  </LXLoop1>
+  <LXLoop1 ID="105" SegmentPosition="00">
+    <LX ID="106" SegmentPosition="00">
+      <LX01 ID="00:107">2</LX01>
+    </LX>
+    <W01Loop1 ID="108" SegmentPosition="00">
+      <W01 ID="109" SegmentPosition="00">
+        <W0101 ID="00:110">12</W0101>
+        <W0102 ID="00:111">CA</W0102>
+        <W0103 ID="00:112" >000100011110</W0103>
+        <W0104 ID="00:113">VN</W0104>
+        <W0105 ID="00:114">000100</W0105>
+        <W0106 ID="00:114">UC</W0106>
+        <W0107 ID="00:114">DEC0199</W0107>
+        <W0108 ID="00:114"></W0108>
+        <W0109 ID="00:114"></W0109>
+        <W0110 ID="00:114"></W0110>
+        <W0111 ID="00:114"></W0111>
+        <W0112 ID="00:114"></W0112>
+        <W0113 ID="00:114">19991205</W0113>
+      </W01>
+      <G69 ID="115" SegmentPosition="00">
+        <G6901 ID="00:116">11.500 STRUD BLUBRY</G6901>
+      </G69>
+    </W01Loop1>
+	<N9 ID="109" SegmentPosition="00">
+        <N901 ID="00:110">PC</N901>
+        <N902 ID="00:111">DEC0199</N902>
+        <N903 ID="00:112" />
+        <N904 ID="00:113"></N904>
+        <N905 ID="00:114"></N905>
+      </N9>
+  </LXLoop1>
+  <LXLoop1 ID="105" SegmentPosition="00">
+    <LX ID="106" SegmentPosition="00">
+      <LX01 ID="00:107">3</LX01>
+    </LX>
+    <W01Loop1 ID="108" SegmentPosition="00">
+      <W01 ID="109" SegmentPosition="00">
+        <W0101 ID="00:110">12</W0101>
+        <W0102 ID="00:111">CA</W0102>
+        <W0103 ID="00:112" >000100011110</W0103>
+        <W0104 ID="00:113">VN</W0104>
+        <W0105 ID="00:114">000100</W0105>
+        <W0106 ID="00:114">UC</W0106>
+        <W0107 ID="00:114">DEC0199</W0107>
+        <W0108 ID="00:114"></W0108>
+        <W0109 ID="00:114"></W0109>
+        <W0110 ID="00:114"></W0110>
+        <W0111 ID="00:114"></W0111>
+        <W0112 ID="00:114"></W0112>
+        <W0113 ID="00:114">19991205</W0113>
+      </W01>
+      <G69 ID="115" SegmentPosition="00">
+        <G6901 ID="00:116">11.500 STRUD BLUBRY</G6901>
+      </G69>
+    </W01Loop1>
+	<N9 ID="109" SegmentPosition="00">
+        <N901 ID="00:110">PC</N901>
+        <N902 ID="00:111">DEC0199</N902>
+        <N903 ID="00:112" />
+        <N904 ID="00:113"></N904>
+        <N905 ID="00:114"></N905>
+      </N9>
+  </LXLoop1>
+  <SE ID="117" SegmentPosition="00">
+    <SE01 ID="00:118">16</SE01>
+    <SE02 ID="00:119">0001</SE02>
+  </SE>
+  <W76 ID="117" SegmentPosition="00">
+    <W7601 ID="00:118">56</W7601>
+    <W7602 ID="00:119">500</W7602>
+    <W7603 ID="00:119">LB</W7603>
+    <W7604 ID="00:119">24</W7604>
+    <W7605 ID="00:119">CF</W7605>
+  </W76>
+  <GE ID="120" SegmentPosition="00">
+    <GE01 ID="00:121">3</GE01>
+    <GE02 ID="00:122">9467</GE02>
+  </GE>
+  <IEA ID="123" SegmentPosition="00">
+    <IEA01 ID="00:124">1</IEA01>
+    <IEA02 ID="00:125">380224095</IEA02>
+  </IEA>
+</X12_00401_940>
