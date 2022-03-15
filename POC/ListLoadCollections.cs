@@ -673,7 +673,7 @@ namespace POC
             //            DefaultValue="",
             //            TimeFormat = new TimeFormat()
             //            {
-            //                 SourceFormat = "hhmm",
+            //                 SourceFormat = "HHmm",
             //                 TargetFormat = "hh:mm tt"
             //            }
             //        },
@@ -1596,7 +1596,7 @@ namespace POC
                 },
                 new Configuration()
                 {
-                XPathConnfig = new XPathConnfig() { XPath = "//G62/G6204", PlaceHolder = "{{G62/G6204}}", DefaultValue = "",TimeFormat= new TimeFormat() { SourceFormat = "hhmm",TargetFormat = "hh:mm:ss tt"}},
+                XPathConnfig = new XPathConnfig() { XPath = "//G62/G6204", PlaceHolder = "{{G62/G6204}}", DefaultValue = "",TimeFormat= new TimeFormat() { SourceFormat = "HHmmss",TargetFormat = "hh:mm:ss tt"}},
                 LineLevel = null
                 },
                 new Configuration()
@@ -2090,7 +2090,7 @@ namespace POC
                         DefaultValue="",
                         TimeFormat= new TimeFormat()
                         {
-                            SourceFormat="hhmmss",
+                            SourceFormat="HHmmss",
                             TargetFormat="hh:mm:ss tt"
                         }
                     }
@@ -2139,7 +2139,7 @@ namespace POC
                         DefaultValue="",
                         TimeFormat= new TimeFormat()
                         {
-                            SourceFormat="hhmmss",
+                            SourceFormat="HHmmss",
                             TargetFormat="hh:mm:ss tt"
                         }
                     }
