@@ -12,8 +12,8 @@
 {{G62/G6204}} time hhmmss
 {{G62/G6205}} ET=Eastern Time
 {{AT5/AT501}} TLS=Tendered as Truckload (Truckload Service Requested) 
-{{NTE/NTE02-NTE01 = 'CBH'}} //NTE[NTE01 = 'BM']/NTE02
-{{NTE/NTE02-NTE01 = 'RPT'}} //NTE[NTE01 = 'BM']/NTE02
+{{NTE/NTE02-NTE01 = 'CBH'}} //NTE[NTE01 = 'CBH']/NTE02
+{{NTE/NTE02-NTE01 = 'RPT'}} //NTE[NTE01 = 'RPT']/NTE02
 {{N1/N102-N101= 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N1/N102
 {{N1/N103-N101= 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N1/N103 93 =Code assigned by the organization originating the transaction set
 {{N1/N104-N101= 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N1/N104
@@ -23,59 +23,128 @@
 {{N4/N403-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N403
 {{N4/N404-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N404
 {{N7/N702}} //N7Loop1/N7/N702
-{{N7/N711}} //N7Loop1/N7/N7011 TV=Truck, Van 
-{{M7/M701}} //N7Loop1/M7/M702
+{{N7/N711}} //N7Loop1/N7/N711 TV=Truck, Van 
+{{M7/M701}} //N7Loop1/M7/M701
+
+
+{{S5/S501-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/S5/S501 
+{{S5/S502-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/S5/S502 LD=Load
+{{S5/S503-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/S5/S503 
+{{S5/S504-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/S5/S504 L=Pounds
+{{S5/S505-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/S5/S505 
+{{S5/S506-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/S5/S506 PC=Piece
+{{S5/S507-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/S5/S507
+{{S5/S508-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/S5/S508 E=Cubic Feet 
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Date/Time: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Qualifier : {{G62/G6201}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date : {{G62/G6202}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Qualifier : {{G62/G6203}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time : {{G62/G6204}} </td></tr> </table><br>
+{{DateTimeHtml1}} //S5Loop1[S5[S501 = '1']]']]/G62
+{{G62/G6201}} //S5Loop1[S5[S501 = '1']]/G62/G6201 37=Ship Not Before Date  ,38=Ship Not Later Than Date 
+{{G62/G6202}}//S5Loop1[S5[S501 = '1']]/G62/G6202  date mm/dd/yyyy
+{{G62/G6203}}//S5Loop1[S5[S501 = '1']]/G62/G6203 I=Earliest Requested Pick Up Time  , K=Latest Requested Pick Up Time 
+{{G62/G6204}}//S5Loop1[S5[S501 = '1']]/G62/G6204 Time
+
+{{N1/N102-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/N1/N102
+{{N1/N103-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/N1/N103 93=Code assigned by the organization originating the transaction set
+{{N1/N104-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/N1/N104
+{{N3/N301-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/N3/N301
+{{N4/N401-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/N4/N401
+{{N4/N402-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/N4/N402
+{{N4/N403-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/N4/N403
+{{N4/N404-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/N4/N404
+
+{{G61/G6101-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/G61/G6101 SD=Shipping Department
+{{G61/G6102-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/G61/G6102
+{{G61/G6103-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/G61/G6103 TE=Telephone
+{{G61/G6104-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/N1Loop2/G61/G6104
+
+{{OID/OID01-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/OID/OID01
+
+{{LAD/LAD01-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/LAD/LAD01 CUB=Cube
+{{LAD/LAD02-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/LAD/LAD02
+
+{{L5/L503-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/L5/L503
+{{L5/L504-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/L5/L504 Z=Mutually defined
+
+{{AT8/AT801-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/AT8/AT801 G=Gross Weight
+{{AT8/AT802-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/AT8/AT802 L=Pounds
+{{AT8/AT803-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/AT8/AT803
+{{AT8/AT804-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/AT8/AT804
+{{AT8/AT805-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/AT8/AT805
+{{AT8/AT806-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/AT8/AT806 E=Cubic Feet
+{{AT8/AT807-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/AT8/AT807
+
+{{G61/G6101-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/G61Loop2/G61/G6101 ZZ=Mutually Defined
+{{G61/G6102-S501 = '1'}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/G61Loop2/G61/G6102
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Business Instructions and Reference Number: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{L11/L1101}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{L11/L1102}} </td></tr> </table><br>
+{{BussinessHtml1}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/G61Loop2
+{{L11/L1101}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/G61Loop2/L11/L1101
+{{L11/L1102}} //S5Loop1[S5[S501 = '1']]/OIDLoop1/L5Loop2/G61Loop2/L11/L1102 ACD=Class Code , VR=Vendor ID Number  ,PO=Purchase Order Number 
+
+{{S5/S501-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/S5/S501 
+{{S5/S502-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/S5/S502 CU=Complete Unload 
+{{S5/S503-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/S5/S503 
+{{S5/S504-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/S5/S504 L=Pounds
+{{S5/S505-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/S5/S505 
+{{S5/S506-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/S5/S506 PC=Piece
+{{S5/S507-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/S5/S507
+{{S5/S508-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/S5/S508 E=Cubic Feet 
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Date/Time: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Qualifier : {{G62/G6201}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date : {{G62/G6202}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Qualifier : {{G62/G6203}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time : {{G62/G6204}} </td></tr> </table><br>
+{{DateTimeHtml2}} //S5Loop1[S5[S501 = '2']]/G62
+{{G62/G6201}} //S5Loop1[S5[S501 = '2']]/G62/G6201 53=Deliver Not Before Date  ,54=Deliver No Later Than Date
+{{G62/G6202}}//S5Loop1[S5[S501 = '2']]/G62/G6202  date mm/dd/yyyy
+{{G62/G6203}}//S5Loop1[S5[S501 = '2']]/G62/G6203 G=Earliest Requested Deliver Time  , L=Latest Requested Delivery Time
+{{G62/G6204}}//S5Loop1[S5[S501 = '2']]/G62/G6204 Time
+
+{{NTE/NTE02-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/NTE/NTE02
+
+{{N1/N102-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/N1/N102
+{{N1/N103-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/N1/N103 93=Code assigned by the organization originating the transaction set
+{{N1/N104-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/N1/N104
+{{N3/N301-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/N3/N301
+{{N4/N401-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/N4/N401
+{{N4/N402-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/N4/N402
+{{N4/N403-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/N4/N403
+{{N4/N404-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/N4/N404
+
+{{G61/G6101-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/G61/G6101 RE=Receiving Contact
+{{G61/G6102-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/G61/G6102
+{{G61/G6103-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/G61/G6103 TE=Telephone
+{{G61/G6104-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/N1Loop2/G61/G6104
+
+{{OID/OID01-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/OID/OID01
+
+{{LAD/LAD01-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/LAD/LAD01 CUB=Cube
+{{LAD/LAD02-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/LAD/LAD02
+
+{{L5/L503-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/L5/L503
+{{L5/L504-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/L5/L504 Z=Mutually defined
+
+{{AT8/AT801-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/AT8/AT801 G=Gross Weight
+{{AT8/AT802-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/AT8/AT802 L=Pounds
+{{AT8/AT803-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/AT8/AT803
+{{AT8/AT804-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/AT8/AT804
+{{AT8/AT805-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/AT8/AT805
+{{AT8/AT806-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/AT8/AT806 E=Cubic Feet
+{{AT8/AT807-S501 = '2'}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/AT8/AT807
+
+{{G61/G6101-S501 = '2' 2nd}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/G61Loop2/G61/G6101 ZZ=Mutually Defined
+{{G61/G6102-S501 = '2' 2nd}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/G61Loop2/G61/G6102
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Business Instructions and Reference Number: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{L11/L1101}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{L11/L1102}} </td></tr> </table><br>
+{{BussinessHtml2}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/G61Loop2/L11
+{{L11/L1101}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/G61Loop2/L11/L1101
+{{L11/L1102}} //S5Loop1[S5[S501 = '2']]/OIDLoop1/L5Loop2/G61Loop2/L11/L1102 ACD=Class Code , VR=Vendor ID Number  ,PO=Purchase Order Number 
+
+{{L3/L301}} //L3/L301
+{{L3/L302}} //L3/L302 G=Gross Weight
+{{L3/L309}} //L3/L309
+{{L3/L310}} //L3/L310 E=Cubic Feet
+{{L3/L311}} //L3/L311
+{{L3/L312}} //L3/L312 L=Pounds
 
 
 
 
-
-
-
-
-
-
-
-
-{{W06/W0601}} F=Full Detail 
-{{W06/W0602}}
-{{W06/W0603}} date
-{{W06/W0604}}
-{{N1/N102-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N1/N102
-{{N3/N301-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N3/N301
-{{N4/N401-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N401
-{{N4/N402-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N402
-{{N4/N403-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N403
-{{N4/N404-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N4/N404
-
-{{N1/N103-N101 = 'SF'}} //N1Loop1[N1[N101 = 'SF']]/N1/N103  54 = Warehouse
-{{N1/N104-N101 = 'SF'}} //N1Loop1[N1[N101 = 'SF']]/N1/N104
-
-{{N1/N102-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N1/N102
-{{N3/N301-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N3/N301
-{{N4/N401-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N401
-{{N4/N402-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N402
-{{N4/N403-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N403
-{{N4/N404-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N404
-
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Reference Identification: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{N9/N901}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{N9/N902}} </td></tr> </table><br>
-{{ReferenceHtml}} //N9
-{{N9/N901}} CO = Customer Order Number , MB= Master Bill of Lading 
-{{N9/N902}}
-
-{{G62/G6201}} 11=Shipped on This Date 
-{{G62/G6202}} date
-{{G62/G6203}} A=Actual Departure Time 
-{{G62/G6204}} time
-
-{{W27/W2701}} ZZ =Mutually defined 
-{{W27/W2702}}
-
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Warehouse Item Detail: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment/Order Status Code : {{W12/W1201}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped : {{W12/W1203}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{W12/W1205}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : {{W12/W1207}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : {{W12/W1208}} </td></tr> </table><br>
-{{WarehousDetailsHtml}} //LXLoop1[LX]
-{{W12/W1201}} //LXLoop1[LX]/W12Loop1/W12/W1201 CC=Shipment Complete on (Date)
-{{W12/W1203}}//LXLoop1[LX]/W12Loop1/W12/W1203
-{{W12/W1205}} //LXLoop1[LX]/W12Loop1/W12/W1205 BX= Box
-{{W12/W1207}} //LXLoop1[LX]/W12Loop1/W12/W1207 VN=Vendor's (Seller's) Item Number 
-{{W12/W1208}} //LXLoop1[LX]/W12Loop1/W12/W1208
 
