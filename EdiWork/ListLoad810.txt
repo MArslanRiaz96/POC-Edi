@@ -1,11 +1,12 @@
-{{BIG/BIG01}}
+{{BIG/BIG01}} date
 {{BIG/BIG02}}
-{{BIG/BIG03}}
+{{BIG/BIG03}} date
 {{BIG/BIG04}}
 {{REF/REF02-REF01 = 'DP'}}//REF[REF01 = 'DP']/REF02
 {{REF/REF02-REF01 = 'IA'}}//REF[REF01 = 'IA']/REF02
 {{ShipHtml}}//N1Loop1/N1
 <tr> <td border="0" width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Assigned by Buyer or Buyer's Agent: {{N1/N103-N101 = 'ST'}})</td> </tr>
+
 {{N1/N103'}}
 {{ITD/ITD01}}
 {{ITD/ITD02}}

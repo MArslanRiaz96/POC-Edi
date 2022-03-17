@@ -1,6 +1,6 @@
 {{B1/B101}}
 {{B1/B102}}
-{{B1/B103}}
-{{B1/B104}}
-{{N9/N901}}
+{{B1/B103}} date
+{{B1/B104}} A=Reservation Accepted 
+{{N9/N901}} CN=Carrier's Reference Number (PRO/Invoice) 
 {{N9/N902}}
