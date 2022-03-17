@@ -76,13 +76,13 @@ namespace POC
                                     }
                                     else if (XPathConnfig.MutiplcationUsingXPath != null)
                                     {
-                                        List<int> XpathValues = new List<int>();
+                                        List<double> XpathValues = new List<double>();
                                         foreach (var Xpath in XPathConnfig.MutiplcationUsingXPath)
                                         {
                                             try
                                             {
                                                 var elemListForMutiplication = baseNode.SelectNodes(Xpath)[i];
-                                                XpathValues.Add(Convert.ToInt32(elemListForMutiplication.InnerXml));
+                                                XpathValues.Add(Convert.ToDouble(elemListForMutiplication.InnerXml));
                                             }
                                             catch (Exception ex)
                                             {
@@ -90,7 +90,7 @@ namespace POC
                                             }
                                             
                                         }
-                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XpathValues.Aggregate((a, x) => a * x).ToString());
+                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XpathValues.Aggregate((a, x) => a * x).ToString("0.00"));
                                     }
                                         
                                 }
