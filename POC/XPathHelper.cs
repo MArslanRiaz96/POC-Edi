@@ -112,7 +112,7 @@ namespace POC
                         listEdiXPathValues.Add(Tuple.Create(listEdiXpath.LineLevel.PlaceHolder, htmlArray));
                         htmlArray = "";
                 } 
-                else if (listEdiXpath.XPathConnfig != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders == null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders == null)
+                else if (listEdiXpath.XPathConnfig != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders == null)
                 {
                     XmlNodeList elemList = doc.SelectNodes(listEdiXpath.XPathConnfig.XPath);
                     for (int i = 0; i < elemList.Count; i++)
