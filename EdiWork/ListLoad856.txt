@@ -1,44 +1,58 @@
-{{BSN/BSN02}}
-{{BSN/BSN03}}
-{{BSN/BSN04}}
-{{TD1/TD101-TD101 = 'Pieces'}}
-{{TD1/TD102-TD101 = 'Pieces'}}
-{{TD1/TD103-TD101 = 'Pieces'}}
-{{TD1/TD104-TD101 = 'Pieces'}}
-{{TD1/TD105-TD101 = 'Pieces'}}
+{{BSN/BSN01}} 14=Advance Notification
+{{BSN/BSN02}} 
+{{BSN/BSN03}} date
+{{BSN/BSN04}} time hhmmss
+{{BSN/BSN05}}  0002=Shipment, Order, Item, Packaging 
 
-{{TD5/TD501}}
-{{TD5/TD502}}
-{{TD5/TD503}}
-{{REF/REF02-REF01 = 'CN'}}
-{{REF/REF02-REF01 = 'BM'}} 
-{{DTM/DTM02-DTM01 = '011'}}
-{{N1/N102-N101 = 'SH'}}
-{{N3/N301-N301 = '31875 SOLON RD'}}
-{{N4/N403-N401 = 'SOLON'}}=
+{{TD1/TD101-HL03 = 'S'}} //HLLoop1[TD1[HL03 = 'S']]/TD1/TD102 PCS=Pieces 
+{{TD1/TD102-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/TD1/TD102
+{{TD1/TD106-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/TD1/TD106 A3=Shippers Weight 
+{{TD1/TD107-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/TD1/TD107
+{{TD1/TD108-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/TD1/TD108 LB=Pound
 
-{{N1/N102-N101 = 'OB'}}
-{{N3/N301-N301 = 'P O BOX 9999999'}}
-{{N4/N403-N401 = 'ATLANTA'}}
-{{N4/N405-N401 = 'ATLANTA'}}
+{{TD5/TD502-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/TD5/TD502 2=Standard Carrier Alpha Code (SCAC) 
+{{TD5/TD503-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/TD5/TD503
+{{TD5/TD504-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/TD5/TD504
 
-{{N1/N102-N101 = 'SF'}}
-{{N3/N301-N301 = '31875 SOLON ROAD'}}
-{{N4/N403-N401 = 'SOLON'}}=
-{{PRF/PRF01}}
-{{PRF/PRF02}}
+{{REF/REF02-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/REF[REF01 = 'CN']/REF/REF02
+{{REF/REF02-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/REF[REF01 = 'BM']/REF/REF02
+
+{{DTM/DTM02-HL03 = 'S'}} //HLLoop1[HL[HL03 = 'S']]/DTM[DTM01 = '011']/DTM/DTM02 date
+
+{{N1/N102-HL03 = 'S'-N101 = 'SH'}}  //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SH']]/N1/N102
+{{N3/N301-HL03 = 'S'-N101 = 'SH'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SH']]/N3/N301
+{{N4/N401-HL03 = 'S'-N101 = 'SH'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SH']]/N4/N401
+{{N4/N402-HL03 = 'S'-N101 = 'SH'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SH']]/N4/N402
+{{N4/N403-HL03 = 'S'-N101 = 'SH'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SH']]/N4/N403
+
+{{N1/N102-HL03 = 'S'-N101 = 'OB'}}  //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'OB']]/N1/N102
+{{N3/N301-HL03 = 'S'-N101 = 'OB'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'OB']]/N3/N301
+{{N4/N401-HL03 = 'S'-N101 = 'OB'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'OB']]/N4/N401
+{{N4/N402-HL03 = 'S'-N101 = 'OB'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'OB']]/N4/N402
+{{N4/N403-HL03 = 'S'-N101 = 'OB'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'OB']]/N4/N403
+{{N4/N405-HL03 = 'S'-N101 = 'OB'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'OB']]/N4/N405  SN=Store Number
+{{N4/N406-HL03 = 'S'-N101 = 'OB'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'OB']]/N4/N406
+
+{{N1/N102-HL03 = 'S'-N101 = 'SF'}}  //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SF']]/N1/N102
+{{N3/N301-HL03 = 'S'-N101 = 'SF'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SF']]/N4/N401
+{{N4/N401-HL03 = 'S'-N101 = 'SF'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SF']]/N4/N401
+{{N4/N402-HL03 = 'S'-N101 = 'SF'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SF']]/N4/N402
+{{N4/N403-HL03 = 'S'-N101 = 'SF'}} //HLLoop1[HL[HL03 = 'S']]/N1Loop1[N1[N101 = 'SF']]/N4/N403
+
+{{PRF/PRF01}} //HLLoop1[HL[HL03 = 'O']]/PRF/PRF02
+{{PRF/PRF04}} //HLLoop1[HL[HL03 = 'O']]/PRF/PRF04 date
 
 {{ItemLevelHtml}}//HLLoop1[PO4]
-<table cellpadding="0" border="0" width="100%"> <tr> <td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">Item Level Information</td> </tr> </table> </center></div> <table border="0" cellspacing="0" cellpadding="0"><tr><td> <b>Part Numbers</b> </td></tr></table> <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif"> <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Part Number</TD><TD BGCOLOR="#FFFFFF">{{LIN/LIN03}}</TD></TR> <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UCC - 12</TD><TD BGCOLOR="#FFFFFF">{{LIN/LIN05}}</TD></TR> </TR> </table> <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Item Detail (Shipment): </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assigned Identification : {{SN1/SN101}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped : {{SN1/SN102}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{SN1/SN103}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Item Physical Details: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack : {{PO4/PO401}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Size : {{PO4/PO402}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{PO4/PO403}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%"> <tr> <td width="1%" valign="top"> </td> <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> <b>Product/Item Description: </b></td></tr> <tr> <td width="100%" valign="top" align="left"> </b>{{PID/PID03}}<br>    </td></tr> </table></td></tr></table> <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+<table cellpadding="0" border="0" width="100%"> <tr> <td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">Item Level Information</td> </tr> </table> </center></div> <table border="0" cellspacing="0" cellpadding="0"><tr><td> <b>Part Numbers</b> </td></tr></table> <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif"> <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Part Number</TD><TD BGCOLOR="#FFFFFF">{{LIN/LIN03}}</TD></TR> <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UCC - 12</TD><TD BGCOLOR="#FFFFFF">{{LIN/LIN05}}</TD></TR> </TR> </table> <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Item Detail (Shipment): </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assigned Identification : {{SN1/SN101}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped : {{SN1/SN102}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{SN1/SN103}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Item Physical Details: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack : {{PO4/PO401}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Size : {{PO4/PO402}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{PO4/PO403}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%"> <tr> <td width="1%" valign="top"> </td> <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> <b>Product/Item Description: </b></td></tr> <tr> <td width="100%" valign="top" align="left"> </b>{{PID/PID05}}<br>    </td></tr> </table></td></tr></table> <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
 {{LIN/LIN03}}
 {{LIN/LIN05}}
 {{SN1/SN101}}
 {{SN1/SN102}}
-{{SN1/SN103}}
+{{SN1/SN103}} EA=Each
 {{PO4/PO401}}
 {{PO4/PO402}}
-{{PO4/PO403}}
-{{PID/PID03}}
+{{PO4/PO403}} 
+{{PID/PID05}} //
 
 {{CTT/CTT01}}
 {{CTT/CTT02}}

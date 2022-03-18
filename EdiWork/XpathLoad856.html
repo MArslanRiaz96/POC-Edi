@@ -353,7 +353,7 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Set Purpose Code
-    : Advance Notification
+    : {{BSN/BSN01}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
@@ -368,12 +368,12 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time
-    : {{BSN/BSN04}} PM
+    : {{BSN/BSN04}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hierarchical Structure Code
-    : Shipment, Order, Item, Packaging
+    : {{BSN/BSN05}}
     </td></tr>
 </table><br>
 <table cellpadding="0" border="0" width="100%">
@@ -386,7 +386,7 @@ H6
     <td width="100%" valign="top" align="left">
 <b>Carrier Details (Quantity and Weight):
 </b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packaging Code : {{TD1/TD101-TD101 = 'Pieces'}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lading Quantity : {{TD1/TD102-TD101 = 'Pieces'}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight Qualifier : {{TD1/TD103-TD101 = 'Pieces'}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight : {{TD1/TD104-TD101 = 'Pieces'}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{TD1/TD105-TD101 = 'Pieces'}} </td></tr> </table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packaging Code : {{TD1/TD101-HL03 = 'S'}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lading Quantity : {{TD1/TD102-HL03 = 'S'}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight Qualifier : {{TD1/TD106-HL03 = 'S'}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight : {{TD1/TD107-HL03 = 'S'}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{TD1/TD108-HL03 = 'S'}} </td></tr> </table>
 <br>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
@@ -397,16 +397,16 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identification Code Qualifier
-    : {{TD5/TD501}}
+    : {{TD5/TD502-HL03 = 'S'}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identification Code
-    : {{TD5/TD502}}
+    : {{TD5/TD503-HL03 = 'S'}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
-    &n{{TD5/TD503}}
+    &n{{TD5/TD504-HL03 = 'S'}}
     </td></tr>
 </table><br>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -419,11 +419,11 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bill of Lading Number
-    : {{REF/REF02-REF01 = 'CN'}}   </td></tr>
+    : {{REF/REF02-HL03 = 'S'}}  </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carrier's Reference Number (PRO/Invoice)
-    : {{REF/REF02-REF01 = 'BM'}}   </td></tr>
+    : {{REF/REF02-HL03 = 'S'}}   </td></tr>
 </table><br>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
   <tr> 
@@ -435,7 +435,7 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipped
-    : {{DTM/DTM02-DTM01 = '011'}}    </td></tr>
+    : {{DTM/DTM02-HL03 = 'S'}}   </td></tr>
 </table><br>
 <table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
@@ -446,13 +446,13 @@ H6
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{N1/N102-N101 = 'SH'}}</td> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{N1/N102-HL03 = 'S'-N101 = 'SH'}}  </td> 
 </tr> 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N301 = '31875 SOLON RD'}}</td></tr>  <tr> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-HL03 = 'S'-N101 = 'SH'}}</td></tr>  <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N403-N401 = 'SOLON'}} </td></tr></table>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-HL03 = 'S'-N101 = 'SH'}}, {{N4/N402-HL03 = 'S'-N101 = 'SH'}} {{N4/N403-HL03 = 'S'-N101 = 'SH'}}  </td></tr></table>
 </td>
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
@@ -462,13 +462,13 @@ H6
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'OB'}}</td> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-HL03 = 'S'-N101 = 'OB'}}</td> 
 </tr> 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N301 = 'P O BOX 9999999'}}</td></tr>  <tr> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-HL03 = 'S'-N101 = 'OB'}}</td></tr>  <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N403-N401 = 'ATLANTA'}}  <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number: {{N4/N405-N401 = 'ATLANTA'}}</td></tr></table>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-HL03 = 'S'-N101 = 'OB'}}, {{N4/N402-HL03 = 'S'-N101 = 'OB'}} {{N4/N403-HL03 = 'S'-N101 = 'OB'}} <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N405-HL03 = 'S'-N101 = 'OB'}}: {{N4/N406-HL03 = 'S'-N101 = 'OB'}}</td></tr></table>
 </td>
 </tr><tr>
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
@@ -479,13 +479,13 @@ H6
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'SF'}}</td> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-HL03 = 'S'-N101 = 'SF'}}</td> 
 </tr> 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N301 = '31875 SOLON ROAD'}}</td></tr>  <tr> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-HL03 = 'S'-N101 = 'SF'}}</td></tr>  <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N403-N401 = 'SOLON'}} </td></tr></table>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-HL03 = 'S'-N101 = 'SF'}}, {{N4/N402-HL03 = 'S'-N101 = 'SF'}} {{N4/N403-HL03 = 'S'-N101 = 'SF'}}  </td></tr></table>
 </td>
 </tr></table><BR>
 <table cellpadding="0" border="0" width="100%">
@@ -507,7 +507,7 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{PRF/PRF02}}
+    : {{PRF/PRF04}}
     </td></tr>
 </table><br>
 {{ItemLevelHtml}}
