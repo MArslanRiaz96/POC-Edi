@@ -5,22 +5,26 @@
 {{REF/REF02-REF01 = 'DP'}}//REF[REF01 = 'DP']/REF02
 {{REF/REF02-REF01 = 'IA'}}//REF[REF01 = 'IA']/REF02
 {{ShipHtml}}//N1Loop1/N1
-<tr> <td border="0" width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Assigned by Buyer or Buyer's Agent: {{N1/N103-N101 = 'ST'}})</td> </tr>
+<tr> <td border="0" width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({{N1/N103}}: {{N1/N104}})</td> </tr>
+{{N1/N103}} 92=Assigned by Buyer or Buyer's Agent
+{{N1/N104}}
 
-{{N1/N103'}}
-{{ITD/ITD01}}
-{{ITD/ITD02}}
-{{ITD/ITD03}}
-{{ITD/ITD04}}
+{{ITD/ITD01}} 01=Basic
+{{ITD/ITD02}} 3= Invoice Date
+{{ITD/ITD05}} //
+{{ITD/ITD07}}//
+
 {{LinesHtml}}//IT1Loop1/IT1
-<tr> <td VALIGN="TOP" width="5%"><br>1</td> <td width="50%"><br> <b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT106}}<br> </td> <td VALIGN="TOP" width="10%"><br>{{IT1/IT102}}</td> <td VALIGN="TOP" width="5%"><br>{{IT1/IT103}}</td> <td VALIGN="TOP" width="12%"><br>{{IT1/IT104}}</td> <td VALIGN="TOP" width="15%"><br>{{IT1/IT105}}</td> </tr> <tr> <td width="15"></td> <td width="55%" colspan="5"> </td> </tr>
-{{IT1/IT106}}
+<tr> <td VALIGN="TOP" width="5%"><br>{{IT1/IT101}}</td> <td width="50%"><br> <b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT107}}<br> </td> <td VALIGN="TOP" width="10%"><br>{{IT1/IT102}}</td> <td VALIGN="TOP" width="5%"><br>{{IT1/IT103}}</td> <td VALIGN="TOP" width="12%"><br>{{IT1/IT104}}</td> <td VALIGN="TOP" width="15%"><br>{{IT1/IT105}}</td> </tr> <tr> <td width="15"></td> <td width="55%" colspan="5"> </td> </tr>
+{{IT1/IT107}}
+{{IT1/IT101}}
 {{IT1/IT102}}
-{{IT1/IT103}}
+{{IT1/IT103}} EA=
 {{IT1/IT104}}
-{{IT1/IT105}}
-{{TDS/TDS01}}
-{{CAD/CAD01}}
-{{CAD/CAD02}}
-{{CAD/CAD03}}
+{{IT1/IT105}}  {{IT1/IT102}} * {{IT1/IT104}}
+
+{{TDS/TDS01}} {{IT1/IT105}}
+{{CAD/CAD05}}//
+{{CAD/CAD07}}// BM=Bill of Lading Number
+{{CAD/CAD08}}//
 {{CTT/CTT01}}

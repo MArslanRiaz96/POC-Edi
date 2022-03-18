@@ -36,6 +36,7 @@ namespace POC
         public DateFormat DateFormat { get; set; }
         public TimeFormat TimeFormat { get; set; }
         public List<string> MutiplcationUsingXPath { get; set; }
+        public List<string> AdditionUsingPlaceHolders { get; set; }
     }
     public class DateFormat
     {

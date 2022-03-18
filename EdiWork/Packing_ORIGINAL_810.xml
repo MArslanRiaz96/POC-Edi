@@ -42,15 +42,11 @@
     <CUR02 ID="00:38">USD</CUR02>
   </CUR>
   <N1Loop1 ID="39" SegmentPosition="00">
-    <N1 ID="40" SegmentPosition="00">
-      <N101 ID="00:41">RI</N101>
-      <N102 ID="00:42">ITO EN (North America) Inc</N102>
-      <N103 ID="00:170">89475</N103>
-    </N1>
     <N1 ID="400" SegmentPosition="00">
       <N101 ID="00:401">ST</N101>
-      <N102 ID="00:402">ITO EN (North America) Inc</N102>
-      <N103 ID="00:403">123</N103>
+      <N102 ID="00:402"></N102>
+      <N103 ID="00:403">92</N103>
+      <N104 ID="00:403">123</N104>
     </N1>
     <N3 ID="43" SegmentPosition="00">
       <N301 ID="00:44">Lock Box 9181</N301>
@@ -63,13 +59,14 @@
     </N4>
   </N1Loop1>
   <ITD ID="50" SegmentPosition="00">
-    <ITD01 ID="00:51">Basic</ITD01>
-    <ITD02 ID="00:52">Invoice Date</ITD02>
-    <ITD03 ID="00:53">0</ITD03>
-    <ITD04 ID="00:54">60</ITD04>
-    <ITD05 ID="00:55">30</ITD05>
-    <ITD06 ID="00:56">20220423</ITD06>
+    <ITD01 ID="00:51">01</ITD01>
+    <ITD02 ID="00:52">3</ITD02>
+    <ITD03 ID="00:53"></ITD03>
+    <ITD04 ID="00:54"></ITD04>
+    <ITD05 ID="00:55">0</ITD05>
+    <ITD06 ID="00:56"></ITD06>
     <ITD07 ID="00:57">60</ITD07>
+    <ITD08 ID="00:57"></ITD08>
   </ITD>
   <IT1Loop1 ID="58" SegmentPosition="00">
     <IT1 ID="59" SegmentPosition="00">
@@ -77,118 +74,102 @@
       <IT102 ID="00:61">4</IT102>
       <IT103 ID="00:62">EA</IT103>
       <IT104 ID="00:63">8.60</IT104>
-      <IT105 ID="00:64">34.5</IT105>
-      <IT106 ID="00:65">999999330023</IT106>
-      <IT107 ID="00:66">20835143002000</IT107>
+      <IT105 ID="00:64"></IT105>
+      <IT106 ID="00:65">UP</IT106>
+      <IT107 ID="00:66">999999330023</IT107>
       <IT108 ID="00:67" />
       <IT109 ID="00:68" />
-      <IT110 ID="00:69">UA</IT110>
-      <IT111 ID="00:70">20835143002000</IT111>
     </IT1>
   </IT1Loop1>
-  <IT1Loop1 ID="71" SegmentPosition="00">
-    <IT1 ID="72" SegmentPosition="00">
-      <IT101 ID="00:73">2</IT101>
-      <IT102 ID="00:74">2</IT102>
-      <IT103 ID="00:75">EA</IT103>
-      <IT104 ID="00:76">15.00</IT104>
-      <IT105 ID="00:77">30</IT105>
-      <IT106 ID="00:78">999999330115</IT106>
-      <IT107 ID="00:79">20835143010814</IT107>
-      <IT108 ID="00:80" />
-      <IT109 ID="00:81" />
-      <IT110 ID="00:82">UA</IT110>
-      <IT111 ID="00:83">20835143010814</IT111>
+  <IT1Loop1 ID="58" SegmentPosition="00">
+    <IT1 ID="59" SegmentPosition="00">
+      <IT101 ID="00:60">2</IT101>
+      <IT102 ID="00:61">5</IT102>
+      <IT103 ID="00:62">EA</IT103>
+      <IT104 ID="00:63">8.60</IT104>
+      <IT105 ID="00:64"></IT105>
+      <IT106 ID="00:65">UP</IT106>
+      <IT107 ID="00:66">999999330023</IT107>
+      <IT108 ID="00:67" />
+      <IT109 ID="00:68" />
     </IT1>
   </IT1Loop1>
-  <IT1Loop1 ID="84" SegmentPosition="00">
-    <IT1 ID="85" SegmentPosition="00">
-      <IT101 ID="00:86">3</IT101>
-      <IT102 ID="00:87">2</IT102>
-      <IT103 ID="00:88">EA</IT103>
-      <IT104 ID="00:89">7.30</IT104>
-      <IT105 ID="00:90">14.6</IT105>
-      <IT106 ID="00:91">999999330146</IT106>
-      <IT107 ID="00:92">20835143011361</IT107>
-      <IT108 ID="00:93" />
-      <IT109 ID="00:94" />
-      <IT110 ID="00:95">UA</IT110>
-      <IT111 ID="00:96">20835143011361</IT111>
+  <IT1Loop1 ID="58" SegmentPosition="00">
+    <IT1 ID="59" SegmentPosition="00">
+      <IT101 ID="00:60">3</IT101>
+      <IT102 ID="00:61">4</IT102>
+      <IT103 ID="00:62">EA</IT103>
+      <IT104 ID="00:63">8.60</IT104>
+      <IT105 ID="00:64"></IT105>
+      <IT106 ID="00:65">UP</IT106>
+      <IT107 ID="00:66">999999330023</IT107>
+      <IT108 ID="00:67" />
+      <IT109 ID="00:68" />
     </IT1>
   </IT1Loop1>
-  <IT1Loop1 ID="97" SegmentPosition="00">
-    <IT1 ID="98" SegmentPosition="00">
-      <IT101 ID="00:99">4</IT101>
-      <IT102 ID="00:100">4</IT102>
-      <IT103 ID="00:101">EA</IT103>
-      <IT104 ID="00:102">17.20</IT104>
-      <IT105 ID="00:103">68.8</IT105>
-      <IT106 ID="00:104">999999330184</IT106>
-      <IT107 ID="00:105">20835143012016</IT107>
-      <IT108 ID="00:106" />
-      <IT109 ID="00:107" />
-      <IT110 ID="00:108">UA</IT110>
-      <IT111 ID="00:109">20835143012016</IT111>
+  <IT1Loop1 ID="58" SegmentPosition="00">
+    <IT1 ID="59" SegmentPosition="00">
+      <IT101 ID="00:60">4</IT101>
+      <IT102 ID="00:61">4</IT102>
+      <IT103 ID="00:62">EA</IT103>
+      <IT104 ID="00:63">8.60</IT104>
+      <IT105 ID="00:64"></IT105>
+      <IT106 ID="00:65">UP</IT106>
+      <IT107 ID="00:66">999999330023</IT107>
+      <IT108 ID="00:67" />
+      <IT109 ID="00:68" />
     </IT1>
   </IT1Loop1>
-  <IT1Loop1 ID="110" SegmentPosition="00">
-    <IT1 ID="111" SegmentPosition="00">
-      <IT101 ID="00:112">5</IT101>
-      <IT102 ID="00:113">8</IT102>
-      <IT103 ID="00:114">EA</IT103>
-      <IT104 ID="00:115">4.30</IT104>
-      <IT105 ID="00:116">34.4</IT105>
-      <IT106 ID="00:117">999999330320</IT106>
-      <IT107 ID="00:118">20835143012177</IT107>
-      <IT108 ID="00:119" />
-      <IT109 ID="00:120" />
-      <IT110 ID="00:121">UA</IT110>
-      <IT111 ID="00:122">20835143012177</IT111>
+  <IT1Loop1 ID="58" SegmentPosition="00">
+    <IT1 ID="59" SegmentPosition="00">
+      <IT101 ID="00:60">5</IT101>
+      <IT102 ID="00:61">4</IT102>
+      <IT103 ID="00:62">EA</IT103>
+      <IT104 ID="00:63">8.60</IT104>
+      <IT105 ID="00:64"></IT105>
+      <IT106 ID="00:65">UP</IT106>
+      <IT107 ID="00:66">999999330023</IT107>
+      <IT108 ID="00:67" />
+      <IT109 ID="00:68" />
     </IT1>
   </IT1Loop1>
-  <IT1Loop1 ID="123" SegmentPosition="00">
-    <IT1 ID="124" SegmentPosition="00">
-      <IT101 ID="00:125">6</IT101>
-      <IT102 ID="00:126">4</IT102>
-      <IT103 ID="00:127">EA</IT103>
-      <IT104 ID="00:128">4.30</IT104>
-      <IT105 ID="00:129">17.2</IT105>
-      <IT106 ID="00:130">999999330337</IT106>
-      <IT107 ID="00:131">20835143014874</IT107>
-      <IT108 ID="00:132" />
-      <IT109 ID="00:133" />
-      <IT110 ID="00:134">UA</IT110>
-      <IT111 ID="00:135">20835143014874</IT111>
-	  </IT1>
-	  </IT1Loop1>
-<IT1Loop1 ID="170" SegmentPosition="00">
-    <IT1 ID="171" SegmentPosition="00">
-      <IT101 ID="00:171">6</IT101>
-      <IT102 ID="00:172">6</IT102>
-      <IT103 ID="00:173">EA</IT103>
-      <IT104 ID="00:174">1.50</IT104>
-      <IT105 ID="00:175">9</IT105>
-      <IT106 ID="00:176">999999330634</IT106>
-      <IT107 ID="00:177">20835143014874</IT107>
-      <IT108 ID="00:178" />
-      <IT109 ID="00:179" />
-      <IT110 ID="00:180">UA</IT110>
-      <IT111 ID="00:181">20835143014874</IT111>
-	  </IT1>
-	  </IT1Loop1>
-<IT1Loop1 ID="182" SegmentPosition="00">
-    <IT1 ID="183" SegmentPosition="00">
-      <IT101 ID="00:184">6</IT101>
-      <IT102 ID="00:185">6</IT102>
-      <IT103 ID="00:186">EA</IT103>
-      <IT104 ID="00:187">1.50</IT104>
-      <IT105 ID="00:188">9</IT105>
-      <IT106 ID="00:189">999999330641</IT106>
-      <IT107 ID="00:190">20835143014874</IT107>
-      <IT108 ID="00:191" />
-      <IT109 ID="00:192" />
-      <IT110 ID="00:193">UA</IT110>
-      <IT111 ID="00:194">20835143014874</IT111>
+  <IT1Loop1 ID="58" SegmentPosition="00">
+    <IT1 ID="59" SegmentPosition="00">
+      <IT101 ID="00:60">6</IT101>
+      <IT102 ID="00:61">4</IT102>
+      <IT103 ID="00:62">EA</IT103>
+      <IT104 ID="00:63">8.60</IT104>
+      <IT105 ID="00:64"></IT105>
+      <IT106 ID="00:65">UP</IT106>
+      <IT107 ID="00:66">999999330023</IT107>
+      <IT108 ID="00:67" />
+      <IT109 ID="00:68" />
+    </IT1>
+  </IT1Loop1>
+<IT1Loop1 ID="58" SegmentPosition="00">
+    <IT1 ID="59" SegmentPosition="00">
+      <IT101 ID="00:60">7</IT101>
+      <IT102 ID="00:61">4</IT102>
+      <IT103 ID="00:62">EA</IT103>
+      <IT104 ID="00:63">8.60</IT104>
+      <IT105 ID="00:64"></IT105>
+      <IT106 ID="00:65">UP</IT106>
+      <IT107 ID="00:66">999999330023</IT107>
+      <IT108 ID="00:67" />
+      <IT109 ID="00:68" />
+    </IT1>
+  </IT1Loop1>
+<IT1Loop1 ID="58" SegmentPosition="00">
+    <IT1 ID="59" SegmentPosition="00">
+      <IT101 ID="00:60">8</IT101>
+      <IT102 ID="00:61">4</IT102>
+      <IT103 ID="00:62">EA</IT103>
+      <IT104 ID="00:63">8.60</IT104>
+      <IT105 ID="00:64"></IT105>
+      <IT106 ID="00:65">UP</IT106>
+      <IT107 ID="00:66">999999330023</IT107>
+      <IT108 ID="00:67" />
+      <IT109 ID="00:68" />
     </IT1>
   </IT1Loop1>
   <TDS ID="136" SegmentPosition="00">
@@ -219,8 +200,13 @@
     <REF02 ID="00:155">99999</REF02>
   </REF>
 <CAD ID="200" SegmentPosition="00">
-    <CAD01 ID="00:201">GTCT</CAD01>
-    <CAD02 ID="00:202">Bill of Lading Number</CAD02>
-    <CAD03 ID="00:203">99999</CAD03>
+    <CAD01 ID="00:201"></CAD01>
+    <CAD02 ID="00:202"></CAD02>
+    <CAD03 ID="00:203"></CAD03>
+    <CAD04 ID="00:203"></CAD04>
+    <CAD05 ID="00:203">GTCT</CAD05>
+    <CAD06 ID="00:203"></CAD06>
+    <CAD07 ID="00:203">BM</CAD07>
+    <CAD08 ID="00:203">99999</CAD08>
   </CAD>
 </X12_00401_810>

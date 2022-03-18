@@ -18,8 +18,8 @@ namespace POC
         public static void XPathMapper(HumanReadableConfiguration humanReadableConfiguration)
         {
             var listEdiXPathValues = new List<Tuple<string, string>>();
-            
-                XmlDocument doc = new XmlDocument();
+            var listPlaceHolderForCalculation = new List<Tuple<string, double>>();
+            XmlDocument doc = new XmlDocument();
                 doc.Load(humanReadableConfiguration.PackingPath);
 
                 foreach (var listEdiXpath in humanReadableConfiguration.configurations)
@@ -83,6 +83,7 @@ namespace POC
                                             {
                                                 var elemListForMutiplication = baseNode.SelectNodes(Xpath)[i];
                                                 XpathValues.Add(Convert.ToDouble(elemListForMutiplication.InnerXml));
+                                                
                                             }
                                             catch (Exception ex)
                                             {
@@ -91,6 +92,7 @@ namespace POC
                                             
                                         }
                                         htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XpathValues.Aggregate((a, x) => a * x).ToString("0.00"));
+                                        listPlaceHolderForCalculation.Add(Tuple.Create(XPathConnfig.PlaceHolder, Convert.ToDouble(XpathValues.Aggregate((a, x) => a * x).ToString("0.00"))));
                                     }
                                         
                                 }
@@ -110,7 +112,7 @@ namespace POC
                         listEdiXPathValues.Add(Tuple.Create(listEdiXpath.LineLevel.PlaceHolder, htmlArray));
                         htmlArray = "";
                 } 
-                else if (listEdiXpath.XPathConnfig != null)
+                else if (listEdiXpath.XPathConnfig != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders == null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders == null)
                 {
                     XmlNodeList elemList = doc.SelectNodes(listEdiXpath.XPathConnfig.XPath);
                     for (int i = 0; i < elemList.Count; i++)
@@ -167,6 +169,16 @@ namespace POC
                             listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, listEdiXpath.XPathConnfig.DefaultValue));
                         }
                     }
+                }
+                else if(listEdiXpath.XPathConnfig != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders.Any())
+                {
+                    double sum = 0;
+                    foreach (var placeHolder in listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders)
+                    {
+                        var placeHolderSum = listPlaceHolderForCalculation.Where(x=>x.Item1 == placeHolder).Select(x=>x.Item2).Sum();
+                        sum = sum + placeHolderSum;
+                    }
+                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, sum.ToString()));
                 }
             }
                 WebClient webClient = new WebClient();
