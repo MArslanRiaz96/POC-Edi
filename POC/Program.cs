@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
 
@@ -19,6 +20,7 @@ namespace POC
             {
                  var tes  = JsonConvert.SerializeObject(ListLoadCollection);
                 Byte[] bytes = File.ReadAllBytes(ListLoadCollection.TemplatePath);
+                var content = Encoding.UTF8.GetString(bytes);
                 String file = Convert.ToBase64String(bytes);
                 XPathHelper.XPathMapper(ListLoadCollection);
             }

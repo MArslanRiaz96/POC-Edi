@@ -445,6 +445,16 @@ H6
 <b>Carrier Details (Routing Sequence/Transit Time):
 </b></td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+<tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identification Code Qualifier
+    : {{TD5/TD502}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identification Code
+    : {{TD5/TD503}}
+    </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Routing
@@ -480,6 +490,31 @@ Message Text</b></td>
         <td width="638">
 {{MSG/MSG01-N901 = 'PO'}}
 </td></tr></table>
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
+
+<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Ship To: </b>
+</td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td border="0" width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'ST'}} ({{N1/N103-N101 = 'ST'}}: {{N1/N104-N101 = 'ST'}})</td> 
+</tr> 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'ST'}}</td></tr>  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} </td></tr></table>
+</td>
+</tr></table><BR>
+
+
+
+
 <table cellpadding="0" border="0" width="100%">
 <tr>
 <td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: Black; background-color:#000000; padding: 2pt; color: White">Line Item Information</td>

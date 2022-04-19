@@ -52,12 +52,28 @@
 		<DTM02 ID="00:46">20210928</DTM02>
 	</DTM>
 	<TD5 ID="47" SegmentPosition="00">
-		<TD501 ID="00:48"/>
-		<TD502 ID="00:49"/>
-		<TD503 ID="00:50"/>
-		<TD504 ID="00:51"/>
+		<TD501 ID="00:48"></TD501>
+		<TD502 ID="00:49">92</TD502>
+		<TD503 ID="00:50">NLGO</TD503>
+		<TD504 ID="00:51"></TD504>
 		<TD505 ID="00:52">REI Vendor Guide</TD505>
 	</TD5>
+	<N1Loop1 ID="42" SegmentPosition="00">
+		<N1 ID="43" SegmentPosition="00">
+			<N101 ID="00:44">ST</N101>
+			<N102 ID="00:45">National Logistics Services</N102>
+			<N103 ID="00:46">92</N103>
+			<N104 ID="00:47">999</N104>
+		</N1>
+		<N3 ID="48" SegmentPosition="00">
+			<N301 ID="00:49">105 Iron Street</N301>
+		</N3>
+		<N4 ID="50" SegmentPosition="00">
+			<N401 ID="00:51">Etobicoke</N401>
+			<N402 ID="00:52">ON</N402>
+			<N403 ID="00:53">M9W 5L9</N403>
+		</N4>
+	</N1Loop1>
 	<N9Loop1 ID="53" SegmentPosition="00">
 		<N9 ID="54" SegmentPosition="00">
 			<N901 ID="00:55">PO</N901>
