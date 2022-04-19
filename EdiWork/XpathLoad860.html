@@ -369,6 +369,11 @@ H6
 </td></tr>
 </table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+<tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number
+    : {{REF/REF02-REF01 = 'DP'}}    </td></tr>
+  <tr> 
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internal Vendor Number
@@ -420,7 +425,37 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description
-    : {{ITD/ITD012}}
+    : {{ITD/ITD12}}
+    </td></tr>
+	 <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Type Code
+    : {{ITD/ITD01}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Basis Date Code
+    : {{ITD/ITD02}}
+    </td></tr>
+	<tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Net Days
+    : {{ITD/ITD07}}
+    </td></tr>
+	<tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disc Days
+    : 
+    </td></tr>
+	<tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disc Due Date
+    : 
+    </td></tr>
+	<tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net Due Date
+    : 
     </td></tr>
 </table><br>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
@@ -434,6 +469,10 @@ H6
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ship Not Before
     : {{DTM/DTM02-DTM01 = '037'}}    </td></tr>
+	<tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do Not Deliver Before
+    : {{DTM/DTM02-DTM01 = '064'}}     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ship No Later
@@ -511,6 +550,12 @@ Message Text</b></td>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} </td></tr></table>
 </td>
 </tr></table><BR>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Currency:</b>
+{{CUR/CUR02}}
+</td><tr></table>
 
 
 
@@ -520,16 +565,8 @@ Message Text</b></td>
 <td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: Black; background-color:#000000; padding: 2pt; color: White">Line Item Information</td>
 </tr>
 </table>
-<table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1" 
-   <tr> 
-     <td width="10%"><b>Line</b></td> 
-     <td width="47%"><b>Description</b></td> 
-     <td width="10%"><b>Quan</b></td> 
-     <td width="5%"><b>UI</b></td> 
-     <td width="10%"><b>Price($)</b></td> 
-     <td width="10%"><b>Price Basis</b></td> 
-     <td width="15%"><b>  Total($)</b></td> 
-   </tr> 
+
+  
  {{LinedItemHtml}}
 
 </table></table></table><BR><BR><BR><BR><a href="http://www.liaison.com/" target="_external" onmouseout="window.status='';return true;" onmouseover="window.status='Visit www.liaison.com';return true;" style="color:8E8E8E">&copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script> Liaison Technologies, Inc., All Rights Reserved.</a></BODY>

@@ -16,9 +16,17 @@
 		<BCH10 ID="00:15"/>
 		<BCH11 ID="00:16">20210920</BCH11>
 	</BCH>
+	<CUR ID="12" SegmentPosition="00">
+		<CUR01 ID="00:13">SE</CUR01>
+		<CUR02 ID="00:14">CAD</CUR02>
+	</CUR>
 	<REF ID="17" SegmentPosition="00">
 		<REF01 ID="00:18">IA</REF01>
 		<REF02 ID="00:19">0000046839</REF02>
+	</REF>
+	<REF ID="15" SegmentPosition="00">
+		<REF01 ID="00:16">DP</REF01>
+		<REF02 ID="00:17">598</REF02>
 	</REF>
 	<FOB ID="20" SegmentPosition="00">
 		<FOB01 ID="00:21">CC</FOB01>
@@ -30,13 +38,13 @@
 		<FOB07 ID="00:27">Freight Collect</FOB07>
 	</FOB>
 	<ITD ID="28" SegmentPosition="00">
-		<ITD01 ID="00:29"/>
-		<ITD02 ID="00:30"/>
+		<ITD01 ID="00:29">01</ITD01>
+		<ITD02 ID="00:30">2</ITD02>
 		<ITD03 ID="00:31">0</ITD03>
 		<ITD04 ID="00:32"/>
 		<ITD05 ID="00:33">60</ITD05>
 		<ITD06 ID="00:34"/>
-		<ITD07 ID="00:35"/>
+		<ITD07 ID="00:35">30</ITD07>
 		<ITD08 ID="00:36"/>
 		<ITD09 ID="00:37"/>
 		<ITD10 ID="00:38"/>
@@ -46,6 +54,10 @@
 	<DTM ID="41" SegmentPosition="00">
 		<DTM01 ID="00:42">037</DTM01>
 		<DTM02 ID="00:43">20210924</DTM02>
+	</DTM>
+	<DTM ID="32" SegmentPosition="00">
+		<DTM01 ID="00:33">064</DTM01>
+		<DTM02 ID="00:34">20221003</DTM02>
 	</DTM>
 	<DTM ID="44" SegmentPosition="00">
 		<DTM01 ID="00:45">038</DTM01>
@@ -96,18 +108,33 @@
 			<POC09 ID="00:69">477154</POC09>
 			<POC10 ID="00:70">UP</POC10>
 			<POC11 ID="00:71">810005963015</POC11>
-			<POC12 ID="00:72">IN</POC12>
+			<POC12 ID="00:72">1023256-230</POC12>
 			<POC13 ID="00:73">2042010001</POC13>
+			<POC14 ID="00:69">177903890</POC14>
 		</POC>
 		<PIDLoop1 ID="74" SegmentPosition="00">
-			<PID ID="75" SegmentPosition="00">
+			<PID_2 ID="75" SegmentPosition="00">
+				<PID01 ID="00:76">F</PID01>
+				<PID02 ID="00:77">75</PID02>
+				<PID03 ID="00:78"/>
+				<PID04 ID="00:79"/>
+				<PID05 ID="00:80">PURPLE SUEDE</PID05>
+			</PID_2>
+		</PIDLoop1>
+		<PIDLoop1 ID="74" SegmentPosition="00">
+			<PID_2 ID="75" SegmentPosition="00">
 				<PID01 ID="00:76">F</PID01>
 				<PID02 ID="00:77">08</PID02>
 				<PID03 ID="00:78"/>
 				<PID04 ID="00:79"/>
 				<PID05 ID="00:80">Drive Reach OTR, No Color, One Size</PID05>
-			</PID>
+			</PID_2>
 		</PIDLoop1>
+		<PO4 ID="88" SegmentPosition="00">
+			<PO401 ID="00:89">1</PO401>
+			<PO402 ID="00:90">1</PO402>
+			<PO403 ID="00:91">EA</PO403>
+		</PO4>
 	</POCLoop1>
 	<POCLoop1 ID="81" SegmentPosition="00">
 		<POC ID="82" SegmentPosition="00">
@@ -125,15 +152,29 @@
 			<POC12 ID="00:94">IN</POC12>
 			<POC13 ID="00:95">2042030001</POC13>
 		</POC>
-		<PIDLoop1 ID="96" SegmentPosition="00">
-			<PID ID="97" SegmentPosition="00">
-				<PID01 ID="00:98">F</PID01>
-				<PID02 ID="00:99">08</PID02>
-				<PID03 ID="00:100"/>
-				<PID04 ID="00:101"/>
-				<PID05 ID="00:102">Ultra Low Loss Coax, No Color, One Size</PID05>
-			</PID>
+		<PIDLoop1 ID="112" SegmentPosition="00">
+			<PID_2 ID="113" SegmentPosition="00">
+				<PID01 ID="00:114">F</PID01>
+				<PID02 ID="00:115">75</PID02>
+				<PID03 ID="00:116"/>
+				<PID04 ID="00:117"/>
+				<PID05 ID="00:118">PURPLE</PID05>
+			</PID_2>
 		</PIDLoop1>
+		<PIDLoop1 ID="119" SegmentPosition="00">
+			<PID_2 ID="120" SegmentPosition="00">
+				<PID01 ID="00:121">F</PID01>
+				<PID02 ID="00:122">08</PID02>
+				<PID03 ID="00:123"/>
+				<PID04 ID="00:124"/>
+				<PID05 ID="00:125">2C BIRKENSTOCK ARIZONA SHEARLI</PID05>
+			</PID_2>
+		</PIDLoop1>
+		<PO4 ID="126" SegmentPosition="00">
+			<PO401 ID="00:127">1</PO401>
+			<PO402 ID="00:128">0</PO402>
+			<PO403 ID="00:129">EA</PO403>
+		</PO4>
 	</POCLoop1>
 	<SE ID="103" SegmentPosition="020">
 		<SE01 ID="020:104">15</SE01>

@@ -33,6 +33,34 @@
 {{N4/N401-N101 = 'ST'}} //N1Loop1[N4[N101 = 'ST']]/N4/N401
 {{N4/N402-N101 = 'ST'}} //N1Loop1[N4[N101 = 'ST']]/N4/N402
 {{N4/N403-N101 = 'ST'}} //N1Loop1[N4[N101 = 'ST']]/N4/N403
+
+
+...................more 
+{{CUR/CUR02}}
+
+{{ITD/ITD01}} 01 = Basic
+{{ITD/ITD02}} 2 = Delivery Date 
+{{ITD/ITD07}}
+
+{{REF/REF02-REF01 = 'DP'}}
+
+{{DTM/DTM02-DTM01 = '064'}} date
+
+...... more and update
+{{PID/PID05-PID01 = '75'}} //POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '75']/PID05
+{{PID/PID05-PID01 = '08'}} //POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '08']/PID05
+{{PO4/PO401}} //POCLoop1[POC]/PO4/PO401 
+{{PO4/PO402}} //POCLoop1[POC]/PO4/PO402
+{{PO4/PO403}} EA = Each //POCLoop1[POC]/PO4/PO403
+{{POC/POC12}}
+{{POC/POC14}}
+
+
+
+
+
+
+
  
 
 <table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1" <tr> <td width="10%"><b>Line</b></td> <td width="47%"><b>Description</b></td> <td width="10%"><b>Quan</b></td> <td width="5%"><b>UI</b></td> <td width="10%"><b>Price($)</b></td> <td width="10%"><b>Price Basis</b></td> <td width="15%"><b>  Total($)</b></td> </tr> <table border="0" WIDTH="70%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1" > <tr> <td width="5%"><b>Line</b></td> <td width="48%"><b>Description</b></td> <td width="10%"><b>Quan Ord</b></td> <td width="10%"><b>Quan to Rec</b></td> <td width="3%"><b>UI</b></td> <td width="6%"><b>Price Basis</b></td> <td width="10%"><b>Price($)</b></td> </tr> <tr> <td VALIGN="TOP" width="5%">{{POC/POC01}}</td> <td width="48%"> <b>Vendor's Style Number</b>: {{POC/POC09}}<br> <b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{POC/POC011}}<br> <b>Buyer's Item Number</b>:{{POC/POC013}}<br> <b>Change Type</b>: {{POC/POC02}}<br> </td> <td VALIGN="TOP" width="10%">{{POC/POC03}}</td> <td VALIGN="TOP" width="10%">{{POC/POC04}}</td> <td VALIGN="TOP" width="3%">{{POC/POC05}}</td> <td VALIGN="TOP" width="6%"></td> <td VALIGN="TOP" width="10%">{{POC/POC06}}</td> </tr> <tr> <td width="15"></td> <td width="55%" colspan="5"> <br><b>     Line Item Description (Source: Product)</b> <table border="0" width="100%" background="res://VistaRes.Dll/legalpad.gif" cellspacing="1" cellpadding="0"  doDocumentonClick()> <tr> <td></td> <td align="left" width="90%"> </b>{{PID/PID05}}<br> </td> </tr> </table> </div> </td> </tr>
