@@ -1133,7 +1133,7 @@ namespace POC
                 XPathConnfig = null,
                 LineLevel = new LineLevel()
                 {
-                   HTML = "<table border=\"0\" WIDTH=\"70%\" CELLPADDING=\"0\" CELLSPACING=\"0\" HEIGHT=\"1\"> <tr> <td width=\"5%\"><b>Line</b></td> <td width=\"48%\"><b>Description</b></td> <td width=\"10%\"><b>Quan Ord</b></td> <td width=\"10%\"><b>Quan to Rec</b></td> <td width=\"3%\"><b>UI</b></td> <td width=\"6%\"><b>Price Basis</b></td> <td width=\"10%\"><b>Price($)</b></td> </tr> <tr > <td VALIGN=\"TOP\" width=\"5%\">{{POC/POC01}}</td> <td width=\"48%\"> <b>Vendor's Style Number</b>: {{POC/POC09}} <br> <b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{POC/POC11}} <br> <b>GTIN</b>:{{POC/POC12}} <br> <b>Buyer's Item Number</b>:{{POC/POC13}} <br> <b>Buyer Part </b>:{{POC/POC14}} <br> <b>VENDOR PART </b>: <br> <b>Pack </b>: {{PO4/PO401}} <br> <b>Size </b>: {{PO4/PO402}} <br> <b>Unit or Basis for Measurement Code </b>: {{PO4/PO403}} <br> <b>Change Type</b>: {{POC/POC02}} <br> </td> <td VALIGN=\"TOP\" width=\"10%\">{{POC/POC03}}</td> <td VALIGN=\"TOP\" width=\"10%\">{{POC/POC04}}</td> <td VALIGN=\"TOP\" width=\"3%\">{{POC/POC05}}</td> <td VALIGN=\"TOP\" width=\"6%\"></td> <td VALIGN=\"TOP\" width=\"10%\">{{POC/POC06}}</td> </tr> <tr> <td width=\"15\"></td> <td width=\"55%\" colspan=\"5\"> <br><b>     Line Item Description (Source: Product)</b> <table border=\"0\" width=\"100%\" background=\"res://VistaRes.Dll/legalpad.gif\" cellspacing=\"1\" cellpadding=\"0\" doDocumentonClick()> <tr> <td></td> <td align=\"left\" width=\"90%\"> </b>{{PID/PID05-PID01 = '75'}} <br> </td> </tr> <tr> <td></td> <td align=\"left\" width=\"90%\"> </b>{{PID/PID05-PID01 = '08'}} <br> </td> </tr> </table> </div> </td> </tr>",
+                   HTML = "<table border=\"0\" WIDTH=\"70%\" CELLPADDING=\"0\" CELLSPACING=\"0\" HEIGHT=\"1\"> <tr> <td width=\"5%\"><b>Line</b></td> <td width=\"43%\"><b>Description</b></td> <td width=\"10%\"><b>Quan Ord</b></td> <td width=\"10%\"><b>Quan to Rec</b></td> <td width=\"3%\"><b>UI</b></td> <td width=\"11%\"><b>Price Basis</b></td> <td width=\"10%\"><b>Price($)</b></td> </tr> <tr> <td VALIGN=\"TOP\" width=\"5%\">{{POC/POC01}}</td> <td width=\"48%\"> <b>Vendor's Style Number</b>: {{POC/POC09}} <br> <b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{POC/POC10}} <br> <b>GTIN</b>:{{POC/POC12}} <br> <b>Buyer's Item Number</b>:{{POC/POC13}} <br> <b>Buyer Part </b>:{{POC/POC14}} <br> <b>VENDOR PART </b>: <br> <b>Pack </b>: {{PO4/PO401}} <br> <b>Size </b>: {{PO4/PO402}} <br> <b>Product Size </b>: {{POC/POC18}} <br> <b>Message Text </b>: {{MSG/MSG01}} <br> <b>Unit or Basis for Measurement Code </b>: {{PO4/PO403}} <br> <b>Change Type</b>: {{POC/POC02}} <br> </td> <td VALIGN=\"TOP\" width=\"10%\">{{POC/POC03}}</td> <td VALIGN=\"TOP\" width=\"10%\">{{POC/POC04}}</td> <td VALIGN=\"TOP\" width=\"3%\">{{POC/POC05}}</td> <td VALIGN=\"TOP\" width=\"6%\"></td> <td VALIGN=\"TOP\" width=\"10%\">{{POC/POC07}}</td> </tr> <tr> <td width=\"15\"></td> <td width=\"55%\" colspan=\"5\"> <br><b>     Line Item Description (Source: Product)</b> <table border=\"0\" width=\"100%\" background=\"res://VistaRes.Dll/legalpad.gif\" cellspacing=\"1\" cellpadding=\"0\" doDocumentonClick()> <tr> <td></td> <td align=\"left\" width=\"90%\"> </b>{{PID/PID05-PID01 = '75'}} <br> </td> </tr> <tr> <td></td> <td align=\"left\" width=\"90%\"> </b>{{PID/PID05-PID01 = '08'}} <br> </td> </tr> </table> </div> </td> </tr>",
                     LineLevelXPath = "//POCLoop1[POC]",
                     PlaceHolder = "{{LinedItemHtml}}",
                     XPathConnfigs = new List<XPathConnfig>() {
@@ -1151,8 +1151,8 @@ namespace POC
                     },
                     new XPathConnfig()
                     {
-                        XPath="//POCLoop1[POC]/POC/POC11",
-                        PlaceHolder="{{POC/POC11}}",
+                        XPath="//POCLoop1[POC]/POC/POC10",
+                        PlaceHolder="{{POC/POC10}}",
                         DefaultValue=""
                     },
                     new XPathConnfig()
@@ -1200,8 +1200,8 @@ namespace POC
                     },
                     new XPathConnfig()
                     {
-                        XPath="//POCLoop1[POC]/POC/POC06",
-                        PlaceHolder="{{POC/POC06}}",
+                        XPath="//POCLoop1[POC]/POC/POC07",
+                        PlaceHolder="{{POC/POC07}}",
                         DefaultValue=""
                     },
                     new XPathConnfig()
@@ -1234,6 +1234,18 @@ namespace POC
                         PlaceHolder="{{PO4/PO403}}",
                         DefaultValue="",
                         MappingRequired = true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//POCLoop1[POC]/POC/POC18",
+                        PlaceHolder="{{POC/POC18}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//POCLoop1[POC]/MSG/MSG01",
+                        PlaceHolder="{{MSG/MSG01}}",
+                        DefaultValue=""
                     }
 
                 }
