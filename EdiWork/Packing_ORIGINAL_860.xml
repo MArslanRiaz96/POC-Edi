@@ -142,6 +142,9 @@
 		<MSG ID="88" SegmentPosition="00">
 			<MSG01 ID="00:89">PACKED IN SOLIDS</MSG01>
 		</MSG>
+		<MSG ID="88" SegmentPosition="00">
+			<MSG01 ID="00:89">ECOM</MSG01>
+		</MSG>
 	</POCLoop1>
 	<POCLoop1 ID="81" SegmentPosition="00">
 		<POC ID="82" SegmentPosition="00">

@@ -37,6 +37,9 @@ namespace POC
         public TimeFormat TimeFormat { get; set; }
         public List<string> MutiplcationUsingXPath { get; set; }
         public List<string> AdditionUsingPlaceHolders { get; set; }
+        public bool ConcatinationUsingSameXPath { get; set; }
+        //public List<string> ConcatinationUsingXPath { get; set; }
+        public bool GetXPathUsingIdentifier { get; set; }
     }
     public class DateFormat
     {

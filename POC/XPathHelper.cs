@@ -38,7 +38,7 @@ namespace POC
 
                             if (elemList != null || XPathConnfig.MutiplcationUsingXPath != null)
                             {
-                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null)
+                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false)
                                 {
                                     Console.WriteLine(elemList.InnerXml);
                                     htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
@@ -94,7 +94,18 @@ namespace POC
                                         htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XpathValues.Aggregate((a, x) => a * x).ToString("0.00"));
                                         listPlaceHolderForCalculation.Add(Tuple.Create(XPathConnfig.PlaceHolder, Convert.ToDouble(XpathValues.Aggregate((a, x) => a * x).ToString("0.00"))));
                                     }
-                                        
+                                    else if (XPathConnfig.ConcatinationUsingSameXPath == true)
+                                    {
+                                        var elemListForconcatinationlist = baseNode.SelectNodes(XPathConnfig.XPath);
+                                        string ConcatinationUsingSameXPath = "";
+                                        for (int j = 0; j < elemListForconcatinationlist.Count; j++)
+                                        {
+                                            Console.WriteLine(elemListForconcatinationlist[j].InnerXml);
+                                            ConcatinationUsingSameXPath = ConcatinationUsingSameXPath + " "+ elemListForconcatinationlist[j].InnerXml;
+                                        }
+                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, ConcatinationUsingSameXPath);
+                                    }
+
                                 }
                                 
                                
@@ -120,7 +131,7 @@ namespace POC
                         Console.WriteLine(elemList[i].InnerXml);
                         if (!listEdiXPathValues.Any(z => z.Item2 == elemList[i].InnerXml && z.Item1 == listEdiXpath.XPathConnfig.PlaceHolder))
                         {
-                            if (listEdiXpath.XPathConnfig.MappingRequired == false && listEdiXpath.XPathConnfig.DateFormat == null && listEdiXpath.XPathConnfig.TimeFormat == null)
+                            if (listEdiXpath.XPathConnfig.MappingRequired == false && listEdiXpath.XPathConnfig.DateFormat == null && listEdiXpath.XPathConnfig.TimeFormat == null && listEdiXpath.XPathConnfig.ConcatinationUsingSameXPath == false)
                             {
                                 listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
                             }
@@ -156,6 +167,17 @@ namespace POC
 
                                         listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
                                     }
+                                }
+                                else if (listEdiXpath.XPathConnfig.ConcatinationUsingSameXPath == true)
+                                {
+                                    var elemListForconcatinationlist = doc.SelectNodes(listEdiXpath.XPathConnfig.XPath);
+                                    string ConcatinationUsingSameXPath = "";
+                                    for (int j = 0; j < elemListForconcatinationlist.Count; j++)
+                                    {
+                                        Console.WriteLine(elemListForconcatinationlist[j].InnerXml);
+                                        ConcatinationUsingSameXPath = ConcatinationUsingSameXPath + " " + elemListForconcatinationlist[j].InnerXml;
+                                    }
+                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, ConcatinationUsingSameXPath));
                                 }
                             }
 

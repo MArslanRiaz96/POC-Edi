@@ -1200,9 +1200,10 @@ namespace POC
                     },
                     new XPathConnfig()
                     {
-                        XPath="//POCLoop1[POC]/POC/POC07",
+                        XPath="EA",
                         PlaceHolder="{{POC/POC07}}",
-                        DefaultValue=""
+                        DefaultValue="",
+                        GetXPathUsingIdentifier = true
                     },
                     new XPathConnfig()
                     {
@@ -1245,7 +1246,8 @@ namespace POC
                     {
                         XPath="//POCLoop1[POC]/MSG/MSG01",
                         PlaceHolder="{{MSG/MSG01}}",
-                        DefaultValue=""
+                        DefaultValue="",
+                        ConcatinationUsingSameXPath = true
                     }
 
                 }
