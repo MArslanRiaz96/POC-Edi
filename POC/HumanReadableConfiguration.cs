@@ -38,9 +38,9 @@ namespace POC
         public List<string> MutiplcationUsingXPath { get; set; }
         public List<string> AdditionUsingPlaceHolders { get; set; }
         public bool ConcatinationUsingSameXPath { get; set; }
-        //public List<string> ConcatinationUsingXPath { get; set; }
         public string GetXPathUsingIdentifier { get; set; }
         public bool ShowInLastLineItem { get; set; }
+        public List<Tuple<string,string>> PreferedXpaths { get; set; }
     }
     public class DateFormat
     {

@@ -134,6 +134,15 @@
 				<PID05 ID="00:80">Drive Reach OTR, No Color, One Size</PID05>
 			</PID_2>
 		</PIDLoop1>
+		<PIDLoop1 ID="74" SegmentPosition="00">
+			<PID_2 ID="75" SegmentPosition="00">
+				<PID01 ID="00:76">F</PID01>
+				<PID02 ID="00:77">73</PID02>
+				<PID03 ID="00:78">VI</PID03>
+				<PID04 ID="00:79"/>
+				<PID05 ID="00:80">BLUE</PID05>
+			</PID_2>
+		</PIDLoop1>
 		<PO4 ID="88" SegmentPosition="00">
 			<PO401 ID="00:89">1</PO401>
 			<PO402 ID="00:90">1</PO402>

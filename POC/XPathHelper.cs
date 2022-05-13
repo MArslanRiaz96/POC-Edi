@@ -33,10 +33,36 @@ namespace POC
                         var htmltemplate = listEdiXpath.LineLevel.HTML;
                         foreach (var XPathConnfig in listEdiXpath.LineLevel.XPathConnfigs)
                         {
-                            var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[i];
-                            if ( (XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null ) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.GetXPathUsingIdentifier != null))
+                            if (XPathConnfig.PreferedXpaths != null)
                             {
-                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && XPathConnfig.GetXPathUsingIdentifier == null)
+                                foreach (var preferedXpath in XPathConnfig.PreferedXpaths)
+                                {
+                                    if (string.IsNullOrEmpty(preferedXpath.Item2))
+                                    {
+                                        var elemListXpathValidator = baseNode.SelectNodes(preferedXpath.Item1)[i];
+                                        if (elemListXpathValidator != null)
+                                        {
+                                            XPathConnfig.XPath = preferedXpath.Item1;
+                                            XPathConnfig.GetXPathUsingIdentifier = "";
+                                            break;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        var elemListXpathValidator = baseNode.SelectNodes(preferedXpath.Item1)[i];
+                                        if (elemListXpathValidator != null && elemListXpathValidator.InnerText.Contains(preferedXpath.Item2))
+                                        {
+                                            XPathConnfig.XPath = preferedXpath.Item1;
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+
+                            var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[i];
+                            if ( (XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null ) || (XPathConnfig.ShowInLastLineItem == false && !string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier)))
+                            {
+                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
                                 {
                                     Console.WriteLine(elemList.InnerXml);
                                     htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
@@ -103,7 +129,7 @@ namespace POC
                                         }
                                         htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, ConcatinationUsingSameXPath);
                                     }
-                                    else if (XPathConnfig.GetXPathUsingIdentifier != null)
+                                    else if (!string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
                                     {
                                         bool validator = false;
                                         var elemListForconcatinationlist = elemList.ChildNodes;

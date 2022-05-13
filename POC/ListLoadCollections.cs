@@ -1251,7 +1251,13 @@ namespace POC
                         XPath="//POCLoop1[POC]/POC",
                         PlaceHolder="{{POC/IZ}}",
                         DefaultValue="",
-                        GetXPathUsingIdentifier = "IZ"
+                        GetXPathUsingIdentifier = "IZ",
+                        PreferedXpaths = new List<Tuple<string, string>>()
+                        {
+                            Tuple.Create("//POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '73']/PID05",""),
+                            Tuple.Create("//POCLoop1[POC]/POC","IZ")
+
+                        }
                     },
                     new XPathConnfig()
                     {
