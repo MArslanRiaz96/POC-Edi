@@ -33,12 +33,10 @@ namespace POC
                         var htmltemplate = listEdiXpath.LineLevel.HTML;
                         foreach (var XPathConnfig in listEdiXpath.LineLevel.XPathConnfigs)
                         {
-
                             var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[i];
-
-                            if (elemList != null || XPathConnfig.MutiplcationUsingXPath != null)
+                            if ( (XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null ) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.GetXPathUsingIdentifier != null))
                             {
-                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false)
+                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && XPathConnfig.GetXPathUsingIdentifier == null)
                                 {
                                     Console.WriteLine(elemList.InnerXml);
                                     htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
@@ -60,7 +58,7 @@ namespace POC
                                         {
                                             htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
                                         }
-                                        
+
                                     }
                                     else if (XPathConnfig.TimeFormat != null)
                                     {
@@ -83,13 +81,13 @@ namespace POC
                                             {
                                                 var elemListForMutiplication = baseNode.SelectNodes(Xpath)[i];
                                                 XpathValues.Add(Convert.ToDouble(elemListForMutiplication.InnerXml));
-                                                
+
                                             }
                                             catch (Exception ex)
                                             {
 
                                             }
-                                            
+
                                         }
                                         htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XpathValues.Aggregate((a, x) => a * x).ToString("0.00"));
                                         listPlaceHolderForCalculation.Add(Tuple.Create(XPathConnfig.PlaceHolder, Convert.ToDouble(XpathValues.Aggregate((a, x) => a * x).ToString("0.00"))));
@@ -101,16 +99,35 @@ namespace POC
                                         for (int j = 0; j < elemListForconcatinationlist.Count; j++)
                                         {
                                             Console.WriteLine(elemListForconcatinationlist[j].InnerXml);
-                                            ConcatinationUsingSameXPath = ConcatinationUsingSameXPath + " "+ elemListForconcatinationlist[j].InnerXml;
+                                            ConcatinationUsingSameXPath = ConcatinationUsingSameXPath + " " + elemListForconcatinationlist[j].InnerXml;
                                         }
                                         htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, ConcatinationUsingSameXPath);
                                     }
+                                    else if (XPathConnfig.GetXPathUsingIdentifier != null)
+                                    {
+                                        bool validator = false;
+                                        var elemListForconcatinationlist = elemList.ChildNodes;
+                                        for (int j = 0; j < elemListForconcatinationlist.Count; j++)
+                                        {
+                                            if (validator == true)
+                                            {
+                                                htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemListForconcatinationlist[j].InnerXml);
+                                                Console.WriteLine(elemListForconcatinationlist[j].InnerXml);
+                                                break;
+                                            }
+                                            if (elemListForconcatinationlist[j].InnerXml == XPathConnfig.GetXPathUsingIdentifier)
+                                            {
+                                                validator = true;
+                                            }
+
+                                        }
+                                    }
 
                                 }
-                                
-                               
+
+
                             }
-                            else if (elemList == null)
+                            else if (elemList == null || XPathConnfig.ShowInLastLineItem == true)
                             {
                                 htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XPathConnfig.DefaultValue);
                             }
