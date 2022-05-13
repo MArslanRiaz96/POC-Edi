@@ -121,6 +121,10 @@ namespace POC
                                             }
 
                                         }
+                                        if (!validator)
+                                        {
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, XPathConnfig.DefaultValue);
+                                        }
                                     }
 
                                 }
