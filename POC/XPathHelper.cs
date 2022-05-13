@@ -111,11 +111,11 @@ namespace POC
                                         {
                                             if (validator == true)
                                             {
-                                                htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemListForconcatinationlist[j].InnerXml);
-                                                Console.WriteLine(elemListForconcatinationlist[j].InnerXml);
+                                                htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemListForconcatinationlist[j]?.InnerXml == null? "" : elemListForconcatinationlist[j]?.InnerXml);
+                                                Console.WriteLine(elemListForconcatinationlist[j]?.InnerXml);
                                                 break;
                                             }
-                                            if (elemListForconcatinationlist[j].InnerXml == XPathConnfig.GetXPathUsingIdentifier)
+                                            if (elemListForconcatinationlist[j]?.InnerXml == XPathConnfig.GetXPathUsingIdentifier)
                                             {
                                                 validator = true;
                                             }
