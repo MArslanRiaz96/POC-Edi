@@ -39,6 +39,7 @@ namespace POC
         public List<string> AdditionUsingPlaceHolders { get; set; }
         public bool ConcatinationUsingSameXPath { get; set; }
         public string GetXPathUsingIdentifier { get; set; }
+        public bool GetXPathUsingIdentifierOneStepHead { get; set; }
         public bool ShowInLastLineItem { get; set; }
         public List<PreferedXpath> PreferedXpaths { get; set; }
     }

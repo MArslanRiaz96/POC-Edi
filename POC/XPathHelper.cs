@@ -34,6 +34,7 @@ namespace POC
                         foreach (var XPathConnfig in listEdiXpath.LineLevel.XPathConnfigs)
                         {
                             string node = "";
+                            bool identifierOneStepHead = XPathConnfig.GetXPathUsingIdentifierOneStepHead;
                             if (XPathConnfig.PreferedXpaths != null)
                             {
                                 foreach (var preferedXpath in XPathConnfig.PreferedXpaths)
@@ -141,9 +142,17 @@ namespace POC
                                         {
                                             if (validator == true)
                                             {
-                                                htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemListForconcatinationlist[j]?.InnerXml == null? "" : elemListForconcatinationlist[j]?.InnerXml);
-                                                Console.WriteLine(elemListForconcatinationlist[j]?.InnerXml);
-                                                break;
+                                                if (identifierOneStepHead == false)
+                                                {
+                                                    htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemListForconcatinationlist[j]?.InnerXml == null ? "" : elemListForconcatinationlist[j]?.InnerXml);
+                                                    Console.WriteLine(elemListForconcatinationlist[j]?.InnerXml);
+                                                    break;
+                                                }
+                                                else if (identifierOneStepHead == true)
+                                                {
+                                                    identifierOneStepHead = false;
+                                                }
+                                                
                                             }
                                             if (elemListForconcatinationlist[j]?.InnerXml == XPathConnfig.GetXPathUsingIdentifier)
                                             {
