@@ -143,6 +143,15 @@
 		<PIDLoop1 ID="74" SegmentPosition="00">
 			<PID_2 ID="75" SegmentPosition="00">
 				<PID01 ID="00:76">F</PID01>
+				<PID02 ID="00:77">73</PID02>
+				<PID03 ID="00:78">VI</PID03>
+				<PID04 ID="00:79"/>
+				<PID05 ID="00:80">BLUE</PID05>
+			</PID_2>
+		</PIDLoop1>
+		<PIDLoop1 ID="74" SegmentPosition="00">
+			<PID_2 ID="75" SegmentPosition="00">
+				<PID01 ID="00:76">F</PID01>
 				<PID02 ID="00:77">74</PID02>
 				<PID03 ID="00:78">VI</PID03>
 				<PID04 ID="00:79"/>
@@ -217,6 +226,15 @@
 				<PID03 ID="00:123"/>
 				<PID04 ID="00:124"/>
 				<PID05 ID="00:125">2C BIRKENSTOCK ARIZONA SHEARLI</PID05>
+			</PID_2>
+		</PIDLoop1>
+		<PIDLoop1 ID="74" SegmentPosition="00">
+			<PID_2 ID="75" SegmentPosition="00">
+				<PID01 ID="00:76">F</PID01>
+				<PID02 ID="00:77">73</PID02>
+				<PID03 ID="00:78">VI</PID03>
+				<PID04 ID="00:79"/>
+				<PID05 ID="00:80">RED</PID05>
 			</PID_2>
 		</PIDLoop1>
 		<PO4 ID="126" SegmentPosition="00">
