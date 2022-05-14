@@ -1262,7 +1262,7 @@ namespace POC
                         GetXPathUsingIdentifier = "IZ",
                         PreferedXpaths = new List<Tuple<string, string>>()
                         {
-                            Tuple.Create("//POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '73']/PID05",""),
+                            Tuple.Create("//POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '74']/PID05",""),
                             Tuple.Create("//POCLoop1[POC]/POC","IZ")
 
                         }
