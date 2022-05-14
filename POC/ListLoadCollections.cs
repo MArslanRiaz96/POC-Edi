@@ -1208,10 +1208,10 @@ namespace POC
                         PlaceHolder="{{POC/EA}}",
                         DefaultValue="",
                         GetXPathUsingIdentifier = "EA",
-                        PreferedXpaths = new List<Tuple<string, string,string,string>>()
+                        PreferedXpaths = new List<PreferedXpath>()
                         {
-                            Tuple.Create("//POCLoop1[POC]/CTP[CTP02 = 'UCP']","UCP","2","1"),
-                            Tuple.Create("//POCLoop1[POC]/POC","EA","","")
+                            new PreferedXpath(){ XPath = "//POCLoop1[POC]/CTP[CTP02 = 'UCP']",Identifier = "UCP",TotalNodes = "2",SelectedNode = "1"},
+                            new PreferedXpath(){ XPath = "//POCLoop1[POC]/POC",Identifier = "EA",TotalNodes = "",SelectedNode = ""}
 
                         }
                     },
@@ -1266,10 +1266,10 @@ namespace POC
                         PlaceHolder="{{POC/IZ}}",
                         DefaultValue="",
                         GetXPathUsingIdentifier = "IZ",
-                        PreferedXpaths = new List<Tuple<string, string, string,string>>()
+                        PreferedXpaths = new List<PreferedXpath>()
                         {
-                            Tuple.Create("//POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '74']/PID05","", "",""),
-                            Tuple.Create("//POCLoop1[POC]/POC","IZ", "","")
+                            new PreferedXpath(){ XPath = "//POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '74']/PID05",Identifier = "",TotalNodes = "",SelectedNode = ""},
+                            new PreferedXpath(){ XPath = "//POCLoop1[POC]/POC",Identifier = "IZ",TotalNodes = "",SelectedNode = ""}
 
                         }
                     },

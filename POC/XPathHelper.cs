@@ -38,25 +38,25 @@ namespace POC
                             {
                                 foreach (var preferedXpath in XPathConnfig.PreferedXpaths)
                                 {
-                                    if (string.IsNullOrEmpty(preferedXpath.Item2))
+                                    if (string.IsNullOrEmpty(preferedXpath.Identifier))
                                     {
-                                        var elemListXpathValidator = baseNode.SelectNodes(preferedXpath.Item1)[i];
+                                        var elemListXpathValidator = baseNode.SelectNodes(preferedXpath.XPath)[i];
                                         if (elemListXpathValidator != null)
                                         {
-                                            XPathConnfig.XPath = preferedXpath.Item1;
+                                            XPathConnfig.XPath = preferedXpath.XPath;
                                             XPathConnfig.GetXPathUsingIdentifier = "";
-                                            node = !string.IsNullOrEmpty(preferedXpath.Item3) && !string.IsNullOrEmpty(preferedXpath.Item4) ? (Convert.ToInt32(preferedXpath.Item3) * (i + 1) - Convert.ToInt32(preferedXpath.Item4)).ToString() : "";
+                                            node = !string.IsNullOrEmpty(preferedXpath.TotalNodes) && !string.IsNullOrEmpty(preferedXpath.SelectedNode) ? (Convert.ToInt32(preferedXpath.TotalNodes) * (i + 1) - Convert.ToInt32(preferedXpath.SelectedNode)).ToString() : "";
                                             break;
                                         }
                                     }
                                     else
                                     {
-                                        var elemListXpathValidator = baseNode.SelectNodes(preferedXpath.Item1)[i];
-                                        if (elemListXpathValidator != null && elemListXpathValidator.InnerText.Contains(preferedXpath.Item2))
+                                        var elemListXpathValidator = baseNode.SelectNodes(preferedXpath.XPath)[i];
+                                        if (elemListXpathValidator != null && elemListXpathValidator.InnerText.Contains(preferedXpath.Identifier))
                                         {
-                                            XPathConnfig.XPath = preferedXpath.Item1;
-                                            XPathConnfig.GetXPathUsingIdentifier = preferedXpath.Item2;
-                                            node = !string.IsNullOrEmpty(preferedXpath.Item3) && !string.IsNullOrEmpty(preferedXpath.Item4) ? (Convert.ToInt32(preferedXpath.Item3) * (i + 1) - Convert.ToInt32(preferedXpath.Item4)).ToString() : "";
+                                            XPathConnfig.XPath = preferedXpath.XPath;
+                                            XPathConnfig.GetXPathUsingIdentifier = preferedXpath.Identifier;
+                                            node = !string.IsNullOrEmpty(preferedXpath.TotalNodes) && !string.IsNullOrEmpty(preferedXpath.SelectedNode) ? (Convert.ToInt32(preferedXpath.TotalNodes) * (i + 1) - Convert.ToInt32(preferedXpath.SelectedNode)).ToString() : "";
                                             break;
                                         }
                                     }
