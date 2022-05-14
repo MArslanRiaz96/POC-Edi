@@ -264,7 +264,7 @@
 		<CTP ID="88" SegmentPosition="00">
 			<CTP01 ID="00:89"></CTP01>
 			<CTP02 ID="00:90">RES</CTP02>
-			<CTP03 ID="00:91">170</CTP03>
+			<CTP03 ID="00:91">172</CTP03>
 		</CTP>
 	</POCLoop1>
 	<SE ID="103" SegmentPosition="020">
