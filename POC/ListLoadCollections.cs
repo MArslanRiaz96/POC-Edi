@@ -1292,7 +1292,13 @@ namespace POC
                     {
                         XPath="//POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '73']/PID05",
                         PlaceHolder="{{PID/PID05}}",
-                        DefaultValue=""
+                        DefaultValue="",
+                        PreferedXpaths = new List<PreferedXpath>()
+                        {
+                            new PreferedXpath(){ XPath = "//POCLoop1[POC]/POC",Identifier = "BO",TotalNodes = "",SelectedNode = ""},
+                            new PreferedXpath(){ XPath = "//POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '73']/PID05",Identifier = "",TotalNodes = "",SelectedNode = ""}
+
+                        }
                     },
                     new XPathConnfig()
                     {
