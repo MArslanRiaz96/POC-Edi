@@ -1207,7 +1207,13 @@ namespace POC
                         XPath="//POCLoop1[POC]/POC",
                         PlaceHolder="{{POC/EA}}",
                         DefaultValue="",
-                        GetXPathUsingIdentifier = "EA"
+                        GetXPathUsingIdentifier = "EA",
+                        PreferedXpaths = new List<Tuple<string, string,string,string>>()
+                        {
+                            Tuple.Create("//POCLoop1[POC]/CTP[CTP02 = 'UCP']","UCP","2","1"),
+                            Tuple.Create("//POCLoop1[POC]/POC","EA","","")
+
+                        }
                     },
                     new XPathConnfig()
                     {
@@ -1260,10 +1266,10 @@ namespace POC
                         PlaceHolder="{{POC/IZ}}",
                         DefaultValue="",
                         GetXPathUsingIdentifier = "IZ",
-                        PreferedXpaths = new List<Tuple<string, string>>()
+                        PreferedXpaths = new List<Tuple<string, string, string,string>>()
                         {
-                            Tuple.Create("//POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '74']/PID05",""),
-                            Tuple.Create("//POCLoop1[POC]/POC","IZ")
+                            Tuple.Create("//POCLoop1[POC]/PIDLoop1[PID_2]/PID_2[PID02 = '74']/PID05","", "",""),
+                            Tuple.Create("//POCLoop1[POC]/POC","IZ", "","")
 
                         }
                     },

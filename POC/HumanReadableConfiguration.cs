@@ -40,7 +40,7 @@ namespace POC
         public bool ConcatinationUsingSameXPath { get; set; }
         public string GetXPathUsingIdentifier { get; set; }
         public bool ShowInLastLineItem { get; set; }
-        public List<Tuple<string,string>> PreferedXpaths { get; set; }
+        public List<Tuple<string,string,string,string>> PreferedXpaths { get; set; }
     }
     public class DateFormat
     {

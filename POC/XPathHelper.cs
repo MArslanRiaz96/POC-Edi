@@ -33,6 +33,7 @@ namespace POC
                         var htmltemplate = listEdiXpath.LineLevel.HTML;
                         foreach (var XPathConnfig in listEdiXpath.LineLevel.XPathConnfigs)
                         {
+                            string node = "";
                             if (XPathConnfig.PreferedXpaths != null)
                             {
                                 foreach (var preferedXpath in XPathConnfig.PreferedXpaths)
@@ -44,6 +45,7 @@ namespace POC
                                         {
                                             XPathConnfig.XPath = preferedXpath.Item1;
                                             XPathConnfig.GetXPathUsingIdentifier = "";
+                                            node = !string.IsNullOrEmpty(preferedXpath.Item3) && !string.IsNullOrEmpty(preferedXpath.Item4) ? (Convert.ToInt32(preferedXpath.Item3) * (i + 1) - Convert.ToInt32(preferedXpath.Item4)).ToString() : "";
                                             break;
                                         }
                                     }
@@ -53,13 +55,15 @@ namespace POC
                                         if (elemListXpathValidator != null && elemListXpathValidator.InnerText.Contains(preferedXpath.Item2))
                                         {
                                             XPathConnfig.XPath = preferedXpath.Item1;
+                                            XPathConnfig.GetXPathUsingIdentifier = preferedXpath.Item2;
+                                            node = !string.IsNullOrEmpty(preferedXpath.Item3) && !string.IsNullOrEmpty(preferedXpath.Item4) ? (Convert.ToInt32(preferedXpath.Item3) * (i + 1) - Convert.ToInt32(preferedXpath.Item4)).ToString() : "";
                                             break;
                                         }
                                     }
                                 }
                             }
 
-                            var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[i];
+                            var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[ !string.IsNullOrEmpty(node) ? Convert.ToInt32(node) : i];
                             if ( (XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null ) || (XPathConnfig.ShowInLastLineItem == false && !string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier)))
                             {
                                 if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
