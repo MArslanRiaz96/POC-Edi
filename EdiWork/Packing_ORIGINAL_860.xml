@@ -185,12 +185,12 @@
 			<CTP02 ID="00:90">RES</CTP02>
 			<CTP03 ID="00:91">170</CTP03>
 		</CTP>
-		<MSG ID="88" SegmentPosition="00">
+		<MSG_5 ID="88" SegmentPosition="00">
 			<MSG01 ID="00:89">PACKED IN SOLIDS</MSG01>
-		</MSG>
-		<MSG ID="88" SegmentPosition="00">
+		</MSG_5>
+		<MSG_5 ID="88" SegmentPosition="00">
 			<MSG01 ID="00:89">ECOM</MSG01>
-		</MSG>
+		</MSG_5>
 	</POCLoop1>
 	<POCLoop1 ID="81" SegmentPosition="00">
 		<POC ID="82" SegmentPosition="00">

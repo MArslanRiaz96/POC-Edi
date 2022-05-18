@@ -1328,7 +1328,7 @@ namespace POC
                     },
                     new XPathConnfig()
                     {
-                        XPath="//POCLoop1[POC]/MSG/MSG01",
+                        XPath="//POCLoop1[POC]/MSG_5/MSG01",
                         PlaceHolder="{{MSG/MSG01}}",
                         DefaultValue="",
                         ConcatinationUsingSameXPath = true,
