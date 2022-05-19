@@ -468,7 +468,7 @@ H6
     </td>
     <td width="50%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    : 
+    
     </td></tr>
 </table><br>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
@@ -527,31 +527,25 @@ H6
     : {{N9/N902-N901 = 'PO'}}
     </td></tr>
 </table><br>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" >
-  <tr> 
-    <td width="25%" valign="top" align="left"><b>
-Message Text</b></td> 
-  </tr></table>
-<table border="0" width="735" 
-    background="res://VistaRes.Dll/legalpad.gif" cellspacing="1" cellpadding="0" > 
-      <tr> 
-        <td width="57" bgcolor="#FFFFFF"></td> 
-        <td width="638">
-{{MSG/MSG01}}
-</td></tr></table>
 
-<table border="0" width="100%" cellspacing="0" cellpadding="0" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
   <tr> 
-<td width="25%" valign="top" align="left"><b>
-Agreement Number</b></td> 
-  </tr></table>
-<table border="0" width="735" 
-    background="res://VistaRes.Dll/legalpad.gif" cellspacing="1" cellpadding="0" > 
-      <tr> 
-        <td width="57" bgcolor="#FFFFFF"></td> 
-        <td width="638">
-{{N9/N901-N901 = 'AH'}}
-</td></tr></table>
+    <td width="100%" valign="top" align="left">
+<b>Notes:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="50%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message Text
+    : {{MSG/MSG01}}
+    </td>
+    <td width="50%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agreement Number
+    : {{N9/N901-N901 = 'AH'}}
+    </td></tr>
+</table><br>
+
+
 
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
@@ -572,7 +566,7 @@ Agreement Number</b></td>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} </td></tr></table>
 </td>
 </tr></table><BR>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+<table border="0" width="100%" cellspacing="0" cellpadding="0" style="margin-bottom:1%" > 
   <tr> 
     <td width="100%" valign="top" align="left">
 <b>Currency:</b>
@@ -584,12 +578,13 @@ Agreement Number</b></td>
 
 <table cellpadding="0" border="0" width="100%">
 <tr>
-<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: Black; background-color:#000000; padding: 2pt; color: White">Line Item Information</td>
+<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: Black; background-color:#000000; padding: 2pt; color: White"><strong>Line Item Information</strong></td>
 </tr>
+ {{LinedItemHtml}}
 </table>
 
   
- {{LinedItemHtml}}
+
 
 </table></table></table><BR><BR><BR><BR><a href="http://www.liaison.com/" target="_external" onmouseout="window.status='';return true;" onmouseover="window.status='Visit www.liaison.com';return true;" style="color:8E8E8E">&copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script></a></BODY>
 </HTML><script LANGUAGE="JavaScript"> 
