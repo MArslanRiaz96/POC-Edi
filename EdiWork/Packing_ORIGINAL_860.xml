@@ -16,9 +16,21 @@
 		<BCH10 ID="00:15"/>
 		<BCH11 ID="00:16">20210920</BCH11>
 	</BCH>
+	<DTM ID="38" SegmentPosition="00">
+		<DTM01 ID="00:39">064</DTM01>
+		<DTM02 ID="00:40">20220201</DTM02>
+	</DTM>
+	<DTM ID="41" SegmentPosition="00">
+		<DTM01 ID="00:42">063</DTM01>
+		<DTM02 ID="00:43">20220228</DTM02>
+	</DTM>
 	<CUR ID="12" SegmentPosition="00">
 		<CUR01 ID="00:13">SE</CUR01>
 		<CUR02 ID="00:14">CAD</CUR02>
+	</CUR>
+	<CUR ID="12" SegmentPosition="00">
+		<CUR01 ID="00:13">BY</CUR01>
+		<CUR02 ID="00:14">PKR</CUR02>
 	</CUR>
 	<REF ID="17" SegmentPosition="00">
 		<REF01 ID="00:18">IA</REF01>
@@ -30,8 +42,8 @@
 	</REF>
 	<FOB ID="20" SegmentPosition="00">
 		<FOB01 ID="00:21">CC</FOB01>
-		<FOB02 ID="00:22">OR</FOB02>
-		<FOB03 ID="00:23"/>
+		<FOB02 ID="00:22">CI</FOB02>
+		<FOB03 ID="00:29">City Of Origin</FOB03>
 		<FOB04 ID="00:24"/>
 		<FOB05 ID="00:25"/>
 		<FOB06 ID="00:26">ZZ</FOB06>
@@ -90,6 +102,10 @@
 		<N9 ID="54" SegmentPosition="00">
 			<N901 ID="00:55">PO</N901>
 			<N902 ID="00:56">4513733034TST4</N902>
+		</N9>
+		<N9 ID="45" SegmentPosition="00">
+			<N901 ID="00:46">AH</N901>
+			<N902 ID="00:47">14843650596</N902>
 		</N9>
 		<MSG ID="57" SegmentPosition="00">
 			<MSG01 ID="00:58">Payable Net in 60 days</MSG01>
@@ -165,26 +181,26 @@
 			<PO402 ID="00:90">1</PO402>
 			<PO403 ID="00:91">EA</PO403>
 		</PO4>
-		<CTP ID="88" SegmentPosition="00">
+		<CTP_2 ID="88" SegmentPosition="00">
 			<CTP01 ID="00:89"></CTP01>
 			<CTP02 ID="00:90">UCP</CTP02>
 			<CTP03 ID="00:91">79.9</CTP03>
-		</CTP>
-		<CTP ID="88" SegmentPosition="00">
+		</CTP_2>
+		<CTP_2 ID="88" SegmentPosition="00">
 			<CTP01 ID="00:89"></CTP01>
 			<CTP02 ID="00:90">UCP</CTP02>
 			<CTP03 ID="00:91">84.6</CTP03>
-		</CTP>
-		<CTP ID="88" SegmentPosition="00">
+		</CTP_2>
+		<CTP_2 ID="88" SegmentPosition="00">
 			<CTP01 ID="00:89"></CTP01>
 			<CTP02 ID="00:90">RES</CTP02>
 			<CTP03 ID="00:91">170</CTP03>
-		</CTP>
-		<CTP ID="88" SegmentPosition="00">
+		</CTP_2>
+		<CTP_2 ID="88" SegmentPosition="00">
 			<CTP01 ID="00:89"></CTP01>
 			<CTP02 ID="00:90">RES</CTP02>
 			<CTP03 ID="00:91">170</CTP03>
-		</CTP>
+		</CTP_2>
 		<MSG_5 ID="88" SegmentPosition="00">
 			<MSG01 ID="00:89">PACKED IN SOLIDS</MSG01>
 		</MSG_5>
@@ -246,26 +262,26 @@
 			<PO402 ID="00:128">0</PO402>
 			<PO403 ID="00:129">EA</PO403>
 		</PO4>
-		<CTP ID="88" SegmentPosition="00">
+		<CTP_2 ID="88" SegmentPosition="00">
 			<CTP01 ID="00:89"></CTP01>
 			<CTP02 ID="00:90">UCP</CTP02>
 			<CTP03 ID="00:91">11.9</CTP03>
-		</CTP>
-		<CTP ID="88" SegmentPosition="00">
+		</CTP_2>
+		<CTP_2 ID="88" SegmentPosition="00">
 			<CTP01 ID="00:89"></CTP01>
 			<CTP02 ID="00:90">UCP</CTP02>
 			<CTP03 ID="00:91">15.6</CTP03>
-		</CTP>
-		<CTP ID="88" SegmentPosition="00">
+		</CTP_2>
+		<CTP_2 ID="88" SegmentPosition="00">
 			<CTP01 ID="00:89"></CTP01>
 			<CTP02 ID="00:90">RES</CTP02>
 			<CTP03 ID="00:91">170</CTP03>
-		</CTP>
-		<CTP ID="88" SegmentPosition="00">
+		</CTP_2>
+		<CTP_2 ID="88" SegmentPosition="00">
 			<CTP01 ID="00:89"></CTP01>
 			<CTP02 ID="00:90">RES</CTP02>
 			<CTP03 ID="00:91">172</CTP03>
-		</CTP>
+		</CTP_2>
 	</POCLoop1>
 	<SE ID="103" SegmentPosition="020">
 		<SE01 ID="020:104">15</SE01>

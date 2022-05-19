@@ -64,7 +64,18 @@ more
 {{MSG/MSG01}}
 
 
+.................
+more 
+{{DTM/DTM02-DTM01 = '063'}} //DTM[DTM01 = '063']/DTM02 date
+{{DTM/DTM02-DTM01 = '064'}} //DTM[DTM01 = '064']/DTM02 date
+{{CUR/CUR-BY}} BY
+{{CUR/CUR-SE}} //CUR[CUR01 = 'SE']
+{{BCH/BCH11}}  date
 
+{{FOB/FOB07}} => {{FOB-CI}}
+CTP to CTP_2 
+//N9Loop1[N9[N901 = 'PO']]/MSG/MSG01 instead use //MSG/MSG01  {{MSG/MSG01-N901 = 'PO'}} {{MSG/MSG01}} 
+//N9Loop1[N9[N901 = 'AH']]/N9/N902  {{N9/N901-N901 = 'AH'}}
 
 
 

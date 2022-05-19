@@ -353,14 +353,29 @@ H6
     </tr><tr>
     <td width="50%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number:  {{BCH/BCH03}}</td>    <td width="50%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Date: {{BCH/BCH06}}</td>    </tr><tr>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Date: {{BCH/BCH06}}</td>    </tr>
+	
+	
+	<tr>
+    <td width="50%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lastest Delivery [063]:  {{DTM/DTM02-DTM01 = '063'}}</td>    <td width="50%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earliest Delivery[064]: {{DTM/DTM02-DTM01 = '064'}}</td>    </tr>
+	<tr>
+    <td width="50%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Currency:  {{CUR/CUR-BY}}</td>    <td width="50%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sellers Currency: {{CUR/CUR-SE}}</td>    </tr>
+	
+	
+	<tr>
     <td width="50%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Purpose Code:  {{BCH/BCH01}}</td>    <td width="50%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Type Code:  {{BCH/BCH02}}</td>  <tr> 
     <td width="50%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Change Request Date
     : {{BCH/BCH11}}
-    </td></tr>
+    </td> 
+	<td width="50%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PO Change Date:  {{BCH/BCH11}}</td></tr>
 </tr></table><br>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr> 
@@ -401,7 +416,7 @@ H6
     </td>
     <td width="50%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description
-    : {{FOB/FOB07}} 
+    : {{FOB-CI}} 
     </td></tr>
 </table><br>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
@@ -522,7 +537,20 @@ Message Text</b></td>
       <tr> 
         <td width="57" bgcolor="#FFFFFF"></td> 
         <td width="638">
-{{MSG/MSG01-N901 = 'PO'}}
+{{MSG/MSG01}}
+</td></tr></table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" >
+  <tr> 
+<td width="25%" valign="top" align="left"><b>
+Agreement Number</b></td> 
+  </tr></table>
+<table border="0" width="735" 
+    background="res://VistaRes.Dll/legalpad.gif" cellspacing="1" cellpadding="0" > 
+      <tr> 
+        <td width="57" bgcolor="#FFFFFF"></td> 
+        <td width="638">
+{{N9/N901-N901 = 'AH'}}
 </td></tr></table>
 
 
