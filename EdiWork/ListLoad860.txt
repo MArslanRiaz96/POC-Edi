@@ -77,8 +77,11 @@ CTP to CTP_2
 //N9Loop1[N9[N901 = 'PO']]/MSG/MSG01 instead use //MSG/MSG01  {{MSG/MSG01-N901 = 'PO'}} {{MSG/MSG01}} 
 //N9Loop1[N9[N901 = 'AH']]/N9/N902  {{N9/N901-N901 = 'AH'}}
 
+.........
+more
+{{DTM/DTM02-DTM01 = '001'}}
 
-
+{{POC/POC06}} //POCLoop1[POC]/POC06
 
  
 
