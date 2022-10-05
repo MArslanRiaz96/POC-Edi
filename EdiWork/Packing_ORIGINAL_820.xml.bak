@@ -1,0 +1,280 @@
+<X12_00401_204 ID="1">
+	<ST ID="2" SegmentPosition="00">
+		<ST01 ID="00:3">204</ST01>
+		<ST02 ID="00:4">2377329</ST02>
+	</ST>
+	<B2 ID="5" SegmentPosition="00">
+		<B201 ID="00:6"/>
+		<B202 ID="00:7">WEND</B202>
+		<B203 ID="00:8"/>
+		<B204 ID="00:9">31308438</B204>
+		<B205 ID="00:10">2022-03-09T00:36:53-06:00</B205>
+		<B206 ID="00:11">CC</B206>
+		<B207 ID="00:12">L</B207>
+	</B2>
+	<B2A ID="13" SegmentPosition="00">
+		<B2A01 ID="00:14">01</B2A01>
+		<B2A02 ID="00:15">LT</B2A02>
+	</B2A>
+	<L11 ID="16" SegmentPosition="00">
+		<L1101 ID="00:17">31308438</L1101>
+		<L1102 ID="00:18">IL</L1102>
+	</L11>
+	<G62 ID="19" SegmentPosition="00">
+		<G6201 ID="00:20">64</G6201>
+		<G6202 ID="00:21">20220309</G6202>
+		<G6203 ID="00:22">1</G6203>
+		<G6204 ID="00:23">073011</G6204>
+		<G6205 ID="00:24">ET</G6205>
+	</G62>
+	<AT5 ID="25" SegmentPosition="00">
+		<AT501 ID="00:26">TLS</AT501>
+	</AT5>
+	<NTE ID="27" SegmentPosition="00">
+		<NTE01 ID="00:28">CBH</NTE01>
+		<NTE02 ID="00:29">USD</NTE02>
+	</NTE>
+	<NTE ID="30" SegmentPosition="00">
+		<NTE01 ID="00:31">RPT</NTE01>
+		<NTE02 ID="00:32">Rate Code DBH</NTE02>
+	</NTE>
+	<N1Loop1 ID="33" SegmentPosition="00">
+		<N1 ID="34" SegmentPosition="00">
+			<N101 ID="00:35">BT</N101>
+			<N102 ID="00:36">The Home Depot</N102>
+			<N103 ID="00:37">93</N103>
+			<N104 ID="00:38">1001</N104>
+		</N1>
+		<N3 ID="39" SegmentPosition="00">
+			<N301 ID="00:40">3150 HWY 42 SOUTH</N301>
+		</N3>
+		<N4 ID="41" SegmentPosition="00">
+			<N401 ID="00:42">LOCUST GROVE</N401>
+			<N402 ID="00:43">GA</N402>
+			<N403 ID="00:44">30248</N403>
+			<N404 ID="00:45">USA</N404>
+		</N4>
+	</N1Loop1>
+	<N7Loop1 ID="46" SegmentPosition="00">
+		<N7 ID="47" SegmentPosition="00">
+			<N701 ID="00:48"/>
+			<N702 ID="00:49">0000000000</N702>
+			<N703 ID="00:50"/>
+			<N704 ID="00:51"/>
+			<N705 ID="00:52"/>
+			<N706 ID="00:53"/>
+			<N707 ID="00:54"/>
+			<N708 ID="00:55"/>
+			<N709 ID="00:56"/>
+			<N710 ID="00:57"/>
+			<N711 ID="00:58">TV</N711>
+		</N7>
+		<M7 ID="59" SegmentPosition="00">
+			<M701 ID="00:60">31308438</M701>
+		</M7>
+	</N7Loop1>
+	<S5Loop1 ID="61" SegmentPosition="00">
+		<S5 ID="62" SegmentPosition="00">
+			<S501 ID="00:63">1</S501>
+			<S502 ID="00:64">LD</S502>
+			<S503 ID="00:65">16795</S503>
+			<S504 ID="00:66">L</S504>
+			<S505 ID="00:67">152</S505>
+			<S506 ID="00:68">PC</S506>
+			<S507 ID="00:69">2397</S507>
+			<S508 ID="00:70">E</S508>
+		</S5>
+		<G62 ID="71" SegmentPosition="00">
+			<G6201 ID="00:72">37</G6201>
+			<G6202 ID="00:73">20220315</G6202>
+			<G6203 ID="00:74">I</G6203>
+			<G6204 ID="00:75">200000</G6204>
+		</G62>
+		<G62 ID="76" SegmentPosition="00">
+			<G6201 ID="00:77">38</G6201>
+			<G6202 ID="00:78">20220314</G6202>
+			<G6203 ID="00:79">K</G6203>
+			<G6204 ID="00:80">200000</G6204>
+		</G62>
+		<N1Loop2 ID="81" SegmentPosition="00">
+			<N1 ID="82" SegmentPosition="00">
+				<N101 ID="00:83">SF</N101>
+				<N102 ID="00:84">RHEEM MFG - MONTGOMERY BID ONLY</N102>
+				<N103 ID="00:85">93</N103>
+				<N104 ID="00:86">30983AL001</N104>
+			</N1>
+			<N3 ID="87" SegmentPosition="00">
+				<N301 ID="00:88">2600 GUNTER PARK DRIVE</N301>
+			</N3>
+			<N4 ID="89" SegmentPosition="00">
+				<N401 ID="00:90">MONTGOMERY</N401>
+				<N402 ID="00:91">AL</N402>
+				<N403 ID="00:92">36109</N403>
+				<N404 ID="00:93">US</N404>
+			</N4>
+			<G61 ID="94" SegmentPosition="00">
+				<G6101 ID="00:95">SD</G6101>
+				<G6102 ID="00:96">Ellis Albright</G6102>
+				<G6103 ID="00:97">TE</G6103>
+				<G6104 ID="00:98">334-260-1489</G6104>
+			</G61>
+		</N1Loop2>
+		<OIDLoop1 ID="99" SegmentPosition="00">
+			<OID ID="100" SegmentPosition="00">
+				<OID01 ID="00:101">03935424</OID01>
+			</OID>
+			<LAD ID="102" SegmentPosition="00">
+				<LAD01 ID="00:103">CUB</LAD01>
+				<LAD02 ID="00:104">2397</LAD02>
+			</LAD>
+			<L5Loop2 ID="105" SegmentPosition="00">
+				<L5 ID="106" SegmentPosition="00">
+					<L501 ID="00:107"/>
+					<L502 ID="00:108"/>
+					<L503 ID="00:109">100</L503>
+					<L504 ID="00:110">Z</L504>
+				</L5>
+				<AT8 ID="111" SegmentPosition="00">
+					<AT801 ID="00:112">G</AT801>
+					<AT802 ID="00:113">L</AT802>
+					<AT803 ID="00:114">16794</AT803>
+					<AT804 ID="00:115">152</AT804>
+					<AT805 ID="00:116">0</AT805>
+					<AT806 ID="00:117">E</AT806>
+					<AT807 ID="00:118">2397</AT807>
+				</AT8>
+				<G61Loop2 ID="119" SegmentPosition="00">
+					<G61 ID="120" SegmentPosition="00">
+						<G6101 ID="00:121">ZZ</G6101>
+						<G6102 ID="00:122">RECEIVING_334-260-1489</G6102>
+					</G61>
+					<L11 ID="123" SegmentPosition="00">
+						<L1101 ID="00:124">100</L1101>
+						<L1102 ID="00:125">ACD</L1102>
+					</L11>
+					<L11 ID="126" SegmentPosition="00">
+						<L1101 ID="00:127">0</L1101>
+						<L1102 ID="00:128">VR</L1102>
+					</L11>
+					<L11 ID="129" SegmentPosition="00">
+						<L1101 ID="00:130">03935424</L1101>
+						<L1102 ID="00:131">PO</L1102>
+					</L11>
+				</G61Loop2>
+			</L5Loop2>
+		</OIDLoop1>
+	</S5Loop1>
+	<S5Loop1 ID="132" SegmentPosition="00">
+		<S5 ID="133" SegmentPosition="00">
+			<S501 ID="00:134">2</S501>
+			<S502 ID="00:135">CU</S502>
+			<S503 ID="00:136">16795</S503>
+			<S504 ID="00:137">L</S504>
+			<S505 ID="00:138">152</S505>
+			<S506 ID="00:139">PC</S506>
+			<S507 ID="00:140">2397</S507>
+			<S508 ID="00:141">E</S508>
+		</S5>
+		<G62 ID="142" SegmentPosition="00">
+			<G6201 ID="00:143">53</G6201>
+			<G6202 ID="00:144">20220316</G6202>
+			<G6203 ID="00:145">G</G6203>
+			<G6204 ID="00:146">130000</G6204>
+		</G62>
+		<G62 ID="147" SegmentPosition="00">
+			<G6201 ID="00:148">54</G6201>
+			<G6202 ID="00:149">20220316</G6202>
+			<G6203 ID="00:150">L</G6203>
+			<G6204 ID="00:151">130000</G6204>
+		</G62>
+		<NTE ID="152" SegmentPosition="00">
+			<NTE01 ID="00:153">LOI</NTE01>
+			<NTE02 ID="00:154">IFC DEST</NTE02>
+		</NTE>
+		<N1Loop2 ID="155" SegmentPosition="00">
+			<N1 ID="156" SegmentPosition="00">
+				<N101 ID="00:157">ST</N101>
+				<N102 ID="00:158">Home Depot RDC #5250</N102>
+				<N103 ID="00:159">93</N103>
+				<N104 ID="00:160">5250</N104>
+			</N1>
+			<N3 ID="161" SegmentPosition="00">
+				<N301 ID="00:162">3150 HWY 42 SOUTH</N301>
+			</N3>
+			<N4 ID="163" SegmentPosition="00">
+				<N401 ID="00:164">LOCUST GROVE</N401>
+				<N402 ID="00:165">GA</N402>
+				<N403 ID="00:166">30248</N403>
+				<N404 ID="00:167">US</N404>
+			</N4>
+			<G61 ID="168" SegmentPosition="00">
+				<G6101 ID="00:169">RE</G6101>
+				<G6102 ID="00:170">RDC 5250</G6102>
+				<G6103 ID="00:171">TE</G6103>
+				<G6104 ID="00:172">470-483-0300 x460</G6104>
+			</G61>
+		</N1Loop2>
+		<OIDLoop1 ID="173" SegmentPosition="00">
+			<OID ID="174" SegmentPosition="00">
+				<OID01 ID="00:175">03935424</OID01>
+			</OID>
+			<LAD ID="176" SegmentPosition="00">
+				<LAD01 ID="00:177">CUB</LAD01>
+				<LAD02 ID="00:178">2397</LAD02>
+			</LAD>
+			<L5Loop2 ID="179" SegmentPosition="00">
+				<L5 ID="180" SegmentPosition="00">
+					<L501 ID="00:181"/>
+					<L502 ID="00:182"/>
+					<L503 ID="00:183">100</L503>
+					<L504 ID="00:184">Z</L504>
+				</L5>
+				<AT8 ID="185" SegmentPosition="00">
+					<AT801 ID="00:186">G</AT801>
+					<AT802 ID="00:187">L</AT802>
+					<AT803 ID="00:188">16794</AT803>
+					<AT804 ID="00:189">152</AT804>
+					<AT805 ID="00:190">0</AT805>
+					<AT806 ID="00:191">E</AT806>
+					<AT807 ID="00:192">2397</AT807>
+				</AT8>
+				<G61Loop2 ID="193" SegmentPosition="00">
+					<G61 ID="194" SegmentPosition="00">
+						<G6101 ID="00:195">ZZ</G6101>
+						<G6102 ID="00:196">RECEIVING_470-483-0300 x460</G6102>
+					</G61>
+					<L11 ID="197" SegmentPosition="00">
+						<L1101 ID="00:198">100</L1101>
+						<L1102 ID="00:199">ACD</L1102>
+					</L11>
+					<L11 ID="200" SegmentPosition="00">
+						<L1101 ID="00:201">0</L1101>
+						<L1102 ID="00:202">VR</L1102>
+					</L11>
+					<L11 ID="203" SegmentPosition="00">
+						<L1101 ID="00:204">03935424</L1101>
+						<L1102 ID="00:205">PO</L1102>
+					</L11>
+				</G61Loop2>
+			</L5Loop2>
+		</OIDLoop1>
+	</S5Loop1>
+	<L3 ID="206" SegmentPosition="00">
+		<L301 ID="00:207">16795</L301>
+		<L302 ID="00:208">G</L302>
+		<L303 ID="00:209"/>
+		<L304 ID="00:210"/>
+		<L305 ID="00:211"/>
+		<L306 ID="00:212"/>
+		<L307 ID="00:213"/>
+		<L308 ID="00:214"/>
+		<L309 ID="00:215">2397</L309>
+		<L310 ID="00:216">E</L310>
+		<L311 ID="00:217">2397</L311>
+		<L312 ID="00:218">L</L312>
+	</L3>
+	<SE ID="219" SegmentPosition="00">
+		<SE01 ID="00:220">46</SE01>
+		<SE02 ID="00:221">2377329</SE02>
+	</SE>
+</X12_00401_204>

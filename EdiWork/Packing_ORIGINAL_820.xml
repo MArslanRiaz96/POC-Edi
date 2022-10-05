@@ -1,0 +1,1469 @@
+<X12_00501_820 ID="1">
+  <ST ID="2" SegmentPosition="00">
+    <ST01 ID="00:3">820</ST01>
+    <ST02 ID="00:4">101549</ST02>
+  </ST>
+  <BPR ID="5" SegmentPosition="00">
+    <BPR01 ID="00:6">I</BPR01>
+    <BPR02 ID="00:7">231108.51</BPR02>
+    <BPR03 ID="00:8">C</BPR03>
+    <BPR04 ID="00:9">CHK</BPR04>
+    <BPR05 ID="00:10" />
+    <BPR06 ID="00:11" />
+    <BPR07 ID="00:12" />
+    <BPR08 ID="00:13" />
+    <BPR09 ID="00:14" />
+    <BPR10 ID="00:15" />
+    <BPR11 ID="00:16" />
+    <BPR12 ID="00:17" />
+    <BPR13 ID="00:18" />
+    <BPR14 ID="00:19" />
+    <BPR15 ID="00:20" />
+    <BPR16 ID="00:21">20220225</BPR16>
+    <BPR17 ID="00:22">VEN</BPR17>
+  </BPR>
+  <TRN ID="23" SegmentPosition="00">
+    <TRN01 ID="00:24">3</TRN01>
+    <TRN02 ID="00:25">8026848</TRN02>
+  </TRN>
+  <CUR ID="26" SegmentPosition="00">
+    <CUR01 ID="00:27">PR</CUR01>
+    <CUR02 ID="00:28">USD</CUR02>
+  </CUR>
+  <N1Loop1 ID="29" SegmentPosition="00">
+    <N1 ID="30" SegmentPosition="00">
+      <N101 ID="00:31">PR</N101>
+      <N102 ID="00:32">WALMART INC.</N102>
+      <N103 ID="00:33">UL</N103>
+      <N104 ID="00:34">0078742000008</N104>
+    </N1>
+  </N1Loop1>
+  <N1Loop1 ID="35" SegmentPosition="00">
+    <N1 ID="36" SegmentPosition="00">
+      <N101 ID="00:37">PE</N101>
+      <N102 ID="00:38">GT S LIVING FOODS, LLC</N102>
+    </N1>
+    <REF_2 ID="39" SegmentPosition="00">
+      <REF01 ID="00:40">IA</REF01>
+      <REF02 ID="00:41">456160</REF02>
+    </REF_2>
+  </N1Loop1>
+  <ENTLoop1 ID="42" SegmentPosition="00">
+    <ENT ID="43" SegmentPosition="00">
+      <ENT01 ID="00:44">1</ENT01>
+    </ENT>
+    <RMRLoop1 ID="45" SegmentPosition="00">
+      <RMR ID="46" SegmentPosition="00">
+        <RMR01 ID="00:47">IV</RMR01>
+        <RMR02 ID="00:48">10078557</RMR02>
+        <RMR03 ID="00:49">PO</RMR03>
+        <RMR04 ID="00:50">10407.35</RMR04>
+        <RMR05 ID="00:51">10755.84</RMR05>
+        <RMR06 ID="00:52">215.12</RMR06>
+      </RMR>
+      <REF_7 ID="53" SegmentPosition="00">
+        <REF01 ID="00:54">PO</REF01>
+        <REF02 ID="00:55">0635876713</REF02>
+      </REF_7>
+      <REF_7 ID="56" SegmentPosition="00">
+        <REF01 ID="00:57">DP</REF01>
+        <REF02 ID="00:58">00095</REF02>
+      </REF_7>
+      <REF_7 ID="59" SegmentPosition="00">
+        <REF01 ID="00:60">MR</REF01>
+        <REF02 ID="00:61">0020</REF02>
+      </REF_7>
+      <REF_7 ID="62" SegmentPosition="00">
+        <REF01 ID="00:63">19</REF01>
+        <REF02 ID="00:64">07</REF02>
+      </REF_7>
+      <REF_7 ID="65" SegmentPosition="00">
+        <REF01 ID="00:66">ST</REF01>
+        <REF02 ID="00:67">0078742034324</REF02>
+      </REF_7>
+      <REF_7 ID="68" SegmentPosition="00">
+        <REF01 ID="00:69">MC</REF01>
+        <REF02 ID="00:70">611302857</REF02>
+      </REF_7>
+      <DTM_7 ID="71" SegmentPosition="00">
+        <DTM01 ID="00:72">097</DTM01>
+        <DTM02 ID="00:73">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="74" SegmentPosition="00">
+        <ADX_2 ID="75" SegmentPosition="00">
+          <ADX01 ID="00:76">-133.37</ADX01>
+          <ADX02 ID="00:77">01</ADX02>
+          <ADX03 ID="00:78">CM</ADX03>
+          <ADX04 ID="00:79">10078557</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="80" SegmentPosition="00">
+          <REF_10 ID="81" SegmentPosition="00">
+            <REF01 ID="00:82">6O</REF01>
+            <REF02 ID="00:83">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="84" SegmentPosition="00">
+          <REF_10 ID="85" SegmentPosition="00">
+            <REF01 ID="00:86">MC</REF01>
+            <REF02 ID="00:87">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="88" SegmentPosition="00">
+      <RMR ID="89" SegmentPosition="00">
+        <RMR01 ID="00:90">IV</RMR01>
+        <RMR02 ID="00:91">10078560</RMR02>
+        <RMR03 ID="00:92">PO</RMR03>
+        <RMR04 ID="00:93">16411.73</RMR04>
+        <RMR05 ID="00:94">16961.28</RMR05>
+        <RMR06 ID="00:95">339.23</RMR06>
+      </RMR>
+      <REF_7 ID="96" SegmentPosition="00">
+        <REF01 ID="00:97">PO</REF01>
+        <REF02 ID="00:98">0635876801</REF02>
+      </REF_7>
+      <REF_7 ID="99" SegmentPosition="00">
+        <REF01 ID="00:100">DP</REF01>
+        <REF02 ID="00:101">00095</REF02>
+      </REF_7>
+      <REF_7 ID="102" SegmentPosition="00">
+        <REF01 ID="00:103">MR</REF01>
+        <REF02 ID="00:104">0020</REF02>
+      </REF_7>
+      <REF_7 ID="105" SegmentPosition="00">
+        <REF01 ID="00:106">19</REF01>
+        <REF02 ID="00:107">07</REF02>
+      </REF_7>
+      <REF_7 ID="108" SegmentPosition="00">
+        <REF01 ID="00:109">ST</REF01>
+        <REF02 ID="00:110">0078742045962</REF02>
+      </REF_7>
+      <REF_7 ID="111" SegmentPosition="00">
+        <REF01 ID="00:112">MC</REF01>
+        <REF02 ID="00:113">611302858</REF02>
+      </REF_7>
+      <DTM_7 ID="114" SegmentPosition="00">
+        <DTM01 ID="00:115">097</DTM01>
+        <DTM02 ID="00:116">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="117" SegmentPosition="00">
+        <ADX_2 ID="118" SegmentPosition="00">
+          <ADX01 ID="00:119">-210.32</ADX01>
+          <ADX02 ID="00:120">01</ADX02>
+          <ADX03 ID="00:121">CM</ADX03>
+          <ADX04 ID="00:122">10078560</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="123" SegmentPosition="00">
+          <REF_10 ID="124" SegmentPosition="00">
+            <REF01 ID="00:125">6O</REF01>
+            <REF02 ID="00:126">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="127" SegmentPosition="00">
+          <REF_10 ID="128" SegmentPosition="00">
+            <REF01 ID="00:129">MC</REF01>
+            <REF02 ID="00:130">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="131" SegmentPosition="00">
+      <RMR ID="132" SegmentPosition="00">
+        <RMR01 ID="00:133">IV</RMR01>
+        <RMR02 ID="00:134">10078562</RMR02>
+        <RMR03 ID="00:135">PO</RMR03>
+        <RMR04 ID="00:136">5350.44</RMR04>
+        <RMR05 ID="00:137">5529.6</RMR05>
+        <RMR06 ID="00:138">110.59</RMR06>
+      </RMR>
+      <REF_7 ID="139" SegmentPosition="00">
+        <REF01 ID="00:140">PO</REF01>
+        <REF02 ID="00:141">0635876682</REF02>
+      </REF_7>
+      <REF_7 ID="142" SegmentPosition="00">
+        <REF01 ID="00:143">DP</REF01>
+        <REF02 ID="00:144">00095</REF02>
+      </REF_7>
+      <REF_7 ID="145" SegmentPosition="00">
+        <REF01 ID="00:146">MR</REF01>
+        <REF02 ID="00:147">0020</REF02>
+      </REF_7>
+      <REF_7 ID="148" SegmentPosition="00">
+        <REF01 ID="00:149">19</REF01>
+        <REF02 ID="00:150">07</REF02>
+      </REF_7>
+      <REF_7 ID="151" SegmentPosition="00">
+        <REF01 ID="00:152">ST</REF01>
+        <REF02 ID="00:153">0078742039374</REF02>
+      </REF_7>
+      <REF_7 ID="154" SegmentPosition="00">
+        <REF01 ID="00:155">MC</REF01>
+        <REF02 ID="00:156">611302859</REF02>
+      </REF_7>
+      <DTM_7 ID="157" SegmentPosition="00">
+        <DTM01 ID="00:158">097</DTM01>
+        <DTM02 ID="00:159">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="160" SegmentPosition="00">
+        <ADX_2 ID="161" SegmentPosition="00">
+          <ADX01 ID="00:162">-68.57</ADX01>
+          <ADX02 ID="00:163">01</ADX02>
+          <ADX03 ID="00:164">CM</ADX03>
+          <ADX04 ID="00:165">10078562</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="166" SegmentPosition="00">
+          <REF_10 ID="167" SegmentPosition="00">
+            <REF01 ID="00:168">6O</REF01>
+            <REF02 ID="00:169">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="170" SegmentPosition="00">
+          <REF_10 ID="171" SegmentPosition="00">
+            <REF01 ID="00:172">MC</REF01>
+            <REF02 ID="00:173">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="174" SegmentPosition="00">
+      <RMR ID="175" SegmentPosition="00">
+        <RMR01 ID="00:176">IV</RMR01>
+        <RMR02 ID="00:177">10078569</RMR02>
+        <RMR03 ID="00:178">PO</RMR03>
+        <RMR04 ID="00:179">5669.98</RMR04>
+        <RMR05 ID="00:180">5859.84</RMR05>
+        <RMR06 ID="00:181">117.2</RMR06>
+      </RMR>
+      <REF_7 ID="182" SegmentPosition="00">
+        <REF01 ID="00:183">PO</REF01>
+        <REF02 ID="00:184">0635876649</REF02>
+      </REF_7>
+      <REF_7 ID="185" SegmentPosition="00">
+        <REF01 ID="00:186">DP</REF01>
+        <REF02 ID="00:187">00095</REF02>
+      </REF_7>
+      <REF_7 ID="188" SegmentPosition="00">
+        <REF01 ID="00:189">MR</REF01>
+        <REF02 ID="00:190">0020</REF02>
+      </REF_7>
+      <REF_7 ID="191" SegmentPosition="00">
+        <REF01 ID="00:192">19</REF01>
+        <REF02 ID="00:193">07</REF02>
+      </REF_7>
+      <REF_7 ID="194" SegmentPosition="00">
+        <REF01 ID="00:195">ST</REF01>
+        <REF02 ID="00:196">0078742032528</REF02>
+      </REF_7>
+      <REF_7 ID="197" SegmentPosition="00">
+        <REF01 ID="00:198">MC</REF01>
+        <REF02 ID="00:199">611302860</REF02>
+      </REF_7>
+      <DTM_7 ID="200" SegmentPosition="00">
+        <DTM01 ID="00:201">097</DTM01>
+        <DTM02 ID="00:202">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="203" SegmentPosition="00">
+        <ADX_2 ID="204" SegmentPosition="00">
+          <ADX01 ID="00:205">-72.66</ADX01>
+          <ADX02 ID="00:206">01</ADX02>
+          <ADX03 ID="00:207">CM</ADX03>
+          <ADX04 ID="00:208">10078569</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="209" SegmentPosition="00">
+          <REF_10 ID="210" SegmentPosition="00">
+            <REF01 ID="00:211">6O</REF01>
+            <REF02 ID="00:212">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="213" SegmentPosition="00">
+          <REF_10 ID="214" SegmentPosition="00">
+            <REF01 ID="00:215">MC</REF01>
+            <REF02 ID="00:216">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="217" SegmentPosition="00">
+      <RMR ID="218" SegmentPosition="00">
+        <RMR01 ID="00:219">IV</RMR01>
+        <RMR02 ID="00:220">10078575</RMR02>
+        <RMR03 ID="00:221">PO</RMR03>
+        <RMR04 ID="00:222">6533.86</RMR04>
+        <RMR05 ID="00:223">6752.64</RMR05>
+        <RMR06 ID="00:224">135.05</RMR06>
+      </RMR>
+      <REF_7 ID="225" SegmentPosition="00">
+        <REF01 ID="00:226">PO</REF01>
+        <REF02 ID="00:227">0635876771</REF02>
+      </REF_7>
+      <REF_7 ID="228" SegmentPosition="00">
+        <REF01 ID="00:229">DP</REF01>
+        <REF02 ID="00:230">00095</REF02>
+      </REF_7>
+      <REF_7 ID="231" SegmentPosition="00">
+        <REF01 ID="00:232">MR</REF01>
+        <REF02 ID="00:233">0020</REF02>
+      </REF_7>
+      <REF_7 ID="234" SegmentPosition="00">
+        <REF01 ID="00:235">19</REF01>
+        <REF02 ID="00:236">07</REF02>
+      </REF_7>
+      <REF_7 ID="237" SegmentPosition="00">
+        <REF01 ID="00:238">ST</REF01>
+        <REF02 ID="00:239">0078742058528</REF02>
+      </REF_7>
+      <REF_7 ID="240" SegmentPosition="00">
+        <REF01 ID="00:241">MC</REF01>
+        <REF02 ID="00:242">611302861</REF02>
+      </REF_7>
+      <DTM_7 ID="243" SegmentPosition="00">
+        <DTM01 ID="00:244">097</DTM01>
+        <DTM02 ID="00:245">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="246" SegmentPosition="00">
+        <ADX_2 ID="247" SegmentPosition="00">
+          <ADX01 ID="00:248">-83.73</ADX01>
+          <ADX02 ID="00:249">01</ADX02>
+          <ADX03 ID="00:250">CM</ADX03>
+          <ADX04 ID="00:251">10078575</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="252" SegmentPosition="00">
+          <REF_10 ID="253" SegmentPosition="00">
+            <REF01 ID="00:254">6O</REF01>
+            <REF02 ID="00:255">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="256" SegmentPosition="00">
+          <REF_10 ID="257" SegmentPosition="00">
+            <REF01 ID="00:258">MC</REF01>
+            <REF02 ID="00:259">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="260" SegmentPosition="00">
+      <RMR ID="261" SegmentPosition="00">
+        <RMR01 ID="00:262">IV</RMR01>
+        <RMR02 ID="00:263">10078588</RMR02>
+        <RMR03 ID="00:264">PO</RMR03>
+        <RMR04 ID="00:265">8664.74</RMR04>
+        <RMR05 ID="00:266">8954.88</RMR05>
+        <RMR06 ID="00:267">179.1</RMR06>
+      </RMR>
+      <REF_7 ID="268" SegmentPosition="00">
+        <REF01 ID="00:269">PO</REF01>
+        <REF02 ID="00:270">0635876721</REF02>
+      </REF_7>
+      <REF_7 ID="271" SegmentPosition="00">
+        <REF01 ID="00:272">DP</REF01>
+        <REF02 ID="00:273">00095</REF02>
+      </REF_7>
+      <REF_7 ID="274" SegmentPosition="00">
+        <REF01 ID="00:275">MR</REF01>
+        <REF02 ID="00:276">0020</REF02>
+      </REF_7>
+      <REF_7 ID="277" SegmentPosition="00">
+        <REF01 ID="00:278">19</REF01>
+        <REF02 ID="00:279">07</REF02>
+      </REF_7>
+      <REF_7 ID="280" SegmentPosition="00">
+        <REF01 ID="00:281">ST</REF01>
+        <REF02 ID="00:282">0078742035499</REF02>
+      </REF_7>
+      <REF_7 ID="283" SegmentPosition="00">
+        <REF01 ID="00:284">MC</REF01>
+        <REF02 ID="00:285">611302864</REF02>
+      </REF_7>
+      <DTM_7 ID="286" SegmentPosition="00">
+        <DTM01 ID="00:287">097</DTM01>
+        <DTM02 ID="00:288">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="289" SegmentPosition="00">
+        <ADX_2 ID="290" SegmentPosition="00">
+          <ADX01 ID="00:291">-111.04</ADX01>
+          <ADX02 ID="00:292">01</ADX02>
+          <ADX03 ID="00:293">CM</ADX03>
+          <ADX04 ID="00:294">10078588</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="295" SegmentPosition="00">
+          <REF_10 ID="296" SegmentPosition="00">
+            <REF01 ID="00:297">6O</REF01>
+            <REF02 ID="00:298">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="299" SegmentPosition="00">
+          <REF_10 ID="300" SegmentPosition="00">
+            <REF01 ID="00:301">MC</REF01>
+            <REF02 ID="00:302">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="303" SegmentPosition="00">
+      <RMR ID="304" SegmentPosition="00">
+        <RMR01 ID="00:305">IV</RMR01>
+        <RMR02 ID="00:306">10078593</RMR02>
+        <RMR03 ID="00:307">PO</RMR03>
+        <RMR04 ID="00:308">6673.19</RMR04>
+        <RMR05 ID="00:309">6896.64</RMR05>
+        <RMR06 ID="00:310">137.93</RMR06>
+      </RMR>
+      <REF_7 ID="311" SegmentPosition="00">
+        <REF01 ID="00:312">PO</REF01>
+        <REF02 ID="00:313">0635876651</REF02>
+      </REF_7>
+      <REF_7 ID="314" SegmentPosition="00">
+        <REF01 ID="00:315">DP</REF01>
+        <REF02 ID="00:316">00095</REF02>
+      </REF_7>
+      <REF_7 ID="317" SegmentPosition="00">
+        <REF01 ID="00:318">MR</REF01>
+        <REF02 ID="00:319">0020</REF02>
+      </REF_7>
+      <REF_7 ID="320" SegmentPosition="00">
+        <REF01 ID="00:321">19</REF01>
+        <REF02 ID="00:322">07</REF02>
+      </REF_7>
+      <REF_7 ID="323" SegmentPosition="00">
+        <REF01 ID="00:324">ST</REF01>
+        <REF02 ID="00:325">0078742032610</REF02>
+      </REF_7>
+      <REF_7 ID="326" SegmentPosition="00">
+        <REF01 ID="00:327">MC</REF01>
+        <REF02 ID="00:328">611302865</REF02>
+      </REF_7>
+      <DTM_7 ID="329" SegmentPosition="00">
+        <DTM01 ID="00:330">097</DTM01>
+        <DTM02 ID="00:331">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="332" SegmentPosition="00">
+        <ADX_2 ID="333" SegmentPosition="00">
+          <ADX01 ID="00:334">-85.52</ADX01>
+          <ADX02 ID="00:335">01</ADX02>
+          <ADX03 ID="00:336">CM</ADX03>
+          <ADX04 ID="00:337">10078593</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="338" SegmentPosition="00">
+          <REF_10 ID="339" SegmentPosition="00">
+            <REF01 ID="00:340">6O</REF01>
+            <REF02 ID="00:341">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="342" SegmentPosition="00">
+          <REF_10 ID="343" SegmentPosition="00">
+            <REF01 ID="00:344">MC</REF01>
+            <REF02 ID="00:345">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="346" SegmentPosition="00">
+      <RMR ID="347" SegmentPosition="00">
+        <RMR01 ID="00:348">IV</RMR01>
+        <RMR02 ID="00:349">10078600</RMR02>
+        <RMR03 ID="00:350">PO</RMR03>
+        <RMR04 ID="00:351">8010.8</RMR04>
+        <RMR05 ID="00:352">8279.04</RMR05>
+        <RMR06 ID="00:353">165.58</RMR06>
+      </RMR>
+      <REF_7 ID="354" SegmentPosition="00">
+        <REF01 ID="00:355">PO</REF01>
+        <REF02 ID="00:356">0635876772</REF02>
+      </REF_7>
+      <REF_7 ID="357" SegmentPosition="00">
+        <REF01 ID="00:358">DP</REF01>
+        <REF02 ID="00:359">00095</REF02>
+      </REF_7>
+      <REF_7 ID="360" SegmentPosition="00">
+        <REF01 ID="00:361">MR</REF01>
+        <REF02 ID="00:362">0020</REF02>
+      </REF_7>
+      <REF_7 ID="363" SegmentPosition="00">
+        <REF01 ID="00:364">19</REF01>
+        <REF02 ID="00:365">07</REF02>
+      </REF_7>
+      <REF_7 ID="366" SegmentPosition="00">
+        <REF01 ID="00:367">ST</REF01>
+        <REF02 ID="00:368">0078742085654</REF02>
+      </REF_7>
+      <REF_7 ID="369" SegmentPosition="00">
+        <REF01 ID="00:370">MC</REF01>
+        <REF02 ID="00:371">611302867</REF02>
+      </REF_7>
+      <DTM_7 ID="372" SegmentPosition="00">
+        <DTM01 ID="00:373">097</DTM01>
+        <DTM02 ID="00:374">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="375" SegmentPosition="00">
+        <ADX_2 ID="376" SegmentPosition="00">
+          <ADX01 ID="00:377">-102.66</ADX01>
+          <ADX02 ID="00:378">01</ADX02>
+          <ADX03 ID="00:379">CM</ADX03>
+          <ADX04 ID="00:380">10078600</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="381" SegmentPosition="00">
+          <REF_10 ID="382" SegmentPosition="00">
+            <REF01 ID="00:383">6O</REF01>
+            <REF02 ID="00:384">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="385" SegmentPosition="00">
+          <REF_10 ID="386" SegmentPosition="00">
+            <REF01 ID="00:387">MC</REF01>
+            <REF02 ID="00:388">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="389" SegmentPosition="00">
+      <RMR ID="390" SegmentPosition="00">
+        <RMR01 ID="00:391">IV</RMR01>
+        <RMR02 ID="00:392">10078606</RMR02>
+        <RMR03 ID="00:393">PO</RMR03>
+        <RMR04 ID="00:394">4993.74</RMR04>
+        <RMR05 ID="00:395">5160.96</RMR05>
+        <RMR06 ID="00:396">103.22</RMR06>
+      </RMR>
+      <REF_7 ID="397" SegmentPosition="00">
+        <REF01 ID="00:398">PO</REF01>
+        <REF02 ID="00:399">0635876654</REF02>
+      </REF_7>
+      <REF_7 ID="400" SegmentPosition="00">
+        <REF01 ID="00:401">DP</REF01>
+        <REF02 ID="00:402">00095</REF02>
+      </REF_7>
+      <REF_7 ID="403" SegmentPosition="00">
+        <REF01 ID="00:404">MR</REF01>
+        <REF02 ID="00:405">0020</REF02>
+      </REF_7>
+      <REF_7 ID="406" SegmentPosition="00">
+        <REF01 ID="00:407">19</REF01>
+        <REF02 ID="00:408">07</REF02>
+      </REF_7>
+      <REF_7 ID="409" SegmentPosition="00">
+        <REF01 ID="00:410">ST</REF01>
+        <REF02 ID="00:411">0078742032887</REF02>
+      </REF_7>
+      <REF_7 ID="412" SegmentPosition="00">
+        <REF01 ID="00:413">MC</REF01>
+        <REF02 ID="00:414">611302869</REF02>
+      </REF_7>
+      <DTM_7 ID="415" SegmentPosition="00">
+        <DTM01 ID="00:416">097</DTM01>
+        <DTM02 ID="00:417">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="418" SegmentPosition="00">
+        <ADX_2 ID="419" SegmentPosition="00">
+          <ADX01 ID="00:420">-64</ADX01>
+          <ADX02 ID="00:421">01</ADX02>
+          <ADX03 ID="00:422">CM</ADX03>
+          <ADX04 ID="00:423">10078606</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="424" SegmentPosition="00">
+          <REF_10 ID="425" SegmentPosition="00">
+            <REF01 ID="00:426">6O</REF01>
+            <REF02 ID="00:427">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="428" SegmentPosition="00">
+          <REF_10 ID="429" SegmentPosition="00">
+            <REF01 ID="00:430">MC</REF01>
+            <REF02 ID="00:431">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="432" SegmentPosition="00">
+      <RMR ID="433" SegmentPosition="00">
+        <RMR01 ID="00:434">IV</RMR01>
+        <RMR02 ID="00:435">10078609</RMR02>
+        <RMR03 ID="00:436">PO</RMR03>
+        <RMR04 ID="00:437">5071.77</RMR04>
+        <RMR05 ID="00:438">5241.6</RMR05>
+        <RMR06 ID="00:439">104.83</RMR06>
+      </RMR>
+      <REF_7 ID="440" SegmentPosition="00">
+        <REF01 ID="00:441">PO</REF01>
+        <REF02 ID="00:442">0635876670</REF02>
+      </REF_7>
+      <REF_7 ID="443" SegmentPosition="00">
+        <REF01 ID="00:444">DP</REF01>
+        <REF02 ID="00:445">00095</REF02>
+      </REF_7>
+      <REF_7 ID="446" SegmentPosition="00">
+        <REF01 ID="00:447">MR</REF01>
+        <REF02 ID="00:448">0020</REF02>
+      </REF_7>
+      <REF_7 ID="449" SegmentPosition="00">
+        <REF01 ID="00:450">19</REF01>
+        <REF02 ID="00:451">07</REF02>
+      </REF_7>
+      <REF_7 ID="452" SegmentPosition="00">
+        <REF01 ID="00:453">ST</REF01>
+        <REF02 ID="00:454">0078742039367</REF02>
+      </REF_7>
+      <REF_7 ID="455" SegmentPosition="00">
+        <REF01 ID="00:456">MC</REF01>
+        <REF02 ID="00:457">611302871</REF02>
+      </REF_7>
+      <DTM_7 ID="458" SegmentPosition="00">
+        <DTM01 ID="00:459">097</DTM01>
+        <DTM02 ID="00:460">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="461" SegmentPosition="00">
+        <ADX_2 ID="462" SegmentPosition="00">
+          <ADX01 ID="00:463">-65</ADX01>
+          <ADX02 ID="00:464">01</ADX02>
+          <ADX03 ID="00:465">CM</ADX03>
+          <ADX04 ID="00:466">10078609</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="467" SegmentPosition="00">
+          <REF_10 ID="468" SegmentPosition="00">
+            <REF01 ID="00:469">6O</REF01>
+            <REF02 ID="00:470">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="471" SegmentPosition="00">
+          <REF_10 ID="472" SegmentPosition="00">
+            <REF01 ID="00:473">MC</REF01>
+            <REF02 ID="00:474">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="475" SegmentPosition="00">
+      <RMR ID="476" SegmentPosition="00">
+        <RMR01 ID="00:477">IV</RMR01>
+        <RMR02 ID="00:478">10078610</RMR02>
+        <RMR03 ID="00:479">PO</RMR03>
+        <RMR04 ID="00:480">13067.7</RMR04>
+        <RMR05 ID="00:481">13505.28</RMR05>
+        <RMR06 ID="00:482">270.11</RMR06>
+      </RMR>
+      <REF_7 ID="483" SegmentPosition="00">
+        <REF01 ID="00:484">PO</REF01>
+        <REF02 ID="00:485">0635876762</REF02>
+      </REF_7>
+      <REF_7 ID="486" SegmentPosition="00">
+        <REF01 ID="00:487">DP</REF01>
+        <REF02 ID="00:488">00095</REF02>
+      </REF_7>
+      <REF_7 ID="489" SegmentPosition="00">
+        <REF01 ID="00:490">MR</REF01>
+        <REF02 ID="00:491">0020</REF02>
+      </REF_7>
+      <REF_7 ID="492" SegmentPosition="00">
+        <REF01 ID="00:493">19</REF01>
+        <REF02 ID="00:494">07</REF02>
+      </REF_7>
+      <REF_7 ID="495" SegmentPosition="00">
+        <REF01 ID="00:496">ST</REF01>
+        <REF02 ID="00:497">0078742042428</REF02>
+      </REF_7>
+      <REF_7 ID="498" SegmentPosition="00">
+        <REF01 ID="00:499">MC</REF01>
+        <REF02 ID="00:500">611302872</REF02>
+      </REF_7>
+      <DTM_7 ID="501" SegmentPosition="00">
+        <DTM01 ID="00:502">097</DTM01>
+        <DTM02 ID="00:503">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="504" SegmentPosition="00">
+        <ADX_2 ID="505" SegmentPosition="00">
+          <ADX01 ID="00:506">-167.47</ADX01>
+          <ADX02 ID="00:507">01</ADX02>
+          <ADX03 ID="00:508">CM</ADX03>
+          <ADX04 ID="00:509">10078610</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="510" SegmentPosition="00">
+          <REF_10 ID="511" SegmentPosition="00">
+            <REF01 ID="00:512">6O</REF01>
+            <REF02 ID="00:513">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="514" SegmentPosition="00">
+          <REF_10 ID="515" SegmentPosition="00">
+            <REF01 ID="00:516">MC</REF01>
+            <REF02 ID="00:517">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="518" SegmentPosition="00">
+      <RMR ID="519" SegmentPosition="00">
+        <RMR01 ID="00:520">IV</RMR01>
+        <RMR02 ID="00:521">10078612</RMR02>
+        <RMR03 ID="00:522">PO</RMR03>
+        <RMR04 ID="00:523">6673.19</RMR04>
+        <RMR05 ID="00:524">6896.64</RMR05>
+        <RMR06 ID="00:525">137.93</RMR06>
+      </RMR>
+      <REF_7 ID="526" SegmentPosition="00">
+        <REF01 ID="00:527">PO</REF01>
+        <REF02 ID="00:528">0635876655</REF02>
+      </REF_7>
+      <REF_7 ID="529" SegmentPosition="00">
+        <REF01 ID="00:530">DP</REF01>
+        <REF02 ID="00:531">00095</REF02>
+      </REF_7>
+      <REF_7 ID="532" SegmentPosition="00">
+        <REF01 ID="00:533">MR</REF01>
+        <REF02 ID="00:534">0020</REF02>
+      </REF_7>
+      <REF_7 ID="535" SegmentPosition="00">
+        <REF01 ID="00:536">19</REF01>
+        <REF02 ID="00:537">07</REF02>
+      </REF_7>
+      <REF_7 ID="538" SegmentPosition="00">
+        <REF01 ID="00:539">ST</REF01>
+        <REF02 ID="00:540">0078742033877</REF02>
+      </REF_7>
+      <REF_7 ID="541" SegmentPosition="00">
+        <REF01 ID="00:542">MC</REF01>
+        <REF02 ID="00:543">611302874</REF02>
+      </REF_7>
+      <DTM_7 ID="544" SegmentPosition="00">
+        <DTM01 ID="00:545">097</DTM01>
+        <DTM02 ID="00:546">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="547" SegmentPosition="00">
+        <ADX_2 ID="548" SegmentPosition="00">
+          <ADX01 ID="00:549">-85.52</ADX01>
+          <ADX02 ID="00:550">01</ADX02>
+          <ADX03 ID="00:551">CM</ADX03>
+          <ADX04 ID="00:552">10078612</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="553" SegmentPosition="00">
+          <REF_10 ID="554" SegmentPosition="00">
+            <REF01 ID="00:555">6O</REF01>
+            <REF02 ID="00:556">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="557" SegmentPosition="00">
+          <REF_10 ID="558" SegmentPosition="00">
+            <REF01 ID="00:559">MC</REF01>
+            <REF02 ID="00:560">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="561" SegmentPosition="00">
+      <RMR ID="562" SegmentPosition="00">
+        <RMR01 ID="00:563">IV</RMR01>
+        <RMR02 ID="00:564">10078623</RMR02>
+        <RMR03 ID="00:565">PO</RMR03>
+        <RMR04 ID="00:566">19880.23</RMR04>
+        <RMR05 ID="00:567">20545.92</RMR05>
+        <RMR06 ID="00:568">410.92</RMR06>
+      </RMR>
+      <REF_7 ID="569" SegmentPosition="00">
+        <REF01 ID="00:570">PO</REF01>
+        <REF02 ID="00:571">0635876707</REF02>
+      </REF_7>
+      <REF_7 ID="572" SegmentPosition="00">
+        <REF01 ID="00:573">DP</REF01>
+        <REF02 ID="00:574">00095</REF02>
+      </REF_7>
+      <REF_7 ID="575" SegmentPosition="00">
+        <REF01 ID="00:576">MR</REF01>
+        <REF02 ID="00:577">0020</REF02>
+      </REF_7>
+      <REF_7 ID="578" SegmentPosition="00">
+        <REF01 ID="00:579">19</REF01>
+        <REF02 ID="00:580">07</REF02>
+      </REF_7>
+      <REF_7 ID="581" SegmentPosition="00">
+        <REF01 ID="00:582">ST</REF01>
+        <REF02 ID="00:583">0078742033150</REF02>
+      </REF_7>
+      <REF_7 ID="584" SegmentPosition="00">
+        <REF01 ID="00:585">MC</REF01>
+        <REF02 ID="00:586">611302877</REF02>
+      </REF_7>
+      <DTM_7 ID="587" SegmentPosition="00">
+        <DTM01 ID="00:588">097</DTM01>
+        <DTM02 ID="00:589">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="590" SegmentPosition="00">
+        <ADX_2 ID="591" SegmentPosition="00">
+          <ADX01 ID="00:592">-254.77</ADX01>
+          <ADX02 ID="00:593">01</ADX02>
+          <ADX03 ID="00:594">CM</ADX03>
+          <ADX04 ID="00:595">10078623</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="596" SegmentPosition="00">
+          <REF_10 ID="597" SegmentPosition="00">
+            <REF01 ID="00:598">6O</REF01>
+            <REF02 ID="00:599">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="600" SegmentPosition="00">
+          <REF_10 ID="601" SegmentPosition="00">
+            <REF01 ID="00:602">MC</REF01>
+            <REF02 ID="00:603">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="604" SegmentPosition="00">
+      <RMR ID="605" SegmentPosition="00">
+        <RMR01 ID="00:606">IV</RMR01>
+        <RMR02 ID="00:607">10078625</RMR02>
+        <RMR03 ID="00:608">PO</RMR03>
+        <RMR04 ID="00:609">17385.21</RMR04>
+        <RMR05 ID="00:610">17967.36</RMR05>
+        <RMR06 ID="00:611">359.35</RMR06>
+      </RMR>
+      <REF_7 ID="612" SegmentPosition="00">
+        <REF01 ID="00:613">PO</REF01>
+        <REF02 ID="00:614">0635876717</REF02>
+      </REF_7>
+      <REF_7 ID="615" SegmentPosition="00">
+        <REF01 ID="00:616">DP</REF01>
+        <REF02 ID="00:617">00095</REF02>
+      </REF_7>
+      <REF_7 ID="618" SegmentPosition="00">
+        <REF01 ID="00:619">MR</REF01>
+        <REF02 ID="00:620">0020</REF02>
+      </REF_7>
+      <REF_7 ID="621" SegmentPosition="00">
+        <REF01 ID="00:622">19</REF01>
+        <REF02 ID="00:623">07</REF02>
+      </REF_7>
+      <REF_7 ID="624" SegmentPosition="00">
+        <REF01 ID="00:625">ST</REF01>
+        <REF02 ID="00:626">0078742034959</REF02>
+      </REF_7>
+      <REF_7 ID="627" SegmentPosition="00">
+        <REF01 ID="00:628">MC</REF01>
+        <REF02 ID="00:629">611302878</REF02>
+      </REF_7>
+      <DTM_7 ID="630" SegmentPosition="00">
+        <DTM01 ID="00:631">097</DTM01>
+        <DTM02 ID="00:632">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="633" SegmentPosition="00">
+        <ADX_2 ID="634" SegmentPosition="00">
+          <ADX01 ID="00:635">-222.8</ADX01>
+          <ADX02 ID="00:636">01</ADX02>
+          <ADX03 ID="00:637">CM</ADX03>
+          <ADX04 ID="00:638">10078625</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="639" SegmentPosition="00">
+          <REF_10 ID="640" SegmentPosition="00">
+            <REF01 ID="00:641">6O</REF01>
+            <REF02 ID="00:642">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="643" SegmentPosition="00">
+          <REF_10 ID="644" SegmentPosition="00">
+            <REF01 ID="00:645">MC</REF01>
+            <REF02 ID="00:646">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="647" SegmentPosition="00">
+      <RMR ID="648" SegmentPosition="00">
+        <RMR01 ID="00:649">IV</RMR01>
+        <RMR02 ID="00:650">10078633</RMR02>
+        <RMR03 ID="00:651">PO</RMR03>
+        <RMR04 ID="00:652">11185.76</RMR04>
+        <RMR05 ID="00:653">11560.32</RMR05>
+        <RMR06 ID="00:654">231.21</RMR06>
+      </RMR>
+      <REF_7 ID="655" SegmentPosition="00">
+        <REF01 ID="00:656">PO</REF01>
+        <REF02 ID="00:657">0635876693</REF02>
+      </REF_7>
+      <REF_7 ID="658" SegmentPosition="00">
+        <REF01 ID="00:659">DP</REF01>
+        <REF02 ID="00:660">00095</REF02>
+      </REF_7>
+      <REF_7 ID="661" SegmentPosition="00">
+        <REF01 ID="00:662">MR</REF01>
+        <REF02 ID="00:663">0020</REF02>
+      </REF_7>
+      <REF_7 ID="664" SegmentPosition="00">
+        <REF01 ID="00:665">19</REF01>
+        <REF02 ID="00:666">07</REF02>
+      </REF_7>
+      <REF_7 ID="667" SegmentPosition="00">
+        <REF01 ID="00:668">ST</REF01>
+        <REF02 ID="00:669">0078742088228</REF02>
+      </REF_7>
+      <REF_7 ID="670" SegmentPosition="00">
+        <REF01 ID="00:671">MC</REF01>
+        <REF02 ID="00:672">611302880</REF02>
+      </REF_7>
+      <DTM_7 ID="673" SegmentPosition="00">
+        <DTM01 ID="00:674">097</DTM01>
+        <DTM02 ID="00:675">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="676" SegmentPosition="00">
+        <ADX_2 ID="677" SegmentPosition="00">
+          <ADX01 ID="00:678">-143.35</ADX01>
+          <ADX02 ID="00:679">01</ADX02>
+          <ADX03 ID="00:680">CM</ADX03>
+          <ADX04 ID="00:681">10078633</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="682" SegmentPosition="00">
+          <REF_10 ID="683" SegmentPosition="00">
+            <REF01 ID="00:684">6O</REF01>
+            <REF02 ID="00:685">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="686" SegmentPosition="00">
+          <REF_10 ID="687" SegmentPosition="00">
+            <REF01 ID="00:688">MC</REF01>
+            <REF02 ID="00:689">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="690" SegmentPosition="00">
+      <RMR ID="691" SegmentPosition="00">
+        <RMR01 ID="00:692">IV</RMR01>
+        <RMR02 ID="00:693">10078635</RMR02>
+        <RMR03 ID="00:694">PO</RMR03>
+        <RMR04 ID="00:695">12662.71</RMR04>
+        <RMR05 ID="00:696">13086.72</RMR05>
+        <RMR06 ID="00:697">261.73</RMR06>
+      </RMR>
+      <REF_7 ID="698" SegmentPosition="00">
+        <REF01 ID="00:699">PO</REF01>
+        <REF02 ID="00:700">0635876697</REF02>
+      </REF_7>
+      <REF_7 ID="701" SegmentPosition="00">
+        <REF01 ID="00:702">DP</REF01>
+        <REF02 ID="00:703">00095</REF02>
+      </REF_7>
+      <REF_7 ID="704" SegmentPosition="00">
+        <REF01 ID="00:705">MR</REF01>
+        <REF02 ID="00:706">0020</REF02>
+      </REF_7>
+      <REF_7 ID="707" SegmentPosition="00">
+        <REF01 ID="00:708">19</REF01>
+        <REF02 ID="00:709">07</REF02>
+      </REF_7>
+      <REF_7 ID="710" SegmentPosition="00">
+        <REF01 ID="00:711">ST</REF01>
+        <REF02 ID="00:712">0078742033969</REF02>
+      </REF_7>
+      <REF_7 ID="713" SegmentPosition="00">
+        <REF01 ID="00:714">MC</REF01>
+        <REF02 ID="00:715">611302882</REF02>
+      </REF_7>
+      <DTM_7 ID="716" SegmentPosition="00">
+        <DTM01 ID="00:717">097</DTM01>
+        <DTM02 ID="00:718">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="719" SegmentPosition="00">
+        <ADX_2 ID="720" SegmentPosition="00">
+          <ADX01 ID="00:721">-162.28</ADX01>
+          <ADX02 ID="00:722">01</ADX02>
+          <ADX03 ID="00:723">CM</ADX03>
+          <ADX04 ID="00:724">10078635</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="725" SegmentPosition="00">
+          <REF_10 ID="726" SegmentPosition="00">
+            <REF01 ID="00:727">6O</REF01>
+            <REF02 ID="00:728">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="729" SegmentPosition="00">
+          <REF_10 ID="730" SegmentPosition="00">
+            <REF01 ID="00:731">MC</REF01>
+            <REF02 ID="00:732">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="733" SegmentPosition="00">
+      <RMR ID="734" SegmentPosition="00">
+        <RMR01 ID="00:735">IV</RMR01>
+        <RMR02 ID="00:736">10078637</RMR02>
+        <RMR03 ID="00:737">PO</RMR03>
+        <RMR04 ID="00:738">7995.94</RMR04>
+        <RMR05 ID="00:739">8263.68</RMR05>
+        <RMR06 ID="00:740">165.27</RMR06>
+      </RMR>
+      <REF_7 ID="741" SegmentPosition="00">
+        <REF01 ID="00:742">PO</REF01>
+        <REF02 ID="00:743">0635876734</REF02>
+      </REF_7>
+      <REF_7 ID="744" SegmentPosition="00">
+        <REF01 ID="00:745">DP</REF01>
+        <REF02 ID="00:746">00095</REF02>
+      </REF_7>
+      <REF_7 ID="747" SegmentPosition="00">
+        <REF01 ID="00:748">MR</REF01>
+        <REF02 ID="00:749">0020</REF02>
+      </REF_7>
+      <REF_7 ID="750" SegmentPosition="00">
+        <REF01 ID="00:751">19</REF01>
+        <REF02 ID="00:752">07</REF02>
+      </REF_7>
+      <REF_7 ID="753" SegmentPosition="00">
+        <REF01 ID="00:754">ST</REF01>
+        <REF02 ID="00:755">0078742045870</REF02>
+      </REF_7>
+      <REF_7 ID="756" SegmentPosition="00">
+        <REF01 ID="00:757">MC</REF01>
+        <REF02 ID="00:758">611302884</REF02>
+      </REF_7>
+      <DTM_7 ID="759" SegmentPosition="00">
+        <DTM01 ID="00:760">097</DTM01>
+        <DTM02 ID="00:761">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="762" SegmentPosition="00">
+        <ADX_2 ID="763" SegmentPosition="00">
+          <ADX01 ID="00:764">-102.47</ADX01>
+          <ADX02 ID="00:765">01</ADX02>
+          <ADX03 ID="00:766">CM</ADX03>
+          <ADX04 ID="00:767">10078637</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="768" SegmentPosition="00">
+          <REF_10 ID="769" SegmentPosition="00">
+            <REF01 ID="00:770">6O</REF01>
+            <REF02 ID="00:771">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="772" SegmentPosition="00">
+          <REF_10 ID="773" SegmentPosition="00">
+            <REF01 ID="00:774">MC</REF01>
+            <REF02 ID="00:775">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="776" SegmentPosition="00">
+      <RMR ID="777" SegmentPosition="00">
+        <RMR01 ID="00:778">IV</RMR01>
+        <RMR02 ID="00:779">10078638</RMR02>
+        <RMR03 ID="00:780">PO</RMR03>
+        <RMR04 ID="00:781">13207.04</RMR04>
+        <RMR05 ID="00:782">13649.28</RMR05>
+        <RMR06 ID="00:783">272.99</RMR06>
+      </RMR>
+      <REF_7 ID="784" SegmentPosition="00">
+        <REF01 ID="00:785">PO</REF01>
+        <REF02 ID="00:786">0635876739</REF02>
+      </REF_7>
+      <REF_7 ID="787" SegmentPosition="00">
+        <REF01 ID="00:788">DP</REF01>
+        <REF02 ID="00:789">00095</REF02>
+      </REF_7>
+      <REF_7 ID="790" SegmentPosition="00">
+        <REF01 ID="00:791">MR</REF01>
+        <REF02 ID="00:792">0020</REF02>
+      </REF_7>
+      <REF_7 ID="793" SegmentPosition="00">
+        <REF01 ID="00:794">19</REF01>
+        <REF02 ID="00:795">07</REF02>
+      </REF_7>
+      <REF_7 ID="796" SegmentPosition="00">
+        <REF01 ID="00:797">ST</REF01>
+        <REF02 ID="00:798">0078742035314</REF02>
+      </REF_7>
+      <REF_7 ID="799" SegmentPosition="00">
+        <REF01 ID="00:800">MC</REF01>
+        <REF02 ID="00:801">611302885</REF02>
+      </REF_7>
+      <DTM_7 ID="802" SegmentPosition="00">
+        <DTM01 ID="00:803">097</DTM01>
+        <DTM02 ID="00:804">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="805" SegmentPosition="00">
+        <ADX_2 ID="806" SegmentPosition="00">
+          <ADX01 ID="00:807">-169.25</ADX01>
+          <ADX02 ID="00:808">01</ADX02>
+          <ADX03 ID="00:809">CM</ADX03>
+          <ADX04 ID="00:810">10078638</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="811" SegmentPosition="00">
+          <REF_10 ID="812" SegmentPosition="00">
+            <REF01 ID="00:813">6O</REF01>
+            <REF02 ID="00:814">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="815" SegmentPosition="00">
+          <REF_10 ID="816" SegmentPosition="00">
+            <REF01 ID="00:817">MC</REF01>
+            <REF02 ID="00:818">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="819" SegmentPosition="00">
+      <RMR ID="820" SegmentPosition="00">
+        <RMR01 ID="00:821">IV</RMR01>
+        <RMR02 ID="00:822">10078639</RMR02>
+        <RMR03 ID="00:823">PO</RMR03>
+        <RMR04 ID="00:824">11055.72</RMR04>
+        <RMR05 ID="00:825">11425.92</RMR05>
+        <RMR06 ID="00:826">228.52</RMR06>
+      </RMR>
+      <REF_7 ID="827" SegmentPosition="00">
+        <REF01 ID="00:828">PO</REF01>
+        <REF02 ID="00:829">0635876741</REF02>
+      </REF_7>
+      <REF_7 ID="830" SegmentPosition="00">
+        <REF01 ID="00:831">DP</REF01>
+        <REF02 ID="00:832">00095</REF02>
+      </REF_7>
+      <REF_7 ID="833" SegmentPosition="00">
+        <REF01 ID="00:834">MR</REF01>
+        <REF02 ID="00:835">0020</REF02>
+      </REF_7>
+      <REF_7 ID="836" SegmentPosition="00">
+        <REF01 ID="00:837">19</REF01>
+        <REF02 ID="00:838">07</REF02>
+      </REF_7>
+      <REF_7 ID="839" SegmentPosition="00">
+        <REF01 ID="00:840">ST</REF01>
+        <REF02 ID="00:841">0078742042220</REF02>
+      </REF_7>
+      <REF_7 ID="842" SegmentPosition="00">
+        <REF01 ID="00:843">MC</REF01>
+        <REF02 ID="00:844">611302886</REF02>
+      </REF_7>
+      <DTM_7 ID="845" SegmentPosition="00">
+        <DTM01 ID="00:846">097</DTM01>
+        <DTM02 ID="00:847">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="848" SegmentPosition="00">
+        <ADX_2 ID="849" SegmentPosition="00">
+          <ADX01 ID="00:850">-141.68</ADX01>
+          <ADX02 ID="00:851">01</ADX02>
+          <ADX03 ID="00:852">CM</ADX03>
+          <ADX04 ID="00:853">10078639</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="854" SegmentPosition="00">
+          <REF_10 ID="855" SegmentPosition="00">
+            <REF01 ID="00:856">6O</REF01>
+            <REF02 ID="00:857">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="858" SegmentPosition="00">
+          <REF_10 ID="859" SegmentPosition="00">
+            <REF01 ID="00:860">MC</REF01>
+            <REF02 ID="00:861">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="862" SegmentPosition="00">
+      <RMR ID="863" SegmentPosition="00">
+        <RMR01 ID="00:864">IV</RMR01>
+        <RMR02 ID="00:865">10078640</RMR02>
+        <RMR03 ID="00:866">PO</RMR03>
+        <RMR04 ID="00:867">11869.43</RMR04>
+        <RMR05 ID="00:868">12266.88</RMR05>
+        <RMR06 ID="00:869">245.34</RMR06>
+      </RMR>
+      <REF_7 ID="870" SegmentPosition="00">
+        <REF01 ID="00:871">PO</REF01>
+        <REF02 ID="00:872">0635876749</REF02>
+      </REF_7>
+      <REF_7 ID="873" SegmentPosition="00">
+        <REF01 ID="00:874">DP</REF01>
+        <REF02 ID="00:875">00095</REF02>
+      </REF_7>
+      <REF_7 ID="876" SegmentPosition="00">
+        <REF01 ID="00:877">MR</REF01>
+        <REF02 ID="00:878">0020</REF02>
+      </REF_7>
+      <REF_7 ID="879" SegmentPosition="00">
+        <REF01 ID="00:880">19</REF01>
+        <REF02 ID="00:881">07</REF02>
+      </REF_7>
+      <REF_7 ID="882" SegmentPosition="00">
+        <REF01 ID="00:883">ST</REF01>
+        <REF02 ID="00:884">0078742042091</REF02>
+      </REF_7>
+      <REF_7 ID="885" SegmentPosition="00">
+        <REF01 ID="00:886">MC</REF01>
+        <REF02 ID="00:887">611302887</REF02>
+      </REF_7>
+      <DTM_7 ID="888" SegmentPosition="00">
+        <DTM01 ID="00:889">097</DTM01>
+        <DTM02 ID="00:890">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="891" SegmentPosition="00">
+        <ADX_2 ID="892" SegmentPosition="00">
+          <ADX01 ID="00:893">-152.11</ADX01>
+          <ADX02 ID="00:894">01</ADX02>
+          <ADX03 ID="00:895">CM</ADX03>
+          <ADX04 ID="00:896">10078640</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="897" SegmentPosition="00">
+          <REF_10 ID="898" SegmentPosition="00">
+            <REF01 ID="00:899">6O</REF01>
+            <REF02 ID="00:900">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="901" SegmentPosition="00">
+          <REF_10 ID="902" SegmentPosition="00">
+            <REF01 ID="00:903">MC</REF01>
+            <REF02 ID="00:904">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="905" SegmentPosition="00">
+      <RMR ID="906" SegmentPosition="00">
+        <RMR01 ID="00:907">IV</RMR01>
+        <RMR02 ID="00:908">10078646</RMR02>
+        <RMR03 ID="00:909">PO</RMR03>
+        <RMR04 ID="00:910">9528.62</RMR04>
+        <RMR05 ID="00:911">9847.68</RMR05>
+        <RMR06 ID="00:912">196.95</RMR06>
+      </RMR>
+      <REF_7 ID="913" SegmentPosition="00">
+        <REF01 ID="00:914">PO</REF01>
+        <REF02 ID="00:915">0635876812</REF02>
+      </REF_7>
+      <REF_7 ID="916" SegmentPosition="00">
+        <REF01 ID="00:917">DP</REF01>
+        <REF02 ID="00:918">00095</REF02>
+      </REF_7>
+      <REF_7 ID="919" SegmentPosition="00">
+        <REF01 ID="00:920">MR</REF01>
+        <REF02 ID="00:921">0020</REF02>
+      </REF_7>
+      <REF_7 ID="922" SegmentPosition="00">
+        <REF01 ID="00:923">19</REF01>
+        <REF02 ID="00:924">07</REF02>
+      </REF_7>
+      <REF_7 ID="925" SegmentPosition="00">
+        <REF01 ID="00:926">ST</REF01>
+        <REF02 ID="00:927">0078742094670</REF02>
+      </REF_7>
+      <REF_7 ID="928" SegmentPosition="00">
+        <REF01 ID="00:929">MC</REF01>
+        <REF02 ID="00:930">611302893</REF02>
+      </REF_7>
+      <DTM_7 ID="931" SegmentPosition="00">
+        <DTM01 ID="00:932">097</DTM01>
+        <DTM02 ID="00:933">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="934" SegmentPosition="00">
+        <ADX_2 ID="935" SegmentPosition="00">
+          <ADX01 ID="00:936">-122.11</ADX01>
+          <ADX02 ID="00:937">01</ADX02>
+          <ADX03 ID="00:938">CM</ADX03>
+          <ADX04 ID="00:939">10078646</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="940" SegmentPosition="00">
+          <REF_10 ID="941" SegmentPosition="00">
+            <REF01 ID="00:942">6O</REF01>
+            <REF02 ID="00:943">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="944" SegmentPosition="00">
+          <REF_10 ID="945" SegmentPosition="00">
+            <REF01 ID="00:946">MC</REF01>
+            <REF02 ID="00:947">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="948" SegmentPosition="00">
+      <RMR ID="949" SegmentPosition="00">
+        <RMR01 ID="00:950">IV</RMR01>
+        <RMR02 ID="00:951">10078647</RMR02>
+        <RMR03 ID="00:952">PO</RMR03>
+        <RMR04 ID="00:953">9333.55</RMR04>
+        <RMR05 ID="00:954">9646.08</RMR05>
+        <RMR06 ID="00:955">192.92</RMR06>
+      </RMR>
+      <REF_7 ID="956" SegmentPosition="00">
+        <REF01 ID="00:957">PO</REF01>
+        <REF02 ID="00:958">0635905498</REF02>
+      </REF_7>
+      <REF_7 ID="959" SegmentPosition="00">
+        <REF01 ID="00:960">DP</REF01>
+        <REF02 ID="00:961">00095</REF02>
+      </REF_7>
+      <REF_7 ID="962" SegmentPosition="00">
+        <REF01 ID="00:963">MR</REF01>
+        <REF02 ID="00:964">0020</REF02>
+      </REF_7>
+      <REF_7 ID="965" SegmentPosition="00">
+        <REF01 ID="00:966">19</REF01>
+        <REF02 ID="00:967">07</REF02>
+      </REF_7>
+      <REF_7 ID="968" SegmentPosition="00">
+        <REF01 ID="00:969">ST</REF01>
+        <REF02 ID="00:970">0078742096933</REF02>
+      </REF_7>
+      <REF_7 ID="971" SegmentPosition="00">
+        <REF01 ID="00:972">MC</REF01>
+        <REF02 ID="00:973">611302894</REF02>
+      </REF_7>
+      <DTM_7 ID="974" SegmentPosition="00">
+        <DTM01 ID="00:975">097</DTM01>
+        <DTM02 ID="00:976">20220123</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="977" SegmentPosition="00">
+        <ADX_2 ID="978" SegmentPosition="00">
+          <ADX01 ID="00:979">-119.61</ADX01>
+          <ADX02 ID="00:980">01</ADX02>
+          <ADX03 ID="00:981">CM</ADX03>
+          <ADX04 ID="00:982">10078647</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="983" SegmentPosition="00">
+          <REF_10 ID="984" SegmentPosition="00">
+            <REF01 ID="00:985">6O</REF01>
+            <REF02 ID="00:986">010</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="987" SegmentPosition="00">
+          <REF_10 ID="988" SegmentPosition="00">
+            <REF01 ID="00:989">MC</REF01>
+            <REF02 ID="00:990">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="991" SegmentPosition="00">
+      <RMR ID="992" SegmentPosition="00">
+        <RMR01 ID="00:993">IV</RMR01>
+        <RMR02 ID="00:994">10078695</RMR02>
+        <RMR03 ID="00:995">PO</RMR03>
+        <RMR04 ID="00:996">14750.21</RMR04>
+        <RMR05 ID="00:997">15206.4</RMR05>
+        <RMR06 ID="00:998">304.13</RMR06>
+      </RMR>
+      <REF_7 ID="999" SegmentPosition="00">
+        <REF01 ID="00:1000">PO</REF01>
+        <REF02 ID="00:1001">0636055237</REF02>
+      </REF_7>
+      <REF_7 ID="1002" SegmentPosition="00">
+        <REF01 ID="00:1003">DP</REF01>
+        <REF02 ID="00:1004">00064</REF02>
+      </REF_7>
+      <REF_7 ID="1005" SegmentPosition="00">
+        <REF01 ID="00:1006">MR</REF01>
+        <REF02 ID="00:1007">0020</REF02>
+      </REF_7>
+      <REF_7 ID="1008" SegmentPosition="00">
+        <REF01 ID="00:1009">19</REF01>
+        <REF02 ID="00:1010">07</REF02>
+      </REF_7>
+      <REF_7 ID="1011" SegmentPosition="00">
+        <REF01 ID="00:1012">ST</REF01>
+        <REF02 ID="00:1013">0078742078021</REF02>
+      </REF_7>
+      <REF_7 ID="1014" SegmentPosition="00">
+        <REF01 ID="00:1015">MC</REF01>
+        <REF02 ID="00:1016">615303433</REF02>
+      </REF_7>
+      <DTM_7 ID="1017" SegmentPosition="00">
+        <DTM01 ID="00:1018">097</DTM01>
+        <DTM02 ID="00:1019">20220124</DTM02>
+      </DTM_7>
+      <ADXLoop2 ID="1020" SegmentPosition="00">
+        <ADX_2 ID="1021" SegmentPosition="00">
+          <ADX01 ID="00:1022">-152.06</ADX01>
+          <ADX02 ID="00:1023">82</ADX02>
+          <ADX03 ID="00:1024">CM</ADX03>
+          <ADX04 ID="00:1025">10078695</ADX04>
+        </ADX_2>
+        <REFLoop6 ID="1026" SegmentPosition="00">
+          <REF_10 ID="1027" SegmentPosition="00">
+            <REF01 ID="00:1028">6O</REF01>
+            <REF02 ID="00:1029">059</REF02>
+          </REF_10>
+        </REFLoop6>
+        <REFLoop6 ID="1030" SegmentPosition="00">
+          <REF_10 ID="1031" SegmentPosition="00">
+            <REF01 ID="00:1032">MC</REF01>
+            <REF02 ID="00:1033">000000025</REF02>
+          </REF_10>
+        </REFLoop6>
+      </ADXLoop2>
+    </RMRLoop1>
+    <RMRLoop1 ID="1034" SegmentPosition="00">
+      <RMR ID="1035" SegmentPosition="00">
+        <RMR01 ID="00:1036">IV</RMR01>
+        <RMR02 ID="00:1037">4561600122</RMR02>
+        <RMR03 ID="00:1038">PO</RMR03>
+        <RMR04 ID="00:1039">-5536</RMR04>
+        <RMR05 ID="00:1040">-5536</RMR05>
+      </RMR>
+      <REF_7 ID="1041" SegmentPosition="00">
+        <REF01 ID="00:1042">19</REF01>
+        <REF02 ID="00:1043">05</REF02>
+      </REF_7>
+      <REF_7 ID="1044" SegmentPosition="00">
+        <REF01 ID="00:1045">ST</REF01>
+        <REF02 ID="00:1046">0078742036373</REF02>
+      </REF_7>
+      <REF_7 ID="1047" SegmentPosition="00">
+        <REF01 ID="00:1048">MC</REF01>
+        <REF02 ID="00:1049">000072912</REF02>
+      </REF_7>
+      <DTM_7 ID="1050" SegmentPosition="00">
+        <DTM01 ID="00:1051">097</DTM01>
+        <DTM02 ID="00:1052">20220125</DTM02>
+      </DTM_7>
+    </RMRLoop1>
+    <RMRLoop1 ID="1053" SegmentPosition="00">
+      <RMR ID="1054" SegmentPosition="00">
+        <RMR01 ID="00:1055">IV</RMR01>
+        <RMR02 ID="00:1056">5800420220215</RMR02>
+        <RMR03 ID="00:1057">PO</RMR03>
+        <RMR04 ID="00:1058">151.2</RMR04>
+        <RMR05 ID="00:1059">151.2</RMR05>
+      </RMR>
+      <REF_7 ID="1060" SegmentPosition="00">
+        <REF01 ID="00:1061">19</REF01>
+        <REF02 ID="00:1062">05</REF02>
+      </REF_7>
+      <REF_7 ID="1063" SegmentPosition="00">
+        <REF01 ID="00:1064">ST</REF01>
+        <REF02 ID="00:1065">0078742035932</REF02>
+      </REF_7>
+      <REF_7 ID="1066" SegmentPosition="00">
+        <REF01 ID="00:1067">MC</REF01>
+        <REF02 ID="00:1068">000000035</REF02>
+      </REF_7>
+      <DTM_7 ID="1069" SegmentPosition="00">
+        <DTM01 ID="00:1070">097</DTM01>
+        <DTM02 ID="00:1071">20220215</DTM02>
+      </DTM_7>
+    </RMRLoop1>
+    <RMRLoop1 ID="1072" SegmentPosition="00">
+      <RMR ID="1073" SegmentPosition="00">
+        <RMR01 ID="00:1074">IV</RMR01>
+        <RMR02 ID="00:1075">5800420220216</RMR02>
+        <RMR03 ID="00:1076">PO</RMR03>
+        <RMR04 ID="00:1077">110.4</RMR04>
+        <RMR05 ID="00:1078">110.4</RMR05>
+      </RMR>
+      <REF_7 ID="1079" SegmentPosition="00">
+        <REF01 ID="00:1080">19</REF01>
+        <REF02 ID="00:1081">05</REF02>
+      </REF_7>
+      <REF_7 ID="1082" SegmentPosition="00">
+        <REF01 ID="00:1083">ST</REF01>
+        <REF02 ID="00:1084">0078742035932</REF02>
+      </REF_7>
+      <REF_7 ID="1085" SegmentPosition="00">
+        <REF01 ID="00:1086">MC</REF01>
+        <REF02 ID="00:1087">000000035</REF02>
+      </REF_7>
+      <DTM_7 ID="1088" SegmentPosition="00">
+        <DTM01 ID="00:1089">097</DTM01>
+        <DTM02 ID="00:1090">20220216</DTM02>
+      </DTM_7>
+    </RMRLoop1>
+  </ENTLoop1>
+  <SE ID="1091" SegmentPosition="00">
+    <SE01 ID="00:1092">277</SE01>
+    <SE02 ID="00:1093">101549</SE02>
+  </SE>
+</X12_00501_820>
