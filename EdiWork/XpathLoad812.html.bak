@@ -1,0 +1,650 @@
+<HTML>
+<style type="text/css"><!--BODY
+{
+    BACKGROUND-COLOR: white;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    MARGIN-BOTTOM: 3px;
+    MARGIN-TOP: 0px;
+    TEXT-ALIGN: left;
+    WORD-SPACING: 0px;
+    marginwidth: 0;
+    marginheight: 0
+}
+LI
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    LINE-HEIGHT: 150%;
+    MARGIN-TOP: 3px;
+    WORD-SPACING: 0px
+}
+P
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    LINE-HEIGHT: 150%;
+    MARGIN-TOP: 0px;
+    WORD-SPACING: 0px
+}
+TABLE
+{
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px
+}
+TABLE.border
+{
+    BORDER-BOTTOM: black thin solid;
+    BORDER-LEFT: black thin solid;
+    BORDER-RIGHT: black thin solid;
+    BORDER-TOP: black thin solid
+}
+BLOCKQUOTE
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    LINE-HEIGHT: 150%;
+    MARGIN-TOP: 0px;
+    WORD-SPACING: 0px
+}
+TD
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 2px;
+    PADDING-RIGHT: 8px;
+    PADDING-TOP: 0px;
+    WORD-SPACING: 0px
+}
+TR
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px;
+    WORD-SPACING: 0px;
+    LINE-SPACING: 0px
+}
+TEXTAREA
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 10pt;
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 2px;
+    PADDING-RIGHT: 8px;
+    PADDING-TOP: 0px;
+    WORD-SPACING: 0px
+}
+INPUT
+{
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px
+}
+SELECT
+{
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px
+}
+IMG
+{
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px;
+    PADDING-BOTTOM: 0px
+}
+ADDRESS
+{
+    COLOR: #808080;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 7.5pt;
+    FONT-STYLE: normal;
+    LINE-HEIGHT: 100%;
+    MARGIN-TOP: 10px
+}
+A:link
+{
+    COLOR: #004e9b;
+    TEXT-DECORATION: underline;
+    target: _top
+}
+A:visited
+{
+    COLOR: #cc9933;
+    TEXT-DECORATION: underline
+}
+A:hover
+{
+    COLOR: #b0c0d0;
+    TEXT-DECORATION: underline
+}
+H1
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 13pt;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 125%;
+    MARGIN-BOTTOM: 15px;
+    MARGIN-TOP: 12px;
+    TEXT-DECORATION: none
+}
+H2
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 125%;
+    MARGIN-BOTTOM: 15px;
+    MARGIN-TOP: 0px;
+    TEXT-DECORATION: none
+}
+H3
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    MARGIN: 0px 0px 5px;
+    WORD-SPACING: 0px
+}
+H4
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 11pt;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 100%;
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 10px;
+    TEXT-DECORATION: underline
+}
+H5
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: normal;
+    LINE-HEIGHT: 125%
+}
+H6
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 150%;
+    MARGIN-LEFT: 0px;
+    MARGIN-RIGHT: 0px;
+    MARGIN-TOP: 0px;
+    WORD-SPACING: 0px
+}
+.sectiontitle
+{
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold
+}
+.mandatory
+{
+    FONT-WEIGHT: bold
+}
+.disabled
+{
+    COLOR: graytext
+}
+#divControls
+{
+    POSITION: absolute;
+    VISIBILITY: hidden;
+    WIDTH: 200px;
+    Z-INDEX: 200
+}
+.clControls
+{
+    BACKGROUND-COLOR: infobackground;
+    BORDER-BOTTOM: #999999 1px solid;
+    BORDER-LEFT: #999999 1px solid;
+    BORDER-RIGHT: #999999 1px solid;
+    BORDER-TOP: #999999 1px solid;
+    COLOR: infotext;
+    FONT-FAMILY: verdana,arial,helvetica;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 3px;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    PADDING-TOP: 3px;
+    WIDTH: 150px
+}
+#divControl
+{
+    LEFT: 100px;
+    POSITION: absolute;
+    TOP: 200px;
+    Z-INDEX: 1
+}
+
+@media print {
+	BODY { margin-left: 30px; }
+}
+//--></style><style type="text/css">
+<!--
+	.clsBlurb { display:none; }
+//-->
+</style>
+<BODY link="" background="000000">
+<!--TOOLBAR_START--> 
+<!--TOOLBAR_EXEMPT--> 
+<!--TOOLBAR_END--> 
+<script LANGUAGE="JavaScript"> 
+<!-- 
+  // IF THE BROWSER IS MSIE4.0 FOR WINDOWS NT AND 95 ONLY, THEN bClickable = TRUE 
+ 
+	var sAgent = navigator.userAgent 
+   	var bIs95NT = sAgent.indexOf("Windows 95") > -1 || sAgent.indexOf("Windows 98") > -1 || sAgent.indexOf("Windows NT") > -1 || sAgent.indexOf("Win32") > -1  
+	var bIsIE4 = sAgent.indexOf("IE 4")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
+	var bIsIE5 = sAgent.indexOf("IE 5")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
+	var bClickable = true; //User will always have IE4 or greater 
+   
+  // DEFINE GLOBAL VARIABLES HERE 
+ 
+  document.onclick = doDocumentOnClick ; 
+  document.onmouseover = doDocumentOnMouseOver ; 
+  document.onmouseout = doDocumentOnMouseOut ; 
+   
+	function HideButton()  
+	{ 
+		var myvar = 999 
+		var itemnum
+		var hdrbtn = "IdHeaderButton" 
+		var sButtonId
+		if (bClickable)  
+		{ 
+			for(i=0; i<document.all.length; i++)  
+			{ 
+				if (document.all(i).id.indexOf("idButton") != -1) 
+				{
+					document.all(i).style.display = "none"; 
+				}
+				if (document.all(i).id.indexOf("idButtonImage") != -1) 
+				{
+					document.all(i).style.display = "none"; 
+				}
+			} 
+		} 
+	} 
+ 
+ 
+  /* 	IF bClickable IS TRUE, FIND OUT WHICH BLURB IS AFFECTED ONCLICK.  
+	 	IF THE BLURB'S DISPLAY IS NONE, DISPLAY BLURB.  
+		IF THE BLURB IS DISPLAYING, SET IT TO NOT DISPLAY.*/ 
+ 
+	function doDocumentOnClick()  
+	{ 
+		if (bClickable)  
+		{ 
+                  var eSrc = window.event.srcElement ; 
+			if (eSrc.className == "clsHeader" || eSrc.className == "clsHeaderButton" )  
+			{ 
+			 
+				var sId = "idBlurb" + eSrc.id.substring(eSrc.id.length-4,eSrc.id.length) ; 
+				if (document.all(sId).style.display == "block")  
+				{ 
+					document.all(sId).style.display = "none" ; 
+					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
+					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
+				} 
+        			else  
+		 		{ 
+          				document.all(sId).style.display = "block" ; 
+					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
+					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
+        			} 
+    		} 
+    		window.event.cancelBubble = true ; 
+    	} 
+  } 
+ 
+  // CHANGE HEADLINE COLOR ONMOUSEOVER 
+ 
+  function doDocumentOnMouseOver()  
+  { 
+  		var eSrc = window.event.srcElement ;  
+    	if (eSrc.className == "clsHeader") 
+		{
+      		document.all(eSrc.id).style.color= "" 
+    	}
+  }
+ 
+  // CHANGE HEADLINE COLOR ONMOUSEOUT
+ 
+  function doDocumentOnMouseOut() 
+  {
+  		var eSrc = window.event.srcElement ;
+    	if (eSrc.className == "clsHeader")
+		{
+      		document.all(eSrc.id).style.color= "#000000" 
+    	}
+  }
+//-->
+</script>
+<body>
+<!-- <BR><IMG BORDER=0 SRC="http://logoimages.sv.softshare.com/tpks/images/wmlogo.gif"/><BR> <table border="0" width="100%" > -->
+   <tr>
+     <td width="100%">
+     <H1>Credit/Debit Adjustment</H1>
+     </td>
+   </tr>
+ </table>
+<table cellpadding="0" border="0" width="100%">
+<tr>
+<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: Black; background-color:#1A75CF; padding: 2pt; color: White">General Information</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Beginning Credit/Debit Adjustment:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : {{BCD/BCD01}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit/Debit Adjustment Number
+    : {{BCD/BCD02}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Handling Code
+    : {{BCD/BCD03}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount
+    : {{BCD/BCD04}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit/Debit Flag Code
+    : {{BCD/BCD05}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : {{BCD/BCD06}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoice Number
+    : {{BCD/BCD07}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : {{BCD/BCD09}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number
+    : {{BCD/BCD10}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Set Purpose Code
+    : {{BCD/BCD11}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Type Code
+    : {{BCD/BCD12}}
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Currency:</b>
+USD
+</td><tr></table>
+<table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table></table>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Extended Reference Information:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : Internal Vendor Number
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : 456160950
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Extended Reference Information:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : Microfilm Number
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : 25
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Extended Reference Information:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : Department Number
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : 95
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Extended Reference Information:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : Merchandise Type Code
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : 0020
+    </td></tr>
+</table><br>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Contact Information: </b>
+</td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr>
+<td width="50%" align="left" valign="top" >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer Relations
+    : WALMART INC.
+  <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone
+    : 4792734089
+  <BR>
+</td>
+</tr></table><BR>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
+<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Original Claimant: </b>
+</td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td border="0" width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WALMART INC. (Global Location Number (GLN): 0078742042220)</td> 
+</tr> 
+</table>
+</td>
+<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Supplier/Manufacturer: </b>
+</td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td border="0" width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MILLENNIUM PRODUCTS INC</td> 
+</tr> 
+</table>
+</td>
+</tr><tr>
+</tr></table><BR>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Credit/Debit Adjustment Detail:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code
+    : Pricing Error
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit/Debit Flag Code
+    : Debit
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assigned Identification
+    : 1
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount
+    : 102.47
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price Identifier Code
+    : Unit cost price
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit Price
+    : 0
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit Price
+    : 102.4696
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Message Text
+    : PRICE DIFFERENCE AS DOCUMENTED
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Extended Reference Information:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : Cross Reference Number
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : 010
+    </td></tr>
+</table><br>
+</table></table></table><BR><BR><BR><BR><a href="http://www.liaison.com/" target="_external" onmouseout="window.status='';return true;" onmouseover="window.status='Visit www.liaison.com';return true;" style="color:8E8E8E">&copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script> Liaison Technologies, Inc., All Rights Reserved.</a></BODY>
+</HTML><script LANGUAGE="JavaScript"> 
+	function collapseAll()  
+	{ 
+		var myvar = 999 
+		var itemnum
+		var hdrbtn = "IdHeaderButton" 
+		var sButtonId
+		if (bClickable)  
+		{ 
+			for(i=0; i<document.all.length; i++)  
+			{ 
+				if (document.all(i).id.indexOf("idHeader") != -1) 
+				{
+				}
+				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
+				{
+					myvar = myvar + 1 
+					itemnum = (myvar).toString()
+					sButtonId = hdrbtn + itemnum 
+					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
+				}
+				if (document.all(i).id.indexOf("idBlurb") != -1) 
+				{
+					document.all(i).style.display = "none"; 
+				}
+			} 
+		} 
+	} 
+	function bExpandAll()  
+	{ 
+		var myvar = 999 
+		var itemnum
+		var hdrbtn = "IdHeaderButton" 
+		var sButtonId
+		if (bClickable)  
+		{ 
+			for(i=0; i<document.all.length; i++)  
+			{ 
+				if (document.all(i).id.indexOf("idHeader") != -1) 
+				{
+					document.all(i).style.display = "block"; 
+				}
+				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
+				{
+					document.all(i).style.display = "block"; 
+					myvar = myvar + 1 
+					itemnum = (myvar).toString()
+					sButtonId = hdrbtn + itemnum 
+					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
+				}
+				if (document.all(i).id.indexOf("idBlurb") != -1) 
+				{
+					document.all(i).style.display = "block"; 
+				}
+			} 
+		} 
+	} 
+</script>
+</HTML>

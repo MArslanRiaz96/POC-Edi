@@ -1,0 +1,85 @@
+<X12_00501_812 ID="1">
+  <ST ID="2" SegmentPosition="00">
+    <ST01 ID="00:3">812</ST01>
+    <ST02 ID="00:4">4274650</ST02>
+  </ST>
+  <BCD ID="5" SegmentPosition="00">
+    <BCD01 ID="00:6">20220519</BCD01>
+    <BCD02 ID="00:7">000000010078999</BCD02>
+    <BCD03 ID="00:8">A</BCD03>
+    <BCD04 ID="00:9">102.47</BCD04>
+    <BCD05 ID="00:10">D</BCD05>
+    <BCD06 ID="00:11">20220516</BCD06>
+    <BCD07 ID="00:12">000000010078999</BCD07>
+    <BCD08 ID="00:13">002680</BCD08>
+    <BCD09 ID="00:14">20220506</BCD09>
+    <BCD10 ID="00:15">0637974885</BCD10>
+    <BCD11 ID="00:16">00</BCD11>
+    <BCD12 ID="00:17">DR</BCD12>
+    <BCD13 ID="00:18">BT</BCD13>
+    <BCD14 ID="00:19">022139</BCD14>
+  </BCD>
+  <CUR ID="26" SegmentPosition="00">
+    <CUR01 ID="00:27">PR</CUR01>
+    <CUR02 ID="00:28">USD</CUR02>
+  </CUR>
+  <PER ID="20" SegmentPosition="00">
+    <PER01 ID="00:21">AD</PER01>
+    <PER02 ID="00:22">RASC</PER02>
+    <PER03 ID="00:23">TE</PER03>
+    <PER04 ID="00:24">615-232-9500</PER04>
+  </PER>
+  <N1Loop1 ID="25" SegmentPosition="00">
+    <N1 ID="26" SegmentPosition="00">
+      <N101 ID="00:27">BY</N101>
+      <N102 ID="00:28">KING SOOPERS</N102>
+      <N103 ID="00:29">9</N103>
+      <N104 ID="00:30">0319715943800</N104>
+    </N1>
+  </N1Loop1>
+  <N1Loop1 ID="31" SegmentPosition="00">
+    <N1 ID="32" SegmentPosition="00">
+      <N101 ID="00:33">VN</N101>
+      <N102 ID="00:34">WESTERN SUGAR COOPERATIVE</N102>
+      <N103 ID="00:35">1</N103>
+      <N104 ID="00:36">002680</N104>
+    </N1>
+    <N3 ID="37" SegmentPosition="00">
+      <N301 ID="00:38">3289 SOLUTIONS CTR</N301>
+    </N3>
+    <N4 ID="39" SegmentPosition="00">
+      <N401 ID="00:40">CHICAGO</N401>
+      <N402 ID="00:41">IL</N402>
+      <N403 ID="00:42">606773002</N403>
+    </N4>
+  </N1Loop1>
+  <CDDLoop1 ID="43" SegmentPosition="00">
+    <CDD ID="44" SegmentPosition="00">
+      <CDD01 ID="00:45">07</CDD01>
+      <CDD02 ID="00:46">C</CDD02>
+      <CDD03 ID="00:47" />
+      <CDD04 ID="00:48">105120</CDD04>
+      <CDD05 ID="00:49" />
+      <CDD06 ID="00:50" />
+      <CDD07 ID="00:51">60</CDD07>
+      <CDD08 ID="00:52">CA</CDD08>
+      <CDD09 ID="00:53" />
+      <CDD10 ID="00:54">UCP</CDD10>
+      <CDD11 ID="00:55">17.52</CDD11>
+    </CDD>
+    <LIN ID="56" SegmentPosition="00">
+      <LIN01 ID="00:57" />
+      <LIN02 ID="00:58">UK</LIN02>
+      <LIN03 ID="00:59">10023200000226</LIN03>
+    </LIN>
+    <N9_3 ID="60" SegmentPosition="00">
+      <N901 ID="00:61">LI</N901>
+      <N902 ID="00:62" />
+      <N903 ID="00:63">10/4# GRAN - GW</N903>
+    </N9_3>
+  </CDDLoop1>
+  <SE ID="64" SegmentPosition="00">
+    <SE01 ID="00:65">11</SE01>
+    <SE02 ID="00:66">4274650</SE02>
+  </SE>
+</X12_00501_812>
