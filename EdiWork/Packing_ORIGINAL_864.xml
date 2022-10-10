@@ -1,0 +1,58 @@
+<X12_00501_864 ID="1">
+  <ST ID="2" SegmentPosition="00">
+    <ST01 ID="00:3">864</ST01>
+    <ST02 ID="00:4">100439</ST02>
+  </ST>
+  <BMG ID="5" SegmentPosition="00">
+    <BMG01 ID="00:6">00</BMG01>
+    <BMG02 ID="00:7">THESE DOCUMENTS WILL NOT BE PROCESSED.</BMG02>
+    <BMG03 ID="00:8">03</BMG03>
+  </BMG>
+  <N1Loop1 ID="9" SegmentPosition="00">
+    <N1 ID="10" SegmentPosition="00">
+      <N101 ID="00:11">FR</N101>
+      <N102 ID="00:12">WAL MART D.C. 6085</N102>
+      <N103 ID="00:13">UL</N103>
+      <N104 ID="00:14">0078742000008</N104>
+    </N1>
+  </N1Loop1>
+  <N1Loop1 ID="15" SegmentPosition="00">
+    <N1 ID="16" SegmentPosition="00">
+      <N101 ID="00:17">TO</N101>
+      <N102 ID="00:18">MILLENNIUM PRODUCTS INC</N102>
+    </N1>
+    <REF ID="19" SegmentPosition="00">
+      <REF01 ID="00:20">IA</REF01>
+      <REF02 ID="00:21">456160</REF02>
+    </REF>
+    <REF ID="22" SegmentPosition="00">
+      <REF01 ID="00:23">IV</REF01>
+      <REF02 ID="00:24">000000010082687</REF02>
+    </REF>
+  </N1Loop1>
+  <MITLoop1 ID="25" SegmentPosition="00">
+    <MIT ID="26" SegmentPosition="00">
+      <MIT01 ID="00:27">PLEASE CORRECT AND RESEND.</MIT01>
+      <MIT02 ID="00:28">THESE DOCUMENTS WILL NOT BE PROCESSED.</MIT02>
+    </MIT>
+    <MSG ID="29" SegmentPosition="00">
+      <MSG01 ID="00:30">SEGMENT      ELEMENT      ERROR</MSG01>
+    </MSG>
+    <MSG ID="31" SegmentPosition="00">
+      <MSG01 ID="00:32">INVOICE NUMBER    PO NUMBER     ID        POS - REF      DATA                  </MSG01>
+    </MSG>
+    <MSG ID="33" SegmentPosition="00">
+      <MSG01 ID="00:34">  COMMENTS</MSG01>
+    </MSG>
+    <MSG ID="35" SegmentPosition="00">
+      <MSG01 ID="00:36">10082687   0655322341     PO4       999 - 999     007224309400              NO</MSG01>
+    </MSG>
+    <MSG ID="37" SegmentPosition="00">
+      <MSG01 ID="00:38">PO4 SEG TO MATCH IT1 SENT AS CA   PROD</MSG01>
+    </MSG>
+  </MITLoop1>
+  <SE ID="39" SegmentPosition="00">
+    <SE01 ID="00:40">13</SE01>
+    <SE02 ID="00:41">100439</SE02>
+  </SE>
+</X12_00501_864>

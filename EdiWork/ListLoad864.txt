@@ -1,0 +1,91 @@
+{{BMG/BMG01}}  00=Original
+{{BMG/BMG02}}
+{{BMG/BMG03}} 03=Report Message
+
+{{N1/N102-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N102
+{{N1/N103-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N103 UL=6085 (Global Location Number (GLN)
+{{N1/N104-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N104
+
+{{N1/N102-N101 = 'TO'}} //N1Loop1[N1[N101 = 'TO']]/N1/N102
+
+{{REF/REF02-REF01 = 'IA'}} //N1Loop1[REF[REF01 = 'IA']]/REF[REF01 = 'IA']/REF02
+
+{{REF/REF02-REF01 = 'IV'}} //N1Loop1[REF[REF01 = 'IV']]/REF[REF01 = 'IV']/REF02
+
+{{MIT/MIT01}} //MITLoop1[MIT]/MIT/MIT01
+{{MIT/MIT02}} //MITLoop1[MIT]/MIT/MIT02
+
+
+{{MSG/MSG01}}   //ConcatinationUsingSameXPath = true,
+
+
+
+
+
+
+
+
+
+
+
+{{BCD/BCD01}} date
+{{BCD/BCD02}}
+{{BCD/BCD03}} A= Off Invoice (Deduction from Original Invoice)
+{{BCD/BCD04}}
+{{BCD/BCD05}} D= Debit
+{{BCD/BCD06}} date
+{{BCD/BCD07}}
+{{BCD/BCD09}} date
+{{BCD/BCD10}}
+{{BCD/BCD11}} 00= Original
+{{BCD/BCD12}} DR= Debit Memo
+
+{{CUR/CUR02-CUR01 = 'BY'}} //CUR[CUR01 = 'BY']/CUR02
+
+{{N9/N901-N901 = 'IA'}} //N9[N901 = 'IA']/N901 IA=Internal Vendor Number
+{{N9/N902-N901 = 'IA'}} //N9[N901 = 'IA']/N902
+
+{{N9/N901-N901 = 'MC'}} //N9[N901 = 'MC']/N901 MC=Microfilm Number
+{{N9/N902-N901 = 'MC'}} //N9[N901 = 'MC']/N902
+
+{{N9/N901-N901 = 'DP'}} //N9[N901 = 'DP']/N901 DP=Department Number 
+{{N9/N902-N901 = 'DP'}} //N9[N901 = 'DP']/N902
+
+{{N9/N901-N901 = 'MR'}} //N9[N901 = 'MR']/N901 MR=Merchandise Type Code 
+{{N9/N902-N901 = 'MR'}} //N9[N901 = 'MR']/N902
+
+{{PER/PER02-PER01 = 'CR'}} //PER[PER01 = 'CR']/PER02
+{{PER/PER04-PER01 = 'CR'}} //PER[PER01 = 'CR']/PER04
+
+{{N1/N102-N101 = 'XI'}} //N1Loop1[N1[N101 = 'XI']]/N1/N102
+{{N1/N103-N101 = 'XI'}} //N1Loop1[N1[N101 = 'XI']]/N1/N103 UL = Global Location Number (GLN)
+{{N1/N104-N101 = 'XI'}} //N1Loop1[N1[N101 = 'XI']]/N1/N104
+
+{{N1/N102-N101 = 'SU'}} //N1Loop1[N1[N101 = 'SU']]/N1/N102
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Credit/Debit Adjustment Detail: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code : {{CDD/CDD01}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit/Debit Flag Code : {{CDD/CDD02}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assigned Identification : {{CDD/CDD03}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount : {{CDD/CDD04}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price Identifier Code : {{CDD/CDD10}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit Price : {{CDD/CDD11}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit Price : {{CDD/CDD13}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Message Text : {{CDD/CDD14}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Extended Reference Information: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{N9_3/N901}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{N9_3/N902}} </td></tr> </table><br>
+{{LinedItemHtml}}   //CDDLoop1
+{{CDD/CDD01}} 01 = Pricing Error  //CDDLoop1/CDD/CDD01
+{{CDD/CDD02}} D=Debit 
+{{CDD/CDD03}}
+{{CDD/CDD04}}
+{{CDD/CDD10}} UCP=Unit cost price
+{{CDD/CDD11}}
+{{CDD/CDD13}}
+{{CDD/CDD14}}
+
+{{N9_3/N901}} 6O=Cross Reference Number
+{{N9_3/N902}}
+
+
+
+
+
+
+
+
+
+
+
+
