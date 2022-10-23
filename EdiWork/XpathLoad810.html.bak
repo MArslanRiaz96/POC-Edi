@@ -335,7 +335,7 @@ H6
  <table border="0" width="100%" >
    <tr>
      <td width="100%">
-     <H1>Warehouse Shipping Advice</H1>
+     <H1>Invoice</H1>
      </td>
    </tr>
  </table>
@@ -347,106 +347,119 @@ H6
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Warehouse Shipment Identification:
+<b>Beginning Segment for Invoice:
 </b></td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reporting Code
-    : {{W06/W0601}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : {{BIG/BIG01}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depositor Order Number
-    : {{W06/W0602}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoice Number
+    : {{BIG/BIG02}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{W06/W0603}}
+    : {{BIG/BIG03}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Identification Number
-    : {{W06/W0604}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number
+    : {{BIG/BIG04}}
     </td></tr>
 </table><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+<table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Bill-to-Party: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'BT'}}</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'BT'}}</td></tr>  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'BT'}},  {{N4/N402-N101 = 'BT'}} {{N4/N403-N101 = 'BT'}} {{N4/N404-N101 = 'BT'}}</td></tr></table>
-</td>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Ship From: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({{N1/N103-N101 = 'SF'}}: {{N1/N104-N101 = 'SF'}})</td> 
-</tr> 
+<b>Reference Identification: </b>
+</td></tr>
 </table>
-</td>
-</tr><tr>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number
+    : {{REF/REF02-REF01 = 'DP'}}  </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internal Vendor Number
+    : {{REF/REF02-REF01 = 'IA'}}    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
 <b>Ship To: </b>
 </td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'ST'}}</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'ST'}}</td></tr>  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} {{N4/N404-N101 = 'ST'}}</td></tr></table>
+ {{ShipHtml}}
+</table>
 </td>
 </tr></table><BR>
-{{ReferenceHtml}}
-
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Date/Time:
+<b>Terms of Sale/Deferred Terms of Sale:
 </b></td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Qualifier
-    : {{G62/G6201}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Type Code
+    : {{ITD/ITD01}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{G62/G6202}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Basis Date Code
+    : {{ITD/ITD02}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Qualifier
-    : {{G62/G6203}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Discount Days Due
+    : {{ITD/ITD05}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time
-    : {{G62/G6204}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms Net Days
+    : {{ITD/ITD07}}
     </td></tr>
 </table><br>
+<table cellpadding="0" border="0" width="100%">
+<tr>
+<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">Line Item Information</td>
+</tr>
+</table>
+<table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1" 
+   <tr> 
+     <td width="10%"><b>Line</b></td> 
+     <td width="47%"><b>Description</b></td> 
+     <td width="10%"><b>Quan</b></td> 
+     <td width="5%"><b>UI</b></td> 
+     <td width="10%"><b>Price($)</b></td> 
+     <td width="15%"><b>  Total($)</b></td> 
+   </tr> 
+   {{LinesHtml}}
+   
+   <tr> 
+     <td width="15"></td> 
+     <td width="55%" colspan="5"> 
+</td> 
+   </tr> 
+<hr width="100%" align="left" size="1" color="#C0C0C0">
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Total Monetary Value Summary: </b>
+</td></tr></table></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total: $
+ {{TDS/TDS01}}
+    </td></tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="100%" valign="top" align="left">
@@ -455,18 +468,30 @@ H6
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation Method/Type Code
-    :{{W27/W2701}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Routing
+    : {{CAD/CAD05}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Carrier Alpha Code
-    : {{W27/W2702}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : {{CAD/CAD07}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : {{CAD/CAD08}}
     </td></tr>
 </table><br>
-
-{{WarehousDetailsHtml}}
-</table></table></table><BR><BR><BR><BR></BODY>
+</td></tr></table>
+<br>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="25%" valign="top" align="left">
+    <b>Line Count: </b>
+{{CTT/CTT01}}
+   </td></tr>
+</table>
+</table></table></table><BR><BR><BR><BR><a href="http://www.liaison.com/" target="_external" onmouseout="window.status='';return true;" onmouseover="window.status='Visit www.liaison.com';return true;" style="color:8E8E8E">&copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script> Liaison Technologies, Inc., All Rights Reserved.</a></BODY>
 </HTML><script LANGUAGE="JavaScript"> 
 	function collapseAll()  
 	{ 

@@ -332,141 +332,202 @@ H6
 //-->
 </script>
 <body>
- <table border="0" width="100%" >
+<!-- <BR><IMG BORDER=0 SRC="http://logoimages.sv.softshare.com/tpks/images/wmlogo.gif"/><BR> <table border="0" width="100%" > -->
    <tr>
      <td width="100%">
-     <H1>Warehouse Shipping Advice</H1>
+     <H1>Credit/Debit Adjustment</H1>
      </td>
    </tr>
  </table>
 <table cellpadding="0" border="0" width="100%">
 <tr>
-<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">General Information</td>
+<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: Black; background-color:#1A75CF; padding: 2pt; color: White">General Information</td>
 </tr>
 </table>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Warehouse Shipment Identification:
+<b>Beginning Credit/Debit Adjustment:
 </b></td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reporting Code
-    : {{W06/W0601}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : {{BCD/BCD01}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depositor Order Number
-    : {{W06/W0602}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit/Debit Adjustment Number
+    : {{BCD/BCD02}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Handling Code
+    : {{BCD/BCD03}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount
+    : {{BCD/BCD04}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit/Debit Flag Code
+    : {{BCD/BCD05}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{W06/W0603}}
+    : {{BCD/BCD06}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Identification Number
-    : {{W06/W0604}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoice Number
+    : {{BCD/BCD07}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : {{BCD/BCD09}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number
+    : {{BCD/BCD10}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Set Purpose Code
+    : {{BCD/BCD11}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Type Code
+    : {{BCD/BCD12}}
     </td></tr>
 </table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Currency:</b>
+{{CUR/CUR02-CUR01 = 'BY'}}
+</td><tr></table>
+<table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table></table>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Extended Reference Information:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : {{N9/N901-N901 = 'IA'}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : {{N9/N902-N901 = 'IA'}}
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Extended Reference Information:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : {{N9/N901-N901 = 'MC'}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : {{N9/N902-N901 = 'MC'}}
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Extended Reference Information:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : {{N9/N901-N901 = 'DP'}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : {{N9/N902-N901 = 'DP'}}
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Extended Reference Information:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
+    : {{N9/N901-N901 = 'MR'}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : {{N9/N902-N901 = 'MR'}}
+    </td></tr>
+</table><br>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Contact Information: </b>
+</td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr>
+<td width="50%" align="left" valign="top" >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer Relations
+    : {{PER/PER02-PER01 = 'CR'}}
+  <BR>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone
+    : {{PER/PER04-PER01 = 'CR'}}
+  <BR>
+</td>
+</tr></table><BR>
 <table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Bill-to-Party: </b>
+<b>Original Claimant: </b>
 </td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'BT'}}</td> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'XI'}} ({{N1/N103-N101 = 'XI'}}: {{N1/N104-N101 = 'XI'}})</td> 
 </tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'BT'}}</td></tr>  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'BT'}},  {{N4/N402-N101 = 'BT'}} {{N4/N403-N101 = 'BT'}} {{N4/N404-N101 = 'BT'}}</td></tr></table>
+</table>
 </td>
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Ship From: </b>
+<b>Supplier/Manufacturer: </b>
 </td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({{N1/N103-N101 = 'SF'}}: {{N1/N104-N101 = 'SF'}})</td> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'SU'}}</td> 
 </tr> 
 </table>
 </td>
 </tr><tr>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Ship To: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'ST'}}</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'ST'}}</td></tr>  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} {{N4/N404-N101 = 'ST'}}</td></tr></table>
-</td>
 </tr></table><BR>
-{{ReferenceHtml}}
 
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Date/Time:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Qualifier
-    : {{G62/G6201}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{G62/G6202}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Qualifier
-    : {{G62/G6203}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time
-    : {{G62/G6204}}
-    </td></tr>
-</table><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Carrier Detail:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation Method/Type Code
-    :{{W27/W2701}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Carrier Alpha Code
-    : {{W27/W2702}}
-    </td></tr>
-</table><br>
+{{LinedItemHtml}}
 
-{{WarehousDetailsHtml}}
-</table></table></table><BR><BR><BR><BR></BODY>
+</table></table></table><BR><BR><BR><BR><a href="http://www.liaison.com/" target="_external" onmouseout="window.status='';return true;" onmouseover="window.status='Visit www.liaison.com';return true;" style="color:8E8E8E">&copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script> Liaison Technologies, Inc., All Rights Reserved.</a></BODY>
 </HTML><script LANGUAGE="JavaScript"> 
 	function collapseAll()  
 	{ 
