@@ -1,0 +1,58 @@
+{{BPR/BPR01}} I= Remittance Information Only
+{{BPR/BPR02}}
+{{BPR/BPR03}} C= Credit
+{{BPR/BPR04}} CHK= Check
+{{BPR/BPR16}} date
+{{BPR/BPR17}} VEN= Vendor Payment
+
+{{TRN/TRN01}} 3= Financial Reassociation Trace Number
+{{TRN/TRN02}}
+
+{{CUR/CUR02-CUR01 = 'PR'}} //CUR[CUR01 = 'PR']/CUR02
+
+{{N1/N102-N101= 'PR'}} //N1Loop1[N1[N101 = 'PR']]/N1/N102
+{{N1/N103-N101= 'PR'}} //N1Loop1[N1[N101 = 'PR']]/N1/N103 UL= Global Location Number (GLN)
+{{N1/N104-N101= 'PR'}} //N1Loop1[N1[N101 = 'PR']]/N1/N104
+
+{{N1/N102-N101= 'PE'}} //N1Loop1[N1[N101 = 'PE']]/N1/N102
+
+{{N1/REF02-REF01= 'IA'}} //N1Loop1[REF_2[REF01 = 'IA']]/REF_2/REF02
+
+{{TRN/TRN01}} //ENTLoop1[ENT]/ENT/ENT01
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Remittance Advice Accounts Receivable Open Item Reference: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{RMR/RMR01}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{RMR/RMR02}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code : {{RMR/RMR03}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount : {{RMR/RMR04}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount : {{RMR/RMR05}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount : {{RMR/RMR06}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Reference Information: </b> </td></tr> </table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number : {{REF_7/REF02-REF01 = 'PO'}}    </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number : {{REF_7/REF02-REF01 = 'DP'}}   </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code : {{REF_7/REF02-REF01 = 'MR'}}   </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier : {{REF_7/REF02-REF01 = '19'}}    </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number : {{REF_7/REF02-REF01 = 'ST'}}    </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number : {{REF_7/REF02-REF01 = 'MC'}}   </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Date/Time Reference </b></td></tr> </table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation : {{DTM_7/DTM02-DTM01 = '097'}}    </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Adjustment: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount : {{ADX_2/ADX01}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code : {{ADX_2/ADX02}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : {{ADX_2/ADX03}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : {{ADX_2/ADX04}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Reference Information: </b> </td></tr> </table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number : {{REF_10/REF02-REF01 = '6O'}}    </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number : {{REF_10/REF02-REF01 = 'MC'}}   </td></tr> </table><br>
+{{LinedItemHtml}} //POCLoop1[POC]  //ENTLoop1[RMRLoop1]//RMRLoop1[RMR]
+
+{{RMR/RMR01}} IV = Seller's Invoice Number
+{{RMR/RMR02}}
+{{RMR/RMR03}} PO= Payment on Account
+{{RMR/RMR04}} 
+{{RMR/RMR05}} 
+{{RMR/RMR06}} 
+
+{{REF_7/REF02-REF01 = 'PO'}} //REF_7[REF01 = 'PO']/REF02
+
+{{REF_7/REF02-REF01 = 'DP'}} //REF_7[REF01 = 'DP']/REF02
+
+{{REF_7/REF02-REF01 = 'MR'}} //REF_7[REF01 = 'MR']/REF02
+
+{{REF_7/REF02-REF01 = '19'}} //REF_7[REF01 = '19']/REF02
+
+{{REF_7/REF02-REF01 = 'ST'}} //REF_7[REF01 = 'ST']/REF02
+
+{{REF_7/REF02-REF01 = 'MC'}} //REF_7[REF01 = 'MC']/REF02
+
+{{DTM_7/DTM02-DTM01 = '097'}} //DTM_7[DTM01 = '097']/DTM02   date
+
+{{ADX_2/ADX01}} //ADXLoop2[ADX_2]/ADX_2/ADX01
+{{ADX_2/ADX02}} //ADXLoop2[ADX_2]/ADX_2/ADX02  01= Pricing Error
+{{ADX_2/ADX03}} //ADXLoop2[ADX_2]/ADX_2/ADX03  CM= Buyer's Credit Memo
+{{ADX_2/ADX04}} //ADXLoop2[ADX_2]/ADX_2/ADX04  
+
+{{REF_10/REF02-REF01 = '6O'}} //ADXLoop2[ADX_2]/REFLoop6[REF_10[REF01 = '6O']]/REF_10/REF02
+
+{{REF_10/REF02-REF01 = 'MC'}} //ADXLoop2[ADX_2]/REFLoop6[REF_10[REF01 = 'MC']]/REF_10/REF02
+
+
+
