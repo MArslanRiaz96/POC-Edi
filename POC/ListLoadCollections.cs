@@ -3511,6 +3511,165 @@ namespace POC
             //}
             //}
 
-        };
+
+
+            new HumanReadableConfiguration()
+            {
+            TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad846.html"),
+            TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad846Updated.html"),
+            PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGINAL_846.xml"),
+            TemplateSetCode = 846,
+            KDIVersion = "",
+            configurations = new List<Configuration>() {
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//BIA/BIA01", PlaceHolder = "{{BIA/BIA01}}", DefaultValue = "", MappingRequired= true},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//BIA/BIA02", PlaceHolder = "{{BIA/BIA02}}", DefaultValue = "", MappingRequired= true},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//BIA/BIA03", PlaceHolder = "{{BIA/BIA03}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//BIA/BIA04", PlaceHolder = "{{BIA/BIA04}}", DefaultValue = "", DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" } },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//BIA/BIA05", PlaceHolder = "{{BIA/BIA05}}", DefaultValue = "",TimeFormat= new TimeFormat() { SourceFormat = "HHmmss",TargetFormat = "hh:mm:ss tt"} },
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//REF/REF02", PlaceHolder = "{{REF/REF02}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//REF/REF03", PlaceHolder = "{{REF/REF03}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//CTT/CTT01", PlaceHolder = "{{CTT/CTT01}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = null,
+                LineLevel = new LineLevel()
+                {
+                    HTML = "<table style=\"border: 0px; border-style: solid; border-color: black; padding: 2pt; \" WIDTH=\"638\">   <tr><td width=\"100%\" class=\"sectiontitle\"><font face=\"Arial\" color=\"#D60D00\">Line Item</font></td></tr>   <tr><td width=\"100%\">   </center></div>    <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td>   <b>Part Numbers</b>   </td></tr></table>   <table border=\"0\" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\"    bordercolor=\"#808080\" bordercolorlight=\"#C0C0C0\" bordercolordark=\"#808080\"   background=\"res://VistaRes.Dll/legalpad.gif\">    <TR><TD WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{LIN/LIN02}}</TD><TD BGCOLOR=\"#FFFFFF\">{{LIN/LIN03}}</TD></TR>   <TR><TD WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{LIN/LIN04}}</TD><TD BGCOLOR=\"#FFFFFF\">{{LIN/LIN05}}</TD></TR>   <TR><TD WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{LIN/LIN06}}</TD><TD BGCOLOR=\"#FFFFFF\">{{LIN/LIN07}}</TD></TR>   </TR>   </table>   <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table>   <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">   <tr>   <td width=\"1%\" valign=\"top\">   </td>   <td width = \"99%\"><table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" >    <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   <b>Product/Item Description:   </b></td></tr>   <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   </b>{{PID/PID05}}<br>    </td></tr>   </table></td></tr></table>   <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table>   <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">   <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   <b>Quantity:   </b></td></tr></table>   <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" >    <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier   : {{QTY/QTY01}}   </td></tr>   <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity   : {{QTY/QTY02}}   </td></tr>   <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure   : {{QTY/QTY03}}   </td></tr>   </table><br>   <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">   <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   <b>Line Item Schedule:   </b></td></tr></table>   <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" >    <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity   : {{SCH/SCH01}}   </td></tr>   <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code   : {{SCH/SCH02}}   </td></tr>   <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier   : {{SCH/SCH05}}   </td></tr>   <tr>    <td width=\"100%\" valign=\"top\" align=\"left\">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date   : {{SCH/SCH06}}   </td></tr>   </table><br>   </td></tr>   </table><br>   <hr style=\"height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; \" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" >",
+                    LineLevelXPath = "//LINLoop1[LIN]",
+                    PlaceHolder = "{{LinedItemHtml}}",
+                    XPathConnfigs = new List<XPathConnfig>() {
+                    new XPathConnfig()
+                    {
+                        XPath="//LIN/LIN02",
+                        PlaceHolder="{{LIN/LIN02}}",
+                        DefaultValue="",
+                        MappingRequired= true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LIN/LIN03",
+                        PlaceHolder="{{LIN/LIN03}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LIN/LIN04",
+                        PlaceHolder="{{LIN/LIN04}}",
+                        DefaultValue="",
+                        MappingRequired= true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LIN/LIN05",
+                        PlaceHolder="{{LIN/LIN05}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LIN/LIN06",
+                        PlaceHolder="{{LIN/LIN06}}",
+                        DefaultValue="",
+                        MappingRequired= true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//LIN/LIN07",
+                        PlaceHolder="{{LIN/LIN07}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//PID/PID05",
+                        PlaceHolder="{{PID/PID05}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//QTY/QTY01",
+                        PlaceHolder="{{QTY/QTY01}}",
+                        DefaultValue="",
+                        MappingRequired= true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//QTY/QTY02",
+                        PlaceHolder="{{QTY/QTY02}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//QTY/QTY03",
+                        PlaceHolder="{{QTY/QTY03}}",
+                        DefaultValue="",
+                        MappingRequired= true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//SCH/SCH01",
+                        PlaceHolder="{{SCH/SCH01}}",
+                        DefaultValue=""
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//SCH/SCH02",
+                        PlaceHolder="{{SCH/SCH02}}",
+                        DefaultValue="",
+                        MappingRequired= true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//SCH/SCH05",
+                        PlaceHolder="{{SCH/SCH05}}",
+                        DefaultValue="",
+                        MappingRequired= true
+                    },
+                    new XPathConnfig()
+                    {
+                        XPath="//SCH/SCH06",
+                        PlaceHolder="{{SCH/SCH06}}",
+                        DefaultValue="", 
+                        DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" }
+                    }
+
+                }
+                }
+                }
+
+        }
+            }
+
+};
     }
 }

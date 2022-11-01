@@ -332,3064 +332,2050 @@ H6
 //-->
 </script>
 <body>
- <table border="0" width="100%" >
    <tr>
      <td width="100%">
-     <H1>Payment Order/Remittance Advice</H1>
+     <H1>Inventory Inquiry/Advice</H1>
      </td>
    </tr>
  </table>
 <table cellpadding="0" border="0" width="100%">
 <tr>
-<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">General Information</td>
+<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: Black; background-color:#D60D00; padding: 2pt; color: White">General Information</td>
 </tr>
 </table>
-<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="25%" valign="top" align="left">
-    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Handling Code
-    : </b></td> 
-    </b><td width="42%" valign="top" align="left">
-{{BPR/BPR01}}</td> 
-    <b> 
-  </tr> 
-  <tr> 
-    <td width="25%" valign="top" align="left">
-    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount
-    : </b></td> 
-    </b><td width="42%" valign="top" align="left">
-{{BPR/BPR02}}</td> 
-    <b> 
-  </tr> 
-  <tr> 
-    <td width="25%" valign="top" align="left">
-    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit/Debit Flag Code
-    : </b></td> 
-    </b><td width="42%" valign="top" align="left">
-{{BPR/BPR03}}</td> 
-    <b> 
-  </tr> 
-  <tr> 
-    <td width="25%" valign="top" align="left">
-    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Method Code
-    : </b></td> 
-    </b><td width="42%" valign="top" align="left">
-{{BPR/BPR04}}</td> 
-    <b> 
-  </tr> 
-  <tr> 
-    <td width="25%" valign="top" align="left">
-    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : </b></td> 
-    </b><td width="42%" valign="top" align="left">
-{{BPR/BPR16}}</td> 
-    <b> 
-  </tr> 
-  <tr> 
-    <td width="25%" valign="top" align="left">
-    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Business Function Code
-    : </b></td> 
-    </b><td width="42%" valign="top" align="left">
-{{BPR/BPR17}}</td> 
-    <b> 
-  </tr> 
-</table></td></tr></table>
-<table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Trace:
+<b>Beginning Segment for Inventory Inquiry/Advice:
 </b></td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trace Type Code
-    : {{TRN/TRN01}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Set Purpose Code
+    : {{BIA/BIA01}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Report Type Code
+    : {{BIA/BIA02}}
     </td></tr>
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
-    : {{TRN/TRN02}}
+    : {{BIA/BIA03}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : {{BIA/BIA04}} 
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time
+    : {{BIA/BIA05}}
     </td></tr>
 </table><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+<table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Currency:</b>
-{{CUR/CUR02-CUR01 = 'PR'}}
-</td><tr></table>
-<table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table></table>
-<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Payer: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101= 'PR'}} ({{N1/N103-N101= 'PR'}}: {{N1/N104-N101= 'PR'}})</td> 
-</tr> 
-</table>
-</td>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Payee: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101= 'PE'}}</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Reference Information: </b>
+<b>Reference Identification: </b>
 </td></tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internal Vendor Number
-    : {{N1/REF02-REF01= 'IA'}}    </td></tr>
-</table>
-</td>
-</tr><tr>
-</tr></table><BR>
-<hr width="100%" align="left" size="1" color="#C0C0C0">
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Entity:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assigned Number
-    : {{TRN/TRN01}}
-    </td></tr>
+    : {{REF/REF02}} -- {{REF/REF03}}    </td></tr>
 </table><br>
+<table cellpadding="0" border="0" width="100%">
+<tr>
+<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: Black; background-color:#D60D00; padding: 2pt; color: White">Line Information</td>
+</tr>
+</table>
 
 {{LinedItemHtml}}
+<!-- ......... -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
 
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
-<!-- </b></td></tr></table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078560 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 16411.73 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 16961.28 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 339.23 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{LIN/LIN02}}</TD><TD BGCOLOR="#FFFFFF">{{LIN/LIN03}}</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{LIN/LIN04}}</TD><TD BGCOLOR="#FFFFFF">{{LIN/LIN05}}</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{LIN/LIN06}}</TD><TD BGCOLOR="#FFFFFF">{{LIN/LIN07}}</TD></TR> -->
+<!-- </TR> -->
 <!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876801    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742045962    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302858    </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>{{PID/PID05}}<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -210.32 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : {{QTY/QTY01}} -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : {{QTY/QTY02}} -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : {{QTY/QTY03}} -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078560 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : {{SCH/SCH01}} -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078562 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : {{SCH/SCH02}} -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : {{SCH/SCH05}} -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 5350.44 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 5529.6 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 110.59 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : {{SCH/SCH06}} -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876682    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742039374    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302859    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ 
+ 
+<!-- ......................... -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">751077010446</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">CP592618-30-H1TEC-17</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1268463</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>CP592618-30-H1TEC-17<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -68.57 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 1 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078562 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 1 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078569 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 5669.98 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 5859.84 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 117.2 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876649    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742032528    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302860    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">751077009587</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">DR8-H11HEC-16</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1207716</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>DR8-H11HEC-16<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -72.66 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078569 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078575 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 6533.86 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 6752.64 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 135.05 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876771    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742058528    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302861    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">751077011214</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">LM3220-H10HEC-17</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">NONDS_1268518l</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>LM3220-H10HEC-17<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -83.73 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078575 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078588 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 8664.74 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 8954.88 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 179.1 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876721    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742035499    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302864    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">751077009617</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">LM3220-H10HEC-17-DS</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1268518</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>LM3220-H10HEC-17-DS<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -111.04 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078588 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078593 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 6673.19 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 6896.64 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 137.93 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876651    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742032610    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302865    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188019</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">PC-95C-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429572</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>PC-95C-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -85.52 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 17 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078593 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 17 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078600 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 8010.8 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 8279.04 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 165.58 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876772    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742085654    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302867    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529018002</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">PDS-1800-E</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429573</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>PDS-1800-E<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -102.66 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 35 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078600 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 35 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078606 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 4993.74 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 5160.96 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 103.22 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876654    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742032887    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302869    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529171219</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">PFS-012-BG-E</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429571</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>PFS-012-BG-E<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -64 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078606 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078609 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 5071.77 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 5241.6 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 104.83 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876670    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742039367    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302871    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529170168</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">PFS-016-BG-E</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429570</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>PFS-016-BG-E<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -65 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 7 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078609 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 7 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078610 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 13067.7 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 13505.28 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 270.11 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876762    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742042428    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302872    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188088</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPAD-12-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429568</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPAD-12-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -167.47 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078610 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078612 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 6673.19 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 6896.64 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 137.93 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876655    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742033877    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302874    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188071</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPAD-1500-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1043909</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPAD-1500-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -85.52 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078612 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078623 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 19880.23 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 20545.92 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 410.92 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876707    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742033150    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302877    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188064</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPAD-24-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1043688</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPAD-24-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -254.77 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078623 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078625 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 17385.21 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 17967.36 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 359.35 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876717    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742034959    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302878    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188057</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPAD-60-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1043686</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPAD-60-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -222.8 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078625 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078633 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 11185.76 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 11560.32 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 231.21 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876693    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742088228    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302880    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188576</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPADC-57-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429567</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPADC-57-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -143.35 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 3 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078633 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 3 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078635 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 12662.71 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 13086.72 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 261.73 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876697    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742033969    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302882    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188101</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPAL-17300-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1039657</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPAL-17300-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -162.28 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 4 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078635 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 4 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078637 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 7995.94 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 8263.68 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 165.27 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876734    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742045870    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302884    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188125</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPALDC-1703-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429565</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPALDC-1703-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -102.47 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 3 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078637 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 3 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078638 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 13207.04 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 13649.28 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 272.99 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876739    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742035314    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302885    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529180013</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPA-MAG1-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429564</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPA-MAG1-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -169.25 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078638 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078639 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 11055.72 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 11425.92 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 228.52 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876741    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742042220    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302886    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529180020</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPA-MAG2-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429563</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPA-MAG2-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -141.68 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078639 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078640 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 11869.43 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 12266.88 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 245.34 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876749    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742042091    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302887    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188118</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPAO-148-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1043690</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPAO-148-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -152.11 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 178 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078640 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 178 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078646 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 9528.62 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 9847.68 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 196.95 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635876812    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742094670    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302893    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188170</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPAP-L-CD-DPR-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429574</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPAP-L-CD-DPR-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -122.11 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078646 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078647 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 9333.55 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 9646.08 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 192.92 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0635905498    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00095    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742096933    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 611302894    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188149</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPAPR-1504-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1429562</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/23/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPAPR-1504-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -119.61 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Pricing Error -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078647 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 010    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078695 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 14750.21 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 15206.4 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 304.13 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number -->
-    <!-- : 0636055237    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Number -->
-    <!-- : 00064    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchandise Type Code -->
-    <!-- : 0020    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 07    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742078021    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 615303433    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">085529188163</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">SPAPR-4-18</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1039658</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/24/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>SPAPR-4-18<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Adjustment: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -152.06 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adjustment Reason Code -->
-    <!-- : Defective Allowance -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Buyer's Credit Memo -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 10078695 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cross Reference Number -->
-    <!-- : 059    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000025    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 5 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 4561600122 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -5536 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : -5536 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
 <!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 05    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742036373    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000072912    </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">751077010897</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">TS5950-75-H1FEC-17</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1129486</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
+<!-- <b>Product/Item Description: -->
 <!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 1/25/2022     </td></tr> -->
-<!-- </table><br> -->
+<!-- </b>TS5950-75-H1FEC-17<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Quantity: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 5800420220215 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
     <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 151.2 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 151.2 -->
-    <!-- </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 05    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742035932    </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000035    </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
-<!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 2/15/2022     </td></tr> -->
-<!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Remittance Advice Accounts Receivable Open Item Reference: -->
+<!-- <b>Line Item Schedule: -->
 <!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier -->
-    <!-- : Seller's Invoice Number -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 0 -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification -->
-    <!-- : 5800420220216 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Action Code -->
-    <!-- : Payment on Account -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
     <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 110.4 -->
-    <!-- </td></tr> -->
-  <!-- <tr>  -->
-    <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monetary Amount -->
-    <!-- : 110.4 -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> -->
+<!-- </td></tr> -->
+<!-- </table><br> -->
+ <!-- <hr style="height: 1px; border-style: solid; border-color: #D60D00; padding: 2pt; " WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" > -->
+ <!-- <table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> -->
+<!-- <tr><td width="100%" class="sectiontitle"><font face="Arial" color="#D60D00">Line Item</font></td></tr> -->
+<!-- <tr><td width="100%"> -->
+ <!-- </center></div>  -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td> -->
+<!-- <b>Part Numbers</b> -->
+<!-- </td></tr></table> -->
+ <!-- <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1"  -->
+ <!-- bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080"   background="res://VistaRes.Dll/legalpad.gif">  -->
+
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Consumer Package Code (1-5-5-1)</TD><TD BGCOLOR="#FFFFFF">751077001406</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</TD><TD BGCOLOR="#FFFFFF">TS5950H12C5E7522</TD></TR> -->
+<!-- <TR><TD WIDTH="35%" BGCOLOR="#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyer's Item Number</TD><TD BGCOLOR="#FFFFFF">1895995</TD></TR> -->
+<!-- </TR> -->
+<!-- </table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
+  <!-- <tr> -->
+    <!-- <td width="1%" valign="top"> -->
+    <!-- </td> -->
+    <!-- <td width = "99%"><table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Reference Information: </b> -->
-<!-- </td></tr> -->
-<!-- </table> -->
+<!-- <b>Product/Item Description: -->
+<!-- </b></td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+<!-- </b>TS5950H12C5E7522<br>    </td></tr> -->
+<!-- </table></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+<!-- <b>Quantity: -->
+<!-- </b></td></tr></table> -->
 <!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division Identifier -->
-    <!-- : 05    </td></tr> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Qualifier -->
+    <!-- : Quantity Available for Sale (stock quantity) -->
+    <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store Number -->
-    <!-- : 0078742035932    </td></tr> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 603 -->
+    <!-- </td></tr> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microfilm Number -->
-    <!-- : 000000035    </td></tr> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure -->
+    <!-- : Each -->
+    <!-- </td></tr> -->
 <!-- </table><br> -->
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-<!-- <b>Date/Time Reference -->
-<!-- </b></td></tr> -->
-<!-- </table> -->
-<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
+<!-- <b>Line Item Schedule: -->
+<!-- </b></td></tr></table> -->
+<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" > -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
-    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Creation -->
-    <!-- : 2/16/2022     </td></tr> -->
-<!-- </table><br> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 603 -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Each -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date/Time Qualifier -->
+    <!-- : Available -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date -->
+    <!-- : 10/31/2022 -->
+    <!-- </td></tr> -->
+<!-- </table> -->
+<br>
+</td></tr>
+</table><br>
+</td></tr></table>
+<br>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="25%" valign="top" align="left">
+    <b>Line Count: </b>
+{{CTT/CTT01}}
+   </td></tr>
+</table>
 </table></table></table><BR><BR><BR><BR></BODY>
 </HTML><script LANGUAGE="JavaScript"> 
 	function collapseAll()  
