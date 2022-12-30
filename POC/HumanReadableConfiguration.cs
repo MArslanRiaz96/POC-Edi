@@ -12,6 +12,7 @@ namespace POC
         public string TemplatePathUpdatedTemp { get; set; }
         public string PackingPath { get; set; }
         public int TemplateSetCode { get; set; }
+        public bool? IsCustom { get; set; }
         public string KDIVersion { get; set; }
         public List<Configuration> configurations{ get; set; }
     }
@@ -42,6 +43,7 @@ namespace POC
         public bool GetXPathUsingIdentifierOneStepHead { get; set; }
         public bool ShowInLastLineItem { get; set; }
         public List<PreferedXpath> PreferedXpaths { get; set; }
+        public List<string> ConcatinationUsingDifferentXPath { get; set; }
     }
     public class PreferedXpath
     {

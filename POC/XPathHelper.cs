@@ -65,7 +65,7 @@ namespace POC
                             }
 
                             var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[ !string.IsNullOrEmpty(node) ? Convert.ToInt32(node) : i];
-                            if ( (XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null ) || (XPathConnfig.ShowInLastLineItem == false && !string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier)))
+                            if ( (XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null ) || (XPathConnfig.ShowInLastLineItem == false && !string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.ConcatinationUsingDifferentXPath != null)))
                             {
                                 if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
                                 {
@@ -134,6 +134,22 @@ namespace POC
                                         }
                                         htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, ConcatinationUsingSameXPath);
                                     }
+                                    else if (XPathConnfig?.ConcatinationUsingDifferentXPath?.Count() > 0)
+                                    {
+                                        string ConcatinationUsingDifferentXPath = "";
+                                        foreach (string XPathConfig in XPathConnfig?.ConcatinationUsingDifferentXPath)
+                                        {
+                                            var elemListForconcatinationlist = baseNode.SelectNodes(XPathConfig);
+
+                                            for (int j = 0; j < elemListForconcatinationlist.Count; j++)
+                                            {
+                                                Console.WriteLine(elemListForconcatinationlist[j].InnerXml);
+                                                ConcatinationUsingDifferentXPath = ConcatinationUsingDifferentXPath + " " + elemListForconcatinationlist[j].InnerXml;
+                                            }
+                                        }
+                                        
+                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, ConcatinationUsingDifferentXPath);
+                                    }
                                     else if (!string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
                                     {
                                         bool validator = false;
@@ -188,13 +204,48 @@ namespace POC
                     XmlNodeList elemList = doc.SelectNodes(listEdiXpath.XPathConnfig.XPath);
                     for (int i = 0; i < elemList.Count; i++)
                     {
-                        bool identifierOneStepHead = listEdiXpath.XPathConnfig.GetXPathUsingIdentifierOneStepHead;
-                        Console.WriteLine(elemList[i].InnerXml);
-                        if (!listEdiXPathValues.Any(z => z.Item2 == elemList[i].InnerXml && z.Item1 == listEdiXpath.XPathConnfig.PlaceHolder))
+
+                        string node = "";
+                        bool isPreferedXpath = false;
+                        dynamic elemListXpathValidator = null;
+                        if (listEdiXpath.XPathConnfig.PreferedXpaths != null)
                         {
-                            if (listEdiXpath.XPathConnfig.MappingRequired == false && listEdiXpath.XPathConnfig.DateFormat == null && listEdiXpath.XPathConnfig.TimeFormat == null && listEdiXpath.XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(listEdiXpath.XPathConnfig.GetXPathUsingIdentifier))
+                            foreach (var preferedXpath in listEdiXpath.XPathConnfig.PreferedXpaths)
                             {
-                                listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
+                                if (string.IsNullOrEmpty(preferedXpath.Identifier))
+                                {
+                                     elemListXpathValidator = doc.SelectNodes(preferedXpath.XPath)[i];
+                                    if (elemListXpathValidator != null)
+                                    {
+                                        listEdiXpath.XPathConnfig.XPath = preferedXpath.XPath;
+                                        listEdiXpath.XPathConnfig.GetXPathUsingIdentifier = "";
+                                        node = !string.IsNullOrEmpty(preferedXpath.TotalNodes) && !string.IsNullOrEmpty(preferedXpath.SelectedNode) ? (Convert.ToInt32(preferedXpath.TotalNodes) * (i + 1) - Convert.ToInt32(preferedXpath.SelectedNode)).ToString() : "";
+                                        isPreferedXpath = true;
+                                        break;
+                                    }
+                                }
+                                else
+                                {
+                                     elemListXpathValidator = doc.SelectNodes(preferedXpath.XPath)[i];
+                                    if (elemListXpathValidator != null && elemListXpathValidator.InnerText.Contains(preferedXpath.Identifier))
+                                    {
+                                        listEdiXpath.XPathConnfig.XPath = preferedXpath.XPath;
+                                        listEdiXpath.XPathConnfig.GetXPathUsingIdentifier = preferedXpath.Identifier;
+                                        node = !string.IsNullOrEmpty(preferedXpath.TotalNodes) && !string.IsNullOrEmpty(preferedXpath.SelectedNode) ? (Convert.ToInt32(preferedXpath.TotalNodes) * (i + 1) - Convert.ToInt32(preferedXpath.SelectedNode)).ToString() : "";
+                                        isPreferedXpath = true;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+
+                        bool identifierOneStepHead = listEdiXpath.XPathConnfig.GetXPathUsingIdentifierOneStepHead;
+                        Console.WriteLine(!string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml);
+                        if (!listEdiXPathValues.Any(z => z.Item2 == (!string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml) && z.Item1 == listEdiXpath.XPathConnfig.PlaceHolder))
+                        {
+                            if (listEdiXpath.XPathConnfig.MappingRequired == false && listEdiXpath.XPathConnfig.DateFormat == null && listEdiXpath.XPathConnfig.TimeFormat == null && listEdiXpath.XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(listEdiXpath.XPathConnfig.GetXPathUsingIdentifier) && listEdiXpath.XPathConnfig.ConcatinationUsingDifferentXPath == null)
+                            {
+                                listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, !string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml));
                             }
                             else
                             {
@@ -206,13 +257,13 @@ namespace POC
                                 {
                                     try
                                     {
-                                        var parsedDate = DateTime.ParseExact(elemList[i].InnerXml, listEdiXpath.XPathConnfig.DateFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(listEdiXpath.XPathConnfig.DateFormat.TargetFormat);
+                                        var parsedDate = DateTime.ParseExact(!string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml, listEdiXpath.XPathConnfig.DateFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(listEdiXpath.XPathConnfig.DateFormat.TargetFormat);
                                         listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, parsedDate));
                                     }
                                     catch (Exception ex)
                                     {
 
-                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
+                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, !string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml));
                                     }
                                     
                                 }
@@ -220,13 +271,13 @@ namespace POC
                                 {
                                     try
                                     {
-                                        var parsedTime = DateTime.ParseExact(elemList[i].InnerXml, listEdiXpath.XPathConnfig.TimeFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(listEdiXpath.XPathConnfig.TimeFormat.TargetFormat);
+                                        var parsedTime = DateTime.ParseExact(!string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml, listEdiXpath.XPathConnfig.TimeFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(listEdiXpath.XPathConnfig.TimeFormat.TargetFormat);
                                         listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, parsedTime));
                                     }
                                     catch (Exception ex)
                                     {
 
-                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, elemList[i].InnerXml));
+                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, !string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml));
                                     }
                                 }
                                 else if (listEdiXpath.XPathConnfig.ConcatinationUsingSameXPath == true)
@@ -271,8 +322,29 @@ namespace POC
                                         listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, listEdiXpath.XPathConnfig.DefaultValue));
                                     }
                                 }
+                                else if (listEdiXpath.XPathConnfig != null && listEdiXpath.XPathConnfig.ConcatinationUsingDifferentXPath != null && listEdiXpath.XPathConnfig.ConcatinationUsingDifferentXPath.Any())
+                                {
+                                    string ConcatinationUsingDifferentXPath = "";
+                                    foreach (string XPathConfigP in listEdiXpath?.XPathConnfig?.ConcatinationUsingDifferentXPath)
+                                    {
+                                        var elemListForconcatinationlist = doc.SelectNodes(XPathConfigP);
+
+                                        for (int j = 0; j < elemListForconcatinationlist.Count; j++)
+                                        {
+                                            Console.WriteLine(elemListForconcatinationlist[j].InnerXml);
+                                            ConcatinationUsingDifferentXPath = ConcatinationUsingDifferentXPath + " " + elemListForconcatinationlist[j].InnerXml;
+                                        }
+                                    }
+
+                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, ConcatinationUsingDifferentXPath));
+                                }
                             }
 
+                        }
+
+                        if (isPreferedXpath = true)
+                        {
+                        break;
                         }
 
                     }
@@ -294,6 +366,7 @@ namespace POC
                     }
                     listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, sum.ToString()));
                 }
+                
             }
                 WebClient webClient = new WebClient();
 

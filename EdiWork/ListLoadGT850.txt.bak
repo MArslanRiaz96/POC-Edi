@@ -1,0 +1,42 @@
+{{BEG/BEG03}}
+{{DTM/DTM02-DTM01 = '996'}} date //DTM[DTM01 = '996']/DTM02  //DTM[DTM01 = '010']/DTM02 
+{{DTM/DTM02-DTM01 = '371'}} date //DTM[DTM01 = '371']/DTM02 new //DTM[DTM01 = '002']/DTM02
+{{DTM/DTM02-DTM01 = '002'}} date //DTM[DTM01 = '002']/DTM02 new  //DTM[DTM01 = '001']/DTM02
+
+{{MTX_2/MTX02}}  //N9Loop1/MTX_2/MTX02  sum of text
+
+{{N1/N102-N101 = 'ST'}} concatinate //N1Loop1[N1[N101 = 'ST']]/N1/N102 //N1Loop1[N1[N101 = 'ST']]/N3/N301 //N1Loop1[N1[N101 = 'ST']]/N3/N302 //N1Loop1[N1[N101 = 'ST']]/PER_2/PER02 //N1Loop1[N1[N101 = 'ST']]/PER_2/PER03 //N1Loop1[N1[N101 = 'ST']]/PER_2/PER04
+
+{{N1/N102-N101 = 'BY'}} concatinate //N1Loop1[N1[N101 = 'BY']]/N1/N102 //N1Loop1[N1[N101 = 'BY']]/N3/N301 //N1Loop1[N1[N101 = 'BY']]/N3/N302 //N1Loop1[N1[N101 = 'BY']]/PER_2/PER02 //N1Loop1[N1[N101 = 'BY']]/PER_2/PER03 //N1Loop1[N1[N101 = 'BY']]/PER_2/PER04
+
+//// line number add
+{{PO1/PO109}}    //PO1Loop1/PO1/PO109  modifer= MF   
+{{PO1/PO111}}    //PO1Loop1/PO1/PO111
+
+
+{{BEG/BEG03}}
+{{BEG/BEG05}} date \\
+{{BEG/BEG02}} NE=New Order \\
+{{BEG/BEG01}} 00=Original \\
+{{REF/REF02}} 
+{{CSH/CSH01}} Y=Back Order if Out of Stock \\
+{{DTM/DTM02-DTM01 = '064'}} date \\
+{{DTM/DTM02-DTM01 = '063'}} date\\
+
+{{N1/N103-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N1/N103 15=Standard Address Number (SAN) 
+{{N1/N104-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N1/N104
+
+{{LinesHtml}} //PO1Loop1/PO1
+<tr> <td VALIGN="TOP" width="5%"><br>{{PO1/PO101}}</td>  <td width="50%"><br> <b>Vendor's (Seller's) Item Number</b>: {{PO1/PO107}}<br> </td>  <td VALIGN="TOP" width="10%"><br>{{PO1/PO102}}</td> <td VALIGN="TOP" width="5%"><br>{{PO1/PO103}}</td> <td VALIGN="TOP" width="12%"><br>{{PO1/PO104}}</td> <td VALIGN="TOP" width="10%"><br>{{PO1/PO105}}</td>  <td VALIGN="TOP" width="15%"><br>{{PO1/PO106}}</td> </tr>
+{{PO1/PO101}} //PO1Loop1/PO1/PO101
+{{PO1/PO107}} //PO1Loop1/PO1/PO107
+{{PO1/PO102}} //PO1Loop1/PO1/PO102
+{{PO1/PO103}} //PO1Loop1/PO1/PO103
+{{PO1/PO104}} //PO1Loop1/PO1/PO104
+{{PO1/PO105}} PE=Price per Each //PO1Loop1/PO1/PO105
+{{PO1/PO106}} x path for mutiplication  //PO1Loop1/PO1/PO102 //PO1Loop1/PO1/PO104
+
+
+
+{{CTT/CTT01}}
+{{CTT/CTT02}} 
