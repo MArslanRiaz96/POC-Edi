@@ -272,10 +272,6 @@
 		<CTT ID="221" SegmentPosition="0010">
 			<CTT01 ID="0010:222">3</CTT01>
 		</CTT>
-		<AMT_3 ID="256" SegmentPosition="0287">
-        <AMT01 ID="0287:257">TT</AMT01>
-        <AMT02 ID="0287:258">52256.64</AMT02>
-        </AMT_3>
 	</CTTLoop1>
 	<SE ID="223" SegmentPosition="0030">
 		<SE01 ID="0030:224">38</SE01>
