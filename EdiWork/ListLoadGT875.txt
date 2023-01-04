@@ -1,0 +1,79 @@
+{{BEG/BEG03}}
+{{G62/G6202-G6201 = '996'}} date //G62[G6201 = '996']/G6202  //G62[G6201 = '010']/G6202 
+{{G62/G6202-G6201 = '371'}} date //G62[G6201 = '371']/G6202 new //G62[G6201 = '002']/G6202
+{{G62/G6202-G6201 = '002'}} date new  //G62[G6201 = '001']/G6202  old //G62[G6201 = '002']/G6202 
+
+{{MTX_2/MTX02}}  //N9Loop1/MTX_2/MTX02  sum of text
+
+
+
+//// {{G68/G6803}} remove db from it
+{{G68/G6806}}
+{{G68/TotalPrice}}   {{G68/G6801}} * {{G68/G6803}}
+
+
+
+
+
+{{G50/G5001-G5001 = 'N'}} //G50[G5001 = 'N']/G5001   N = Original
+{{G50/G5002-G5001 = 'N'}} //G50[G5001 = 'N']/G5002 date
+{{G50/G5003-G5001 = 'N'}} //G50[G5001 = 'N']/G5003
+
+{{G61/G6101-G6101 = 'BD'}} //G61[G6101 = 'BD']/G6101 BD =Buyer Name or Department
+{{G61/G6102-G6101 = 'BD'}} //G61[G6101 = 'BD']/G6102
+{{G61/G6103-G6101 = 'BD'}} //G61[G6101 = 'BD']/G6103 TE =Telephone
+{{G61/G6104-G6101 = 'BD'}} //G61[G6101 = 'BD']/G6104
+
+{{G62/G6201-G6201 = '02'}} //G62[G6201 = '02']/G6201 02=Delivery Requested on This Date
+{{G62/G6202-G6201 = '02'}} //G62[G6201 = '02']/G6202 date
+
+{{NTE/NTE02-NTE01 = 'GEN'}} //NTE[NTE01 = 'GEN']/NTE02  ConcatinationUsingSameXPath = true
+
+{{G66/G6601-G6601 = 'PP'}} //G66[G6601 = 'PP']/G6601 PP= Prepaid (by Seller)
+{{G66/G6602-G6601 = 'PP'}} //G66[G6601 = 'PP']/G6602 M=Motor (Common Carrier)
+
+{{N1/N102-N101 = 'VN'}} //N1Loop1[N1[N101 = 'VN']]/N1/N102
+{{N1/N103-N101 = 'VN'}} //N1Loop1[N1[N101 = 'VN']]/N1/N103 9 = D-U-N-S+4
+{{N1/N104-N101 = 'VN'}} //N1Loop1[N1[N101 = 'VN']]/N1/N104
+
+{{N1/N102-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N1/N102
+{{N1/N103-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N1/N103 9 = D-U-N-S+4
+{{N1/N104-N101 = 'BT'}} //N1Loop1[N1[N101 = 'BT']]/N1/N104
+
+{{N1/N102-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N1/N102
+{{N1/N103-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N1/N103 9 = D-U-N-S+4
+{{N1/N104-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N1/N104
+
+{{N3/N301-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N3/N301
+
+{{N4/N401-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N401
+{{N4/N402-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N402
+{{N4/N403-N101 = 'ST'}} //N1Loop1[N1[N101 = 'ST']]/N4/N403
+
+{{G76/G7601}}
+{{G76/G7602}} UN=Unit
+{{G76/G7603}}
+{{G76/G7604}} LB= Pound
+{{G76/G7605}}
+{{G76/G7606}} CF=Cubic Feet
+{{G76/G7608}}
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : {{G68/G6801}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{G68/G6802}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : {{G68/G6803}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : {{G68/G6804}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : {{G68/G6805}} </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : {{G68/G6806}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : {{G69/G6901}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack : {{G70/G7001}} </td></tr> </table><br>
+{{LinedItemHtml}}   //G68Loop1
+{{G68/G6801}}
+{{G68/G6802}} CA=Case
+{{G68/G6803}}
+{{G68/G6804}}
+{{G68/G6805}} IT=Buyer's Style Number
+{{G68/G6806}}
+
+{{G69/G6901}}
+
+{{G70/G7001}}
+
+
+
+
+
+

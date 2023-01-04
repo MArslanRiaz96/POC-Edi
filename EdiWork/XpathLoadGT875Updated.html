@@ -1,0 +1,783 @@
+<HTML>
+<style type="text/css"><!--BODY
+{
+    BACKGROUND-COLOR: white;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    MARGIN-BOTTOM: 3px;
+    MARGIN-TOP: 0px;
+    TEXT-ALIGN: left;
+    WORD-SPACING: 0px;
+    marginwidth: 0;
+    marginheight: 0
+}
+LI
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    LINE-HEIGHT: 150%;
+    MARGIN-TOP: 3px;
+    WORD-SPACING: 0px
+}
+P
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    LINE-HEIGHT: 150%;
+    MARGIN-TOP: 0px;
+    WORD-SPACING: 0px
+}
+TABLE
+{
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px
+}
+TABLE.border
+{
+    BORDER-BOTTOM: black thin solid;
+    BORDER-LEFT: black thin solid;
+    BORDER-RIGHT: black thin solid;
+    BORDER-TOP: black thin solid
+}
+BLOCKQUOTE
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    LINE-HEIGHT: 150%;
+    MARGIN-TOP: 0px;
+    WORD-SPACING: 0px
+}
+TD
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 2px;
+    PADDING-RIGHT: 8px;
+    PADDING-TOP: 0px;
+    WORD-SPACING: 0px
+}
+TR
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-RIGHT: 0px;
+    PADDING-TOP: 0px;
+    WORD-SPACING: 0px;
+    LINE-SPACING: 0px
+}
+TEXTAREA
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 10pt;
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 2px;
+    PADDING-RIGHT: 8px;
+    PADDING-TOP: 0px;
+    WORD-SPACING: 0px
+}
+INPUT
+{
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px
+}
+SELECT
+{
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px
+}
+IMG
+{
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px;
+    PADDING-BOTTOM: 0px
+}
+ADDRESS
+{
+    COLOR: #808080;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 7.5pt;
+    FONT-STYLE: normal;
+    LINE-HEIGHT: 100%;
+    MARGIN-TOP: 10px
+}
+A:link
+{
+    COLOR: #004e9b;
+    TEXT-DECORATION: underline;
+    target: _top
+}
+A:visited
+{
+    COLOR: #cc9933;
+    TEXT-DECORATION: underline
+}
+A:hover
+{
+    COLOR: #b0c0d0;
+    TEXT-DECORATION: underline
+}
+H1
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 13pt;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 125%;
+    MARGIN-BOTTOM: 15px;
+    MARGIN-TOP: 12px;
+    TEXT-DECORATION: none
+}
+H2
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 125%;
+    MARGIN-BOTTOM: 15px;
+    MARGIN-TOP: 0px;
+    TEXT-DECORATION: none
+}
+H3
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    MARGIN: 0px 0px 5px;
+    WORD-SPACING: 0px
+}
+H4
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 11pt;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 100%;
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 10px;
+    TEXT-DECORATION: underline
+}
+H5
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: normal;
+    LINE-HEIGHT: 125%
+}
+H6
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8.5pt;
+    FONT-WEIGHT: bold;
+    LINE-HEIGHT: 150%;
+    MARGIN-LEFT: 0px;
+    MARGIN-RIGHT: 0px;
+    MARGIN-TOP: 0px;
+    WORD-SPACING: 0px
+}
+.sectiontitle
+{
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold
+}
+.mandatory
+{
+    FONT-WEIGHT: bold
+}
+.disabled
+{
+    COLOR: graytext
+}
+#divControls
+{
+    POSITION: absolute;
+    VISIBILITY: hidden;
+    WIDTH: 200px;
+    Z-INDEX: 200
+}
+.clControls
+{
+    BACKGROUND-COLOR: infobackground;
+    BORDER-BOTTOM: #999999 1px solid;
+    BORDER-LEFT: #999999 1px solid;
+    BORDER-RIGHT: #999999 1px solid;
+    BORDER-TOP: #999999 1px solid;
+    COLOR: infotext;
+    FONT-FAMILY: verdana,arial,helvetica;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 3px;
+    PADDING-LEFT: 3px;
+    PADDING-RIGHT: 3px;
+    PADDING-TOP: 3px;
+    WIDTH: 150px
+}
+#divControl
+{
+    LEFT: 100px;
+    POSITION: absolute;
+    TOP: 200px;
+    Z-INDEX: 1
+}
+
+@media print {
+	BODY { margin-left: 30px; }
+}
+//--></style><style type="text/css">
+<!--
+	.clsBlurb { display:none; }
+//-->
+</style>
+<BODY link="" background="000000">
+<!--TOOLBAR_START--> 
+<!--TOOLBAR_EXEMPT--> 
+<!--TOOLBAR_END--> 
+<script LANGUAGE="JavaScript"> 
+<!-- 
+  // IF THE BROWSER IS MSIE4.0 FOR WINDOWS NT AND 95 ONLY, THEN bClickable = TRUE 
+ 
+	var sAgent = navigator.userAgent 
+   	var bIs95NT = sAgent.indexOf("Windows 95") > -1 || sAgent.indexOf("Windows 98") > -1 || sAgent.indexOf("Windows NT") > -1 || sAgent.indexOf("Win32") > -1  
+	var bIsIE4 = sAgent.indexOf("IE 4")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
+	var bIsIE5 = sAgent.indexOf("IE 5")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
+	var bClickable = true; //User will always have IE4 or greater 
+   
+  // DEFINE GLOBAL VARIABLES HERE 
+ 
+  document.onclick = doDocumentOnClick ; 
+  document.onmouseover = doDocumentOnMouseOver ; 
+  document.onmouseout = doDocumentOnMouseOut ; 
+   
+	function HideButton()  
+	{ 
+		var myvar = 999 
+		var itemnum
+		var hdrbtn = "IdHeaderButton" 
+		var sButtonId
+		if (bClickable)  
+		{ 
+			for(i=0; i<document.all.length; i++)  
+			{ 
+				if (document.all(i).id.indexOf("idButton") != -1) 
+				{
+					document.all(i).style.display = "none"; 
+				}
+				if (document.all(i).id.indexOf("idButtonImage") != -1) 
+				{
+					document.all(i).style.display = "none"; 
+				}
+			} 
+		} 
+	} 
+ 
+ 
+  /* 	IF bClickable IS TRUE, FIND OUT WHICH BLURB IS AFFECTED ONCLICK.  
+	 	IF THE BLURB'S DISPLAY IS NONE, DISPLAY BLURB.  
+		IF THE BLURB IS DISPLAYING, SET IT TO NOT DISPLAY.*/ 
+ 
+	function doDocumentOnClick()  
+	{ 
+		if (bClickable)  
+		{ 
+                  var eSrc = window.event.srcElement ; 
+			if (eSrc.className == "clsHeader" || eSrc.className == "clsHeaderButton" )  
+			{ 
+			 
+				var sId = "idBlurb" + eSrc.id.substring(eSrc.id.length-4,eSrc.id.length) ; 
+				if (document.all(sId).style.display == "block")  
+				{ 
+					document.all(sId).style.display = "none" ; 
+					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
+					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
+				} 
+        			else  
+		 		{ 
+          				document.all(sId).style.display = "block" ; 
+					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
+					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
+        			} 
+    		} 
+    		window.event.cancelBubble = true ; 
+    	} 
+  } 
+ 
+  // CHANGE HEADLINE COLOR ONMOUSEOVER 
+ 
+  function doDocumentOnMouseOver()  
+  { 
+  		var eSrc = window.event.srcElement ;  
+    	if (eSrc.className == "clsHeader") 
+		{
+      		document.all(eSrc.id).style.color= "" 
+    	}
+  }
+ 
+  // CHANGE HEADLINE COLOR ONMOUSEOUT
+ 
+  function doDocumentOnMouseOut() 
+  {
+  		var eSrc = window.event.srcElement ;
+    	if (eSrc.className == "clsHeader")
+		{
+      		document.all(eSrc.id).style.color= "#000000" 
+    	}
+  }
+//-->
+</script>
+<body>
+ <!-- <BR><IMG BORDER=0 SRC="http://logoimages.sv.softshare.com/tpks/images/awg.jpg"/> -->
+<BR> <table border="0" width="100%" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+							<tr>
+								<td width="100%" valign="right" align="right">
+									<b>{{DateTime}}</b>
+									<BR>
+          </td>
+								</tr>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0" width="100%">
+								<tr>
+									<td width="100%" valign="middle" align="middle">
+										<H1>{{Partner}}</H1>
+										<BR>
+          </td>
+									</tr>
+								</table>
+								<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr>
+										<td width="100%" valign="middle" align="middle">
+											<H1>PartnerLinQ Transaction ID : {{TransactionID}} </H1>
+											<BR>
+          </td>
+										</tr>
+									</table>
+									
+   <tr>
+     <td width="100%">
+     <H1>Grocery Products Purchase Order</H1>
+     </td>
+   </tr>
+ </table>
+<table cellpadding="0" border="0" width="100%">
+<tr>
+<td width="638" valign="top" class="sectiontitle" style="border: opx; background-color:#68728c; padding: 2pt; color: White">General Information</td>
+</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+									<tr>
+										<td width="100%" valign="middle" align="left">
+											<b>Document Information:</b>
+											<BR>
+</td>
+										</tr>
+									</table>
+									<table border="0" width="100%" cellspacing="0" cellpadding="0">
+										<tr> 
+    </tr>
+										<tr>
+											<td width="50%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer PO #:  </td>
+	<td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimated Delivery Date: 01/20/2023 </td>
+										</tr>
+										
+										<tr>
+											<!-- <td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer PO #: {{BEG/BEG03}}</td> -->
+											<td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Required Delivery Date: 01/20/2023</td>
+											<td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requested Delivery Date: 01/20/2023 </td>
+										</tr>
+									</table>
+									<br>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Purchase Order Identification:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order Status Code
+    : db
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : 12/30/2022
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number
+    : 14024062
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Contact:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Function Code
+    : 
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
+    : 
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Communication Number Qualifier
+    : 
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Communication Number
+    : 
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Date/Time:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Qualifier
+    : db
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : 01/20/2023
+    </td></tr>
+</table><br>
+ <div ID="idHeader1000" CLASS="clsHeader" STYLE="text-decoration:none" TITLE="Notes"
+ align="left"><img ID="idHeaderButton1000" CLASS="clsHeaderButton"
+ WIDTH="11" HEIGHT="11" ALT="Click to Expand"> 
+<b>Notes 
+ </b></div> 
+ <div ID="idBlurb1000" CLASS="clsBlurb"
+><b><div align="left"> <table border="0" width="100%" 
+    background="res://VistaRes.Dll/legalpad.gif" cellspacing="1" cellpadding="0" > 
+      <tr> 
+        <td width="5%" ></td> 
+        <td width="90%"> 
+		<b>Note -- Entire Transaction Set<br></b>
+<table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+
+        
+        </td> 
+      </tr> 
+</table> 
+</DIV></DIV><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Transportation Instructions:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Method of Payment
+    : db
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation Method/Type Code
+    : db
+    </td></tr>
+</table><br>
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
+<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Vendor: </b>
+</td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td border="0" width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GT'S LIVING FOODS (db: 9443933620000)</td> 
+</tr> 
+</table>
+</td>
+<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Bill-to-Party: </b>
+</td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td border="0" width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATER BROS. (db: 1077284200000)</td> 
+</tr> 
+</table>
+</td>
+</tr><tr>
+<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Ship To: </b>
+</td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td border="0" width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATER BROS. (db: 1077284200008)</td> 
+</tr> 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;311 S. TIPPECANOE</td></tr>  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SAN BERNARDINO,  CA 92408 </td></tr></table>
+</td>
+<table style="margin-top : 10px" border="0" cellspacing="0" cellpadding="0" width="100%">
+														<tr>
+															<td valign="top" width="50%">
+																<table border="0" width="100%" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td width="100%" valign="top" align="left">
+																			<b>Special Instructions: </b> 
+                </td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+</tr></table><BR>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 96 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 14.39 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243019996 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547503 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547503 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1381.44 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY ASST VRTY </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 34 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243030000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547506 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547506 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1024.08 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY CRANBERRY </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 17 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243075000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547507 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547507 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 512.04 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY PEACH PARADISE </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 34 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243040000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547508 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547508 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1024.08 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY STRAWBERRY </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 17 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243000002 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547509 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547509 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 512.04 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ALIVE GINGER TURMERIC </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 51 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243050000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547510 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547510 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1536.12 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY MANGO </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 34 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243071000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547511 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547511 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1024.08 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY LEMON BERRY </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 34 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243017000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547512 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547512 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1024.08 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY HIBISCUS GINGR </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 17 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243061000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547513 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547513 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 512.04 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY TANGERINE </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 34 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243000100 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547514 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547514 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1024.08 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SEASONAL </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 32 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 36.96 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243060049 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547515 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547515 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1182.72 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY GINGERBERRY </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 34 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243036000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547516 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547516 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1024.08 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY PINK LADY APPL </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 17 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243000020 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547517 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547517 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 512.04 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ALIVE COLA </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 48 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 36.96 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243090049 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547529 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547529 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1774.08 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY GUAVA GODDESS </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 68 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243011000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547570 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547570 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 2048.16 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY TRILOGY </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 68 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243020000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547572 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547572 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 2048.16 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL KOMBUCHA GNGRDE </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 68 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 30.12 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243022000 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547574 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547574 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 2048.16 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY RASPBERRY </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 32 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 36.96 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243020049 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547577 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547577 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1182.72 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL KOMBUCHA GINGERADE </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br><table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Product: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity : 48 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost : 36.96 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code : 072243011049 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier : db </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID : 014547578 </td></tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buyers Item # : 014547578 </td> </tr> <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ext Amount $ : 1774.08 </td> </tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Description: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description : GTS ENL SYNERGY TRILOGY </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Line Item Detail - Miscellaneous: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack :  </td></tr> </table><br>
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+<!-- <b>Line Item Detail - Product: -->
+<!-- </b></td></tr></table> -->
+<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 17 -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Case -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost -->
+    <!-- : 25.44 -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code -->
+    <!-- : 072243030016 -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier -->
+    <!-- : Buyer's Style Number -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID -->
+    <!-- : 913176 -->
+    <!-- </td></tr> -->
+<!-- </table><br> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+<!-- <b>Line Item Detail - Description: -->
+<!-- </b></td></tr></table> -->
+<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description -->
+    <!-- : GT SYN CRANBERRY -->
+    <!-- </td></tr> -->
+<!-- </table><br> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+<!-- <b>Line Item Detail - Miscellaneous: -->
+<!-- </b></td></tr></table> -->
+<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack -->
+    <!-- : 12 -->
+    <!-- </td></tr> -->
+<!-- </table><br> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+<!-- <b>Line Item Detail - Product: -->
+<!-- </b></td></tr></table> -->
+<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity -->
+    <!-- : 17 -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code -->
+    <!-- : Case -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost -->
+    <!-- : 25.44 -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C. Case Code -->
+    <!-- : 072243060016 -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier -->
+    <!-- : Buyer's Style Number -->
+    <!-- </td></tr> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID -->
+    <!-- : 913177 -->
+    <!-- </td></tr> -->
+<!-- </table><br> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+<!-- <b>Line Item Detail - Description: -->
+<!-- </b></td></tr></table> -->
+<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free-form Description -->
+    <!-- : GT SYN GINGERBERRY -->
+    <!-- </td></tr> -->
+<!-- </table><br> -->
+<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+<!-- <b>Line Item Detail - Miscellaneous: -->
+<!-- </b></td></tr></table> -->
+<!-- <table border="0" width="100%" cellspacing="0" cellpadding="0" >  -->
+  <!-- <tr>  -->
+    <!-- <td width="100%" valign="top" align="left"> -->
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack -->
+    <!-- : 12 -->
+    <!-- </td></tr> -->
+<!-- </table><br> -->
+<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" valign="top" align="left">
+<b>Total Purchase Order:
+</b></td></tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity
+    : 783
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code
+    : db
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight
+    : 
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code
+    : 
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Volume
+    : 
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code
+    : 
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount
+    : 
+    </td></tr>
+</table><br>
+</table></table></table><BR><BR><BR><BR></BODY>
+</HTML><script LANGUAGE="JavaScript"> 
+	function collapseAll()  
+	{ 
+		var myvar = 999 
+		var itemnum
+		var hdrbtn = "IdHeaderButton" 
+		var sButtonId
+		if (bClickable)  
+		{ 
+			for(i=0; i<document.all.length; i++)  
+			{ 
+				if (document.all(i).id.indexOf("idHeader") != -1) 
+				{
+				}
+				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
+				{
+					myvar = myvar + 1 
+					itemnum = (myvar).toString()
+					sButtonId = hdrbtn + itemnum 
+					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
+				}
+				if (document.all(i).id.indexOf("idBlurb") != -1) 
+				{
+					document.all(i).style.display = "none"; 
+				}
+			} 
+		} 
+	} 
+	function bExpandAll()  
+	{ 
+		var myvar = 999 
+		var itemnum
+		var hdrbtn = "IdHeaderButton" 
+		var sButtonId
+		if (bClickable)  
+		{ 
+			for(i=0; i<document.all.length; i++)  
+			{ 
+				if (document.all(i).id.indexOf("idHeader") != -1) 
+				{
+					document.all(i).style.display = "block"; 
+				}
+				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
+				{
+					document.all(i).style.display = "block"; 
+					myvar = myvar + 1 
+					itemnum = (myvar).toString()
+					sButtonId = hdrbtn + itemnum 
+					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
+				}
+				if (document.all(i).id.indexOf("idBlurb") != -1) 
+				{
+					document.all(i).style.display = "block"; 
+				}
+			} 
+		} 
+	} 
+</script>
+</HTML>
+
