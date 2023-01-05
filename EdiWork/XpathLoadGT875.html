@@ -353,7 +353,7 @@ H6
 								<table border="0" cellspacing="0" cellpadding="0" width="100%">
 									<tr>
 										<td width="100%" valign="middle" align="middle">
-											<H1>PartnerLinQ Transaction ID : {{TransactionID}} </H1>
+											<H5>PartnerLinQ Transaction ID : {{TransactionID}} </H5>
 											<BR>
           </td>
 										</tr>
@@ -380,124 +380,22 @@ H6
 										</tr>
 									</table>
 									<table border="0" width="100%" cellspacing="0" cellpadding="0">
-										<tr> 
-    </tr>
+		
 										<tr>
 											<td width="50%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer PO #:  {{N9/N902}}</td>
-	<td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimated Delivery Date: {{G62/G6202-G6201 = '371'}} </td>
-										</tr>
-										
-										<tr>
-											<!-- <td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer PO #: {{BEG/BEG03}}</td> -->
-											<td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Required Delivery Date: {{G62/G6202-G6201 = '996'}}</td>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer PO #:  {{G50/G5003-G5001 = 'N'}}</td></tr>
+	<tr><td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimated Delivery Date: {{G62/G6202-G6201 = '371'}} </td></tr>
+	<tr>
+	<td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Required Delivery Date: {{G62/G6202-G6201 = '996'}}</td></tr>
+	<tr>
 											<td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requested Delivery Date: {{G62/G6202-G6201 = '002'}} </td>
 										</tr>
+										
+										
 									</table>
 									<br>
 
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Purchase Order Identification:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order Status Code
-    : {{G50/G5001-G5001 = 'N'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{G50/G5002-G5001 = 'N'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number
-    : {{G50/G5003-G5001 = 'N'}}
-    </td></tr>
-</table><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Contact:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Function Code
-    : {{G61/G6101-G6101 = 'BD'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
-    : {{G61/G6102-G6101 = 'BD'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Communication Number Qualifier
-    : {{G61/G6103-G6101 = 'BD'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Communication Number
-    : {{G61/G6104-G6101 = 'BD'}}
-    </td></tr>
-</table><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Date/Time:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Qualifier
-    : {{G62/G6201-G6201 = '02'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{G62/G6202-G6201 = '02'}}
-    </td></tr>
-</table><br>
- <div ID="idHeader1000" CLASS="clsHeader" STYLE="text-decoration:none" TITLE="Notes"
- align="left"><img ID="idHeaderButton1000" CLASS="clsHeaderButton"
- WIDTH="11" HEIGHT="11" ALT="Click to Expand"> 
-<b>Notes 
- </b></div> 
- <div ID="idBlurb1000" CLASS="clsBlurb"
-><b><div align="left"> <table border="0" width="100%" 
-    background="res://VistaRes.Dll/legalpad.gif" cellspacing="1" cellpadding="0" > 
-      <tr> 
-        <td width="5%" ></td> 
-        <td width="90%"> 
-		<b>Note -- Entire Transaction Set<br></b>
-<table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
-{{NTE/NTE02-NTE01 = 'GEN'}}
-        
-        </td> 
-      </tr> 
-</table> 
-</DIV></DIV><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Transportation Instructions:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Method of Payment
-    : {{G66/G6601-G6601 = 'PP'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation Method/Type Code
-    : {{G66/G6602-G6601 = 'PP'}}
-    </td></tr>
-</table><br>
+
 <table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
@@ -511,10 +409,13 @@ H6
 </tr> 
 </table>
 </td>
+<tr>
+
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+<BR>
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Bill-to-Party: </b>
+<b>Bill To: </b>
 </td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
@@ -523,7 +424,7 @@ H6
 </tr> 
 </table>
 </td>
-</tr><tr>
+
 <td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
@@ -540,6 +441,11 @@ H6
     <td width="100%" valign="top" align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} </td></tr></table>
 </td>
+
+
+</tr> 
+</tr><tr>
+
 <table style="margin-top : 10px" border="0" cellspacing="0" cellpadding="0" width="100%">
 														<tr>
 															<td valign="top" width="50%">
@@ -555,7 +461,52 @@ H6
 													</table>
 </tr></table><BR>
 
-{{LinedItemHtml}}
+<table cellpadding="0" border="0" width="100%">
+														<tr>
+															<td width="638" valign="top" class="sectiontitle" style="border: 0px; background-color:#68728c; padding: 2pt; color: White">Line Item Information</td>
+														</tr>
+													</table>
+													
+													<table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1"
+													<tr>
+														<td width="5%">
+															<b>Line</b>
+														</td>
+														<td width="10%">
+															<b>UPC</b>
+														</td>
+														<td width="15%">
+															<b>Buyers Item #</b>
+														</td>
+														<td width="13%">
+															<b>Description</b>
+														</td>
+														<td width="8%">
+															<b>Qty</b>
+														</td>
+														<td width="8%">
+															<b>UOM</b>
+														</td>
+														<td width="13%">
+															<b>	Price($)</b>
+														</td>
+														<td width="10%">
+															<b>	Price Basis</b>
+														</td>
+														<td width="10%">
+															<b>Ext Amount ($)</b>
+														</td>
+													</tr> 
+   {{LinedItemHtml}}
+   <tr>
+														<td width="15"/>
+														<td width="55%" colspan="5"> 
+</td>
+													</tr>
+												</td>
+											</tr>
+										</table>
+
 <!-- <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> -->
   <!-- <tr>  -->
     <!-- <td width="100%" valign="top" align="left"> -->
@@ -678,48 +629,9 @@ H6
     <!-- : 12 -->
     <!-- </td></tr> -->
 <!-- </table><br> -->
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Total Purchase Order:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity
-    : {{G76/G7601}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code
-    : {{G76/G7602}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight
-    : {{G76/G7603}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code
-    : {{G76/G7604}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Volume
-    : {{G76/G7605}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code
-    : {{G76/G7606}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amount
-    : {{G76/G7608}}
-    </td></tr>
-</table><br>
+<BR>
+<BR>
+
 </table></table></table><BR><BR><BR><BR></BODY>
 </HTML><script LANGUAGE="JavaScript"> 
 	function collapseAll()  
