@@ -3965,6 +3965,12 @@ namespace POC
                 {
                 XPathConnfig = new XPathConnfig() { XPath = "//NTE/NTE02", PlaceHolder = "{{MTX_2/MTX02}}", DefaultValue = "" , ConcatinationUsingSameXPath = true},
                 LineLevel = null
+                }
+                ,
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//G76/G7608", PlaceHolder = "{{G76/G7608}}", DefaultValue = ""},
+                LineLevel = null
                 },
                 new Configuration()
                 {

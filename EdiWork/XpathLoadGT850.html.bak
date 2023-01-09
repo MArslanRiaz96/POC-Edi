@@ -335,7 +335,7 @@ H6
 //-->
 		</script>
 		<body>
-			<BR>
+			
 				<!-- <IMG BORDER=0 SRC="http://logoimages.sv.softshare.com/tpks/images/Amazon.jpg"/> -->
 				<BR>
 					<table border="0" width="100%">
@@ -516,20 +516,6 @@ H6
 											</tr>
 										</table>
 										<br>
-											<table border="0" width="100%" cellspacing="0" cellpadding="0">
-												<tr>
-													<td width="25%" valign="top" align="left">
-														<b>Line Count: </b>
-{{CTT/CTT01}}
-   </td>
-												</tr>
-												<tr>
-													<td width="25%" valign="top" align="left">
-														<b>Grand Total: </b>
-{{ATM/ATM02-ATM01 = 'TT'}} 
-   </td>
-												</tr>
-											</table>
 										</table>
 									</table>
 								</table>
