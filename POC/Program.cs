@@ -22,7 +22,8 @@ namespace POC
                 Byte[] bytes = File.ReadAllBytes(ListLoadCollection.TemplatePath);
                 var content = Encoding.UTF8.GetString(bytes);
                 //String file = Convert.ToBase64String(bytes);
-                XPathHelper.XPathMapper(ListLoadCollection);
+                var mapping = ListLoadCollections.humanReadableConfigurationMappings.Where(x => x.TransactionSetCode == ListLoadCollection.TemplateSetCode).ToList();
+                XPathHelper.XPathMapper(ListLoadCollection, mapping);
             }
         }
         

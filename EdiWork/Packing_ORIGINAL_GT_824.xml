@@ -1,0 +1,41 @@
+<X12_00401_824 ID="1">
+	<ST ID="2" SegmentPosition="00">
+		<ST01 ID="00:3">824</ST01>
+		<ST02 ID="00:4">102895351</ST02>
+	</ST>
+	<BGN ID="5" SegmentPosition="00">
+		<BGN01 ID="00:6">00</BGN01>
+		<BGN02 ID="00:7">1445045807</BGN02>
+		<BGN03 ID="00:8">20230131</BGN03>
+		<BGN04 ID="00:9">164400</BGN04>
+		<BGN05 ID="00:10" />
+		<BGN06 ID="00:11">VB493367CW</BGN06>
+	</BGN>
+	<OTILoop1 ID="12" SegmentPosition="00">
+		<OTI ID="13" SegmentPosition="00">
+			<OTI01 ID="00:14">TR</OTI01>
+			<OTI02 ID="00:15">CN</OTI02>
+			<OTI03 ID="00:16">VB493367CW</OTI03>
+			<OTI04 ID="00:17" />
+			<OTI05 ID="00:18">WENP</OTI05>
+			<OTI06 ID="00:19">20230131</OTI06>
+			<OTI07 ID="00:20">164400</OTI07>
+			<OTI08 ID="00:21">243196787</OTI08>
+			<OTI09 ID="00:22">0001</OTI09>
+		</OTI>
+		<REF_2 ID="23" SegmentPosition="00">
+			<REF01 ID="00:24">IA</REF01>
+			<REF02 ID="00:25">42342519</REF02>
+		</REF_2>
+		<TEDLoop1 ID="26" SegmentPosition="00">
+			<TED ID="27" SegmentPosition="00">
+				<TED01 ID="00:28">009</TED01>
+				<TED02 ID="00:29">Load already completed/canceled by valeria_gonzalez@ryder.c.</TED02>
+			</TED>
+		</TEDLoop1>
+	</OTILoop1>
+	<SE ID="30" SegmentPosition="00">
+		<SE01 ID="00:31">6</SE01>
+		<SE02 ID="00:32">102895351</SE02>
+	</SE>
+</X12_00401_824>

@@ -44,6 +44,7 @@ namespace POC
         public bool ShowInLastLineItem { get; set; }
         public List<PreferedXpath> PreferedXpaths { get; set; }
         public List<string> ConcatinationUsingDifferentXPath { get; set; }
+        public bool AllowNodeSameRepetation { get; set; }
     }
     public class PreferedXpath
     {
@@ -61,5 +62,15 @@ namespace POC
     {
         public string SourceFormat { get; set; }
         public string TargetFormat { get; set; }
+    }
+    public class HumanReadableConfigurationMapping
+    {
+        public int TransactionSetCode { get; set; }
+        public int Version { get; set; }
+        public string Code { get; set; }
+        public string Value { get; set; }
+        public string CompanyId { get; set; }
+        public string TenantId { get; set; }
+        public string entity_name { get; set; }
     }
 }

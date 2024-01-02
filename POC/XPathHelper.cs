@@ -15,15 +15,15 @@ namespace POC
     public static class XPathHelper
     {
         public static string htmlArray = "";
-        public static void XPathMapper(HumanReadableConfiguration humanReadableConfiguration)
+        public static void XPathMapper(HumanReadableConfiguration humanReadableConfiguration, List<HumanReadableConfigurationMapping> mappings)
         {
             var listEdiXPathValues = new List<Tuple<string, string>>();
             var listPlaceHolderForCalculation = new List<Tuple<string, double>>();
             XmlDocument doc = new XmlDocument();
-                doc.Load(humanReadableConfiguration.PackingPath);
+            doc.Load(humanReadableConfiguration.PackingPath);
 
-                foreach (var listEdiXpath in humanReadableConfiguration.configurations)
-                {
+            foreach (var listEdiXpath in humanReadableConfiguration.configurations)
+            {
                 if (listEdiXpath.LineLevel != null)
                 {
                     XmlNodeList baseNodes = doc.SelectNodes(listEdiXpath.LineLevel.LineLevelXPath);
@@ -64,8 +64,14 @@ namespace POC
                                 }
                             }
 
-                            var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[ !string.IsNullOrEmpty(node) ? Convert.ToInt32(node) : i];
-                            if ( (XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null ) || (XPathConnfig.ShowInLastLineItem == false && !string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.ConcatinationUsingDifferentXPath != null)))
+                            var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[!string.IsNullOrEmpty(node) ? Convert.ToInt32(node) : i];
+
+                            if (elemList == null && XPathConnfig.AllowNodeSameRepetation)
+                            {
+                                elemList = baseNode.SelectNodes(XPathConnfig.XPath)[0];
+                            }
+
+                            if ((XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null) || (XPathConnfig.ShowInLastLineItem == false && !string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.ConcatinationUsingDifferentXPath != null)))
                             {
                                 if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
                                 {
@@ -76,7 +82,16 @@ namespace POC
                                 {
                                     if (XPathConnfig.MappingRequired == true)
                                     {
-                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, "db");
+                                        string mappedValue = mappings.Where(x => x.Code == elemList?.InnerXml).Select(x => x.Value).FirstOrDefault();
+                                        if (mappedValue != null)
+                                        {
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, mappedValue);
+                                        }
+                                        else
+                                        {
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList?.InnerXml == null ? "" : elemList?.InnerXml);
+                                        }
+
                                     }
                                     else if (XPathConnfig.DateFormat != null)
                                     {
@@ -147,7 +162,7 @@ namespace POC
                                                 ConcatinationUsingDifferentXPath = ConcatinationUsingDifferentXPath + " " + elemListForconcatinationlist[j].InnerXml;
                                             }
                                         }
-                                        
+
                                         htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, ConcatinationUsingDifferentXPath);
                                     }
                                     else if (!string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
@@ -168,7 +183,7 @@ namespace POC
                                                 {
                                                     identifierOneStepHead = false;
                                                 }
-                                                
+
                                             }
                                             if (elemListForconcatinationlist[j]?.InnerXml == XPathConnfig.GetXPathUsingIdentifier)
                                             {
@@ -196,9 +211,9 @@ namespace POC
                         i++;
                     }
 
-                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.LineLevel.PlaceHolder, htmlArray));
-                        htmlArray = "";
-                } 
+                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.LineLevel.PlaceHolder, htmlArray));
+                    htmlArray = "";
+                }
                 else if (listEdiXpath.XPathConnfig != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders == null)
                 {
                     XmlNodeList elemList = doc.SelectNodes(listEdiXpath.XPathConnfig.XPath);
@@ -214,7 +229,7 @@ namespace POC
                             {
                                 if (string.IsNullOrEmpty(preferedXpath.Identifier))
                                 {
-                                     elemListXpathValidator = doc.SelectNodes(preferedXpath.XPath)[i];
+                                    elemListXpathValidator = doc.SelectNodes(preferedXpath.XPath)[i];
                                     if (elemListXpathValidator != null)
                                     {
                                         listEdiXpath.XPathConnfig.XPath = preferedXpath.XPath;
@@ -226,7 +241,7 @@ namespace POC
                                 }
                                 else
                                 {
-                                     elemListXpathValidator = doc.SelectNodes(preferedXpath.XPath)[i];
+                                    elemListXpathValidator = doc.SelectNodes(preferedXpath.XPath)[i];
                                     if (elemListXpathValidator != null && elemListXpathValidator.InnerText.Contains(preferedXpath.Identifier))
                                     {
                                         listEdiXpath.XPathConnfig.XPath = preferedXpath.XPath;
@@ -251,7 +266,15 @@ namespace POC
                             {
                                 if (listEdiXpath.XPathConnfig.MappingRequired == true)
                                 {
-                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, "db"));
+                                    string mappedValue = mappings.Where(x => x.Code == (!string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml)).Select(x => x.Value).FirstOrDefault();
+                                    if (mappedValue != null)
+                                    {
+                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, mappedValue));
+                                    }
+                                    else
+                                    {
+                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, !string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml));
+                                    }
                                 }
                                 else if (listEdiXpath.XPathConnfig.DateFormat != null)
                                 {
@@ -265,7 +288,7 @@ namespace POC
 
                                         listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, !string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml));
                                     }
-                                    
+
                                 }
                                 else if (listEdiXpath.XPathConnfig.TimeFormat != null)
                                 {
@@ -344,7 +367,7 @@ namespace POC
 
                         if (isPreferedXpath = true)
                         {
-                        break;
+                            break;
                         }
 
                     }
@@ -356,25 +379,30 @@ namespace POC
                         }
                     }
                 }
-                else if(listEdiXpath.XPathConnfig != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders.Any())
+                else if (listEdiXpath.XPathConnfig != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders.Any())
                 {
                     double sum = 0;
                     foreach (var placeHolder in listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders)
                     {
-                        var placeHolderSum = listPlaceHolderForCalculation.Where(x=>x.Item1 == placeHolder).Select(x=>x.Item2).Sum();
+                        var placeHolderSum = listPlaceHolderForCalculation.Where(x => x.Item1 == placeHolder).Select(x => x.Item2).Sum();
                         sum = sum + placeHolderSum;
                     }
                     listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, sum.ToString()));
                 }
-                
+
             }
-                WebClient webClient = new WebClient();
+            WebClient webClient = new WebClient();
 
             string html = webClient.DownloadString(humanReadableConfiguration.TemplatePath).ToString();
             foreach (var listEdiXPathValue in listEdiXPathValues)
             {
                 html = Regex.Replace(html, listEdiXPathValue.Item1, listEdiXPathValue.Item2, RegexOptions.None);
             }
+
+            //
+            html = HtmlCleanupHelper.ExecuteCleanup(html);
+            //
+
             if (!File.Exists(humanReadableConfiguration.TemplatePathUpdatedTemp))
             {
                 File.Create(humanReadableConfiguration.TemplatePathUpdatedTemp).Dispose();
