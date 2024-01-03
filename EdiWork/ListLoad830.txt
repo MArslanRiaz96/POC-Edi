@@ -1,0 +1,91 @@
+{{BFR/BFR01}} //BFR/BFR01  00 = Original
+{{BFR/BFR02}} //BFR/BFR02
+{{BFR/BFR04}} //BFR/BFR01  BB = Customer Production (Consumption) Based
+{{BFR/BFR05}} //BFR/BFR01  A = Actual Discrete Quantities
+{{BFR/BFR06}} //BFR/BFR01  time
+{{BFR/BFR07}} //BFR/BFR01  time
+{{BFR/BFR08}} //BFR/BFR01  time{{BFR/BFR02}} //BFR/BFR02
+{{BFR/BFR04}} //BFR/BFR01  BB = Customer Production (Consumption) Based
+{{BFR/BFR05}} //BFR/BFR01  A = Actual Discrete Quantities
+{{BFR/BFR06}} //BFR/BFR01  time
+{{BFR/BFR07}} //BFR/BFR01  time
+{{BFR/BFR08}} //BFR/BFR01  time
+
+{{N1/N102-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N102
+{{N1/N103-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N103 UL = UCC/EAN Location Code
+{{N1/N104-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N104
+
+{{N1/N104-N101 = 'TO'}} //N1Loop1[N1[N101 = 'TO']]/N1/N102
+
+
+
+{{TransactionInformationHtml}} //LINLoop1
+
+......................................................
+
+
+
+{{BGN/BGN01}} //BGN/BGN01 	34 = Payment Declined
+{{BGN/BGN02}} //BGN/BGN02	
+{{BGN/BGN03}} //BGN/BGN03
+
+{{N1/N102-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N102	FR = Message from
+{{N1/N103-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N103	9 = D-U-N-S+4
+{{N1/N104-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N104	
+
+{{N1/N102-N101 = 'TO'}} //N1Loop1[N1[N101 = 'TO']]/N1/N102	TO = Message to
+{{N1/N103-N101 = 'TO'}} //N1Loop1[N1[N101 = 'TO']]/N1/N103	9 = D-U-N-S+4
+{{N1/N104-N101 = 'TO'}} //N1Loop1[N1[N101 = 'TO']]/N1/N104
+
+{{N1/N102-N101 = 'BB'}} //N1Loop1[N1[N101 = 'BB']]/N1/N102	BB = 9=D-U-N-S+4
+
+{{N1/N102-N101 = 'PE'}} //N1Loop1[N1[N101 = 'PE']]/N1/N102	PE = Payee
+{{N1/N103-N101 = 'PE'}} //N1Loop1[N1[N101 = 'PE']]/N1/N103	9 = D-U-N-S+4
+{{N1/N104-N101 = 'PE'}} //N1Loop1[N1[N101 = 'PE']]/N1/N104
+
+{{PER/PER02}} //N1Loop1/PER/PER02 
+{{PER/PER03}} //N1Loop1/PER/PER03	TE = Telephone
+{{PER/PER04}} //N1Loop1/PER/PER04
+{{PER/PER05}} //N1Loop1/PER/PER05	EM = Email
+{{PER/PER06}} //N1Loop1/PER/PER06
+
+{{SE/SE01}} //SE/SE01
+
+{{OTI/OTI01}} //OTI/OTI01	TR = Transaction Set Reject 
+{{OTI/OTI02}} //OTI/OTI02	TN = Transaction Reference Number 
+{{OTI/OTI03}} //OTI/OTI03
+{{OTI/OTI04}} //OTI/OTI04
+{{OTI/OTI05}} //OTI/OTI05
+{{OTI/OTI06}} //OTI/OTI06	date
+{{OTI/OTI07}} //OTI/OTI07	time
+{{OTI/OTI08}} //OTI/OTI08
+{{OTI/OTI09}} //OTI/OTI09
+{{OTI/OTI10}} //OTI/OTI10	810 = Invoice
+
+{{REF_2/REF02-REF01 = 'BM'}} //OTILoop1/REF_2[REF01 = 'BM']/REF02	BM = Bill of Lading Number
+{{REF_2/REF02-REF01 = 'EQ'}} //OTILoop1/REF_2[REF01 = 'EQ']/REF02 	EQ = Equipment Number
+{{REF_2/REF02-REF01 = 'WY'}} //OTILoop1/REF_2[REF01 = 'WY']/REF02	WY = Waybill Number
+{{REF_2/REF02-REF01 = 'SI'}} //OTILoop1/REF_2[REF01 = 'SI']/REF02	SI = Shipper's Identifying Number for Shipment (SID)
+{{REF_2/REF02-REF01 = '11'}} //OTILoop1/REF_2[REF01 = '11']/REF02	11 = Account Number
+{{REF_2/REF02-REF01 = 'IA'}} //OTILoop1/REF_2[REF01 = 'IA']/REF02	IA = Internal Vendor Number
+
+{{DTM/DTM01}} //DTM/DTM01	003 = Invoice
+{{DTM/DTM02}} //DTM/DTM02	date
+{{DTM/DTM03}} //DTM/DTM03	time
+{{DTM/DTM04}} //DTM/DTM04	time code
+
+{{AMT/AMT01}} //AMT/AMT01	TP = Total payment amount
+{{AMT/AMT02}} //AMT/AMT02	Amount
+
+{{QTY/QTY01}} //QTY/QTY01	53 = Original payment item count.
+{{QTY/QTY02}} //QTY/QTY02	Quantity 
+
+<tr><table style=\"margin-top : 10px\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\"><tr><td valign=\"top\" width=\"50%\"><table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"><tr><td width=\"100%\" valign=\"top\" align=\"left\"><b>Technical Error Description: </b></td></tr></table><table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"><tr><td width=\"50%\" valign=\"top\" align=\"left\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Application Error Condition Code : </span> {{TEDLoop1/TED/TED01}}</td></tr><tr><td width=\"50%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Free Form Message : </span> {{TEDLoop1/TED/TED02}} </td></tr><tr><td width=\"50%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Copy of Bad Data Element : </span> {{TEDLoop1/TED/TED07}} </td></tr></table></td></tr></table></tr><tr><td width=\"15\"/><td width=\"55%\" colspan=\"5\"> </td></tr></td><br /><table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"><tr><td width=\"100%\" valign=\"top\" align=\"left\"><b>Notes: </b></td></tr></table><table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" ><tr><td border=\"0\" width=\"100%\" valign=\"top\" align=\"left\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Note -- Entire Transaction Set</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{NTE/NTE02}}</span></td></tr></table>
+{{TransactionInformationHtml}} //TEDLoop1
+
+{{TEDLoop1/TED/TED01}} //TED/TED01	024 = Total Out of Balance
+{{TEDLoop1/TED/TED02}} //TED/TED02	Free Form Message
+{{TEDLoop1/TED/TED07}} //TED/TED07	Copy of Bad Data Element
+
+.//NTE/NTE02 {{NTE/NTE02}}	Note
+

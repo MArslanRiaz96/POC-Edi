@@ -82,15 +82,7 @@ namespace POC
                                 {
                                     if (XPathConnfig.MappingRequired == true)
                                     {
-                                        string mappedValue = mappings.Where(x => x.Code == elemList?.InnerXml).Select(x => x.Value).FirstOrDefault();
-                                        if (mappedValue != null)
-                                        {
-                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, mappedValue);
-                                        }
-                                        else
-                                        {
-                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList?.InnerXml == null ? "" : elemList?.InnerXml);
-                                        }
+                                        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, "db");
 
                                     }
                                     else if (XPathConnfig.DateFormat != null)
@@ -266,15 +258,7 @@ namespace POC
                             {
                                 if (listEdiXpath.XPathConnfig.MappingRequired == true)
                                 {
-                                    string mappedValue = mappings.Where(x => x.Code == (!string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml)).Select(x => x.Value).FirstOrDefault();
-                                    if (mappedValue != null)
-                                    {
-                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, mappedValue));
-                                    }
-                                    else
-                                    {
-                                        listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, !string.IsNullOrEmpty(node) || elemListXpathValidator == null ? elemList[i].InnerXml : elemListXpathValidator?.InnerXml));
-                                    }
+                                    listEdiXPathValues.Add(Tuple.Create(listEdiXpath.XPathConnfig.PlaceHolder, "db"));
                                 }
                                 else if (listEdiXpath.XPathConnfig.DateFormat != null)
                                 {
