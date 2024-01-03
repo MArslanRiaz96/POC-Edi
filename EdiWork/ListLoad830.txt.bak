@@ -4,6 +4,11 @@
 {{BFR/BFR05}} //BFR/BFR01  A = Actual Discrete Quantities
 {{BFR/BFR06}} //BFR/BFR01  time
 {{BFR/BFR07}} //BFR/BFR01  time
+{{BFR/BFR08}} //BFR/BFR01  time{{BFR/BFR02}} //BFR/BFR02
+{{BFR/BFR04}} //BFR/BFR01  BB = Customer Production (Consumption) Based
+{{BFR/BFR05}} //BFR/BFR01  A = Actual Discrete Quantities
+{{BFR/BFR06}} //BFR/BFR01  time
+{{BFR/BFR07}} //BFR/BFR01  time
 {{BFR/BFR08}} //BFR/BFR01  time
 
 {{N1/N102-N101 = 'FR'}} //N1Loop1[N1[N101 = 'FR']]/N1/N102

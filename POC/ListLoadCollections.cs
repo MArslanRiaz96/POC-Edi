@@ -4495,17 +4495,17 @@ namespace POC
                 configurations = new List<Configuration>() {
                     new Configuration()
                     {
-                        XPathConnfig = new XPathConnfig() { XPath = "//BGN/BGN01", PlaceHolder = "{{BGN/BGN01}}", DefaultValue = "", MappingRequired = true},
+                        XPathConnfig = new XPathConnfig() { XPath = "//BFR/BFR02", PlaceHolder = "{{BFR/BFR02}}", DefaultValue = ""},
                         LineLevel = null
                     },
                     new Configuration()
                     {
-                        XPathConnfig = new XPathConnfig() { XPath = "//BGN/BGN02", PlaceHolder = "{{BGN/BGN02}}", DefaultValue = ""},
+                        XPathConnfig = new XPathConnfig() { XPath = "//BFR/BFR01", PlaceHolder = "{{BFR/BFR01}}", DefaultValue = "", MappingRequired = true},
                         LineLevel = null
                     },
                     new Configuration()
                     {
-                        XPathConnfig = new XPathConnfig() { XPath = "//BGN/BGN03", PlaceHolder = "{{BGN/BGN03}}", DefaultValue = "", DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" }},
+                        XPathConnfig = new XPathConnfig() { XPath = "//BFR/BFR06", PlaceHolder = "{{BFR/BFR06}}", DefaultValue = "", DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" }},
                         LineLevel = null
                     },
                     new Configuration()
