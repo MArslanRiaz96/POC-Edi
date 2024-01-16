@@ -5,10 +5,9 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace POC
 {
@@ -18,19 +17,23 @@ namespace POC
         public static void XPathMapper(HumanReadableConfiguration humanReadableConfiguration, List<HumanReadableConfigurationMapping> mappings)
         {
             var listEdiXPathValues = new List<Tuple<string, string>>();
+            var childEdiXPathValues = new List<Tuple<string, string>>();
             var listPlaceHolderForCalculation = new List<Tuple<string, double>>();
             XmlDocument doc = new XmlDocument();
             doc.Load(humanReadableConfiguration.PackingPath);
-
+            
             foreach (var listEdiXpath in humanReadableConfiguration.configurations)
             {
                 if (listEdiXpath.LineLevel != null)
                 {
                     XmlNodeList baseNodes = doc.SelectNodes(listEdiXpath.LineLevel.LineLevelXPath);
                     int i = 0;
+                    int n = 0;
                     foreach (XmlNode baseNode in baseNodes)
                     {
                         var htmltemplate = listEdiXpath.LineLevel.HTML;
+                        var childHtmlTemplate = listEdiXpath.LineLevel.SecondLineLevel.HTML;
+                        var childTemplateTemp = listEdiXpath.LineLevel.SecondLineLevel.HTML;
                         foreach (var XPathConnfig in listEdiXpath.LineLevel.XPathConnfigs)
                         {
                             string node = "";
@@ -73,6 +76,10 @@ namespace POC
 
                             if ((XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null) || (XPathConnfig.ShowInLastLineItem == false && !string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.ConcatinationUsingDifferentXPath != null)))
                             {
+                                if (XPathConnfig.IsChildMarker)
+                                {
+                                    htmltemplate = Regex.Replace(htmltemplate, listEdiXpath.LineLevel.SecondLineLevel.PlaceHolder, $"{listEdiXpath.LineLevel.SecondLineLevel.PlaceHolder}{elemList.InnerXml}");
+                                }
                                 if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
                                 {
                                     Console.WriteLine(elemList.InnerXml);
@@ -117,8 +124,8 @@ namespace POC
                                         {
                                             try
                                             {
-                                                var elemListForMutiplication = baseNode.SelectNodes(Xpath)[i];
-                                                XpathValues.Add(Convert.ToDouble(elemListForMutiplication.InnerXml));
+                                                var elemListForMultiplication = baseNode.SelectNodes(Xpath)[i];
+                                                XpathValues.Add(Convert.ToDouble(elemListForMultiplication.InnerXml));
 
                                             }
                                             catch (Exception ex)
@@ -190,7 +197,7 @@ namespace POC
                                     }
 
                                 }
-
+                                
 
                             }
                             else if (elemList == null || XPathConnfig.ShowInLastLineItem == true)
@@ -199,12 +206,45 @@ namespace POC
                             }
 
                         }
+
+                        if (listEdiXpath.LineLevel.IsSecondLineLevel)
+                        {
+                            //var baseChildNodes = baseNode.SelectNodes(listEdiXpath.LineLevel.SecondLineLevel.LineLevelXPath);
+                            var baseChildNodes = baseNode.ChildNodes;
+                            string childRows = "";
+                            var marker = listEdiXpath.LineLevel.XPathConnfigs.Where(x => x.IsChildMarker == true).FirstOrDefault();
+                            var lineNode = baseNode.SelectNodes(marker.XPath)[i];
+                            foreach (XmlNode childNode in baseChildNodes)
+                            {
+                                if (childNode.Name.Contains(listEdiXpath.LineLevel.SecondLineLevel.LineLevelXPath.Replace("//", "")))
+                                {
+                                    foreach (var childConnfig in listEdiXpath.LineLevel.SecondLineLevel.XPathConnfigs)
+                                    {
+                                        var elemList = childNode.SelectNodes(childConnfig.XPath)[n];
+                                        Console.WriteLine(elemList.InnerXml);
+                                        childTemplateTemp = Regex.Replace(childTemplateTemp, childConnfig.PlaceHolder, elemList.InnerXml);
+                                    }
+                                    childRows = childRows + childTemplateTemp;
+                                    childTemplateTemp = childHtmlTemplate;
+                                    n++;
+                                }
+                            }
+                            childEdiXPathValues.Add(Tuple.Create($"{listEdiXpath.LineLevel.SecondLineLevel.PlaceHolder}{lineNode.InnerXml}", childRows));
+                            childRows = string.Empty;
+                        }
+                        {
+                            int childTable = 0;
+
+                        }
                         htmlArray = htmlArray + htmltemplate;
                         i++;
                     }
 
                     listEdiXPathValues.Add(Tuple.Create(listEdiXpath.LineLevel.PlaceHolder, htmlArray));
+                    listEdiXPathValues.AddRange(childEdiXPathValues);
                     htmlArray = "";
+
+
                 }
                 else if (listEdiXpath.XPathConnfig != null && listEdiXpath.XPathConnfig.AdditionUsingPlaceHolders == null)
                 {
@@ -415,6 +455,11 @@ namespace POC
                 UseShellExecute = true
             };
             p2.Start();
+
+        }
+
+        private static void ImplementationForSecondLineLevel()
+        {
 
         }
     }
