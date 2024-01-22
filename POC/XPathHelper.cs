@@ -7,7 +7,6 @@ using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
 using System.Xml;
-using System.Xml.Linq;
 
 namespace POC
 {
@@ -21,7 +20,7 @@ namespace POC
             var listPlaceHolderForCalculation = new List<Tuple<string, double>>();
             XmlDocument doc = new XmlDocument();
             doc.Load(humanReadableConfiguration.PackingPath);
-            
+
             foreach (var listEdiXpath in humanReadableConfiguration.configurations)
             {
                 if (listEdiXpath.LineLevel != null)
@@ -32,8 +31,7 @@ namespace POC
                     foreach (XmlNode baseNode in baseNodes)
                     {
                         var htmltemplate = listEdiXpath.LineLevel.HTML;
-                        var childHtmlTemplate = listEdiXpath.LineLevel.SecondLineLevel.HTML;
-                        var childTemplateTemp = listEdiXpath.LineLevel.SecondLineLevel.HTML;
+                        
                         foreach (var XPathConnfig in listEdiXpath.LineLevel.XPathConnfigs)
                         {
                             string node = "";
@@ -76,9 +74,9 @@ namespace POC
 
                             if ((XPathConnfig.ShowInLastLineItem == true && baseNodes.Count == i + 1) || (XPathConnfig.ShowInLastLineItem == false && elemList != null) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.MutiplcationUsingXPath != null) || (XPathConnfig.ShowInLastLineItem == false && !string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier) || (XPathConnfig.ShowInLastLineItem == false && XPathConnfig.ConcatinationUsingDifferentXPath != null)))
                             {
-                                if (XPathConnfig.IsChildMarker)
+                                if (XPathConnfig.IsIdentityMarker && listEdiXpath.LineLevel.IsChildLineLevel)
                                 {
-                                    htmltemplate = Regex.Replace(htmltemplate, listEdiXpath.LineLevel.SecondLineLevel.PlaceHolder, $"{listEdiXpath.LineLevel.SecondLineLevel.PlaceHolder}{elemList.InnerXml}");
+                                    htmltemplate = Regex.Replace(htmltemplate, listEdiXpath.LineLevel.ChildLineLevel.PlaceHolder, $"{listEdiXpath.LineLevel.ChildLineLevel.PlaceHolder}-{elemList.InnerXml}");
                                 }
                                 if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
                                 {
@@ -197,7 +195,7 @@ namespace POC
                                     }
 
                                 }
-                                
+
 
                             }
                             else if (elemList == null || XPathConnfig.ShowInLastLineItem == true)
@@ -207,29 +205,69 @@ namespace POC
 
                         }
 
-                        if (listEdiXpath.LineLevel.IsSecondLineLevel)
+                        if (listEdiXpath.LineLevel.IsChildLineLevel)
                         {
+                            var childHtmlTemplate = listEdiXpath.LineLevel?.ChildLineLevel.HTML;
+                            var childTemplateTemp = listEdiXpath.LineLevel?.ChildLineLevel.HTML;
                             //var baseChildNodes = baseNode.SelectNodes(listEdiXpath.LineLevel.SecondLineLevel.LineLevelXPath);
                             var baseChildNodes = baseNode.ChildNodes;
                             string childRows = "";
-                            var marker = listEdiXpath.LineLevel.XPathConnfigs.Where(x => x.IsChildMarker == true).FirstOrDefault();
+                            var marker = listEdiXpath.LineLevel.XPathConnfigs.Where(x => x.IsIdentityMarker == true).FirstOrDefault();
                             var lineNode = baseNode.SelectNodes(marker.XPath)[i];
                             foreach (XmlNode childNode in baseChildNodes)
                             {
-                                if (childNode.Name.Contains(listEdiXpath.LineLevel.SecondLineLevel.LineLevelXPath.Replace("//", "")))
+                                if (childNode.Name.Contains(listEdiXpath.LineLevel.ChildLineLevel.LineLevelXPath.Replace("//", "")))
                                 {
-                                    foreach (var childConnfig in listEdiXpath.LineLevel.SecondLineLevel.XPathConnfigs)
+                                    foreach (var childConfig in listEdiXpath.LineLevel.ChildLineLevel.XPathConnfigs)
                                     {
-                                        var elemList = childNode.SelectNodes(childConnfig.XPath)[n];
-                                        Console.WriteLine(elemList.InnerXml);
-                                        childTemplateTemp = Regex.Replace(childTemplateTemp, childConnfig.PlaceHolder, elemList.InnerXml);
+                                        var elemList = childNode.SelectNodes(childConfig.XPath)[n];
+                                        if (childConfig.MappingRequired == false && childConfig.DateFormat == null
+                                            && childConfig.TimeFormat == null && childConfig.MutiplcationUsingXPath == null
+                                            && childConfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(childConfig.GetXPathUsingIdentifier))
+                                        {
+                                            Console.WriteLine(elemList.InnerXml);
+                                            childTemplateTemp = Regex.Replace(childTemplateTemp, childConfig.PlaceHolder, elemList.InnerXml);
+                                        }
+                                        else
+                                        {
+                                            if (childConfig.MappingRequired == true)
+                                            {
+                                                childTemplateTemp = Regex.Replace(childTemplateTemp, childConfig.PlaceHolder,"db");
+                                            }
+                                            else if (childConfig.DateFormat != null)
+                                            {
+                                                try
+                                                {
+                                                    var parsedDate = DateTime.ParseExact(elemList.InnerXml, childConfig.DateFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(childConfig.DateFormat.TargetFormat);
+                                                    childTemplateTemp = Regex.Replace(childTemplateTemp, childConfig.PlaceHolder, parsedDate);
+                                                }
+                                                catch (Exception ex)
+                                                {
+                                                    childTemplateTemp = Regex.Replace(childTemplateTemp, childConfig.PlaceHolder, elemList.InnerXml);
+                                                }
+
+                                            }
+                                            else if (childConfig.TimeFormat != null)
+                                            {
+                                                try
+                                                {
+                                                    var parsedTime = DateTime.ParseExact(elemList.InnerXml, childConfig.TimeFormat.SourceFormat, CultureInfo.InvariantCulture).ToString(childConfig.TimeFormat.TargetFormat);
+                                                    childTemplateTemp = Regex.Replace(childTemplateTemp, childConfig.PlaceHolder, parsedTime);
+                                                }
+                                                catch (Exception ex)
+                                                {
+                                                    childTemplateTemp = Regex.Replace(childTemplateTemp, childConfig.PlaceHolder, elemList.InnerXml);
+                                                }
+                                            }
+                                        }
+
                                     }
                                     childRows = childRows + childTemplateTemp;
                                     childTemplateTemp = childHtmlTemplate;
                                     n++;
                                 }
                             }
-                            childEdiXPathValues.Add(Tuple.Create($"{listEdiXpath.LineLevel.SecondLineLevel.PlaceHolder}{lineNode.InnerXml}", childRows));
+                            childEdiXPathValues.Add(Tuple.Create($"{listEdiXpath.LineLevel.ChildLineLevel.PlaceHolder}-{lineNode.InnerXml}", childRows));
                             childRows = string.Empty;
                         }
                         {

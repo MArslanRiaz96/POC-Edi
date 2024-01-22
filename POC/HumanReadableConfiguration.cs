@@ -28,8 +28,8 @@ namespace POC
         public string LineLevelXPath { get; set; }
         public string PlaceHolder { get; set; }
         public List<XPathConnfig> XPathConnfigs { get; set; }
-        public bool IsSecondLineLevel { get; set; }
-        public LineLevel SecondLineLevel { get; set; }
+        public bool IsChildLineLevel { get; set; }
+        public LineLevel ChildLineLevel { get; set; }
     }
     public class XPathConnfig
     {
@@ -48,7 +48,7 @@ namespace POC
         public List<PreferedXpath> PreferedXpaths { get; set; }
         public List<string> ConcatinationUsingDifferentXPath { get; set; }
         public bool AllowNodeSameRepetation { get; set; }
-        public bool IsChildMarker { get; set; }
+        public bool IsIdentityMarker { get; set; }
 
     }
     public class PreferedXpath

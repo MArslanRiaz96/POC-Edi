@@ -21,7 +21,7 @@ namespace POC
                  var tes  = JsonConvert.SerializeObject(ListLoadCollection);
                 Byte[] bytes = File.ReadAllBytes(ListLoadCollection.TemplatePath);
                 var content = Encoding.UTF8.GetString(bytes);
-                //String file = Convert.ToBase64String(bytes);
+                String file = Convert.ToBase64String(bytes);
                 var mapping = ListLoadCollections.humanReadableConfigurationMappings.Where(x => x.TransactionSetCode == ListLoadCollection.TemplateSetCode).ToList();
                 XPathHelper.XPathMapper(ListLoadCollection, mapping);
             }
