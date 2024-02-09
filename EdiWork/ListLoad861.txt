@@ -1,0 +1,52 @@
+{{BRA/BRA01}} //BRA/BRA01 -->Reference Identification
+{{BRA/BRA02}} //BRA/BRA02 -->Date
+{{BRA/BRA03}} //BRA/BRA03 -->OO Orignal MAPREQ
+{{BRA/BRA04}} //BRA/BRA04 -->2 Post Receipt Advice MAPREQ DISCREQ A LOT OF CODES
+{{DTM/DTM02}} //DTM/DTM02 --> Date
+
+
+{{N1/N104-N101 = 'VN'}} //N1Loop1[N1[N101 = 'VN']]/N1/N104
+
+
+Mappings
+OO --> Orignal
+2  --> Post Receipt Advice
+PC --> Piece
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BRA/BRA04 Mappings
+1	Receiving Dock Advice
+2	Post Receipt Advice
+3	Disposition Advice
+4	Metered Gas Volume Advice
+5	Facility Operator's Allocation Advice
+6	Natural Gas Seller's Allocation Advice
+7	Pipeline Allocation Advice
+8	Acceptance Certificate
+9	Authorized Representative in Receipt of an Acceptance Alert
+An acknowledgment that acceptance has taken place (at destination) by an authorized (government) representative who had been previously alerted to the fact that there is a shipment inbound for which acceptance at destination will be required
+A	Authorized Representative Not in Receipt of an Acceptance Alert
+An acknowledgment that acceptance has taken place (at destination) by an authorized (government) representative who had not been previously alerted to the fact that there is a shipment inbound for which acceptance at destination will be required
+R	Intermediate Point Receipt Advice

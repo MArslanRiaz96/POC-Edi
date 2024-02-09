@@ -4677,43 +4677,196 @@ namespace POC
  //           }
  //       }
 
+ //           new HumanReadableConfiguration()
+ //           {
+ //               TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XPathLoad852.html"),// Placeholder file
+ //               TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XPathLoad852Updated.html"),
+ //               PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGNAL_852.xml"), // Packing file where xml path defined
+ //               TemplateSetCode = 852,
+ //               KDIVersion = "",
+ //               configurations = new List<Configuration>() {
+
+ //                   #region Reporting Date/Action
+	//	new Configuration()
+ //                   {
+ //                       XPathConnfig = new XPathConnfig() { XPath = "//XQ/XQ01", PlaceHolder = "{{XQ/XQ01}}", DefaultValue = "", MappingRequired = true},
+ //                       LineLevel = null
+ //                   },
+ //                   new Configuration()
+ //                   {
+ //                       XPathConnfig = new XPathConnfig() { XPath = "//XQ/XQ02", PlaceHolder = "{{XQ/XQ02}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "MMddyyyy", TargetFormat = "MM/dd/yyyy" }},
+ //                       LineLevel = null
+ //                   },
+ //                    new Configuration()
+ //                   {
+ //                       XPathConnfig = new XPathConnfig() { XPath = "//XQ/XQ03", PlaceHolder = "{{XQ/XQ03}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "MMddyyyy", TargetFormat = "MM/dd/yyyy" }},
+ //                       LineLevel = null
+ //                   }, 
+	//#endregion
+
+ //                   #region Resale Dealer
+
+ //         new Configuration()
+ //                   {
+ //                       XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DU']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'DU'}}", DefaultValue = ""},
+ //                       LineLevel = null
+ //                   },
+ //                        new Configuration()
+ //                   {
+ //                       XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DU']]/N1/N104", PlaceHolder = "{{N1/N104-N101 = 'DU'}}", DefaultValue = ""},
+ //                       LineLevel = null
+ //                   }, 
+	//#endregion
+
+ //                   #region Date/Time Reference
+	//	new Configuration()
+ //                   {
+ //                       XPathConnfig = new XPathConnfig() { XPath = "//DTM/DTM02", PlaceHolder = "{{DTM/DTM02}}", DefaultValue = "", DateFormat = new DateFormat() { SourceFormat = "MMddyyyy", TargetFormat = "MM/dd/yyyy" }},
+ //                       LineLevel = null
+ //                   }, 
+	//#endregion
+
+ //                   #region Vendor
+
+ //         new Configuration()
+ //                   {
+ //                       XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'VN']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'VN'}}", DefaultValue = ""},
+ //                       LineLevel = null
+ //                   },
+ //                        new Configuration()
+ //                   {
+ //                       XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'VN']]/N1/N104", PlaceHolder = "{{N1/N104-N101 = 'VN'}}", DefaultValue = ""},
+ //                       LineLevel = null
+ //                   }, 
+	//#endregion
+
+ //                   #region Line Count
+	//	      new Configuration()
+ //                   {
+ //                       XPathConnfig = new XPathConnfig() { XPath = "//CTT/CTT01", PlaceHolder = "{{CTT/CTT01}}", DefaultValue = ""},
+ //                       LineLevel = null
+ //                   }, 
+	//#endregion
+
+ //               new Configuration()
+ //               {
+ //                   XPathConnfig = null,
+ //                   LineLevel = new LineLevel()
+ //                   {
+ //                       HTML = "<table style=\"border: 0px; border-style: solid; border-color: black; padding: 2pt; \" WIDTH=\"638\"> <tr> <td width=\"100%\" class=\"sectiontitle\"> <font face=\"Arial\" color=\"#FA9101\">Line Item {{LIN/LIN01}}</font> </td> </tr> <tr> <td width=\"100%\"> </center> </div> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td> <b>Part Numbers</b> </td> </tr> </table> <table border=\"0\" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" bordercolor=\"#808080\" bordercolorlight=\"#C0C0C0\" bordercolordark=\"#808080\" background=\"res://VistaRes.Dll/legalpad.gif\"> <TR> <TD WIDTH=\"35%\">     Vendor's (Seller's) Item Number</TD> <TD>{{LIN/LIN03}}</TD> </TR> <TR> <TD WIDTH=\"35%\">     U.P.C. Consumer Package Code (1-5-5-1)</TD> <TD>{{LIN/LIN05}}</TD> </TR> </TR> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td/> </tr> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Reference Identification: </b> </td> </tr> </table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Reference Identification Qualifier : {{N9_3/N901}} </td> </tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Reference Identification : {{N9_3/N902}} </td> </tr> </table> <br> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b> Cost of Goods Sold : {{AMT/AMT02}} </b> </td> </tr> </table> {{ChildTransaction}} <hr style=\"height: 1px; border-style: solid; border-color: #FA9101; padding: 2pt; \" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" >",
+ //                       LineLevelXPath = "//LINLoop1",
+ //                       PlaceHolder = "{{TransactionInformationHtml}}",
+ //                       XPathConnfigs = new List<XPathConnfig>()
+ //                       {
+
+ //                           #region LIN
+	//	                    new XPathConnfig(){
+ //                               XPath="//LIN//LIN01",
+ //                               PlaceHolder="{{LIN/LIN01}}",
+ //                               DefaultValue="",
+ //                               IsIdentityMarker=true,
+ //                           },
+ //                           //   Part Numbers
+ //                           new XPathConnfig(){
+ //                               XPath="//LIN//LIN03",
+ //                                DefaultValue="",
+ //                               PlaceHolder="{{LIN/LIN03}}",
+
+ //                           },
+ //                           // Reference Identification
+ //                           new XPathConnfig(){
+ //                               XPath="//LIN/LIN05",
+ //                                DefaultValue="",
+ //                               PlaceHolder="{{LIN/LIN05}}",
+ //                           },
+
+ //                           //  Buyer's Size Code
+ //                           new XPathConnfig(){
+ //                               XPath="//N9_3/N901",
+ //                                DefaultValue="",
+ //                               PlaceHolder="{{N9_3/N901}}",
+ //                               MappingRequired = true,
+ //                           },
+ //                           // Buyers Color
+ //                           new XPathConnfig(){
+ //                               XPath="//N9_3/N902",
+ //                                DefaultValue="",
+ //                               PlaceHolder="{{N9_3/N902}}",
+ //                           },
+ //                           new XPathConnfig(){
+ //                               XPath="//AMT/AMT02",
+ //                                DefaultValue="",
+ //                               PlaceHolder="{{AMT/AMT02}}",
+ //                           }
+	//#endregion
+
+
+ //                       },
+ //                       IsChildLineLevel=true,
+ //                       ChildLineLevel=new LineLevel()
+ //                       {
+ //                           HTML="<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td/> </tr> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Product Activity Reporting: </b> </td> </tr> </table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Activity Code : {{ZA/ZA01}} </td> </tr> </table> <br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <td> <b>Destination Quantities</b> <tr> <td width=\"100%\" align=\"left\">      Standard Address Number (SAN): {{SDQ/SDQ03}}: {{SDQ/SDQ04}} {{SDQ/SDQ01}}<br> </td> </tr> </td> </table>",
+ //                       LineLevelXPath="//ZALoop1",
+ //                       PlaceHolder="{{ChildTransaction}}",
+ //                       XPathConnfigs=new List<XPathConnfig>()
+ //                       {
+ //                           new XPathConnfig(){
+ //                               XPath="//ZA/ZA01",
+ //                               PlaceHolder="{{ZA/ZA01}}",
+ //                               DefaultValue="",
+ //                               MappingRequired=true,
+ //                           },
+ //                            new XPathConnfig(){
+ //                               XPath="//SDQ/SDQ03",
+ //                               PlaceHolder="{{SDQ/SDQ03}}",
+ //                               DefaultValue="",
+ //                           },
+ //                            new XPathConnfig(){
+ //                               XPath="//SDQ/SDQ04",
+ //                               PlaceHolder="{{SDQ/SDQ04}}",
+ //                               DefaultValue="",
+ //                           },
+ //                            new XPathConnfig(){
+ //                               XPath="//SDQ/SDQ01",
+ //                               PlaceHolder="{{SDQ/SDQ01}}",
+ //                               DefaultValue="",
+ //                               MappingRequired=true,
+ //                           },
+ //                       },
+ //                       }
+ //                   }
+ //               }
+ //           }
+ //       }
+
             new HumanReadableConfiguration()
             {
-                TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XPathLoad852.html"),// Placeholder file
-                TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XPathLoad852Updated.html"),
-                PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGNAL_852.xml"), // Packing file where xml path defined
-                TemplateSetCode = 852,
+                TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XPathLoad861.html"),// Placeholder file
+                TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XPathLoad861Updated.html"),
+                PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGNAL_861.xml"), // Packing file where xml path defined
+                TemplateSetCode = 861,
                 KDIVersion = "",
                 configurations = new List<Configuration>() {
 
-                    #region Reporting Date/Action
+                    #region Beginning Segment for Receiving Advice or Acceptance Certificate:
 		new Configuration()
                     {
-                        XPathConnfig = new XPathConnfig() { XPath = "//XQ/XQ01", PlaceHolder = "{{XQ/XQ01}}", DefaultValue = "", MappingRequired = true},
+                        XPathConnfig = new XPathConnfig() { XPath = "//BRA/BRA01", PlaceHolder = "{{BRA/BRA01}}", DefaultValue = ""},
                         LineLevel = null
                     },
                     new Configuration()
                     {
-                        XPathConnfig = new XPathConnfig() { XPath = "//XQ/XQ02", PlaceHolder = "{{XQ/XQ02}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "MMddyyyy", TargetFormat = "MM/dd/yyyy" }},
+                        XPathConnfig = new XPathConnfig() { XPath = "//BRA/BRA02", PlaceHolder = "{{BRA/BRA02}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "yyMMdd", TargetFormat = "MM/dd/yyyy" }},
                         LineLevel = null
                     },
                      new Configuration()
                     {
-                        XPathConnfig = new XPathConnfig() { XPath = "//XQ/XQ03", PlaceHolder = "{{XQ/XQ03}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "MMddyyyy", TargetFormat = "MM/dd/yyyy" }},
-                        LineLevel = null
-                    }, 
-	#endregion
-
-                    #region Resale Dealer
-
-          new Configuration()
-                    {
-                        XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DU']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'DU'}}", DefaultValue = ""},
+                        XPathConnfig = new XPathConnfig() { XPath = "//BRA/BRA03", PlaceHolder = "{{BRA/BRA03}}", DefaultValue = "",MappingRequired=true},
                         LineLevel = null
                     },
-                         new Configuration()
+                      new Configuration()
                     {
-                        XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DU']]/N1/N104", PlaceHolder = "{{N1/N104-N101 = 'DU'}}", DefaultValue = ""},
+                        XPathConnfig = new XPathConnfig() { XPath = "//BRA/BRA04", PlaceHolder = "{{BRA/BRA04}}", DefaultValue = "",MappingRequired=true},
                         LineLevel = null
                     }, 
 	#endregion
@@ -4721,29 +4874,20 @@ namespace POC
                     #region Date/Time Reference
 		new Configuration()
                     {
-                        XPathConnfig = new XPathConnfig() { XPath = "//DTM/DTM02", PlaceHolder = "{{DTM/DTM02}}", DefaultValue = "", DateFormat = new DateFormat() { SourceFormat = "MMddyyyy", TargetFormat = "MM/dd/yyyy" }},
+                        XPathConnfig = new XPathConnfig() { XPath = "//DTM/DTM02", PlaceHolder = "{{DTM/DTM02}}", DefaultValue = "", DateFormat = new DateFormat() { SourceFormat = "yyMMdd", TargetFormat = "MM/dd/yyyy" }},
                         LineLevel = null
                     }, 
 	#endregion
-
+                 new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//CTT/CTT01", PlaceHolder = "{{CTT/CTT01}}", DefaultValue = "" },
+                LineLevel = null
+                },
                     #region Vendor
 
-          new Configuration()
-                    {
-                        XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'VN']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'VN'}}", DefaultValue = ""},
-                        LineLevel = null
-                    },
                          new Configuration()
                     {
                         XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'VN']]/N1/N104", PlaceHolder = "{{N1/N104-N101 = 'VN'}}", DefaultValue = ""},
-                        LineLevel = null
-                    }, 
-	#endregion
-
-                    #region Line Count
-		      new Configuration()
-                    {
-                        XPathConnfig = new XPathConnfig() { XPath = "//CTT/CTT01", PlaceHolder = "{{CTT/CTT01}}", DefaultValue = ""},
                         LineLevel = null
                     }, 
 	#endregion
@@ -4753,87 +4897,54 @@ namespace POC
                     XPathConnfig = null,
                     LineLevel = new LineLevel()
                     {
-                        HTML = "<table style=\"border: 0px; border-style: solid; border-color: black; padding: 2pt; \" WIDTH=\"638\"> <tr> <td width=\"100%\" class=\"sectiontitle\"> <font face=\"Arial\" color=\"#FA9101\">Line Item {{LIN/LIN01}}</font> </td> </tr> <tr> <td width=\"100%\"> </center> </div> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td> <b>Part Numbers</b> </td> </tr> </table> <table border=\"0\" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" bordercolor=\"#808080\" bordercolorlight=\"#C0C0C0\" bordercolordark=\"#808080\" background=\"res://VistaRes.Dll/legalpad.gif\"> <TR> <TD WIDTH=\"35%\">     Vendor's (Seller's) Item Number</TD> <TD>{{LIN/LIN03}}</TD> </TR> <TR> <TD WIDTH=\"35%\">     U.P.C. Consumer Package Code (1-5-5-1)</TD> <TD>{{LIN/LIN05}}</TD> </TR> </TR> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td/> </tr> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Reference Identification: </b> </td> </tr> </table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Reference Identification Qualifier : {{N9_3/N901}} </td> </tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Reference Identification : {{N9_3/N902}} </td> </tr> </table> <br> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b> Cost of Goods Sold : {{AMT/AMT02}} </b> </td> </tr> </table> {{ChildTransaction}} <hr style=\"height: 1px; border-style: solid; border-color: #FA9101; padding: 2pt; \" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" >",
-                        LineLevelXPath = "//LINLoop1",
-                        PlaceHolder = "{{TransactionInformationHtml}}",
+                        HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Receiving Conditions: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Quantity Units Received or Accepted : {{RCD/RCD02}} </td></tr> </table><br> </center></div> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Item Detail (Shipment): </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Number of Units Shipped : {{SN1/SN102}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Unit or Basis for Measurement Code : {{SN1/SN103}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td> <b>Part Numbers</b> </td></tr></table> <table border=\"0\" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" bordercolor=\"#808080\" bordercolorlight=\"#C0C0C0\" bordercolordark=\"#808080\" background=\"res://VistaRes.Dll/legalpad.gif\"> <TR><TD WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">     Buyer's Part Number</TD><TD BGCOLOR=\"#FFFFFF\">{{LIN/LIN03}}</TD></TR> </TR> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Purchase Order Reference: </b> </td></tr> </table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Purchase Order Number : {{PRF_2/PRF01}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Date : {{PRF_2/PRF04}} </td></tr> </table><br> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > </table><br> <hr style=\\\"height: 3px; border-style: solid; border-color: #FA9101; padding: 2pt; \\\" WIDTH=\\\"100%\\\" CELLPADDING=\\\"0\\\" cellspacing=\\\"1\\\" HEIGHT=\\\"1\\\">",
+                        LineLevelXPath = "//RCDLoop1",
+                        PlaceHolder = "{{ChildItems}}",
                         XPathConnfigs = new List<XPathConnfig>()
                         {
-
+                            new XPathConnfig(){
+                                XPath="//RCD//RCD02",
+                                PlaceHolder="{{RCD/RCD02}}",
+                                DefaultValue="",
+                            },
                             #region LIN
 		                    new XPathConnfig(){
-                                XPath="//LIN//LIN01",
-                                PlaceHolder="{{LIN/LIN01}}",
+                                XPath="//SN1//SN102",
+                                PlaceHolder="{{SN1/SN102}}",
                                 DefaultValue="",
-                                IsIdentityMarker=true,
                             },
                             //   Part Numbers
                             new XPathConnfig(){
-                                XPath="//LIN//LIN03",
+                                XPath="//SN1//SN103",
                                  DefaultValue="",
-                                PlaceHolder="{{LIN/LIN03}}",
+                                PlaceHolder="{{SN1/SN103}}",
+                                MappingRequired=true,
 
                             },
                             // Reference Identification
                             new XPathConnfig(){
-                                XPath="//LIN/LIN05",
+                                XPath="//LIN/LIN03",
                                  DefaultValue="",
-                                PlaceHolder="{{LIN/LIN05}}",
+                                PlaceHolder="{{LIN/LIN03}}",
                             },
 
                             //  Buyer's Size Code
                             new XPathConnfig(){
-                                XPath="//N9_3/N901",
+                                XPath="//PRF_2/PRF01",
                                  DefaultValue="",
-                                PlaceHolder="{{N9_3/N901}}",
-                                MappingRequired = true,
+                                PlaceHolder="{{PRF_2/PRF01}}",
                             },
                             // Buyers Color
                             new XPathConnfig(){
-                                XPath="//N9_3/N902",
+                                XPath="//PRF_2/PRF04",
                                  DefaultValue="",
-                                PlaceHolder="{{N9_3/N902}}",
+                                PlaceHolder="{{PRF_2/PRF04}}",
+                                 DateFormat = new DateFormat() { SourceFormat = "yyMMdd", TargetFormat = "MM/dd/yyyy" }
                             },
-                            new XPathConnfig(){
-                                XPath="//AMT/AMT02",
-                                 DefaultValue="",
-                                PlaceHolder="{{AMT/AMT02}}",
-                            }
 	#endregion
 
 
                         },
-                        IsChildLineLevel=true,
-                        ChildLineLevel=new LineLevel()
-                        {
-                            HTML="<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td/> </tr> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Product Activity Reporting: </b> </td> </tr> </table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Activity Code : {{ZA/ZA01}} </td> </tr> </table> <br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <td> <b>Destination Quantities</b> <tr> <td width=\"100%\" align=\"left\">      Standard Address Number (SAN): {{SDQ/SDQ03}}: {{SDQ/SDQ04}} {{SDQ/SDQ01}}<br> </td> </tr> </td> </table>",
-                        LineLevelXPath="//ZALoop1",
-                        PlaceHolder="{{ChildTransaction}}",
-                        XPathConnfigs=new List<XPathConnfig>()
-                        {
-                            new XPathConnfig(){
-                                XPath="//ZA/ZA01",
-                                PlaceHolder="{{ZA/ZA01}}",
-                                DefaultValue="",
-                                MappingRequired=true,
-                            },
-                             new XPathConnfig(){
-                                XPath="//SDQ/SDQ03",
-                                PlaceHolder="{{SDQ/SDQ03}}",
-                                DefaultValue="",
-                            },
-                             new XPathConnfig(){
-                                XPath="//SDQ/SDQ04",
-                                PlaceHolder="{{SDQ/SDQ04}}",
-                                DefaultValue="",
-                            },
-                             new XPathConnfig(){
-                                XPath="//SDQ/SDQ01",
-                                PlaceHolder="{{SDQ/SDQ01}}",
-                                DefaultValue="",
-                                MappingRequired=true,
-                            },
-                        },
-                        }
                     }
                 }
             }

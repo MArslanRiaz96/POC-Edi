@@ -1,0 +1,105 @@
+<X12_00304_861 ID="1">
+  <ST ID="2" SegmentPosition="00">
+    <ST01 ID="00:3">861</ST01>
+    <ST02 ID="00:4">000000003</ST02>
+  </ST>
+  <BRA ID="5" SegmentPosition="00">
+    <BRA01 ID="00:6">SHIPID000000001</BRA01>
+    <BRA02 ID="00:7">960220</BRA02>
+    <BRA03 ID="00:8">00</BRA03>
+    <BRA04 ID="00:9">2</BRA04>
+  </BRA>
+  <DTM ID="10" SegmentPosition="00">
+    <DTM01 ID="00:11">011</DTM01>
+    <DTM02 ID="00:12">960220</DTM02>
+  </DTM>
+  <N1Loop1 ID="13" SegmentPosition="00">
+    <N1 ID="14" SegmentPosition="00">
+      <N101 ID="00:15">VN</N101>
+      <N102 ID="00:16" />
+      <N103 ID="00:17">92</N103>
+      <N104 ID="00:18">0424A</N104>
+    </N1>
+  </N1Loop1>
+  <RCDLoop1 ID="19" SegmentPosition="00">
+    <RCD ID="20" SegmentPosition="00">
+      <RCD01 ID="00:21" />
+      <RCD02 ID="00:22">24</RCD02>
+      <RCD03 ID="00:23">PC</RCD03>
+      <RCD04 ID="00:24" />
+      <RCD05 ID="00:25" />
+      <RCD06 ID="00:26" />
+      <RCD07 ID="00:27">PC</RCD07>
+      <RCD08 ID="00:28">01</RCD08>
+      <RCD09 ID="00:29" />
+      <RCD10 ID="00:30">PC</RCD10>
+      <RCD11 ID="00:31">02</RCD11>
+      <RCD12 ID="00:32" />
+      <RCD13 ID="00:33">PC</RCD13>
+      <RCD14 ID="00:34">03</RCD14>
+      <RCD15 ID="00:35">1</RCD15>
+      <RCD16 ID="00:36">PC</RCD16>
+      <RCD17 ID="00:37">08</RCD17>
+    </RCD>
+    <SN1 ID="38" SegmentPosition="00">
+      <SN101 ID="00:39" />
+      <SN102 ID="00:40">25</SN102>
+      <SN103 ID="00:41">PC</SN103>
+    </SN1>
+    <LIN ID="42" SegmentPosition="00">
+      <LIN01 ID="00:43" />
+      <LIN02 ID="00:44">BP</LIN02>
+      <LIN03 ID="00:45">1234567890AAAAA</LIN03>
+    </LIN>
+    <PRF_2 ID="46" SegmentPosition="00">
+      <PRF01 ID="00:47">TS111111</PRF01>
+      <PRF02 ID="00:48" />
+      <PRF03 ID="00:49" />
+      <PRF04 ID="00:50">960215</PRF04>
+    </PRF_2>
+  </RCDLoop1>
+  <RCDLoop1 ID="51" SegmentPosition="00">
+    <RCD ID="52" SegmentPosition="00">
+      <RCD01 ID="00:53" />
+      <RCD02 ID="00:54">23</RCD02>
+      <RCD03 ID="00:55">PC</RCD03>
+      <RCD04 ID="00:56" />
+      <RCD05 ID="00:57" />
+      <RCD06 ID="00:58">2</RCD06>
+      <RCD07 ID="00:59">PC</RCD07>
+      <RCD08 ID="00:60">01</RCD08>
+      <RCD09 ID="00:61" />
+      <RCD10 ID="00:62">PC</RCD10>
+      <RCD11 ID="00:63">02</RCD11>
+      <RCD12 ID="00:64" />
+      <RCD13 ID="00:65">PC</RCD13>
+      <RCD14 ID="00:66">03</RCD14>
+      <RCD15 ID="00:67" />
+      <RCD16 ID="00:68">PC</RCD16>
+      <RCD17 ID="00:69">08</RCD17>
+    </RCD>
+    <SN1 ID="70" SegmentPosition="00">
+      <SN101 ID="00:71" />
+      <SN102 ID="00:72">25</SN102>
+      <SN103 ID="00:73">PC</SN103>
+    </SN1>
+    <LIN ID="74" SegmentPosition="00">
+      <LIN01 ID="00:75" />
+      <LIN02 ID="00:76">BP</LIN02>
+      <LIN03 ID="00:77">1234567890</LIN03>
+    </LIN>
+    <PRF_2 ID="78" SegmentPosition="00">
+      <PRF01 ID="00:79">TS222222</PRF01>
+      <PRF02 ID="00:80" />
+      <PRF03 ID="00:81" />
+      <PRF04 ID="00:82">960215</PRF04>
+    </PRF_2>
+  </RCDLoop1>
+  <CTT ID="83" SegmentPosition="00">
+    <CTT01 ID="00:84">2</CTT01>
+  </CTT>
+  <SE ID="85" SegmentPosition="00">
+    <SE01 ID="00:86">14</SE01>
+    <SE02 ID="00:87">000000003</SE02>
+  </SE>
+</X12_00304_861>
