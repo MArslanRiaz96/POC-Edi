@@ -1,0 +1,90 @@
+{{BSS/BSS01}}  //BSS/BSS01 MAPREQ
+{{BSS/BSS02}}  //BSS/BSS02
+{{BSS/BSS03}}  //BSS/BSS03 Date
+{{BSS/BSS04}}  //BSS/BSS04 MAPREQ
+{{BSS/BSS05}}  //BSS/BSS05 Date 01/18/2024
+{{BSS/BSS06}}  //BSS/BSS06 Date
+{{BSS/BSS07}}  //BSS/BSS07
+{{BSS/BSS08}}  //BSS/BSS08 
+{{BSS/BSS11}}  //BSS/BSS11 MAPREQ
+
+{{N1/N101-N101 = 'SU'}}	//N1Loop1[N1[N101 = 'SU']]/N1/N101 MAPREQ
+{{N1/N102-N101 = 'SU'}}	//N1Loop1[N1[N101 = 'SU']]/N1/N102
+{{N1/N103-N101 = 'SU'}}	//N1Loop1[N1[N101 = 'SU']]/N1/N103 MAPREQ
+{{N1/N104-N101 = 'SU'}}	//N1Loop1[N1[N101 = 'SU']]/N1/N104
+
+{{N1/N101-N101 = 'ST'}}	//N1Loop1[N1[N101 = 'ST']]/N1/N101 MAPREQ
+{{N1/N102-N101 = 'ST'}}	//N1Loop1[N1[N101 = 'ST']]/N1/N102
+{{N1/N103-N101 = 'ST'}}	//N1Loop1[N1[N101 = 'ST']]/N1/N103 MAPREQ
+{{N1/N104-N101 = 'ST'}}	//N1Loop1[N1[N101 = 'ST']]/N1/N104
+
+{{N1/N101-N101 = 'BY'}}	//N1Loop1[N1[N101 = 'BY']]/N1/N101 MAPREQ
+{{N1/N102-N101 = 'BY'}}	//N1Loop1[N1[N101 = 'BY']]/N1/N102
+{{N1/N103-N101 = 'BY'}}	//N1Loop1[N1[N101 = 'BY']]/N1/N103 MAPREQ
+{{N1/N104-N101 = 'BY'}}	//N1Loop1[N1[N101 = 'BY']]/N1/N104
+
+{{REF/REF01}} //REF/REF01 MAPREQ
+{{REF/REF02}} //REF/REF02
+
+
+
+
+{{ParentOfChild}}
+<table style="border: 0px; border-style: solid; border-color: black; padding: 2pt; " WIDTH="638"> <tr><td width="100%" class="sectiontitle"><font face="Arial" color="LightGrey">Line Item</font></td></tr> <tr><td width="100%"> </center></div> <table border="0" cellspacing="0" cellpadding="0"><tr><td> <b>Part Numbers</b> </td></tr></table> <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080" background="res://VistaRes.Dll/legalpad.gif"> <TR><TD WIDTH="35%" >     Buyer's Part Number</TD><TD >{{LIN/LIN03}}</TD></TR> <TR><TD WIDTH="35%" >     Part Number Description</TD><TD >{{LIN/LIN05}}</TD></TR> <TR><TD WIDTH="35%" >     Purchaser's Order Line Number</TD><TD >{{LIN/LIN07}}</TD></TR> <TR><TD WIDTH="35%" >     Purchase Order Number</TD><TD >{{LIN/LIN09}}</TD></TR> </TR> </table> <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Unit Detail: </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left">      Composite Unit of Measure : {{UIT/UIT01}} </td></tr> </table><br> <table border="0" cellspacing="0" cellpadding="0" width="100%" border="0" cellspacing="0" cellpadding="0"> <tr> <td width="100%" valign="top" align="left"> <b>Reference Identification: </b> </td></tr> </table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left">      {{REF_2/REF01}} : {{REF_2/REF02}} </td></tr> </table><br> <b>Forecast Schedule</br> <table border="0" WIDTH="100%" CELLPADDING="0" cellspacing="1" HEIGHT="1" bordercolor="#808080" bordercolorlight="#C0C0C0" bordercolordark="#808080" background="res://VistaRes.Dll/legalpad.gif"> <TR><TD ><strong>     Quan</strong></TD><TD ><strong>Timing</strong></TD><TD ><strong>When</strong></TD></TR> {{ForecastScheduleHtml}} </table> <table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left"> <b>Carrier Details (Routing Sequence/Transit Time): </b></td></tr></table> <table border="0" width="100%" cellspacing="0" cellpadding="0" > <tr> <td width="100%" valign="top" align="left">      Routing Sequence Code : {{TD5/TD501}} </td></tr> <tr> <td width="100%" valign="top" align="left">      Transportation Method/Type Code : {{TD5/TD504}} </td></tr> </table><br> </td></tr> </table>
+
+{{LIN/LIN03}} //LIN/LIN03
+{{LIN/LIN05}} //LIN/LIN05
+{{LIN/LIN07}} //LIN/LIN07
+{{LIN/LIN09}} //LIN/LIN09
+
+{{UIT/UIT01}} //UIT/UIT01 MAPREQ
+
+{{REF_2/REF01}} //REF_2/REF01 MAPREQ
+{{REF_2/REF02}} //REF_2/REF02
+
+
+
+
+
+
+
+
+{{ForecastScheduleHtml}}
+<TR><TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{FST/FST01}}</TD><TD>{{FST/FST02}}: {{FST/FST03}}</TD><TD>{{FST/FST04}}</TD></TR>
+
+
+{{FST/FST01}} //FST/FST01
+{{FST/FST02}} //FST/FST02 MAPREQ
+{{FST/FST03}} //FST/FST03 MAPREQ
+{{FST/FST04}} //FST/FST04 Date 1/18/2024
+
+
+
+{{TD5/TD501}} //TD5/TD501 MAPREQ
+{{TD5/TD504}} //TD5/TD504 MAPREQ
+
+
+{{CTT/CTT01}} //CTT/CTT01
+
+
+
+
+
+Mappings
+
+00 --> Orignal
+SH --> Shipment Based
+A  --> Actual Discrete Quantities
+SU --> Supplier/Manufacturer
+ZZ --> Mutually Defined
+ST --> Ship To
+92 --> Assigned by Buyer or Buyer's Agent
+BY --> Buying Party (Purchaser)
+93 --> Code assigned by the organization originating the transaction set
+CR --> Customer Reference Number
+PC --> Piece
+WS --> Warehouse storage location number
+C -->  Firm
+D -->  Discrete
+B -->  Origin/Delivery Carrier (Any Mode)
+M -->  Motor (Common Carrier)

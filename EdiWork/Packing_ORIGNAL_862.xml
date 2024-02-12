@@ -1,0 +1,228 @@
+<X12_00304_862 ID="1">
+  <ST ID="2" SegmentPosition="00">
+    <ST01 ID="00:3">862</ST01>
+    <ST02 ID="00:4">0001</ST02>
+  </ST>
+  <BSS ID="5" SegmentPosition="00">
+    <BSS01 ID="00:6">00</BSS01>
+    <BSS02 ID="00:7">TMS862_SO2</BSS02>
+    <BSS03 ID="00:8">240118</BSS03>
+    <BSS04 ID="00:9">SH</BSS04>
+    <BSS05 ID="00:10">240118</BSS05>
+    <BSS06 ID="00:11">240118</BSS06>
+    <BSS07 ID="00:12">TMS862_SO2</BSS07>
+    <BSS08 ID="00:13" />
+    <BSS09 ID="00:14" />
+    <BSS10 ID="00:15" />
+    <BSS11 ID="00:16">A</BSS11>
+  </BSS>
+  <N1Loop1 ID="17" SegmentPosition="00">
+    <N1 ID="18" SegmentPosition="00">
+      <N101 ID="00:19">SU</N101>
+      <N102 ID="00:20">Wilson Electronics</N102>
+      <N103 ID="00:21">92</N103>
+      <N104 ID="00:22">NIF100801</N104>
+    </N1>
+  </N1Loop1>
+  <N1Loop1 ID="23" SegmentPosition="00">
+    <N1 ID="24" SegmentPosition="00">
+      <N101 ID="00:25">ST</N101>
+      <N102 ID="00:26">CANAL POINTE</N102>
+      <N103 ID="00:27">92</N103>
+      <N104 ID="00:28">6148363808</N104>
+    </N1>
+  </N1Loop1>
+  <N1Loop1 ID="29" SegmentPosition="00">
+    <N1 ID="30" SegmentPosition="00">
+      <N101 ID="00:31">BY</N101>
+      <N102 ID="00:32">Toyota Motor Sales, USA Inc.</N102>
+      <N103 ID="00:33">92</N103>
+      <N104 ID="00:34">6148363808</N104>
+    </N1>
+    <REF ID="35" SegmentPosition="00">
+      <REF01 ID="00:36">CR</REF01>
+      <REF02 ID="00:37">REF_CR_Number01</REF02>
+    </REF>
+  </N1Loop1>
+  <LINLoop1 ID="38" SegmentPosition="00">
+    <LIN ID="39" SegmentPosition="00">
+      <LIN01 ID="00:40" />
+      <LIN02 ID="00:41">BP</LIN02>
+      <LIN03 ID="00:42">470154</LIN03>
+      <LIN04 ID="00:43">PD</LIN04>
+      <LIN05 ID="00:44">Drive Reach</LIN05>
+      <LIN06 ID="00:45">PL</LIN06>
+      <LIN07 ID="00:46">822052</LIN07>
+      <LIN08 ID="00:47">PO</LIN08>
+      <LIN09 ID="00:48">TMS862_SO2</LIN09>
+    </LIN>
+    <UIT ID="49" SegmentPosition="00">
+      <UIT01 ID="00:50">PC</UIT01>
+    </UIT>
+    <REF_2 ID="51" SegmentPosition="00">
+      <REF01 ID="00:52">WS</REF01>
+      <REF02 ID="00:53">E</REF02>
+    </REF_2>
+    <FSTLoop1 ID="54" SegmentPosition="00">
+      <FST ID="55" SegmentPosition="00">
+        <FST01 ID="00:56">50</FST01>
+        <FST02 ID="00:57">C</FST02>
+        <FST03 ID="00:58">D</FST03>
+        <FST04 ID="00:59">240118</FST04>
+      </FST>
+    </FSTLoop1>
+    <FSTLoop1 ID="60" SegmentPosition="00">
+      <FST ID="61" SegmentPosition="00">
+        <FST01 ID="00:62">60</FST01>
+        <FST02 ID="00:63">C</FST02>
+        <FST03 ID="00:64">D</FST03>
+        <FST04 ID="00:65">240218</FST04>
+      </FST>
+    </FSTLoop1>
+    <FSTLoop1 ID="66" SegmentPosition="00">
+      <FST ID="67" SegmentPosition="00">
+        <FST01 ID="00:68">70</FST01>
+        <FST02 ID="00:69">C</FST02>
+        <FST03 ID="00:70">D</FST03>
+        <FST04 ID="00:71">240318</FST04>
+      </FST>
+    </FSTLoop1>
+    <FSTLoop1 ID="72" SegmentPosition="00">
+      <FST ID="73" SegmentPosition="00">
+        <FST01 ID="00:74">80</FST01>
+        <FST02 ID="00:75">C</FST02>
+        <FST03 ID="00:76">D</FST03>
+        <FST04 ID="00:77">240418</FST04>
+      </FST>
+    </FSTLoop1>
+    <TD5 ID="78" SegmentPosition="00">
+      <TD501 ID="00:79">B</TD501>
+      <TD502 ID="00:80" />
+      <TD503 ID="00:81" />
+      <TD504 ID="00:82">M</TD504>
+    </TD5>
+  </LINLoop1>
+  <LINLoop1 ID="83" SegmentPosition="00">
+    <LIN ID="84" SegmentPosition="00">
+      <LIN01 ID="00:85" />
+      <LIN02 ID="00:86">BP</LIN02>
+      <LIN03 ID="00:87">472061</LIN03>
+      <LIN04 ID="00:88">PD</LIN04>
+      <LIN05 ID="00:89">Drive Reach Overland</LIN05>
+      <LIN06 ID="00:90">PL</LIN06>
+      <LIN07 ID="00:91">822052</LIN07>
+      <LIN08 ID="00:92">PO</LIN08>
+      <LIN09 ID="00:93">TMS862_SO2</LIN09>
+    </LIN>
+    <UIT ID="94" SegmentPosition="00">
+      <UIT01 ID="00:95">PC</UIT01>
+    </UIT>
+    <REF_2 ID="96" SegmentPosition="00">
+      <REF01 ID="00:97">WS</REF01>
+      <REF02 ID="00:98">E</REF02>
+    </REF_2>
+    <FSTLoop1 ID="99" SegmentPosition="00">
+      <FST ID="100" SegmentPosition="00">
+        <FST01 ID="00:101">10</FST01>
+        <FST02 ID="00:102">C</FST02>
+        <FST03 ID="00:103">D</FST03>
+        <FST04 ID="00:104">240118</FST04>
+      </FST>
+    </FSTLoop1>
+    <FSTLoop1 ID="105" SegmentPosition="00">
+      <FST ID="106" SegmentPosition="00">
+        <FST01 ID="00:107">20</FST01>
+        <FST02 ID="00:108">C</FST02>
+        <FST03 ID="00:109">D</FST03>
+        <FST04 ID="00:110">240218</FST04>
+      </FST>
+    </FSTLoop1>
+    <FSTLoop1 ID="111" SegmentPosition="00">
+      <FST ID="112" SegmentPosition="00">
+        <FST01 ID="00:113">30</FST01>
+        <FST02 ID="00:114">C</FST02>
+        <FST03 ID="00:115">D</FST03>
+        <FST04 ID="00:116">240318</FST04>
+      </FST>
+    </FSTLoop1>
+    <FSTLoop1 ID="117" SegmentPosition="00">
+      <FST ID="118" SegmentPosition="00">
+        <FST01 ID="00:119">40</FST01>
+        <FST02 ID="00:120">C</FST02>
+        <FST03 ID="00:121">D</FST03>
+        <FST04 ID="00:122">240418</FST04>
+      </FST>
+    </FSTLoop1>
+    <TD5 ID="123" SegmentPosition="00">
+      <TD501 ID="00:124">B</TD501>
+      <TD502 ID="00:125" />
+      <TD503 ID="00:126" />
+      <TD504 ID="00:127">M</TD504>
+    </TD5>
+  </LINLoop1>
+  <LINLoop1 ID="128" SegmentPosition="00">
+    <LIN ID="129" SegmentPosition="00">
+      <LIN01 ID="00:130" />
+      <LIN02 ID="00:131">BP</LIN02>
+      <LIN03 ID="00:132">311249</LIN03>
+      <LIN04 ID="00:133">PD</LIN04>
+      <LIN05 ID="00:134">Toyota SA Overland</LIN05>
+      <LIN06 ID="00:135">PL</LIN06>
+      <LIN07 ID="00:136">822052</LIN07>
+      <LIN08 ID="00:137">PO</LIN08>
+      <LIN09 ID="00:138">TMS862_SO2</LIN09>
+    </LIN>
+    <UIT ID="139" SegmentPosition="00">
+      <UIT01 ID="00:140">PC</UIT01>
+    </UIT>
+    <REF_2 ID="141" SegmentPosition="00">
+      <REF01 ID="00:142">WS</REF01>
+      <REF02 ID="00:143">E</REF02>
+    </REF_2>
+    <FSTLoop1 ID="144" SegmentPosition="00">
+      <FST ID="145" SegmentPosition="00">
+        <FST01 ID="00:146">15</FST01>
+        <FST02 ID="00:147">C</FST02>
+        <FST03 ID="00:148">D</FST03>
+        <FST04 ID="00:149">240118</FST04>
+      </FST>
+    </FSTLoop1>
+    <FSTLoop1 ID="150" SegmentPosition="00">
+      <FST ID="151" SegmentPosition="00">
+        <FST01 ID="00:152">30</FST01>
+        <FST02 ID="00:153">C</FST02>
+        <FST03 ID="00:154">D</FST03>
+        <FST04 ID="00:155">240218</FST04>
+      </FST>
+    </FSTLoop1>
+    <FSTLoop1 ID="156" SegmentPosition="00">
+      <FST ID="157" SegmentPosition="00">
+        <FST01 ID="00:158">35</FST01>
+        <FST02 ID="00:159">C</FST02>
+        <FST03 ID="00:160">D</FST03>
+        <FST04 ID="00:161">240318</FST04>
+      </FST>
+    </FSTLoop1>
+    <FSTLoop1 ID="162" SegmentPosition="00">
+      <FST ID="163" SegmentPosition="00">
+        <FST01 ID="00:164">45</FST01>
+        <FST02 ID="00:165">C</FST02>
+        <FST03 ID="00:166">D</FST03>
+        <FST04 ID="00:167">240418</FST04>
+      </FST>
+    </FSTLoop1>
+    <TD5 ID="168" SegmentPosition="00">
+      <TD501 ID="00:169">B</TD501>
+      <TD502 ID="00:170" />
+      <TD503 ID="00:171" />
+      <TD504 ID="00:172">M</TD504>
+    </TD5>
+  </LINLoop1>
+  <CTT ID="173" SegmentPosition="00">
+    <CTT01 ID="00:174">3</CTT01>
+  </CTT>
+  <SE ID="175" SegmentPosition="00">
+    <SE01 ID="00:176">13</SE01>
+    <SE02 ID="00:177">0001</SE02>
+  </SE>
+</X12_00304_862>
