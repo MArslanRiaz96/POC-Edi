@@ -3446,77 +3446,82 @@ namespace POC
 
 
 
-            ////new HumanReadableConfiguration()
-            ////{
-            ////TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad864.html"),
-            ////TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad864Updated.html"),
-            ////PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGINAL_864.xml"),
-            ////TemplateSetCode = 864,
-            ////KDIVersion = "",
-            ////configurations = new List<Configuration>() {
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//BMG/BMG01", PlaceHolder = "{{BMG/BMG01}}", DefaultValue = "", MappingRequired= true},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//BMG/BMG02", PlaceHolder = "{{BMG/BMG02}}", DefaultValue = ""},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//BMG/BMG03", PlaceHolder = "{{BMG/BMG03}}", DefaultValue = "", MappingRequired= true},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'FR']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'FR'}}", DefaultValue = ""},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'FR']]/N1/N103", PlaceHolder = "{{N1/N103-N101 = 'FR'}}", DefaultValue = "",  MappingRequired= true},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'FR']]/N1/N104", PlaceHolder = "{{N1/N104-N101 = 'FR'}}", DefaultValue = ""},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'TO']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'TO'}}", DefaultValue = ""},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[REF[REF01 = 'IA']]/REF[REF01 = 'IA']/REF02", PlaceHolder = "{{REF/REF02-REF01 = 'IA'}}", DefaultValue = ""},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[REF[REF01 = 'IV']]/REF[REF01 = 'IV']/REF02", PlaceHolder = "{{REF/REF02-REF01 = 'IV'}}", DefaultValue = ""},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//MITLoop1[MIT]/MIT/MIT01", PlaceHolder = "{{MIT/MIT01}}", DefaultValue = ""},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//MITLoop1[MIT]/MIT/MIT02", PlaceHolder = "{{MIT/MIT02}}", DefaultValue = ""},
-            ////    LineLevel = null
-            ////    },
-            ////    new Configuration()
-            ////    {
-            ////    XPathConnfig = new XPathConnfig() { XPath = "//MSG/MSG01", PlaceHolder = "{{MSG/MSG01}}", DefaultValue = "",ConcatinationUsingSameXPath = true},
-            ////    LineLevel = null
-            ////    }
+            new HumanReadableConfiguration()
+            {
+            TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad864.html"),
+            TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad864Updated.html"),
+            PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGINAL_864.xml"),
+            TemplateSetCode = 864,
+            KDIVersion = "",
+            configurations = new List<Configuration>() {
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//BMG/BMG01", PlaceHolder = "{{BMG/BMG01}}", DefaultValue = "", MappingRequired= true},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                    XPathConnfig = new XPathConnfig() { XPath = "//DTM/DTM02", PlaceHolder = "{{DTM/DTM02}}", DefaultValue = "", DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" }},
+                    LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//BMG/BMG02", PlaceHolder = "{{BMG/BMG02}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//BMG/BMG03", PlaceHolder = "{{BMG/BMG03}}", DefaultValue = "", MappingRequired= true},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'FR']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'FR'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'FR']]/N1/N103", PlaceHolder = "{{N1/N103-N101 = 'FR'}}", DefaultValue = "",  MappingRequired= true},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'FR']]/N1/N104", PlaceHolder = "{{N1/N104-N101 = 'FR'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'TO']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'TO'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[REF[REF01 = 'IA' or REF01 = 'VR']]/REF[REF01 = 'IA' or REF01 = 'VR']/REF02", PlaceHolder = "{{REF/REF02-REF01 = 'IA'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[REF[REF01 = 'IV']]/REF[REF01 = 'IV']/REF02", PlaceHolder = "{{REF/REF02-REF01 = 'IV'}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//MITLoop1[MIT]/MIT/MIT01", PlaceHolder = "{{MIT/MIT01}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//MITLoop1[MIT]/MIT/MIT02", PlaceHolder = "{{MIT/MIT02}}", DefaultValue = ""},
+                LineLevel = null
+                },
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//MSG/MSG01", PlaceHolder = "{{MSG/MSG01}}", DefaultValue = "",ConcatinationUsingSameXPath = true},
+                LineLevel = null
+                }
 
-            ////}
-            ////}
+            }
+            },
 
 
 
