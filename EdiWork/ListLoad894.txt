@@ -1,0 +1,30 @@
+{{G82/G8201}} Credit/Debit Flag Code
+{{G82/G8202}} Supplier's Delivery/Return Number
+{{G82/G8203}}   D-U-N-S Number
+{{G82/G8204}}   Receiver's Location Number
+{{G82/G8205}}   D-U-N-S Number
+{{G82/G8206}}   Supplier's Location Number
+{{G82/G8207}}  Physical Delivery or Return Date
+{{LSLoop1/LS/LS01}} 	Loop Identifier Code
+
+
+{{TransactionInformationHtml}}
+
+
+
+
+{{LE/LE01}} 	Loop Identifier Code
+{{G84/G8401}} 	Quantity
+{{G84/G8402}}	Total Invoice Amount
+{{G86/G8601}}	Signature
+{{G85/G8501}}	Integrity Check Value
+
+
+
+
+
+
+
+
+
+
