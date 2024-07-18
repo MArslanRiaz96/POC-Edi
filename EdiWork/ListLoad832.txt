@@ -1,0 +1,53 @@
+{{BCT/BCT01}} //BCT/BCT01  Catalog Purpose Code
+{{BCT/BCT02}} //BCT/BCT02	Catalog Number
+{{BCT/BCT09}} //BCT/BCT09 Description
+{{BCT/BCT10}} //BCT/BCT10 Transaction Set Purpose Code
+{{N1Loop1/N1/N102}}  //N1Loop1/N1/N102  Distributor
+{{N1Loop1/N1/N104}} //N1Loop1/N1/N104
+{{N1Loop1/N3/N301}} //N1Loop1/N3/N301
+{{N1Loop1/N4/N401}} //N1Loop1/N4/N401
+{{N1Loop1/N4/N402}} //N1Loop1/N4/N402
+{{N1Loop1/N4/N403}} //N1Loop1/N4/N403 
+
+......................................................
+{{TransactionInformationHtml}} //LINLoop1
+......................................................
+////LIN
+{{LIN/LIN03-LIN02 = 'VN'}}  //[LIN[LIN02 = 'VN']]LIN//LIN03 Vendor's (Seller's) Item Number
+{{LIN/LIN05-LIN04 = 'BL'}} //[LIN[LIN04 = 'BL']]LIN//LIN05  Brand/Label
+{{LIN/LIN09-LIN08 = 'CN'}} //[LIN[LIN08 = 'CN']]LIN//LIN09  Commodity Name
+{{LIN/LIN13-LIN12 = 'UA'}} //[LIN[LIN12 = 'UA']]LIN//LIN13  U.P.C./EAN Case Code (2-5-5)
+{{LIN/LIN23-LIN22 = 'C3'}} //[LIN[LIN22 = 'C3']]LIN//LIN23  Classification
+
+////REF_3
+{{REF_3/REF02-REF01 = 'VR'}} //[REF_3[REF01 = 'VR']]REF_3//REF02 Vendor ID Number
+
+////PID
+{{PID/PID05}}  //PID//PID05  Product/Item Description
+
+////Measurements
+{{MEA/MEA01}}  //MEA//MEA01  Measurement Reference ID Code
+{{MEA/MEA02}}  //MEA//MEA02  Measurement Qualifier
+{{MEA/MEA03}}  //MEA//MEA03  Measurement Value
+{{MEA/MEA05}}  //MEA//MEA05  Composite Unit of Measure
+
+
+////Pricing Information
+{{CTPLoop1/CTP_2/CTP02}}  //CTPLoop1//CTP_2//CTP02  Price Identifier Code
+{{CTPLoop1/CTP_2/CTP03}}  //CTPLoop1//CTP_2//CTP03  Unit Price
+{{CTPLoop1/CTP_2/CTP04}}  //CTPLoop1//CTP_2//CTP04  Quantity
+{{CTPLoop1/CTP_2/CTP06}}  //CTPLoop1//CTP_2//CTP06  Composite Unit of Measure
+
+
+////Date/Time Reference
+{{CTPLoop1/DTM_5/DTM02}}  //CTPLoop1//DTM_5//DTM02  Effective
+
+
+////Item Characteristics - Vendor's Selling Unit
+{{G39Loop1/G39/G3902}}  //G39Loop1//G39//G3902	 Product/Service ID Qualifier 
+{{G39Loop1/G39/G3903}}	//G39Loop1//G39//G3903   Product/Service ID
+{{G39Loop1/G39/G3905}}  //G39Loop1//G39//G3905    Unit Weight
+{{G39Loop1/G39/G3906}}   //G39Loop1//G39//G3906  Weight Qualifier
+{{G39Loop1/G39/G3907}}  //G39Loop1//G39//G3907    Weight Unit Code
+{{G39Loop1/G39/G3917}}   //G39Loop1//G39//G3917   Pack
+

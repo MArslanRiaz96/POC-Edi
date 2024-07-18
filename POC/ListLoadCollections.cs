@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -3524,6 +3525,248 @@ namespace POC
             //}
             //},
 
+            //new HumanReadableConfiguration()
+            //{
+            //    TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoadDF832.html"),
+            //    TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoadDF832Updated.html"),
+            //    PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGINAL_DF_832.xml"),
+            //    TemplateSetCode = 832,
+            //    KDIVersion = "",
+            //    configurations = new List<Configuration>() {
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//BCT/BCT01", PlaceHolder = "{{BCT/BCT01}}", DefaultValue = "", MappingRequired = true},
+            //            LineLevel = null
+            //        },
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//BCT/BCT02", PlaceHolder = "{{BCT/BCT02}}", DefaultValue = ""},
+            //            LineLevel = null
+            //        },
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//BCT/BCT09", PlaceHolder = "{{BCT/BCT09}}", DefaultValue = ""},
+            //            LineLevel = null
+            //        },
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//BCT/BCT10", PlaceHolder = "{{BCT/BCT10}}", DefaultValue = "",MappingRequired = true},
+            //            LineLevel = null
+            //        },
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1[N1[N101 = 'DS']]/N1/N102", PlaceHolder = "{{N1/N102-N101 = 'DS'}}", DefaultValue = ""},
+            //            LineLevel = null
+            //        },
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1/N1/N104", PlaceHolder = "{{N1Loop1/N1/N104}}", DefaultValue = ""},
+            //            LineLevel = null
+            //        },
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1/N3/N301", PlaceHolder = "{{N1Loop1/N3/N301}}", DefaultValue = ""},
+            //            LineLevel = null
+            //        },
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1/N4/N401", PlaceHolder = "{{N1Loop1/N4/N401}}", DefaultValue = ""},
+            //            LineLevel = null
+            //        },
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1/N4/N402", PlaceHolder = "{{N1Loop1/N4/N402}}", DefaultValue = ""},
+            //            LineLevel = null
+            //        },
+            //        new Configuration()
+            //        {
+            //            XPathConnfig = new XPathConnfig() { XPath = "//N1Loop1/N4/N403", PlaceHolder = "{{N1Loop1/N4/N403}}", DefaultValue = ""},
+            //            LineLevel = null
+            //        },
+
+            //    new Configuration()
+            //    {
+            //        XPathConnfig = null,
+            //        LineLevel = new LineLevel()
+            //        {
+
+            //            HTML = "<table style=\"border: 0px; border-style: solid; border-color: black; padding: 2pt; \" WIDTH=\"638\">\r\n<tr><td width=\"100%\" class=\"sectiontitle\"><font face=\"Arial\" color=\"LightGrey\">Line Item</font></td></tr>\r\n<tr><td width=\"100%\">\r\n <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td>\r\n<b>Part Numbers</b>\r\n</td></tr></table>\r\n <table border=\"0\" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" \r\n bordercolor=\"#808080\" bordercolorlight=\"#C0C0C0\" bordercolordark=\"#808080\"   background=\"res://VistaRes.Dll/legalpad.gif\"> \r\n\r\n<tr><td WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor's (Seller's) Item Number</td><td BGCOLOR=\"#FFFFFF\">{{LIN/LIN03-LIN02 = 'VN'}}</td></tr>\r\n<tr><td WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brand/Label</td><td BGCOLOR=\"#FFFFFF\">{{LIN/LIN05-LIN04 = 'BL'}}</td></tr>\r\n<tr><td WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commodity Name</td><td BGCOLOR=\"#FFFFFF\">{{LIN/LIN09-LIN08 = 'CN'}}</td></tr>\r\n<tr><td WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C./EAN Case Code (2-5-5)</td><td BGCOLOR=\"#FFFFFF\">{{LIN/LIN13-LIN12 = 'UA'}}</td></tr>\r\n<tr><td WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Classification</td><td BGCOLOR=\"#FFFFFF\">{{LIN/LIN23-LIN22 = 'C3'}}</td></tr>\r\n</table>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n<b>Reference Identification: </b>\r\n</td></tr>\r\n</table>\r\n<table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vendor ID Number\r\n    : {{REF_3/REF02-REF01 = 'VR'}}    </td></tr>\r\n</table><br/>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n  <tr>\r\n    <td width=\"1%\" valign=\"top\">\r\n    </td>\r\n    <td width = \"99%\"><table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n<b>Product/Item Description:\r\n</b></td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n{{PID/PID05}}<br/>    </td></tr>\r\n</table></td></tr></table>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n<b>Measurements:\r\n</b></td></tr></table>\r\n<table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Measurement Reference ID Code\r\n    : {{MEA/MEA01}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Measurement Qualifier\r\n    : {{MEA/MEA02}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Measurement Value\r\n    : {{MEA/MEA03}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure\r\n    : {{MEA/MEA05}}\r\n    </td></tr>\r\n</table><br/>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n<b>Pricing Information:\r\n</b></td></tr></table>\r\n<table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price Identifier Code\r\n    : {{CTPLoop1/CTP_2/CTP02}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit Price\r\n    : {{CTPLoop1/CTP_2/CTP03}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity\r\n    : {{CTPLoop1/CTP_2/CTP04}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composite Unit of Measure\r\n    : {{CTPLoop1/CTP_2/CTP06}}\r\n    </td></tr>\r\n</table><br/>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n<b>Date/Time Reference\r\n</b></td></tr>\r\n</table>\r\n<table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effective\r\n    : {{CTPLoop1/DTM_5/DTM02}}     </td></tr>\r\n</table><br/>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n<b>Item Characteristics - Vendor's Selling Unit:\r\n</b></td></tr></table>\r\n<table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier\r\n    : {{G39Loop1/G39/G3902}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID\r\n    : {{G39Loop1/G39/G3903}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit Weight\r\n    : {{G39Loop1/G39/G3905}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight Qualifier\r\n    : {{G39Loop1/G39/G3906}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight Unit Code\r\n    : {{G39Loop1/G39/G3907}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack\r\n    : {{G39Loop1/G39/G3917}}\r\n    </td></tr>\r\n</table><br/>\r\n</td></tr>\r\n</table><br/>\r\n <hr style=\"height: 1px; border-style: solid; border-color: LightGrey; padding: 2pt; \" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\"/>",
+            //            LineLevelXPath = "//LINLoop1",
+            //            PlaceHolder = "{{TransactionInformationHtml}}",
+            //            XPathConnfigs = new List<XPathConnfig>()
+            //            {
+            //                #region LIN
+            //                //Vendor's (Seller's) Item Number
+            //	            new XPathConnfig(){
+            //                    XPath="//LIN[LIN02 = 'VN']/LIN03",
+            //                    PlaceHolder="{{LIN/LIN03-LIN02 = 'VN'}}",
+            //                    DefaultValue="",
+            //                    IsIdentityMarker=true
+            //                },
+            //                //Brand/Label
+            //                new XPathConnfig(){
+            //                    XPath="//LIN[LIN04 = 'BL']/LIN05",
+            //                    PlaceHolder="{{LIN/LIN05-LIN04 = 'BL'}}",
+            //                    DefaultValue=""
+            //                },
+            //                //Commodity Name
+            //                new XPathConnfig(){
+            //                    XPath="//LIN[LIN08 = 'CN']/LIN09",
+            //                    PlaceHolder="{{LIN/LIN09-LIN08 = 'CN'}}",
+            //                    DefaultValue=""
+            //                },
+            //                //U.P.C./EAN Case Code (2-5-5)
+            //                new XPathConnfig(){
+            //                    XPath="//LIN[LIN12 = 'UA']/LIN13",
+            //                    PlaceHolder="{{LIN/LIN13-LIN12 = 'UA'}}",
+            //                    DefaultValue=""
+            //                },
+            //                //Classification
+            //                new XPathConnfig(){
+            //                    XPath="//LIN[LIN22 = 'C3']/LIN23",
+            //                    PlaceHolder="{{LIN/LIN23-LIN22 = 'C3'}}",
+            //                    DefaultValue=""
+            //                },
+            //                #endregion
+
+            //                #region REF_3
+            //                //Vendor ID Number
+            //                new XPathConnfig(){
+            //                    XPath="//REF_3[REF01 = 'VR']/REF02",
+            //                    PlaceHolder="{{REF_3/REF02-REF01 = 'VR'}}",
+            //                    DefaultValue=""
+            //                },
+            //                #endregion
+
+            //                #region PID
+            //                //Product/Item Description
+            //                new XPathConnfig(){
+            //                    XPath="//PID//PID05",
+            //                    PlaceHolder="{{PID/PID05}}",
+            //                    DefaultValue=""
+            //                },
+            //                #endregion
+
+            //                #region Measurements
+            //                //Measurement Reference ID Code
+            //                new XPathConnfig(){
+            //                    XPath="//MEA//MEA01",
+            //                    PlaceHolder="{{MEA/MEA01}}",
+            //                    DefaultValue="",
+            //                    MappingRequired=true
+            //                },
+            //                //Measurement Qualifier
+            //                new XPathConnfig(){
+            //                    XPath="//MEA//MEA02",
+            //                    PlaceHolder="{{MEA/MEA02}}",
+            //                    DefaultValue="",
+            //                    MappingRequired=true
+            //                },
+            //                //Measurement Value
+            //                new XPathConnfig(){
+            //                    XPath="//MEA//MEA03",
+            //                    PlaceHolder="{{MEA/MEA03}}",
+            //                    DefaultValue=""
+            //                },
+            //                //Composite Unit of Measure
+            //                new XPathConnfig(){
+            //                    XPath="//MEA//MEA05",
+            //                    PlaceHolder="{{MEA/MEA05}}",
+            //                    DefaultValue="",
+            //                    MappingRequired=true
+            //                },
+            //                #endregion
+
+            //                #region Pricing Information
+            //                //Price Identifier Code
+            //                new XPathConnfig(){
+            //                    XPath="//CTPLoop1//CTP_2//CTP02",
+            //                    PlaceHolder="{{CTPLoop1/CTP_2/CTP02}}",
+            //                    DefaultValue="",
+            //                    MappingRequired=true
+            //                },
+            //                //Unit Price
+            //                new XPathConnfig(){
+            //                    XPath="//CTPLoop1//CTP_2//CTP03",
+            //                    PlaceHolder="{{CTPLoop1/CTP_2/CTP03}}",
+            //                    DefaultValue=""
+            //                },
+            //                //Quantity
+            //                new XPathConnfig(){
+            //                    XPath="//CTPLoop1//CTP_2//CTP04",
+            //                    PlaceHolder="{{CTPLoop1/CTP_2/CTP04}}",
+            //                    DefaultValue=""
+            //                },
+            //                //Composite Unit of Measure
+            //                new XPathConnfig(){
+            //                    XPath="//CTPLoop1//CTP_2//CTP06",
+            //                    PlaceHolder="{{CTPLoop1/CTP_2/CTP06}}",
+            //                    DefaultValue="",
+            //                    MappingRequired=true
+            //                },
+            //                #endregion
+
+            //                #region Date/Time Reference
+            //                //Effective
+            //                new XPathConnfig(){
+            //                    XPath="//CTPLoop1//DTM_5//DTM02",
+            //                    PlaceHolder="{{CTPLoop1/DTM_5/DTM02}}",
+            //                    DefaultValue="",
+            //                    DateFormat=new DateFormat{
+            //                        SourceFormat="yyyyMMdd",
+            //                        TargetFormat="MM/dd/yyyy"
+            //                    }
+            //                },
+            //                #endregion
+
+            //                #region Item Characteristics - Vendor's Selling Unit
+            //                //Product/Service ID Qualifier
+            //                new XPathConnfig(){
+            //                    XPath="//G39Loop1//G39//G3902",
+            //                    PlaceHolder="{{G39Loop1/G39/G3902}}",
+            //                    DefaultValue="",
+            //                    MappingRequired=true
+            //                },
+            //                //Product/Service ID
+            //                new XPathConnfig(){
+            //                    XPath="//G39Loop1//G39//G3903",
+            //                    PlaceHolder="{{G39Loop1/G39/G3903}}",
+            //                    DefaultValue=""
+            //                },
+            //                 //Unit Weight
+            //                 new XPathConnfig(){
+            //                    XPath="//G39Loop1//G39//G3905",
+            //                    PlaceHolder="{{G39Loop1/G39/G3905}}",
+            //                    DefaultValue=""
+            //                },
+            //                 //Weight Qualifier
+            //                 new XPathConnfig(){
+            //                    XPath="//G39Loop1//G39//G3906",
+            //                    PlaceHolder="{{G39Loop1/G39/G3906}}",
+            //                    DefaultValue="",
+            //                    MappingRequired=true
+            //                },
+            //                 //Weight Unit Code
+            //                 new XPathConnfig(){
+            //                    XPath="//G39Loop1//G39//G3907",
+            //                    PlaceHolder="{{G39Loop1/G39/G3907}}",
+            //                    DefaultValue="",
+            //                    MappingRequired=true
+            //                },
+            //                 //Pack
+            //                 new XPathConnfig(){
+            //                    XPath="//G39Loop1//G39//G3917",
+            //                    PlaceHolder="{{G39Loop1/G39/G3917}}",
+            //                    DefaultValue=""
+            //                },
+            //                #endregion
+            //            },
+            //        }
+            //    }
+            //}
+            //}
+
+
             new HumanReadableConfiguration()
             {
             TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad894.html"),
@@ -5094,7 +5337,7 @@ namespace POC
             //                   XPathConnfig = null,
             //                   LineLevel = new LineLevel()
             //                   {
-            //                       HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Receiving Conditions: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Quantity Units Received or Accepted : {{RCD/RCD02}} </td></tr> </table><br> </center></div> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Item Detail (Shipment): </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Number of Units Shipped : {{SN1/SN102}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Unit or Basis for Measurement Code : {{SN1/SN103}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td> <b>Part Numbers</b> </td></tr></table> <table border=\"0\" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" bordercolor=\"#808080\" bordercolorlight=\"#C0C0C0\" bordercolordark=\"#808080\" background=\"res://VistaRes.Dll/legalpad.gif\"> <TR><TD WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">     Buyer's Part Number</TD><TD BGCOLOR=\"#FFFFFF\">{{LIN/LIN03}}</TD></TR> </TR> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Purchase Order Reference: </b> </td></tr> </table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Purchase Order Number : {{PRF_2/PRF01}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Date : {{PRF_2/PRF04}} </td></tr> </table><br> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > </table><br> <hr style=\\\"height: 3px; border-style: solid; border-color: #FA9101; padding: 2pt; \\\" WIDTH=\\\"100%\\\" CELLPADDING=\\\"0\\\" cellspacing=\\\"1\\\" HEIGHT=\\\"1\\\">",
+            //                       HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Receiving Conditions: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Quantity Units Received or Accepted : {{RCD/RCD02}} </td></tr> </table><br> </center></div> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Item Detail (Shipment): </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Number of Units Shipped : {{SN1/SN102}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Unit or Basis for Measurement Code : {{SN1/SN103}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td> <b>Part Numbers</b> </td></tr></table> <table border=\"0\" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" bordercolor=\"#808080\" bordercolorlight=\"#C0C0C0\" bordercolordark=\"#808080\" background=\"res://VistaRes.Dll/legalpad.gif\"> <TR><TD WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">     Buyer's Part Number</TD><TD BGCOLOR=\"#FFFFFF\">{{LIN/LIN03}}</TD></TR> </TR> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Purchase Order Reference: </b> </td></tr> </table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Purchase Order Number : {{PRF_2/PRF01}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Date : {{PRF_2/PRF04}} </td></tr> </table><br> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > </table><br> <hr style=\\"height: 3px; border-style: solid; border-color: #FA9101; padding: 2pt; \\" WIDTH=\\"100%\\" CELLPADDING=\\"0\\" cellspacing=\\"1\\" HEIGHT=\\"1\\">",
             //                       LineLevelXPath = "//RCDLoop1",
             //                       PlaceHolder = "{{ChildItems}}",
             //                       XPathConnfigs = new List<XPathConnfig>()
@@ -5423,7 +5666,7 @@ namespace POC
             ////                   XPathConnfig = null,
             ////                   LineLevel = new LineLevel()
             ////                   {
-            ////                       HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Receiving Conditions: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Quantity Units Received or Accepted : {{RCD/RCD02}} </td></tr> </table><br> </center></div> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Item Detail (Shipment): </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Number of Units Shipped : {{SN1/SN102}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Unit or Basis for Measurement Code : {{SN1/SN103}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td> <b>Part Numbers</b> </td></tr></table> <table border=\"0\" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" bordercolor=\"#808080\" bordercolorlight=\"#C0C0C0\" bordercolordark=\"#808080\" background=\"res://VistaRes.Dll/legalpad.gif\"> <TR><TD WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">     Buyer's Part Number</TD><TD BGCOLOR=\"#FFFFFF\">{{LIN/LIN03}}</TD></TR> </TR> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Purchase Order Reference: </b> </td></tr> </table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Purchase Order Number : {{PRF_2/PRF01}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Date : {{PRF_2/PRF04}} </td></tr> </table><br> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > </table><br> <hr style=\\\"height: 3px; border-style: solid; border-color: #FA9101; padding: 2pt; \\\" WIDTH=\\\"100%\\\" CELLPADDING=\\\"0\\\" cellspacing=\\\"1\\\" HEIGHT=\\\"1\\\">",
+            ////                       HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Receiving Conditions: </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Quantity Units Received or Accepted : {{RCD/RCD02}} </td></tr> </table><br> </center></div> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Item Detail (Shipment): </b></td></tr></table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Number of Units Shipped : {{SN1/SN102}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Unit or Basis for Measurement Code : {{SN1/SN103}} </td></tr> </table><br> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td> <b>Part Numbers</b> </td></tr></table> <table border=\"0\" WIDTH=\"100%\" CELLPADDING=\"0\" cellspacing=\"1\" HEIGHT=\"1\" bordercolor=\"#808080\" bordercolorlight=\"#C0C0C0\" bordercolordark=\"#808080\" background=\"res://VistaRes.Dll/legalpad.gif\"> <TR><TD WIDTH=\"35%\" BGCOLOR=\"#FFFFFF\">     Buyer's Part Number</TD><TD BGCOLOR=\"#FFFFFF\">{{LIN/LIN03}}</TD></TR> </TR> </table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table> <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"> <tr> <td width=\"100%\" valign=\"top\" align=\"left\"> <b>Purchase Order Reference: </b> </td></tr> </table> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Purchase Order Number : {{PRF_2/PRF01}} </td></tr> <tr> <td width=\"100%\" valign=\"top\" align=\"left\">      Date : {{PRF_2/PRF04}} </td></tr> </table><br> <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > </table><br> <hr style=\\"height: 3px; border-style: solid; border-color: #FA9101; padding: 2pt; \\" WIDTH=\\"100%\\" CELLPADDING=\\"0\\" cellspacing=\\"1\\" HEIGHT=\\"1\\">",
             ////                       LineLevelXPath = "//RCDLoop1",
             ////                       PlaceHolder = "{{ChildItems}}",
             ////                       XPathConnfigs = new List<XPathConnfig>()
