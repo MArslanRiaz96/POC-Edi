@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -3576,72 +3577,124 @@ namespace POC
                     XPathConnfig = null,
                     LineLevel = new LineLevel()
                     {
-                        HTML = "<table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Direct Store Delivery Sequence Number\r\n    : {{G83/G8301}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity\r\n    : {{G83/G8302}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code\r\n    : {{G83/G8303}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C./EAN Consumer Package Code\r\n    : {{G83/G8304}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost\r\n    : {{G83/G8308}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack\r\n    : {{G83/G8309}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cash Register Item Description\r\n    : {{G83/G8310}}\r\n    </td></tr>\r\n</table><br/>",
+                        HTML = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n<b>Line Item Detail/Direct Store Delivery:\r\n</b></td></tr></table>\r\n<table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Direct Store Delivery Sequence Number\r\n    : {{G83/G8301}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity\r\n    : {{G83/G8302}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code\r\n    : {{G83/G8303}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U.P.C./EAN Consumer Package Code\r\n    : {{G83/G8304}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID Qualifier\r\n    : {{G83/G8305}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product/Service ID\r\n    : {{G83/G8306}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item List Cost\r\n    : {{G83/G8308}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pack\r\n    : {{G83/G8309}}\r\n    </td></tr>\r\n</table><br/>\r\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n<b>Allowance or Charge:\r\n</b></td></tr></table>\r\n<table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allowance or Charge Code\r\n    : {{G72/G7201}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allowance or Charge Method of Handling Code\r\n    : {{G72/G7202}}\r\n    </td></tr>\r\n  <tr> \r\n    <td width=\"100%\" valign=\"top\" align=\"left\">\r\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allowance or Charge Total Amount\r\n    : {{G72/G7208}}\r\n    </td></tr>\r\n</table><br/>",
                         LineLevelXPath = "//G83Loop1",
                         PlaceHolder = "{{TransactionInformationHtml}}",
                         XPathConnfigs = new List<XPathConnfig>()
                         {
-                        new XPathConnfig(){
-                                XPath="//G83//G8301",
-                                PlaceHolder="{{G83/G8301}}",
-                                DefaultValue="",
-                        },
-                        new XPathConnfig(){
-                                XPath="//G83//G8302",
-                                PlaceHolder="{{G83/G8302}}",
-                                DefaultValue="",
-                        },
-                        new XPathConnfig(){
-                                XPath="//G83//G8303",
-                                PlaceHolder="{{G83/G8303}}",
-                                DefaultValue="",
-                                MappingRequired= true
-                        },
-                        new XPathConnfig(){
-                                XPath="//G83//G8304",
-                                PlaceHolder="{{G83/G8304}}",
-                                DefaultValue="",
-                        },
-                        new XPathConnfig(){
-                                XPath="//G83//G8308",
-                                PlaceHolder="{{G83/G8308}}",
-                                DefaultValue="",
-                        },
-                        new XPathConnfig(){
-                                XPath="//G83//G8309",
-                                PlaceHolder="{{G83/G8309}}",
-                                DefaultValue="",
-                        },
-                        new XPathConnfig(){
-                                XPath="//G83//G8310",
-                                PlaceHolder="{{G83/G8310}}",
-                                DefaultValue="",
-                        },
+                            //Direct Store Delivery Sequence Number
+                            new XPathConnfig(){
+                                    XPath="//G83//G8301",
+                                    PlaceHolder="{{G83/G8301}}",
+                                    DefaultValue="",
+                            },
+                            //Quantity
+                            new XPathConnfig(){
+                                    XPath="//G83//G8302",
+                                    PlaceHolder="{{G83/G8302}}",
+                                    DefaultValue="",
+                            },
+                            //Unit or Basis for Measurement Code
+                            new XPathConnfig(){
+                                    XPath="//G83//G8303",
+                                    PlaceHolder="{{G83/G8303}}",
+                                    DefaultValue="",
+                                    MappingRequired= true
+                            },
+                            //U.P.C./EAN Consumer Package Code
+                            new XPathConnfig(){
+                                    XPath="//G83//G8304",
+                                    PlaceHolder="{{G83/G8304}}",
+                                    DefaultValue="",
+                            },
+                            //Product/Service ID Qualifier
+                            new XPathConnfig(){
+                                    XPath="//G83//G8305",
+                                    PlaceHolder="{{G83/G8305}}",
+                                    DefaultValue="",
+                                    MappingRequired= true
+                            },
+                            //Product/Service ID
+                            new XPathConnfig(){
+                                    XPath="//G83//G8306",
+                                    PlaceHolder="{{G83/G8306}}",
+                                    DefaultValue="",
+                            },
+                            //Item List Cost
+                            new XPathConnfig(){
+                                    XPath="//G83//G8308",
+                                    PlaceHolder="{{G83/G8308}}",
+                                    DefaultValue="",
+                            },
+                            //Pack
+                            new XPathConnfig(){
+                                    XPath="//G83//G8309",
+                                    PlaceHolder="{{G83/G8309}}",
+                                    DefaultValue="",
+                            },
+
+                            //Allowance or Charge:
+
+                            //Allowance or Charge Code
+                            new XPathConnfig(){
+                                    XPath="//G72//G7201",
+                                    PlaceHolder="{{G72/G7201}}",
+                                    DefaultValue="",
+                                    MappingRequired= true
+                            },
+                            //Allowance or Charge Method of Handling Code
+                            new XPathConnfig(){
+                                    XPath="//G72//G7202",
+                                    PlaceHolder="{{G72/G7202}}",
+                                    DefaultValue="",
+                                    MappingRequired= true
+                            },
+                            //Allowance or Charge Total Amount
+                            new XPathConnfig(){
+                                    XPath="//G72//G7208",
+                                    PlaceHolder="{{G72/G7208}}",
+                                    DefaultValue=""
+                            },
                         }
                     }
                 },
-
+                //Loop Identifier Code
                 new Configuration()
                 {
                 XPathConnfig = new XPathConnfig() { XPath = "//LE/LE01", PlaceHolder = "{{LE/LE01}}", DefaultValue = ""},
                 LineLevel = null
                 },
+                //Delivery/Return Record of Totals:
+
+                //Quantity
                 new Configuration()
                 {
                 XPathConnfig = new XPathConnfig() { XPath = "//G84/G8401", PlaceHolder = "{{G84/G8401}}", DefaultValue = ""},
                 LineLevel = null
                 },
+                //Total Invoice Amount
                 new Configuration()
                 {
                 XPathConnfig = new XPathConnfig() { XPath = "//G84/G8402", PlaceHolder = "{{G84/G8402}}", DefaultValue = ""},
                 LineLevel = null
                 },
+                //Total Deposit Dollar Amount
+                new Configuration()
+                {
+                XPathConnfig = new XPathConnfig() { XPath = "//G84/G8403", PlaceHolder = "{{G84/G8403}}", DefaultValue = ""},
+                LineLevel = null
+                },
+
+                //Signature Identification
+                //Signature
                 new Configuration()
                 {
                 XPathConnfig = new XPathConnfig() { XPath = "//G86/G8601", PlaceHolder = "{{G86/G8601}}", DefaultValue = ""},
                 LineLevel = null
                 },
 
+                //Record Integrity Check
+                //Integrity Check Value
                 new Configuration()
                 {
                 XPathConnfig = new XPathConnfig() { XPath = "//G85/G8501", PlaceHolder = "{{G85/G8501}}", DefaultValue = ""},
