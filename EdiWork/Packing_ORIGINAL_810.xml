@@ -1,18 +1,18 @@
-<X12_00401_810 xml:space="preserve" ID="1">
+<X12_00403_810 xml:space="preserve" ID="1">
   <ISA ID="2" SegmentPosition="00">
     <ISA01 ID="00:3">00</ISA01>
     <ISA02 ID="00:4">          </ISA02>
     <ISA03 ID="00:5">00</ISA03>
     <ISA04 ID="00:6">          </ISA04>
     <ISA05 ID="00:7">12</ISA05>
-    <ISA06 ID="00:8">7182504000     </ISA06>
-    <ISA07 ID="00:9">ZZ</ISA07>
-    <ISA08 ID="00:10">AMAZON         </ISA08>
-    <ISA09 ID="00:11">220223</ISA09>
-    <ISA10 ID="00:12">1233</ISA10>
+    <ISA06 ID="00:8">8777358423     </ISA06>
+    <ISA07 ID="00:9">08</ISA07>
+    <ISA08 ID="00:10">9251750000     </ISA08>
+    <ISA09 ID="00:11">240829</ISA09>
+    <ISA10 ID="00:12">2242</ISA10>
     <ISA11 ID="00:13">U</ISA11>
-    <ISA12 ID="00:14">00401</ISA12>
-    <ISA13 ID="00:15">379004908</ISA13>
+    <ISA12 ID="00:14">00403</ISA12>
+    <ISA13 ID="00:15">115497446</ISA13>
     <ISA14 ID="00:16">1</ISA14>
     <ISA15 ID="00:17">P</ISA15>
     <ISA16 ID="00:18">&gt;</ISA16>
@@ -21,192 +21,400 @@
     <GS01 ID="00:20">IN</GS01>
     <GS02 ID="00:21">3039565790</GS02>
     <GS03 ID="00:22">8028623330</GS03>
-    <GS04 ID="00:23">20220223</GS04>
-    <GS05 ID="00:24">123304</GS05>
+    <GS04 ID="00:23">20240829</GS04>
+    <GS05 ID="00:24">224236</GS05>
     <GS06 ID="00:25">9467</GS06>
     <GS07 ID="00:26">X</GS07>
-    <GS08 ID="00:27">004010</GS08>
+    <GS08 ID="00:27">004030</GS08>
   </GS>
   <ST ID="28" SegmentPosition="00">
     <ST01 ID="00:29">810</ST01>
     <ST02 ID="00:30">0001</ST02>
   </ST>
   <BIG ID="31" SegmentPosition="00">
-    <BIG01 ID="00:32">20220222</BIG01>
-    <BIG02 ID="00:33">SINP-43135</BIG02>
-    <BIG03 ID="00:34">20220215</BIG03>
-    <BIG04 ID="00:35">P792940</BIG04>
+    <BIG01 ID="00:32">20240829</BIG01>
+    <BIG02 ID="00:33">INV10145868</BIG02>
+    <BIG03 ID="00:34">20240815</BIG03>
+    <BIG04 ID="00:35">999447</BIG04>
   </BIG>
-  <CUR ID="36" SegmentPosition="00">
-    <CUR01 ID="00:37">BT</CUR01>
-    <CUR02 ID="00:38">USD</CUR02>
-  </CUR>
-  <N1Loop1 ID="39" SegmentPosition="00">
-    <N1 ID="400" SegmentPosition="00">
-      <N101 ID="00:401">ST</N101>
-      <N102 ID="00:402"></N102>
-      <N103 ID="00:403">92</N103>
-      <N104 ID="00:403">123</N104>
+  <N1Loop1 ID="36" SegmentPosition="00">
+    <N1 ID="37" SegmentPosition="00">
+      <N101 ID="00:38">ST</N101>
+      <N102 ID="00:39">SAFEWAY INC. A SUB. OF ALBERTSONS COMPANIES, LLC</N102>
+      <N103 ID="00:40">9</N103>
+      <N104 ID="00:41">0091372095529</N104>
     </N1>
-    <N3 ID="43" SegmentPosition="00">
-      <N301 ID="00:44">Lock Box 9181</N301>
+    <N3 ID="42" SegmentPosition="00">
+      <N301 ID="00:43">500 S Muddy Creek Road</N301>
     </N3>
-    <N4 ID="45" SegmentPosition="00">
-      <N401 ID="00:46">Philadelphia</N401>
-      <N402 ID="00:47">PA</N402>
-      <N403 ID="00:48">191760280</N403>
-      <N404 ID="00:49">US</N404>
+    <N4 ID="44" SegmentPosition="00">
+      <N401 ID="00:45">Denver</N401>
+      <N402 ID="00:46">PA</N402>
+      <N403 ID="00:47">17517</N403>
     </N4>
   </N1Loop1>
-  <ITD ID="50" SegmentPosition="00">
-    <ITD01 ID="00:51">01</ITD01>
-    <ITD02 ID="00:52">3</ITD02>
-    <ITD03 ID="00:53"></ITD03>
-    <ITD04 ID="00:54"></ITD04>
-    <ITD05 ID="00:55">0</ITD05>
-    <ITD06 ID="00:56"></ITD06>
-    <ITD07 ID="00:57">60</ITD07>
-    <ITD08 ID="00:57"></ITD08>
+  <N1Loop1 ID="48" SegmentPosition="00">
+    <N1 ID="49" SegmentPosition="00">
+      <N101 ID="00:50">BT</N101>
+      <N102 ID="00:51">ALBERTSONS COMPANIES, LLC</N102>
+      <N103 ID="00:52">9</N103>
+      <N104 ID="00:53">0091372091700</N104>
+    </N1>
+    <N3 ID="54" SegmentPosition="00">
+      <N301 ID="00:55">P.O. BOX 29093</N301>
+    </N3>
+    <N4 ID="56" SegmentPosition="00">
+      <N401 ID="00:57">PHOENIX</N401>
+      <N402 ID="00:58">AZ</N402>
+      <N403 ID="00:59">85038</N403>
+    </N4>
+  </N1Loop1>
+  <N1Loop1 ID="60" SegmentPosition="00">
+    <N1 ID="61" SegmentPosition="00">
+      <N101 ID="00:62">VN</N101>
+      <N102 ID="00:63">GT'S LIVING FOODS LLC</N102>
+      <N103 ID="00:64">9</N103>
+      <N104 ID="00:65">101338377</N104>
+    </N1>
+    <N3 ID="66" SegmentPosition="00">
+      <N301 ID="00:67">4646 HAMPTON ST</N301>
+    </N3>
+    <N4 ID="68" SegmentPosition="00">
+      <N401 ID="00:69">VERNON</N401>
+      <N402 ID="00:70">CA</N402>
+      <N403 ID="00:71">90058</N403>
+    </N4>
+  </N1Loop1>
+  <ITD ID="72" SegmentPosition="00">
+    <ITD01 ID="00:73">05</ITD01>
+    <ITD02 ID="00:74">3</ITD02>
+    <ITD03 ID="00:75" />
+    <ITD04 ID="00:76" />
+    <ITD05 ID="00:77" />
+    <ITD06 ID="00:78" />
+    <ITD07 ID="00:79">30</ITD07>
+    <ITD08 ID="00:80" />
+    <ITD09 ID="00:81" />
+    <ITD10 ID="00:82" />
+    <ITD11 ID="00:83" />
+    <ITD12 ID="00:84">Net 30 days</ITD12>
   </ITD>
-  <IT1Loop1 ID="58" SegmentPosition="00">
-    <IT1 ID="59" SegmentPosition="00">
-      <IT101 ID="00:60">1</IT101>
-      <IT102 ID="00:61">4</IT102>
-      <IT103 ID="00:62">EA</IT103>
-      <IT104 ID="00:63">8.60</IT104>
-      <IT105 ID="00:64"></IT105>
-      <IT106 ID="00:65">UP</IT106>
-      <IT107 ID="00:66">999999330023</IT107>
-      <IT108 ID="00:67" />
-      <IT109 ID="00:68" />
+  <DTM ID="85" SegmentPosition="00">
+    <DTM01 ID="00:86">011</DTM01>
+    <DTM02 ID="00:87">20240829</DTM02>
+  </DTM>
+  <IT1Loop1 ID="88" SegmentPosition="00">
+    <IT1 ID="89" SegmentPosition="00">
+      <IT101 ID="00:90">8</IT101>
+      <IT102 ID="00:91">68</IT102>
+      <IT103 ID="00:92">CA</IT103>
+      <IT104 ID="00:93">30.12</IT104>
+      <IT105 ID="00:94" />
+      <IT106 ID="00:95">UA</IT106>
+      <IT107 ID="00:96">072243090000</IT107>
     </IT1>
+    <IT3 ID="97" SegmentPosition="00">
+      <IT301 ID="00:98">68</IT301>
+      <IT302 ID="00:99">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="100" SegmentPosition="00">
+      <PID_2 ID="101" SegmentPosition="00">
+        <PID01 ID="00:102">F</PID01>
+        <PID02 ID="00:103" />
+        <PID03 ID="00:104" />
+        <PID04 ID="00:105" />
+        <PID05 ID="00:106">SYN Guava 16oz 12pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
   </IT1Loop1>
-  <IT1Loop1 ID="58" SegmentPosition="00">
-    <IT1 ID="59" SegmentPosition="00">
-      <IT101 ID="00:60">2</IT101>
-      <IT102 ID="00:61">5</IT102>
-      <IT103 ID="00:62">EA</IT103>
-      <IT104 ID="00:63">8.60</IT104>
-      <IT105 ID="00:64"></IT105>
-      <IT106 ID="00:65">UP</IT106>
-      <IT107 ID="00:66">999999330023</IT107>
-      <IT108 ID="00:67" />
-      <IT109 ID="00:68" />
+  <IT1Loop1 ID="107" SegmentPosition="00">
+    <IT1 ID="108" SegmentPosition="00">
+      <IT101 ID="00:109">5</IT101>
+      <IT102 ID="00:110">136</IT102>
+      <IT103 ID="00:111">CA</IT103>
+      <IT104 ID="00:112">30.12</IT104>
+      <IT105 ID="00:113" />
+      <IT106 ID="00:114">UA</IT106>
+      <IT107 ID="00:115">072243020000</IT107>
     </IT1>
+    <IT3 ID="116" SegmentPosition="00">
+      <IT301 ID="00:117">136</IT301>
+      <IT302 ID="00:118">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="119" SegmentPosition="00">
+      <PID_2 ID="120" SegmentPosition="00">
+        <PID01 ID="00:121">F</PID01>
+        <PID02 ID="00:122" />
+        <PID03 ID="00:123" />
+        <PID04 ID="00:124" />
+        <PID05 ID="00:125">SYN Gingerade 16oz 12pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
   </IT1Loop1>
-  <IT1Loop1 ID="58" SegmentPosition="00">
-    <IT1 ID="59" SegmentPosition="00">
-      <IT101 ID="00:60">3</IT101>
-      <IT102 ID="00:61">4</IT102>
-      <IT103 ID="00:62">EA</IT103>
-      <IT104 ID="00:63">8.60</IT104>
-      <IT105 ID="00:64"></IT105>
-      <IT106 ID="00:65">UP</IT106>
-      <IT107 ID="00:66">999999330023</IT107>
-      <IT108 ID="00:67" />
-      <IT109 ID="00:68" />
+  <IT1Loop1 ID="126" SegmentPosition="00">
+    <IT1 ID="127" SegmentPosition="00">
+      <IT101 ID="00:128">6</IT101>
+      <IT102 ID="00:129">48</IT102>
+      <IT103 ID="00:130">CA</IT103>
+      <IT104 ID="00:131">36.96</IT104>
+      <IT105 ID="00:132" />
+      <IT106 ID="00:133">UA</IT106>
+      <IT107 ID="00:134">072243011049</IT107>
     </IT1>
+    <IT3 ID="135" SegmentPosition="00">
+      <IT301 ID="00:136">48</IT301>
+      <IT302 ID="00:137">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="138" SegmentPosition="00">
+      <PID_2 ID="139" SegmentPosition="00">
+        <PID01 ID="00:140">F</PID01>
+        <PID02 ID="00:141" />
+        <PID03 ID="00:142" />
+        <PID04 ID="00:143" />
+        <PID05 ID="00:144">SYN Trilogy 48oz 6pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
   </IT1Loop1>
-  <IT1Loop1 ID="58" SegmentPosition="00">
-    <IT1 ID="59" SegmentPosition="00">
-      <IT101 ID="00:60">4</IT101>
-      <IT102 ID="00:61">4</IT102>
-      <IT103 ID="00:62">EA</IT103>
-      <IT104 ID="00:63">8.60</IT104>
-      <IT105 ID="00:64"></IT105>
-      <IT106 ID="00:65">UP</IT106>
-      <IT107 ID="00:66">999999330023</IT107>
-      <IT108 ID="00:67" />
-      <IT109 ID="00:68" />
+  <IT1Loop1 ID="145" SegmentPosition="00">
+    <IT1 ID="146" SegmentPosition="00">
+      <IT101 ID="00:147">10</IT101>
+      <IT102 ID="00:148">68</IT102>
+      <IT103 ID="00:149">CA</IT103>
+      <IT104 ID="00:150">30.12</IT104>
+      <IT105 ID="00:151" />
+      <IT106 ID="00:152">UA</IT106>
+      <IT107 ID="00:153">072243071000</IT107>
     </IT1>
+    <IT3 ID="154" SegmentPosition="00">
+      <IT301 ID="00:155">68</IT301>
+      <IT302 ID="00:156">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="157" SegmentPosition="00">
+      <PID_2 ID="158" SegmentPosition="00">
+        <PID01 ID="00:159">F</PID01>
+        <PID02 ID="00:160" />
+        <PID03 ID="00:161" />
+        <PID04 ID="00:162" />
+        <PID05 ID="00:163">SYN Lemon Berry 16oz 12pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
   </IT1Loop1>
-  <IT1Loop1 ID="58" SegmentPosition="00">
-    <IT1 ID="59" SegmentPosition="00">
-      <IT101 ID="00:60">5</IT101>
-      <IT102 ID="00:61">4</IT102>
-      <IT103 ID="00:62">EA</IT103>
-      <IT104 ID="00:63">8.60</IT104>
-      <IT105 ID="00:64"></IT105>
-      <IT106 ID="00:65">UP</IT106>
-      <IT107 ID="00:66">999999330023</IT107>
-      <IT108 ID="00:67" />
-      <IT109 ID="00:68" />
+  <IT1Loop1 ID="164" SegmentPosition="00">
+    <IT1 ID="165" SegmentPosition="00">
+      <IT101 ID="00:166">2</IT101>
+      <IT102 ID="00:167">136</IT102>
+      <IT103 ID="00:168">CA</IT103>
+      <IT104 ID="00:169">30.12</IT104>
+      <IT105 ID="00:170" />
+      <IT106 ID="00:171">UA</IT106>
+      <IT107 ID="00:172">072243050000</IT107>
     </IT1>
+    <IT3 ID="173" SegmentPosition="00">
+      <IT301 ID="00:174">136</IT301>
+      <IT302 ID="00:175">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="176" SegmentPosition="00">
+      <PID_2 ID="177" SegmentPosition="00">
+        <PID01 ID="00:178">F</PID01>
+        <PID02 ID="00:179" />
+        <PID03 ID="00:180" />
+        <PID04 ID="00:181" />
+        <PID05 ID="00:182">SYN Mango 16oz 12pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
   </IT1Loop1>
-  <IT1Loop1 ID="58" SegmentPosition="00">
-    <IT1 ID="59" SegmentPosition="00">
-      <IT101 ID="00:60">6</IT101>
-      <IT102 ID="00:61">4</IT102>
-      <IT103 ID="00:62">EA</IT103>
-      <IT104 ID="00:63">8.60</IT104>
-      <IT105 ID="00:64"></IT105>
-      <IT106 ID="00:65">UP</IT106>
-      <IT107 ID="00:66">999999330023</IT107>
-      <IT108 ID="00:67" />
-      <IT109 ID="00:68" />
+  <IT1Loop1 ID="183" SegmentPosition="00">
+    <IT1 ID="184" SegmentPosition="00">
+      <IT101 ID="00:185">7</IT101>
+      <IT102 ID="00:186">68</IT102>
+      <IT103 ID="00:187">CA</IT103>
+      <IT104 ID="00:188">30.12</IT104>
+      <IT105 ID="00:189" />
+      <IT106 ID="00:190">UA</IT106>
+      <IT107 ID="00:191">072243042000</IT107>
     </IT1>
+    <IT3 ID="192" SegmentPosition="00">
+      <IT301 ID="00:193">68</IT301>
+      <IT302 ID="00:194">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="195" SegmentPosition="00">
+      <PID_2 ID="196" SegmentPosition="00">
+        <PID01 ID="00:197">F</PID01>
+        <PID02 ID="00:198" />
+        <PID03 ID="00:199" />
+        <PID04 ID="00:200" />
+        <PID05 ID="00:201">SYN Golden Pineapple 16oz 12pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
   </IT1Loop1>
-<IT1Loop1 ID="58" SegmentPosition="00">
-    <IT1 ID="59" SegmentPosition="00">
-      <IT101 ID="00:60">7</IT101>
-      <IT102 ID="00:61">4</IT102>
-      <IT103 ID="00:62">EA</IT103>
-      <IT104 ID="00:63">8.60</IT104>
-      <IT105 ID="00:64"></IT105>
-      <IT106 ID="00:65">UP</IT106>
-      <IT107 ID="00:66">999999330023</IT107>
-      <IT108 ID="00:67" />
-      <IT109 ID="00:68" />
+  <IT1Loop1 ID="202" SegmentPosition="00">
+    <IT1 ID="203" SegmentPosition="00">
+      <IT101 ID="00:204">3</IT101>
+      <IT102 ID="00:205">68</IT102>
+      <IT103 ID="00:206">CA</IT103>
+      <IT104 ID="00:207">30.12</IT104>
+      <IT105 ID="00:208" />
+      <IT106 ID="00:209">UA</IT106>
+      <IT107 ID="00:210">072243060000</IT107>
     </IT1>
+    <IT3 ID="211" SegmentPosition="00">
+      <IT301 ID="00:212">68</IT301>
+      <IT302 ID="00:213">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="214" SegmentPosition="00">
+      <PID_2 ID="215" SegmentPosition="00">
+        <PID01 ID="00:216">F</PID01>
+        <PID02 ID="00:217" />
+        <PID03 ID="00:218" />
+        <PID04 ID="00:219" />
+        <PID05 ID="00:220">SYN Gingerberry 16oz 12pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
   </IT1Loop1>
-<IT1Loop1 ID="58" SegmentPosition="00">
-    <IT1 ID="59" SegmentPosition="00">
-      <IT101 ID="00:60">8</IT101>
-      <IT102 ID="00:61">4</IT102>
-      <IT103 ID="00:62">EA</IT103>
-      <IT104 ID="00:63">8.60</IT104>
-      <IT105 ID="00:64"></IT105>
-      <IT106 ID="00:65">UP</IT106>
-      <IT107 ID="00:66">999999330023</IT107>
-      <IT108 ID="00:67" />
-      <IT109 ID="00:68" />
+  <IT1Loop1 ID="221" SegmentPosition="00">
+    <IT1 ID="222" SegmentPosition="00">
+      <IT101 ID="00:223">4</IT101>
+      <IT102 ID="00:224">136</IT102>
+      <IT103 ID="00:225">CA</IT103>
+      <IT104 ID="00:226">30.12</IT104>
+      <IT105 ID="00:227" />
+      <IT106 ID="00:228">UA</IT106>
+      <IT107 ID="00:229">072243011000</IT107>
     </IT1>
+    <IT3 ID="230" SegmentPosition="00">
+      <IT301 ID="00:231">136</IT301>
+      <IT302 ID="00:232">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="233" SegmentPosition="00">
+      <PID_2 ID="234" SegmentPosition="00">
+        <PID01 ID="00:235">F</PID01>
+        <PID02 ID="00:236" />
+        <PID03 ID="00:237" />
+        <PID04 ID="00:238" />
+        <PID05 ID="00:239">SYN Trilogy 16oz 12pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
   </IT1Loop1>
-  <TDS ID="136" SegmentPosition="00">
-    <TDS01 ID="00:137">21740</TDS01>
+  <IT1Loop1 ID="240" SegmentPosition="00">
+    <IT1 ID="241" SegmentPosition="00">
+      <IT101 ID="00:242">11</IT101>
+      <IT102 ID="00:243">48</IT102>
+      <IT103 ID="00:244">CA</IT103>
+      <IT104 ID="00:245">36.96</IT104>
+      <IT105 ID="00:246" />
+      <IT106 ID="00:247">UA</IT106>
+      <IT107 ID="00:248">072243090049</IT107>
+    </IT1>
+    <IT3 ID="249" SegmentPosition="00">
+      <IT301 ID="00:250">48</IT301>
+      <IT302 ID="00:251">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="252" SegmentPosition="00">
+      <PID_2 ID="253" SegmentPosition="00">
+        <PID01 ID="00:254">F</PID01>
+        <PID02 ID="00:255" />
+        <PID03 ID="00:256" />
+        <PID04 ID="00:257" />
+        <PID05 ID="00:258">SYN Guava 48oz 6pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
+  </IT1Loop1>
+  <IT1Loop1 ID="259" SegmentPosition="00">
+    <IT1 ID="260" SegmentPosition="00">
+      <IT101 ID="00:261">12</IT101>
+      <IT102 ID="00:262">68</IT102>
+      <IT103 ID="00:263">CA</IT103>
+      <IT104 ID="00:264">30.12</IT104>
+      <IT105 ID="00:265" />
+      <IT106 ID="00:266">UA</IT106>
+      <IT107 ID="00:267">072243074000</IT107>
+    </IT1>
+    <IT3 ID="268" SegmentPosition="00">
+      <IT301 ID="00:269">68</IT301>
+      <IT302 ID="00:270">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="271" SegmentPosition="00">
+      <PID_2 ID="272" SegmentPosition="00">
+        <PID01 ID="00:273">F</PID01>
+        <PID02 ID="00:274" />
+        <PID03 ID="00:275" />
+        <PID04 ID="00:276" />
+        <PID05 ID="00:277">SYN Elderberry Juniper 16oz 12pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
+  </IT1Loop1>
+  <IT1Loop1 ID="278" SegmentPosition="00">
+    <IT1 ID="279" SegmentPosition="00">
+      <IT101 ID="00:280">1</IT101>
+      <IT102 ID="00:281">68</IT102>
+      <IT103 ID="00:282">CA</IT103>
+      <IT104 ID="00:283">30.12</IT104>
+      <IT105 ID="00:284" />
+      <IT106 ID="00:285">UA</IT106>
+      <IT107 ID="00:286">072243040000</IT107>
+    </IT1>
+    <IT3 ID="287" SegmentPosition="00">
+      <IT301 ID="00:288">68</IT301>
+      <IT302 ID="00:289">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="290" SegmentPosition="00">
+      <PID_2 ID="291" SegmentPosition="00">
+        <PID01 ID="00:292">F</PID01>
+        <PID02 ID="00:293" />
+        <PID03 ID="00:294" />
+        <PID04 ID="00:295" />
+        <PID05 ID="00:296">SYN Strawberry 16oz 12pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
+  </IT1Loop1>
+  <IT1Loop1 ID="297" SegmentPosition="00">
+    <IT1 ID="298" SegmentPosition="00">
+      <IT101 ID="00:299">9</IT101>
+      <IT102 ID="00:300">48</IT102>
+      <IT103 ID="00:301">CA</IT103>
+      <IT104 ID="00:302">36.96</IT104>
+      <IT105 ID="00:303" />
+      <IT106 ID="00:304">UA</IT106>
+      <IT107 ID="00:305">072243020049</IT107>
+    </IT1>
+    <IT3 ID="306" SegmentPosition="00">
+      <IT301 ID="00:307">48</IT301>
+      <IT302 ID="00:308">CA</IT302>
+    </IT3>
+    <PIDLoop1 ID="309" SegmentPosition="00">
+      <PID_2 ID="310" SegmentPosition="00">
+        <PID01 ID="00:311">F</PID01>
+        <PID02 ID="00:312" />
+        <PID03 ID="00:313" />
+        <PID04 ID="00:314" />
+        <PID05 ID="00:315">SYN Gingerade 48oz 6pk OG3</PID05>
+      </PID_2>
+    </PIDLoop1>
+  </IT1Loop1>
+  <TDS ID="316" SegmentPosition="00">
+    <TDS01 ID="00:317">2990016</TDS01>
   </TDS>
-  <CTT ID="138" SegmentPosition="00">
-    <CTT01 ID="00:139">8</CTT01>
-    <CTT02 ID="00:140">280</CTT02>
+  <ISSLoop1 ID="318" SegmentPosition="00">
+    <ISS ID="319" SegmentPosition="00">
+      <ISS01 ID="00:320">976</ISS01>
+      <ISS02 ID="00:321">CA</ISS02>
+      <ISS03 ID="00:322">23790</ISS03>
+      <ISS04 ID="00:323">LB</ISS04>
+    </ISS>
+  </ISSLoop1>
+  <CTT ID="324" SegmentPosition="00">
+    <CTT01 ID="00:325">12</CTT01>
   </CTT>
-  <SE ID="141" SegmentPosition="00">
-    <SE01 ID="00:142" />
-    <SE02 ID="00:143">0001</SE02>
+  <SE ID="326" SegmentPosition="00">
+    <SE01 ID="00:327" />
+    <SE02 ID="00:328">0001</SE02>
   </SE>
-  <GE ID="144" SegmentPosition="00">
-    <GE01 ID="00:145">3</GE01>
-    <GE02 ID="00:146">9467</GE02>
+  <GE ID="329" SegmentPosition="00">
+    <GE01 ID="00:330">3</GE01>
+    <GE02 ID="00:331">9467</GE02>
   </GE>
-  <IEA ID="147" SegmentPosition="00">
-    <IEA01 ID="00:148">1</IEA01>
-    <IEA02 ID="00:149">379004908</IEA02>
+  <IEA ID="332" SegmentPosition="00">
+    <IEA01 ID="00:333">1</IEA01>
+    <IEA02 ID="00:334">115497446</IEA02>
   </IEA>
-<REF ID="150" SegmentPosition="00">
-    <REF01 ID="00:151">DP</REF01>
-    <REF02 ID="00:152">099</REF02>
-  </REF>
-<REF ID="153" SegmentPosition="00">
-    <REF01 ID="00:154">IA</REF01>
-    <REF02 ID="00:155">99999</REF02>
-  </REF>
-<CAD ID="200" SegmentPosition="00">
-    <CAD01 ID="00:201"></CAD01>
-    <CAD02 ID="00:202"></CAD02>
-    <CAD03 ID="00:203"></CAD03>
-    <CAD04 ID="00:203"></CAD04>
-    <CAD05 ID="00:203">GTCT</CAD05>
-    <CAD06 ID="00:203"></CAD06>
-    <CAD07 ID="00:203">BM</CAD07>
-    <CAD08 ID="00:203">99999</CAD08>
-  </CAD>
-</X12_00401_810>
+</X12_00403_810>
