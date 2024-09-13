@@ -649,193 +649,194 @@ namespace POC
             // }
             // }
             // ,
-            new HumanReadableConfiguration()
-            {
-            TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad810.html"),
-            TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad810Updated.html"),
-            PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGINAL_810.xml"),
-            TemplateSetCode = 810,
-            KDIVersion = "",
-            configurations = new List<Configuration>() {
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//BIG/BIG01", PlaceHolder = "{{BIG/BIG01}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" }},
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//BIG/BIG02", PlaceHolder = "{{BIG/BIG02}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//BIG/BIG03", PlaceHolder = "{{BIG/BIG03}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" } },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//BIG/BIG04", PlaceHolder = "{{BIG/BIG04}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//REF[REF01 = 'DP']/REF02", PlaceHolder = "{{REF/REF02-REF01 = 'DP'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//REF[REF01 = 'IA']/REF02", PlaceHolder = "{{REF/REF02-REF01 = 'IA'}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = null,
-                LineLevel = new LineLevel()
-                {
-                   HTML = "<tr> <td border=\"0\" width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({{N1/N103}}: {{N1/N104}})</td> </tr>",
-                    LineLevelXPath = "//N1Loop1/N1",
-                    PlaceHolder = "{{ShipHtml}}",
-                    XPathConnfigs = new List<XPathConnfig>() {
-                    new XPathConnfig()
-                    {
-                        XPath="//N1/N103",
-                        PlaceHolder="{{N1/N103}}",
-                        DefaultValue="",
-                        MappingRequired= true
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//N1/N104",
-                        PlaceHolder="{{N1/N104}}",
-                        DefaultValue="",
-                    }
-                    }
-                },
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//ITD/ITD01", PlaceHolder = "{{ITD/ITD01}}", DefaultValue = "" , MappingRequired= true},
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//ITD/ITD02", PlaceHolder = "{{ITD/ITD02}}", DefaultValue = "" , MappingRequired= true},
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//ITD/ITD05", PlaceHolder = "{{ITD/ITD05}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//ITD/ITD07", PlaceHolder = "{{ITD/ITD07}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = null,
-                LineLevel = new LineLevel()
-                {
-                   //HTML = "<tr> <td VALIGN=\"TOP\" width=\"5%\"><br>{{IT1/IT101}}</td> <td width=\"50%\"><br> <b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT107}}<br> </td> <td VALIGN=\"TOP\" width=\"10%\"><br>{{IT1/IT102}}</td> <td VALIGN=\"TOP\" width=\"5%\"><br>{{IT1/IT103}}</td> <td VALIGN=\"TOP\" width=\"12%\"><br>{{IT1/IT104}}</td> <td VALIGN=\"TOP\" width=\"15%\"><br>{{IT1/IT105}}</td> </tr> <tr> <td width=\"15\"></td> <td width=\"55%\" colspan=\"5\"> </td> </tr>",
-                   //HTML = "<tr>\r\n<td VALIGN=TOP width=5%><br>{{IT1/IT101}}</td>\r\n<td width=50%><br> <b>U.P.C./EAN Case Code (2-5-5)</b>: {{IT1/IT107}}<br> </td>\r\n<td VALIGN=TOP width=10%><br>{{IT1/IT102}}</td>\r\n<td VALIGN=TOP width=5%><br>{{IT1/IT103}}</td>\r\n<td VALIGN=TOP width=12%><br>{{IT1/IT104}}</td>\r\n<td VALIGN=TOP width=15%><br>{{IT1/IT105}}</td>\r\n</tr>\r\n<tr>\r\n<td width=15></td>\r\n<td width=55% colspan=5>\r\n<b>\r\n<p ID=idHeader1000 CLASS=clsHeader TITLE=\"Additional Information\">\r\nAdditional Information\r\n</p><div ID=idBlurb1000 CLASS=clsBlurb>\r\n<table border=0 width=100% background=res://VistaRes.Dll/legalpad.gif cellspacing=1 cellpadding=0>\r\n<tr>\r\n<td align=left width=90%>\r\n</td></tr></table></div></b>\r\n<table border=0 cellspacing=0 cellpadding=0 width=100% cellspacing=0 cellpadding=0>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n<b>Additional Item Data:\r\n</b></td></tr></table>\r\n<table border=0 width=100% cellspacing=0 cellpadding=0>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped : {{IT3/IT301}}\r\n</td></tr>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{IT3/IT302}}\r\n</td></tr>\r\n</table><br>\r\n<table border=0 cellspacing=0 cellpadding=0 width=100%>\r\n<tr>\r\n<td width=1% valign=top>\r\n</td>\r\n<td width=99%><table border=0 width=100% cellspacing=0 cellpadding=0>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n<b>Product/Item Description:\r\n</b></td></tr>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n{{PIDLoop1/PID_2/PID05}}<br> </td></tr>\r\n</table></td></tr></table>\r\n<table border=0 cellspacing=0 cellpadding=0><tr><td></td></tr></table>\r\n</td></tr>",
-                   HTML = "<tr><td VALIGN=TOP width=5%><br/>{{IT1/IT101}}</td><td width=50%><br/> <b>U.P.C./EAN Case Code (2-5-5)</b>: {{IT1/IT107}}<br/> </td><td VALIGN=TOP width=10%><br/>{{IT1/IT102}}</td><td VALIGN=TOP width=5%><br/>{{IT1/IT103}}</td><td VALIGN=TOP width=12%><br/>{{IT1/IT104}}</td><td VALIGN=TOP width=15%><br/>{{IT1/IT105}}</td></tr><tr><td width=15></td><td width=55% colspan=5><b><p ID=idHeader1000 CLASS=clsHeader TITLE=\"Additional Information\">Additional Information </p></b><table border=0 cellspacing=0 cellpadding=0 width=100% cellspacing=0 cellpadding=0><tr><td width=100% valign=top align=left><b>Additional Item Data:</b></td></tr></table><table border=0 width=100% cellspacing=0 cellpadding=0><tr><td width=100% valign=top align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped : {{IT1/IT102}}</td></tr><tr><td width=100% valign=top align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{IT1/IT103}}</td></tr></table><br/><table border=0 cellspacing=0 cellpadding=0 width=100%><tr><td width=1% valign=top></td><td width=99%><table border=0 width=100% cellspacing=0 cellpadding=0><tr><td width=100% valign=top align=left><b>Product/Item Description:</b></td></tr><tr><td width=100% valign=top align=left>{{PIDLoop1/PID_2/PID05}}<br/></td></tr></table></td></tr></table><table border=0 cellspacing=0 cellpadding=0><tr><td></td></tr></table></td></tr>",
-                   //HTML = "<tr>\r\n   <td VALIGN=\"TOP\" width=\"5%\"><br>{{IT1/IT101}}</td>\r\n   <td width=\"50%\"><br> <b>U.P.C./EAN Case Code (2-5-5)</b>: {{IT1/IT107}}<br> </td>\r\n   <td VALIGN=\"TOP\" width=\\\"10%\\\"><br>{{IT1/IT102}}</td>\r\n   <td VALIGN=\"TOP\" width=\\\"5%\\\"><br>{{IT1/IT103}}</td>\r\n   <td VALIGN=\"TOP\" width=\\\"12%\\\"><br>{{IT1/IT104}}</td>\r\n   <td VALIGN=\"TOP\" width=\\\"15%\\\"><br>{{IT1/IT105}}</td>\r\n</tr>\r\n<tr>\r\n   <td width=\"15\"></td>\r\n   <td width=\"55%\" colspan=\"5\">\r\n      <b>\r\n         <p ID=\"idHeader1000\" CLASS=\"clsHeader\" TITLE=\"Additional Information\"><img ID=\"idHeaderButton1000\"\r\n            CLASS=\"clsHeaderButton\" SRC=res://VistaRes.Dll/bullet-plus2.gif WIDTH=\"11\" HEIGHT=\"11\" ALT=\"Click to expand\"> \r\n            Additional Information \r\n         <div ID=\"idBlurb1000\" CLASS=\"clsBlurb\"\r\n            >\r\n            <table border=\"0\" width=\"100%\"     background=\"res://VistaRes.Dll/legalpad.gif\" cellspacing=\"1\" cellpadding=\"0\" >\r\n               <tr>\r\n                  <td align =\"left\" width=\"90%\">\r\n      </b>\r\n      <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      <b>Additional Item Data:\r\n      </b></td></tr></table>\r\n      <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped\r\n      : 68\r\n      </td></tr>\r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code\r\n      : Case\r\n      </td></tr>\r\n      </table><br>\r\n      <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n      <tr>\r\n      <td width=\"1%\" valign=\"top\">\r\n      </td>\r\n      <td width = \"99%\"><table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      <b>Product/Item Description:\r\n      </b></td></tr>\r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      </b>SYN Guava 16oz 12pk OG3<br>    </td></tr>\r\n      </table></td></tr></table>\r\n      <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table>\r\n      </td></tr> \r\n      </table> \r\n      </div> \r\n   </td>\r\n</tr>",
-                    LineLevelXPath = "//IT1Loop1/IT1",
-                    PlaceHolder = "{{LinesHtml}}",
-                    XPathConnfigs = new List<XPathConnfig>() {
-                    new XPathConnfig()
-                    {
-                        XPath="//IT1/IT101",
-                        PlaceHolder="{{IT1/IT101}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//IT1/IT102",
-                        PlaceHolder="{{IT1/IT102}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//IT1/IT103",
-                        PlaceHolder="{{IT1/IT103}}",
-                        DefaultValue="",
-                        MappingRequired= true
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//IT1/IT104",
-                        PlaceHolder="{{IT1/IT104}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//IT1/IT105",
-                        PlaceHolder="{{IT1/IT105}}",
-                        DefaultValue="",
-                        MutiplcationUsingXPath= new List<string>()
-                        {
-                            "//IT1/IT102",
-                            "//IT1/IT104"
-                        }
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//IT1/IT107",
-                        PlaceHolder="{{IT1/IT107}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//IT3/IT301",
-                        PlaceHolder="{{IT3/IT301}}",
-                        DefaultValue="",
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//IT3/IT302",
-                        PlaceHolder="{{IT3/IT302}}",
-                        DefaultValue="",
-                        MappingRequired= true
-                    },
-                    new XPathConnfig()
-                    {
-                        XPath="//PIDLoop1/PID_2/PID05",
-                        PlaceHolder="{{PIDLoop1/PID_2/PID05}}",
-                        DefaultValue="",
-                    }
-                    }
-                },
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { PlaceHolder = "{{TDS/TDS01}}", DefaultValue = "" , AdditionUsingPlaceHolders =  new List<string>() { "{{IT1/IT105}}" } } ,
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//CAD/CAD05", PlaceHolder = "{{CAD/CAD05}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//CAD/CAD07", PlaceHolder = "{{CAD/CAD07}}", DefaultValue = "", MappingRequired= true },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//CAD/CAD08", PlaceHolder = "{{CAD/CAD08}}", DefaultValue = "" },
-                LineLevel = null
-                },
-                new Configuration()
-                {
-                XPathConnfig = new XPathConnfig() { XPath = "//CTT/CTT01", PlaceHolder = "{{CTT/CTT01}}", DefaultValue = "" },
-                LineLevel = null
-                }
 
-            }
-            },
+            //new HumanReadableConfiguration()
+            //{
+            //TemplatePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad810.html"),
+            //TemplatePathUpdatedTemp = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\XpathLoad810Updated.html"),
+            //PackingPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, @"EdiWork\Packing_ORIGINAL_810.xml"),
+            //TemplateSetCode = 810,
+            //KDIVersion = "",
+            //configurations = new List<Configuration>() {
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//BIG/BIG01", PlaceHolder = "{{BIG/BIG01}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" }},
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//BIG/BIG02", PlaceHolder = "{{BIG/BIG02}}", DefaultValue = "" },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//BIG/BIG03", PlaceHolder = "{{BIG/BIG03}}", DefaultValue = "",DateFormat = new DateFormat() { SourceFormat = "yyyyMMdd", TargetFormat = "MM/dd/yyyy" } },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//BIG/BIG04", PlaceHolder = "{{BIG/BIG04}}", DefaultValue = "" },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//REF[REF01 = 'DP']/REF02", PlaceHolder = "{{REF/REF02-REF01 = 'DP'}}", DefaultValue = "" },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//REF[REF01 = 'IA']/REF02", PlaceHolder = "{{REF/REF02-REF01 = 'IA'}}", DefaultValue = "" },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = null,
+            //    LineLevel = new LineLevel()
+            //    {
+            //       HTML = "<tr> <td border=\"0\" width=\"100%\" valign=\"top\" align=\"left\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({{N1/N103}}: {{N1/N104}})</td> </tr>",
+            //        LineLevelXPath = "//N1Loop1/N1",
+            //        PlaceHolder = "{{ShipHtml}}",
+            //        XPathConnfigs = new List<XPathConnfig>() {
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//N1/N103",
+            //            PlaceHolder="{{N1/N103}}",
+            //            DefaultValue="",
+            //            MappingRequired= true
+            //        },
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//N1/N104",
+            //            PlaceHolder="{{N1/N104}}",
+            //            DefaultValue="",
+            //        }
+            //        }
+            //    },
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//ITD/ITD01", PlaceHolder = "{{ITD/ITD01}}", DefaultValue = "" , MappingRequired= true},
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//ITD/ITD02", PlaceHolder = "{{ITD/ITD02}}", DefaultValue = "" , MappingRequired= true},
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//ITD/ITD05", PlaceHolder = "{{ITD/ITD05}}", DefaultValue = "" },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//ITD/ITD07", PlaceHolder = "{{ITD/ITD07}}", DefaultValue = "" },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = null,
+            //    LineLevel = new LineLevel()
+            //    {
+            //       //HTML = "<tr> <td VALIGN=\"TOP\" width=\"5%\"><br>{{IT1/IT101}}</td> <td width=\"50%\"><br> <b>U.P.C. Consumer Package Code (1-5-5-1)</b>: {{IT1/IT107}}<br> </td> <td VALIGN=\"TOP\" width=\"10%\"><br>{{IT1/IT102}}</td> <td VALIGN=\"TOP\" width=\"5%\"><br>{{IT1/IT103}}</td> <td VALIGN=\"TOP\" width=\"12%\"><br>{{IT1/IT104}}</td> <td VALIGN=\"TOP\" width=\"15%\"><br>{{IT1/IT105}}</td> </tr> <tr> <td width=\"15\"></td> <td width=\"55%\" colspan=\"5\"> </td> </tr>",
+            //       //HTML = "<tr>\r\n<td VALIGN=TOP width=5%><br>{{IT1/IT101}}</td>\r\n<td width=50%><br> <b>U.P.C./EAN Case Code (2-5-5)</b>: {{IT1/IT107}}<br> </td>\r\n<td VALIGN=TOP width=10%><br>{{IT1/IT102}}</td>\r\n<td VALIGN=TOP width=5%><br>{{IT1/IT103}}</td>\r\n<td VALIGN=TOP width=12%><br>{{IT1/IT104}}</td>\r\n<td VALIGN=TOP width=15%><br>{{IT1/IT105}}</td>\r\n</tr>\r\n<tr>\r\n<td width=15></td>\r\n<td width=55% colspan=5>\r\n<b>\r\n<p ID=idHeader1000 CLASS=clsHeader TITLE=\"Additional Information\">\r\nAdditional Information\r\n</p><div ID=idBlurb1000 CLASS=clsBlurb>\r\n<table border=0 width=100% background=res://VistaRes.Dll/legalpad.gif cellspacing=1 cellpadding=0>\r\n<tr>\r\n<td align=left width=90%>\r\n</td></tr></table></div></b>\r\n<table border=0 cellspacing=0 cellpadding=0 width=100% cellspacing=0 cellpadding=0>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n<b>Additional Item Data:\r\n</b></td></tr></table>\r\n<table border=0 width=100% cellspacing=0 cellpadding=0>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped : {{IT3/IT301}}\r\n</td></tr>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{IT3/IT302}}\r\n</td></tr>\r\n</table><br>\r\n<table border=0 cellspacing=0 cellpadding=0 width=100%>\r\n<tr>\r\n<td width=1% valign=top>\r\n</td>\r\n<td width=99%><table border=0 width=100% cellspacing=0 cellpadding=0>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n<b>Product/Item Description:\r\n</b></td></tr>\r\n<tr>\r\n<td width=100% valign=top align=left>\r\n{{PIDLoop1/PID_2/PID05}}<br> </td></tr>\r\n</table></td></tr></table>\r\n<table border=0 cellspacing=0 cellpadding=0><tr><td></td></tr></table>\r\n</td></tr>",
+            //       HTML = "<tr><td VALIGN=TOP width=5%><br/>{{IT1/IT101}}</td><td width=50%><br/> <b>U.P.C./EAN Case Code (2-5-5)</b>: {{IT1/IT107}}<br/> </td><td VALIGN=TOP width=10%><br/>{{IT1/IT102}}</td><td VALIGN=TOP width=5%><br/>{{IT1/IT103}}</td><td VALIGN=TOP width=12%><br/>{{IT1/IT104}}</td><td VALIGN=TOP width=15%><br/>{{IT1/IT105}}</td></tr><tr><td width=15></td><td width=55% colspan=5><b><p ID=idHeader1000 CLASS=clsHeader TITLE=\"Additional Information\">Additional Information </p></b><table border=0 cellspacing=0 cellpadding=0 width=100% cellspacing=0 cellpadding=0><tr><td width=100% valign=top align=left><b>Additional Item Data:</b></td></tr></table><table border=0 width=100% cellspacing=0 cellpadding=0><tr><td width=100% valign=top align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped : {{IT1/IT102}}</td></tr><tr><td width=100% valign=top align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code : {{IT1/IT103}}</td></tr></table><br/><table border=0 cellspacing=0 cellpadding=0 width=100%><tr><td width=1% valign=top></td><td width=99%><table border=0 width=100% cellspacing=0 cellpadding=0><tr><td width=100% valign=top align=left><b>Product/Item Description:</b></td></tr><tr><td width=100% valign=top align=left>{{PIDLoop1/PID_2/PID05}}<br/></td></tr></table></td></tr></table><table border=0 cellspacing=0 cellpadding=0><tr><td></td></tr></table></td></tr>",
+            //       //HTML = "<tr>\r\n   <td VALIGN=\"TOP\" width=\"5%\"><br>{{IT1/IT101}}</td>\r\n   <td width=\"50%\"><br> <b>U.P.C./EAN Case Code (2-5-5)</b>: {{IT1/IT107}}<br> </td>\r\n   <td VALIGN=\"TOP\" width=\\\"10%\\\"><br>{{IT1/IT102}}</td>\r\n   <td VALIGN=\"TOP\" width=\\\"5%\\\"><br>{{IT1/IT103}}</td>\r\n   <td VALIGN=\"TOP\" width=\\\"12%\\\"><br>{{IT1/IT104}}</td>\r\n   <td VALIGN=\"TOP\" width=\\\"15%\\\"><br>{{IT1/IT105}}</td>\r\n</tr>\r\n<tr>\r\n   <td width=\"15\"></td>\r\n   <td width=\"55%\" colspan=\"5\">\r\n      <b>\r\n         <p ID=\"idHeader1000\" CLASS=\"clsHeader\" TITLE=\"Additional Information\"><img ID=\"idHeaderButton1000\"\r\n            CLASS=\"clsHeaderButton\" SRC=res://VistaRes.Dll/bullet-plus2.gif WIDTH=\"11\" HEIGHT=\"11\" ALT=\"Click to expand\"> \r\n            Additional Information \r\n         <div ID=\"idBlurb1000\" CLASS=\"clsBlurb\"\r\n            >\r\n            <table border=\"0\" width=\"100%\"     background=\"res://VistaRes.Dll/legalpad.gif\" cellspacing=\"1\" cellpadding=\"0\" >\r\n               <tr>\r\n                  <td align =\"left\" width=\"90%\">\r\n      </b>\r\n      <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      <b>Additional Item Data:\r\n      </b></td></tr></table>\r\n      <table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of Units Shipped\r\n      : 68\r\n      </td></tr>\r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code\r\n      : Case\r\n      </td></tr>\r\n      </table><br>\r\n      <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\r\n      <tr>\r\n      <td width=\"1%\" valign=\"top\">\r\n      </td>\r\n      <td width = \"99%\"><table border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > \r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      <b>Product/Item Description:\r\n      </b></td></tr>\r\n      <tr> \r\n      <td width=\"100%\" valign=\"top\" align=\"left\">\r\n      </b>SYN Guava 16oz 12pk OG3<br>    </td></tr>\r\n      </table></td></tr></table>\r\n      <table border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td></td></tr></table>\r\n      </td></tr> \r\n      </table> \r\n      </div> \r\n   </td>\r\n</tr>",
+            //        LineLevelXPath = "//IT1Loop1/IT1",
+            //        PlaceHolder = "{{LinesHtml}}",
+            //        XPathConnfigs = new List<XPathConnfig>() {
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//IT1/IT101",
+            //            PlaceHolder="{{IT1/IT101}}",
+            //            DefaultValue="",
+            //        },
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//IT1/IT102",
+            //            PlaceHolder="{{IT1/IT102}}",
+            //            DefaultValue="",
+            //        },
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//IT1/IT103",
+            //            PlaceHolder="{{IT1/IT103}}",
+            //            DefaultValue="",
+            //            MappingRequired= true
+            //        },
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//IT1/IT104",
+            //            PlaceHolder="{{IT1/IT104}}",
+            //            DefaultValue="",
+            //        },
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//IT1/IT105",
+            //            PlaceHolder="{{IT1/IT105}}",
+            //            DefaultValue="",
+            //            MutiplcationUsingXPath= new List<string>()
+            //            {
+            //                "//IT1/IT102",
+            //                "//IT1/IT104"
+            //            }
+            //        },
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//IT1/IT107",
+            //            PlaceHolder="{{IT1/IT107}}",
+            //            DefaultValue="",
+            //        },
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//IT3/IT301",
+            //            PlaceHolder="{{IT3/IT301}}",
+            //            DefaultValue="",
+            //        },
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//IT3/IT302",
+            //            PlaceHolder="{{IT3/IT302}}",
+            //            DefaultValue="",
+            //            MappingRequired= true
+            //        },
+            //        new XPathConnfig()
+            //        {
+            //            XPath="//PIDLoop1/PID_2/PID05",
+            //            PlaceHolder="{{PIDLoop1/PID_2/PID05}}",
+            //            DefaultValue="",
+            //        }
+            //        }
+            //    },
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { PlaceHolder = "{{TDS/TDS01}}", DefaultValue = "" , AdditionUsingPlaceHolders =  new List<string>() { "{{IT1/IT105}}" } } ,
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//CAD/CAD05", PlaceHolder = "{{CAD/CAD05}}", DefaultValue = "" },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//CAD/CAD07", PlaceHolder = "{{CAD/CAD07}}", DefaultValue = "", MappingRequired= true },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//CAD/CAD08", PlaceHolder = "{{CAD/CAD08}}", DefaultValue = "" },
+            //    LineLevel = null
+            //    },
+            //    new Configuration()
+            //    {
+            //    XPathConnfig = new XPathConnfig() { XPath = "//CTT/CTT01", PlaceHolder = "{{CTT/CTT01}}", DefaultValue = "" },
+            //    LineLevel = null
+            //    }
+
+            //}
+            //},
 
             //new HumanReadableConfiguration()
             //{
