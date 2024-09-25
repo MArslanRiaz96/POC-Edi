@@ -1,5 +1,6 @@
 <HTML>
-<style type="text/css"><!--BODY
+	<style type="text/css">
+		<!--BODY
 {
     BACKGROUND-COLOR: white;
     FONT-FAMILY: Arial;
@@ -230,299 +231,287 @@ H6
 @media print {
 	BODY { margin-left: 30px; }
 }
-//--></style><style type="text/css">
-<!--
+//-->
+	</style>
+	<style type="text/css">
+		<!--
 	.clsBlurb { display:none; }
 //-->
-</style>
-<BODY link="" background="000000">
-<!--TOOLBAR_START--> 
-<!--TOOLBAR_EXEMPT--> 
-<!--TOOLBAR_END--> 
-<script LANGUAGE="JavaScript"> 
-<!-- 
-  // IF THE BROWSER IS MSIE4.0 FOR WINDOWS NT AND 95 ONLY, THEN bClickable = TRUE 
- 
-	var sAgent = navigator.userAgent 
-   	var bIs95NT = sAgent.indexOf("Windows 95") > -1 || sAgent.indexOf("Windows 98") > -1 || sAgent.indexOf("Windows NT") > -1 || sAgent.indexOf("Win32") > -1  
-	var bIsIE4 = sAgent.indexOf("IE 4")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
-	var bIsIE5 = sAgent.indexOf("IE 5")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
-	var bClickable = true; //User will always have IE4 or greater 
-   
-  // DEFINE GLOBAL VARIABLES HERE 
- 
-  document.onclick = doDocumentOnClick ; 
-  document.onmouseover = doDocumentOnMouseOver ; 
-  document.onmouseout = doDocumentOnMouseOut ; 
-   
-	function HideButton()  
-	{ 
-		var myvar = 999 
-		var itemnum
-		var hdrbtn = "IdHeaderButton" 
-		var sButtonId
-		if (bClickable)  
-		{ 
-			for(i=0; i<document.all.length; i++)  
-			{ 
-				if (document.all(i).id.indexOf("idButton") != -1) 
-				{
-					document.all(i).style.display = "none"; 
-				}
-				if (document.all(i).id.indexOf("idButtonImage") != -1) 
-				{
-					document.all(i).style.display = "none"; 
-				}
-			} 
-		} 
-	} 
- 
- 
-  /* 	IF bClickable IS TRUE, FIND OUT WHICH BLURB IS AFFECTED ONCLICK.  
-	 	IF THE BLURB'S DISPLAY IS NONE, DISPLAY BLURB.  
-		IF THE BLURB IS DISPLAYING, SET IT TO NOT DISPLAY.*/ 
- 
-	function doDocumentOnClick()  
-	{ 
-		if (bClickable)  
-		{ 
-                  var eSrc = window.event.srcElement ; 
-			if (eSrc.className == "clsHeader" || eSrc.className == "clsHeaderButton" )  
-			{ 
-			 
-				var sId = "idBlurb" + eSrc.id.substring(eSrc.id.length-4,eSrc.id.length) ; 
-				if (document.all(sId).style.display == "block")  
-				{ 
-					document.all(sId).style.display = "none" ; 
-					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
-				} 
-        			else  
-		 		{ 
-          				document.all(sId).style.display = "block" ; 
-					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
-        			} 
-    		} 
-    		window.event.cancelBubble = true ; 
-    	} 
-  } 
- 
-  // CHANGE HEADLINE COLOR ONMOUSEOVER 
- 
-  function doDocumentOnMouseOver()  
-  { 
-  		var eSrc = window.event.srcElement ;  
-    	if (eSrc.className == "clsHeader") 
-		{
-      		document.all(eSrc.id).style.color= "" 
-    	}
-  }
- 
-  // CHANGE HEADLINE COLOR ONMOUSEOUT
- 
-  function doDocumentOnMouseOut() 
-  {
-  		var eSrc = window.event.srcElement ;
-    	if (eSrc.className == "clsHeader")
-		{
-      		document.all(eSrc.id).style.color= "#000000" 
-    	}
-  }
-//-->
-</script>
-<body>
- <table border="0" width="100%" >
-   <tr>
-     <td width="100%">
-     <H1>Warehouse Shipping Advice</H1>
-     </td>
-   </tr>
- </table>
-<table cellpadding="0" border="0" width="100%">
-<tr>
-<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">General Information</td>
-</tr>
-</table>
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Warehouse Shipment Identification:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
+	</style>
+		<body>
+			<table border="0"
+			       width="100%">
+				<tr>
+					<td width="100%">
+						<H1>Warehouse Shipping Advice</H1>
+					</td>
+				</tr>
+			</table>
+			<table border="0"
+			       cellspacing="0"
+			       cellpadding="0"
+			       width="100%"
+			       cellspacing="0"
+			       cellpadding="0">
+				<tr>
+					<td width="100%"
+					    valign="top"
+					    align="left">
+						<b>Warehouse Shipment Identification:
+</b>
+					</td>
+				</tr>
+			</table>
+			<table border="0"
+			       width="100%"
+			       cellspacing="0"
+			       cellpadding="0">
+				<tr>
+					<td width="100%"
+					    valign="top"
+					    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reporting Code
     : {{W06/W0601}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+				</tr>
+				<tr>
+					<td width="100%"
+					    valign="top"
+					    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depositor Order Number
     : {{W06/W0602}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+				</tr>
+				<tr>
+					<td width="100%"
+					    valign="top"
+					    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
     : {{W06/W0603}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+				</tr>
+				<tr>
+					<td width="100%"
+					    valign="top"
+					    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Identification Number
     : {{W06/W0604}}
-    </td></tr>
-</table><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Bill-to-Party: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'BT'}}</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'BT'}}</td></tr>  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'BT'}},  {{N4/N402-N101 = 'BT'}} {{N4/N403-N101 = 'BT'}} {{N4/N404-N101 = 'BT'}}</td></tr></table>
-</td>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Ship From: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({{N1/N103-N101 = 'SF'}}: {{N1/N104-N101 = 'SF'}})</td> 
-</tr> 
-</table>
-</td>
-</tr><tr>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Ship To: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'ST'}}</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'ST'}}</td></tr>  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} {{N4/N404-N101 = 'ST'}}</td></tr></table>
-</td>
-</tr></table><BR>
+    </td>
+				</tr>
+			</table>
+			<br/>
+				<table border="0"
+				       cellspacing="0"
+				       cellpadding="0"
+				       width="100%">
+					<tr>
+						<td valign="top"
+						    width="50%">
+							<table border="0"
+							       width="100%"
+							       cellspacing="0"
+							       cellpadding="0">
+								<tr>
+									<td width="100%"
+									    valign="top"
+									    align="left">
+										<b>Bill-to-Party: </b>
+									</td>
+								</tr>
+							</table>
+							<table border="0"
+							       width="100%"
+							       cellspacing="0"
+							       cellpadding="0">
+								<tr>
+									<td border="0"
+									    width="100%"
+									    valign="top"
+									    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'BT'}}</td>
+								</tr>
+								<tr>
+									<td width="100%"
+									    valign="top"
+									    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'BT'}}</td>
+								</tr>
+								<tr>
+									<td width="100%"
+									    valign="top"
+									    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'BT'}},  {{N4/N402-N101 = 'BT'}} {{N4/N403-N101 = 'BT'}} {{N4/N404-N101 = 'BT'}}</td>
+								</tr>
+							</table>
+						</td>
+						<td valign="top"
+						    width="50%">
+							<table border="0"
+							       width="100%"
+							       cellspacing="0"
+							       cellpadding="0">
+								<tr>
+									<td width="100%"
+									    valign="top"
+									    align="left">
+										<b>Ship From: </b>
+									</td>
+								</tr>
+							</table>
+							<table border="0"
+							       width="100%"
+							       cellspacing="0"
+							       cellpadding="0">
+								<tr>
+									<td border="0"
+									    width="100%"
+									    valign="top"
+									    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({{N1/N103-N101 = 'SF'}}: {{N1/N104-N101 = 'SF'}})</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top"
+						    width="50%">
+							<table border="0"
+							       width="100%"
+							       cellspacing="0"
+							       cellpadding="0">
+								<tr>
+									<td width="100%"
+									    valign="top"
+									    align="left">
+										<b>Ship To: </b>
+									</td>
+								</tr>
+							</table>
+							<table border="0"
+							       width="100%"
+							       cellspacing="0"
+							       cellpadding="0">
+								<tr>
+									<td border="0"
+									    width="100%"
+									    valign="top"
+									    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'ST'}}</td>
+								</tr>
+								<tr>
+									<td width="100%"
+									    valign="top"
+									    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'ST'}}</td>
+								</tr>
+								<tr>
+									<td width="100%"
+									    valign="top"
+									    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} {{N4/N404-N101 = 'ST'}}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<br/>
 {{ReferenceHtml}}
 
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Date/Time:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
+<table border="0"
+					       cellspacing="0"
+					       cellpadding="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+								<b>Date/Time:
+</b>
+							</td>
+						</tr>
+					</table>
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Qualifier
     : {{G62/G6201}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
     : {{G62/G6202}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Qualifier
     : {{G62/G6203}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time
     : {{G62/G6204}}
-    </td></tr>
-</table><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Carrier Detail:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+					</table>
+					<br/>
+						<table border="0"
+						       cellspacing="0"
+						       cellpadding="0"
+						       width="100%"
+						       cellspacing="0"
+						       cellpadding="0">
+							<tr>
+								<td width="100%"
+								    valign="top"
+								    align="left">
+									<b>Carrier Detail:
+</b>
+								</td>
+							</tr>
+						</table>
+						<table border="0"
+						       width="100%"
+						       cellspacing="0"
+						       cellpadding="0">
+							<tr>
+								<td width="100%"
+								    valign="top"
+								    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation Method/Type Code
     :{{W27/W2701}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+							</tr>
+							<tr>
+								<td width="100%"
+								    valign="top"
+								    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard Carrier Alpha Code
     : {{W27/W2702}}
-    </td></tr>
-</table><br>
+    </td>
+							</tr>
+						</table>
+						<br/>
 
 {{WarehousDetailsHtml}}
-</table></table></table><BR><BR><BR><BR></BODY>
-</HTML><script LANGUAGE="JavaScript"> 
-	function collapseAll()  
-	{ 
-		var myvar = 999 
-		var itemnum
-		var hdrbtn = "IdHeaderButton" 
-		var sButtonId
-		if (bClickable)  
-		{ 
-			for(i=0; i<document.all.length; i++)  
-			{ 
-				if (document.all(i).id.indexOf("idHeader") != -1) 
-				{
-				}
-				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
-				{
-					myvar = myvar + 1 
-					itemnum = (myvar).toString()
-					sButtonId = hdrbtn + itemnum 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
-				}
-				if (document.all(i).id.indexOf("idBlurb") != -1) 
-				{
-					document.all(i).style.display = "none"; 
-				}
-			} 
-		} 
-	} 
-	function bExpandAll()  
-	{ 
-		var myvar = 999 
-		var itemnum
-		var hdrbtn = "IdHeaderButton" 
-		var sButtonId
-		if (bClickable)  
-		{ 
-			for(i=0; i<document.all.length; i++)  
-			{ 
-				if (document.all(i).id.indexOf("idHeader") != -1) 
-				{
-					document.all(i).style.display = "block"; 
-				}
-				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
-				{
-					document.all(i).style.display = "block"; 
-					myvar = myvar + 1 
-					itemnum = (myvar).toString()
-					sButtonId = hdrbtn + itemnum 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
-				}
-				if (document.all(i).id.indexOf("idBlurb") != -1) 
-				{
-					document.all(i).style.display = "block"; 
-				}
-			} 
-		} 
-	} 
-</script>
-</HTML>
+				<br/>
+					<br/>
+						<br/>
+							<br/>
+							</body>
+						</HTML>

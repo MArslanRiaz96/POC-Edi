@@ -1,6 +1,6 @@
 <HTML>
-   <style type="text/css">
-      <!--BODY
+	<style type="text/css">
+		<!--BODY
          {
              BACKGROUND-COLOR: white;
              FONT-FAMILY: Arial;
@@ -232,376 +232,457 @@
              BODY { margin-left: 30px; }
          }
          //-->
-   </style>
-   <style type="text/css">
-      <!--
+	</style>
+	<style type="text/css">
+		<!--
          .clsBlurb { display:none; }
          //-->
-   </style>
-   <BODY link=" background="000000">
-      <!--TOOLBAR_START--> 
-      <!--TOOLBAR_EXEMPT--> 
-      <!--TOOLBAR_END--> 
-      <script LANGUAGE="JavaScript">
-         <!-- 
-         // IF THE BROWSER IS MSIE4.0 FOR WINDOWS NT AND 95 ONLY, THEN bClickable = TRUE 
-         
-         var sAgent = navigator.userAgent 
-         	var bIs95NT = sAgent.indexOf("Windows 95") > -1 || sAgent.indexOf("Windows 98") > -1 || sAgent.indexOf("Windows NT") > -1 || sAgent.indexOf("Win32") > -1  
-         var bIsIE4 = sAgent.indexOf("IE 4")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
-         var bIsIE5 = sAgent.indexOf("IE 5")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
-         var bClickable = true; //User will always have IE4 or greater 
-         
-         // DEFINE GLOBAL VARIABLES HERE 
-         
-         document.onclick = doDocumentOnClick ; 
-         document.onmouseover = doDocumentOnMouseOver ; 
-         document.onmouseout = doDocumentOnMouseOut ; 
-         
-         function HideButton()  
-         { 
-         var myvar = 999 
-         var itemnum
-         var hdrbtn = "IdHeaderButton" 
-         var sButtonId
-         if (bClickable)  
-         { 
-         for(i=0; i<document.all.length; i++)  
-         { 
-         	if (document.all(i).id.indexOf("idButton") != -1) 
-         	{
-         		document.all(i).style.display = "none"; 
-         	}
-         	if (document.all(i).id.indexOf("idButtonImage") != -1) 
-         	{
-         		document.all(i).style.display = "none"; 
-         	}
-         } 
-         } 
-         } 
-         
-         
-         /* 	IF bClickable IS TRUE, FIND OUT WHICH BLURB IS AFFECTED ONCLICK.  
-         IF THE BLURB'S DISPLAY IS NONE, DISPLAY BLURB.  
-         IF THE BLURB IS DISPLAYING, SET IT TO NOT DISPLAY.*/ 
-         
-         function doDocumentOnClick()  
-         { 
-         if (bClickable)  
-         { 
-                        var eSrc = window.event.srcElement ; 
-         if (eSrc.className == "clsHeader" || eSrc.className == "clsHeaderButton" )  
-         { 
-          
-         	var sId = "idBlurb" + eSrc.id.substring(eSrc.id.length-4,eSrc.id.length) ; 
-         	if (document.all(sId).style.display == "block")  
-         	{ 
-         		document.all(sId).style.display = "none" ; 
-         		sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
-         		document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
-         	} 
-              			else  
-         		{ 
-                				document.all(sId).style.display = "block" ; 
-         		sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
-         		document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
-              			} 
-          		} 
-          		window.event.cancelBubble = true ; 
-          	} 
-         } 
-         
-         // CHANGE HEADLINE COLOR ONMOUSEOVER 
-         
-         function doDocumentOnMouseOver()  
-         { 
-         	var eSrc = window.event.srcElement ;  
-          	if (eSrc.className == "clsHeader") 
-         {
-            		document.all(eSrc.id).style.color= "" 
-          	}
-         }
-         
-         // CHANGE HEADLINE COLOR ONMOUSEOUT
-         
-         function doDocumentOnMouseOut() 
-         {
-         	var eSrc = window.event.srcElement ;
-          	if (eSrc.className == "clsHeader")
-         {
-            		document.all(eSrc.id).style.color= "#000000" 
-          	}
-         }
-         //-->
-      </script>
-      <body>
-         <table  style="margin-top: 10px;" border="0" width="100%" >
-            <tr>
-               <td width="100%">
-                  <H1>Application Advice</H1>
-               </td>
-            </tr>
-         </table>
-         <table cellpadding="0" border="0" width="100%">
-            <tr>
-               <td width="638" valign="top" class="sectiontitle" style="border: opx; background-color:#68728c; padding: 2pt; color: White">General Information</td>
-            </tr>
-         </table>
-         <b style="font-size: 12px;">Beginning Segment:</b>
-         <table border="0" width="100%" cellspacing="0" cellpadding="0">
-            <tr>
-               <td width="50%" valign="top" align="left">
+	</style>
+	<body>
+		<table style="margin-top: 10px;"
+		       border="0"
+		       width="100%">
+			<tr>
+				<td width="100%">
+					<H1>Application Advice</H1>
+				</td>
+			</tr>
+		</table>
+		<table cellpadding="0"
+		       border="0"
+		       width="100%">
+			<tr>
+				<td width="638"
+				    valign="top"
+				    class="sectiontitle"
+				    style="border: opx; background-color:#68728c; padding: 2pt; color: White">General Information</td>
+			</tr>
+		</table>
+		<b style="font-size: 12px;">Beginning Segment:</b>
+		<table border="0"
+		       width="100%"
+		       cellspacing="0"
+		       cellpadding="0">
+			<tr>
+				<td width="50%"
+				    valign="top"
+				    align="left">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Set Purpose Code: <span>{{BGN/BGN01}}</span>
-               </td>
-            </tr>
-            <tr>
-               <td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification: <span>{{BGN/BGN02}}</span> </td>
-            </tr>
-            <tr>
-               <td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date: <span>{{BGN/BGN03}}</span></td>
-            </tr>
-            <tr>
-               <td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time : <span>{{BGN/BGN04}}</span></td>
-            </tr>
-            <tr>
-               <td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : <span>{{BGN/BGN06}}</span></td>
-            </tr>
-         </table>
-         <table style="margin-top: 10px;" border="0" cellspacing="0" cellpadding="0" width="100%">
-            <td valign="top" width="50%">
-               <b>Message From: </b>
-               <table border="0" width="100%" cellspacing="0" cellpadding="0" >
-                  <tr>
-                     <td border="0" width="100%" valign="top" align="left">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{N1/N102-N101 = 'FR'}} ({{N1/N103-N101 = 'FR'}}: {{N1/N104-N101 = 'FR'}})</span> 
-                     </td>
-                  </tr>
-               </table>
-            </td>
-            <td valign="top" width="50%">
-               <b>Message To: </b>
-               <table border="0" width="100%" cellspacing="0" cellpadding="0" >
-                  <tr>
-                     <td border="0" width="100%" valign="top" align="left">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{N1/N102-N101 = 'TO'}} ({{N1/N103-N101 = 'TO'}}: {{N1/N104-N101 = 'TO'}})</span> 
-                     </td>
-                  </tr>
-               </table>
-            </td>
-            </tr> 
-            </tr>
-            <tr>
-               <td>
-                  <div style="margin-top: 10px;"></div>
-                  <b>Payee: </b>
-                  <table border="0" cellspacing="0" cellpadding="0" width="100%">
-                     <tr>
-                        <td width="50%" valign="top" align="left">
+				</td>
+			</tr>
+			<tr>
+				<td width="50%"
+				    valign="top"
+				    align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification: <span>{{BGN/BGN02}}</span>
+				</td>
+			</tr>
+			<tr>
+				<td width="50%"
+				    valign="top"
+				    align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date: <span>{{BGN/BGN03}}</span>
+				</td>
+			</tr>
+			<tr>
+				<td width="50%"
+				    valign="top"
+				    align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time : <span>{{BGN/BGN04}}</span>
+				</td>
+			</tr>
+			<tr>
+				<td width="50%"
+				    valign="top"
+				    align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification : <span>{{BGN/BGN06}}</span>
+				</td>
+			</tr>
+		</table>
+		<table style="margin-top: 10px;"
+		       border="0"
+		       cellspacing="0"
+		       cellpadding="0"
+		       width="100%">
+			<tr>
+				<td valign="top"
+				    width="50%">
+					<b>Message From: </b>
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td border="0"
+							    width="100%"
+							    valign="top"
+							    align="left">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{N1/N102-N101 = 'FR'}} ({{N1/N103-N101 = 'FR'}}: {{N1/N104-N101 = 'FR'}})</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td valign="top"
+				    width="50%">
+					<b>Message To: </b>
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td border="0"
+							    width="100%"
+							    valign="top"
+							    align="left">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{N1/N102-N101 = 'TO'}} ({{N1/N103-N101 = 'TO'}}: {{N1/N104-N101 = 'TO'}})</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div style="margin-top: 10px;"></div>
+					<b>Payee: </b>
+					<table border="0"
+					       cellspacing="0"
+					       cellpadding="0"
+					       width="100%">
+						<tr>
+							<td width="50%"
+							    valign="top"
+							    align="left">
                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{N1/N102-N101 = 'PE'}} ({{N1/N103-N101 = 'PE'}}: {{N1/N104-N101 = 'PE'}})</span>
-                        </td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
-            <tr style="margin-top: 10px;">
-               <td>
-                  <b>Business Partner : </b>
-                  <table style="margin-top: 10px;" border="0" width="100%" cellspacing="0" cellpadding="0" >
-                     <tr>
-                        <td border="0" width="100%" valign="top" align="left">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr style="margin-top: 10px;">
+				<td>
+					<b>Business Partner : </b>
+					<table style="margin-top: 10px;"
+					       border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td border="0"
+							    width="100%"
+							    valign="top"
+							    align="left">
                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{N1/N102-N101 = 'BB'}} </span>
-                        </td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
-            <tr>
-               <table style="margin-top : 10px" border="0" cellspacing="0" cellpadding="0" width="100%">
-                  <tr>
-                     <td valign="top" width="50%">
-                        <b>Contact Information: </b>
-                        <table border="0" width="100%" cellspacing="0" cellpadding="0">
-                           <tr>
-                              <td width="50%" valign="top" align="left">
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Authorized Representative : <span>{{PER/PER02}}</span> </span> 
-                              </td>
-                           </tr>
-                           <tr>
-                              <td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Telephone : <span>{{PER/PER04}}</span> </span>  </td>
-                           </tr>
-                           <tr>
-                              <td width="50%" valign="top" align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Electronic Mail : <span>{{PER/PER06}}</span> </span> </td>
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
-               </table>
-            </tr>
-         </table>
-         <table  style="margin-top: 10px;" cellpadding="0" border="0" width="100%">
-            <tr>
-               <td width="638" valign="top" class="sectiontitle" style="border: 0px; background-color:#68728c; padding: 2pt; color: White">Transaction Information</td>
-            </tr>
-         </table>
-         <table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1">
-            <table border="0" cellspacing="0" cellpadding="0" width="100%">
-               <tr>
-                  <td valign="top" width="100%">
-                     <b>Original Transaction Identification: </b>
-                     <table border="0" width="100%" cellspacing="0" cellpadding="0" >
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table style="margin-top : 10px"
+					       border="0"
+					       cellspacing="0"
+					       cellpadding="0"
+					       width="100%">
+						<tr>
+							<td valign="top"
+							    width="50%">
+								<b>Contact Information: </b>
+								<table border="0"
+								       width="100%"
+								       cellspacing="0"
+								       cellpadding="0">
+									<tr>
+										<td width="50%"
+										    valign="top"
+										    align="left">
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Authorized Representative : <span>{{PER/PER02}}</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td width="50%"
+										    valign="top"
+										    align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Telephone : <span>{{PER/PER04}}</span>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td width="50%"
+										    valign="top"
+										    align="left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Electronic Mail : <span>{{PER/PER06}}</span>
+											</span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			<table style="margin-top: 10px;"
+			       cellpadding="0"
+			       border="0"
+			       width="100%">
+				<tr>
+					<td width="638"
+					    valign="top"
+					    class="sectiontitle"
+					    style="border: 0px; background-color:#68728c; padding: 2pt; color: White">Transaction Information</td>
+				</tr>
+			</table>
+			<table border="0"
+			       WIDTH="100%"
+			       CELLPADDING="0"
+			       CELLSPACING="0"
+			       HEIGHT="1">
+				<tr>
+					<td>
+						<table border="0"
+						       cellspacing="0"
+						       cellpadding="0"
+						       width="100%">
+							<tr>
+								<td valign="top"
+								    width="100%">
+									<b>Original Transaction Identification: </b>
+									<table border="0"
+									       width="100%"
+									       cellspacing="0"
+									       cellpadding="0">
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application Acknowledgment Code : <span>{{OTI/OTI01}}</span>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier : <span>{{OTI/OTI02}}</span>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>TMS Purchase Order Number : <span>{{OTI/OTI03}}</span> </span> 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Application Sender's Code : <span>{{OTI/OTI04}}</span> </span> 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Application Receiver's Code : <span>{{OTI/OTI05}}</span> </span> 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Date : <span>{{OTI/OTI06}}</span> </span> 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Time : <span>{{OTI/OTI07}}</span> </span> 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Group Control Number : <span>{{OTI/OTI08}}</span> </span> 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Transaction Set Control Number : <span>{{OTI/OTI09}}</span> </span> 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Transaction Set Identifier Code : <span>{{OTI/OTI10}}</span> </span> 
-                           </td>
-                        </tr>
-						 <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>TMS Vendor Code : <span>{{N1/N104-N101 = 'VN'}}</span> </span> 
-                           </td>
-                        </tr>
-						 <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>TMS Part Number : <span>{{REF_2/REF02-REF01 = 'BP'}}</span> </span> 
-                           </td>
-                        </tr>
-                     </table>
-                  </td>
-               </tr>
-               <tr>
-                  <td valign="top" width="100%">
-                     <div style="margin-top: 10px;"></div>
-                     <b>Reference Information: </b>
-                     <table border="0" width="100%" cellspacing="0" cellpadding="0" >
-                        <tr>
-                           <td width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Bill of Lading Number : <span>{{REF_2/REF02-REF01 = 'BM'}}</span> </span>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Equipment Number : <span>{{REF_2/REF02-REF01 = 'EQ'}}</span> </span>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Internal Vendor Number : <span>{{REF_2/REF02-REF01 = 'IA'}}</span> </span>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Waybill Number : <span>{{REF_2/REF02-REF01 = 'WY'}}</span> </span>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Account Number : <span>{{REF_2/REF02-REF01 = '11'}}</span>  </span>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Shipper's Identifying Number for Shipment (SID) : <span>{{REF_2/REF02-REF01 = 'SI'}}</span>  </span>
-                           </td>
-                        </tr>
-                     </table>
-                  </td>
-               </tr>
-               <tr>
-                  <td valign="top" width="100%">
-                     <div style="margin-top: 10px;"></div>
-                     <b>Date/Time Reference: </b>
-                     <table border="0" width="100%" cellspacing="0" cellpadding="0" >
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{DTM/DTM01}} : {{DTM/DTM02}} {{DTM/DTM03}} {{DTM/DTM04}}</span> 
-                           </td>
-                        </tr>
-                     </table>
-                  </td>
-               </tr>
-               <tr>
-                  <td valign="top" width="100%">
-                     <table style="margin-top: 10px;" border="0" width="100%" cellspacing="0" cellpadding="0" >
-                        <tr>
-                           <td width="100%" valign="top" align="left">
-                              <b>Total payment amount : <span>{{AMT/AMT02}}</span></b>
-                           </td>
-                        </tr>
-                     </table>
-                  </td>
-               </tr>
-               <tr>
-                  <td valign="top" width="100%">
-                     <b>Quantity: </b>
-                     <table border="0" width="100%" cellspacing="0" cellpadding="0" >
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Quantity Qualifier :  <span>{{QTY/QTY01}}</span></span>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td border="0" width="100%" valign="top" align="left">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Quantity :  <span>{{QTY/QTY02}}</span></span>
-                           </td>
-                        </tr>
-                     </table>
-                  </td>
-               </tr>
-               <tr style="margin-top: 10px;">
-                  <td valign="top" width="100%">
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TMS Purchase Order Number : <span>{{OTI/OTI03}}</span>
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Application Sender's Code : <span>{{OTI/OTI04}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Application Receiver's Code : <span>{{OTI/OTI05}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Date : <span>{{OTI/OTI06}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Time : <span>{{OTI/OTI07}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Group Control Number : <span>{{OTI/OTI08}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Transaction Set Control Number : <span>{{OTI/OTI09}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Transaction Set Identifier Code : <span>{{OTI/OTI10}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>TMS Vendor Code : <span>{{N1/N104-N101 = 'VN'}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>TMS Part Number : <span>{{REF_2/REF02-REF01 = 'BP'}}</span>
+												</span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"
+								    width="100%">
+									<div style="margin-top: 10px;"/>
+									<b>Reference Information: </b>
+									<table border="0"
+									       width="100%"
+									       cellspacing="0"
+									       cellpadding="0">
+										<tr>
+											<td width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Bill of Lading Number : <span>{{REF_2/REF02-REF01 = 'BM'}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Equipment Number : <span>{{REF_2/REF02-REF01 = 'EQ'}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Internal Vendor Number : <span>{{REF_2/REF02-REF01 = 'IA'}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Waybill Number : <span>{{REF_2/REF02-REF01 = 'WY'}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Account Number : <span>{{REF_2/REF02-REF01 = '11'}}</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Shipper's Identifying Number for Shipment (SID) : <span>{{REF_2/REF02-REF01 = 'SI'}}</span>
+												</span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"
+								    width="100%">
+									<div style="margin-top: 10px;"/>
+									<b>Date/Time Reference: </b>
+									<table border="0"
+									       width="100%"
+									       cellspacing="0"
+									       cellpadding="0">
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{DTM/DTM01}} : {{DTM/DTM02}} {{DTM/DTM03}} {{DTM/DTM04}}</span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"
+								    width="100%">
+									<table style="margin-top: 10px;"
+									       border="0"
+									       width="100%"
+									       cellspacing="0"
+									       cellpadding="0">
+										<tr>
+											<td width="100%"
+											    valign="top"
+											    align="left">
+												<b>Total payment amount : <span>{{AMT/AMT02}}</span>
+												</b>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top"
+								    width="100%">
+									<b>Quantity: </b>
+									<table border="0"
+									       width="100%"
+									       cellspacing="0"
+									       cellpadding="0">
+										<tr>
+											<td border="0"
+											    width="100%"
+											    valign="top"
+											    align="left">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{{QTY/QTY01}} :  <span>{{QTY/QTY02}}</span>
+												</span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr style="margin-top: 10px;">
+								<td valign="top"
+								    width="100%">
                      {{TransactionInformationHtml}}
                   </td>
-               </tr>
-            </table>
-            </td>
-            </tr>
-         </table>
-         <BR>
-         <BR>
-         </table></table></table><BR><BR><BR><BR>
-   </BODY>
-</HTML>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</BODY>
+	</HTML>

@@ -196,7 +196,7 @@ namespace POC
                                 {
                                     htmltemplate = Regex.Replace(htmltemplate, listEdiXpath.LineLevel.ChildLineLevel.PlaceHolder, $"{listEdiXpath.LineLevel.ChildLineLevel.PlaceHolder}-{elemList.InnerXml}");
                                 }
-                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
+                                if (XPathConnfig.isDecimal == false && XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
                                 {
                                     Console.WriteLine(elemList.InnerXml);
                                     htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
@@ -207,6 +207,18 @@ namespace POC
                                     {
                                         htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, "db");
 
+                                    }
+                                    else if (XPathConnfig.isDecimal == true)
+                                    {
+                                        try
+                                        {
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, (int.Parse(elemList.InnerXml) / 100.0).ToString("F2"));
+                                        }
+                                        catch
+                                        {
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
+                                        }
+                                        
                                     }
                                     else if (XPathConnfig.DateFormat != null)
                                     {

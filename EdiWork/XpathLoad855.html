@@ -1,5 +1,5 @@
-<HTML>
-<style type="text/css"><!--BODY
+<html>
+<style type="text/css">
 {
     BACKGROUND-COLOR: white;
     FONT-FAMILY: Arial;
@@ -235,107 +235,11 @@ H6
 	.clsBlurb { display:none; }
 //-->
 </style>
-<BODY link="" background="000000">
-<!--TOOLBAR_START--> 
-<!--TOOLBAR_EXEMPT--> 
-<!--TOOLBAR_END--> 
-<script LANGUAGE="JavaScript"> 
-<!-- 
-  // IF THE BROWSER IS MSIE4.0 FOR WINDOWS NT AND 95 ONLY, THEN bClickable = TRUE 
- 
-	var sAgent = navigator.userAgent 
-   	var bIs95NT = sAgent.indexOf("Windows 95") > -1 || sAgent.indexOf("Windows 98") > -1 || sAgent.indexOf("Windows NT") > -1 || sAgent.indexOf("Win32") > -1  
-	var bIsIE4 = sAgent.indexOf("IE 4")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
-	var bIsIE5 = sAgent.indexOf("IE 5")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
-	var bClickable = true; //User will always have IE4 or greater 
-   
-  // DEFINE GLOBAL VARIABLES HERE 
- 
-  document.onclick = doDocumentOnClick ; 
-  document.onmouseover = doDocumentOnMouseOver ; 
-  document.onmouseout = doDocumentOnMouseOut ; 
-   
-	function HideButton()  
-	{ 
-		var myvar = 999 
-		var itemnum
-		var hdrbtn = "IdHeaderButton" 
-		var sButtonId
-		if (bClickable)  
-		{ 
-			for(i=0; i<document.all.length; i++)  
-			{ 
-				if (document.all(i).id.indexOf("idButton") != -1) 
-				{
-					document.all(i).style.display = "none"; 
-				}
-				if (document.all(i).id.indexOf("idButtonImage") != -1) 
-				{
-					document.all(i).style.display = "none"; 
-				}
-			} 
-		} 
-	} 
- 
- 
-  /* 	IF bClickable IS TRUE, FIND OUT WHICH BLURB IS AFFECTED ONCLICK.  
-	 	IF THE BLURB'S DISPLAY IS NONE, DISPLAY BLURB.  
-		IF THE BLURB IS DISPLAYING, SET IT TO NOT DISPLAY.*/ 
- 
-	function doDocumentOnClick()  
-	{ 
-		if (bClickable)  
-		{ 
-                  var eSrc = window.event.srcElement ; 
-			if (eSrc.className == "clsHeader" || eSrc.className == "clsHeaderButton" )  
-			{ 
-			 
-				var sId = "idBlurb" + eSrc.id.substring(eSrc.id.length-4,eSrc.id.length) ; 
-				if (document.all(sId).style.display == "block")  
-				{ 
-					document.all(sId).style.display = "none" ; 
-					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
-				} 
-        			else  
-		 		{ 
-          				document.all(sId).style.display = "block" ; 
-					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
-        			} 
-    		} 
-    		window.event.cancelBubble = true ; 
-    	} 
-  } 
- 
-  // CHANGE HEADLINE COLOR ONMOUSEOVER 
- 
-  function doDocumentOnMouseOver()  
-  { 
-  		var eSrc = window.event.srcElement ;  
-    	if (eSrc.className == "clsHeader") 
-		{
-      		document.all(eSrc.id).style.color= "" 
-    	}
-  }
- 
-  // CHANGE HEADLINE COLOR ONMOUSEOUT
- 
-  function doDocumentOnMouseOut() 
-  {
-  		var eSrc = window.event.srcElement ;
-    	if (eSrc.className == "clsHeader")
-		{
-      		document.all(eSrc.id).style.color= "#000000" 
-    	}
-  }
-//-->
-</script>
 <body>
  <table border="0" width="100%" >
    <tr>
      <td width="100%">
-     <H1>Purchase Order Acknowledgment</H1>
+     <h1>Purchase Order Acknowledgment</h1>
      </td>
    </tr>
  </table>
@@ -348,7 +252,8 @@ H6
   <tr> 
     <td width="100%" valign="top" align="left">
 <b>Beginning Segment for Purchase Order Acknowledgment:
-</b></td></tr></table>
+</b></td></tr>
+</table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
@@ -370,7 +275,7 @@ H6
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
     : {{BAK/BAK04}}
     </td></tr>
-</table><br>
+</table><br/>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
@@ -382,9 +287,10 @@ H6
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation Method/Type Code
     : {{TD5/TD505}}
     </td></tr>
-</table><br>
+</table><br/>
 <table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+<td valign="top" width="50%">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
 <b>Ship To: </b>
@@ -396,7 +302,9 @@ H6
 </tr> 
 </table>
 </td>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+
+<td valign="top" width="50%">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
 <b>Ship From: </b>
@@ -408,16 +316,24 @@ H6
 </tr> 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N401 = 'SF'}},  {{N4/N402-N401 = 'SF'}} {{N4/N403-N401 = 'SF'}} </td></tr></table>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N401 = 'SF'}},  {{N4/N402-N401 = 'SF'}} {{N4/N403-N401 = 'SF'}} </td></tr>
+	</table>
 </td>
+
 </tr><tr>
-</tr></table><BR>
+</tr></table><br/>
+
+
+
+
+
+
 <table cellpadding="0" border="0" width="100%">
 <tr>
 <td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">Line Item Information</td>
 </tr>
 </table>
-<table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1" 
+<table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1">
    <tr> 
      <td width="10%"><b>Line</b></td> 
      <td width="47%"><b>Description</b></td> 
@@ -428,63 +344,6 @@ H6
    </tr> 
 {{LineItemHtml}}
  
-</table></table></table><BR><BR><BR><BR></BODY>
-</HTML><script LANGUAGE="JavaScript"> 
-	function collapseAll()  
-	{ 
-		var myvar = 999 
-		var itemnum
-		var hdrbtn = "IdHeaderButton" 
-		var sButtonId
-		if (bClickable)  
-		{ 
-			for(i=0; i<document.all.length; i++)  
-			{ 
-				if (document.all(i).id.indexOf("idHeader") != -1) 
-				{
-				}
-				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
-				{
-					myvar = myvar + 1 
-					itemnum = (myvar).toString()
-					sButtonId = hdrbtn + itemnum 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
-				}
-				if (document.all(i).id.indexOf("idBlurb") != -1) 
-				{
-					document.all(i).style.display = "none"; 
-				}
-			} 
-		} 
-	} 
-	function bExpandAll()  
-	{ 
-		var myvar = 999 
-		var itemnum
-		var hdrbtn = "IdHeaderButton" 
-		var sButtonId
-		if (bClickable)  
-		{ 
-			for(i=0; i<document.all.length; i++)  
-			{ 
-				if (document.all(i).id.indexOf("idHeader") != -1) 
-				{
-					document.all(i).style.display = "block"; 
-				}
-				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
-				{
-					document.all(i).style.display = "block"; 
-					myvar = myvar + 1 
-					itemnum = (myvar).toString()
-					sButtonId = hdrbtn + itemnum 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
-				}
-				if (document.all(i).id.indexOf("idBlurb") != -1) 
-				{
-					document.all(i).style.display = "block"; 
-				}
-			} 
-		} 
-	} 
-</script>
-</HTML>
+</table><br/><br/><br/><br/></body>
+
+</html>
