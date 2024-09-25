@@ -1,5 +1,5 @@
 <html>
-<style type="text/css">
+<style type="text/css"><!--BODY
 {
     BACKGROUND-COLOR: white;
     FONT-FAMILY: Arial;
@@ -183,10 +183,14 @@ H6
     MARGIN-TOP: 0px;
     WORD-SPACING: 0px
 }
-.sectiontitle
-{
-    FONT-SIZE: 9pt;
-    FONT-WEIGHT: bold
+.sectionTitle {
+	border: 2px solid DarkGray;
+	border-radius: 3px;
+	background: LightGrey;
+	color: Black;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-weight: bold;
 }
 .mandatory
 {
@@ -219,6 +223,9 @@ H6
     PADDING-TOP: 3px;
     WIDTH: 150px
 }
+hr:last-of-type {
+    display: none;
+}
 #divControl
 {
     LEFT: 100px;
@@ -235,11 +242,12 @@ H6
 	.clsBlurb { display:none; }
 //-->
 </style>
+
 <body>
  <table border="0" width="100%" >
    <tr>
      <td width="100%">
-     <h1>Purchase Order Acknowledgment</h1>
+     <H1>Organizational Relationships</H1>
      </td>
    </tr>
  </table>
@@ -251,99 +259,52 @@ H6
 <table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Beginning Segment for Purchase Order Acknowledgment:
-</b></td></tr>
-</table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Set Purpose Code
-    : {{BAK/BAK01}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acknowledgment Type
-    : {{BAK/BAK02}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchase Order Number
-    : {{BAK/BAK03}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
-    : {{BAK/BAK04}}
-    </td></tr>
-</table><br/>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Carrier Details (Routing Sequence/Transit Time):
+<b>Beginning of Hierarchical Transaction:
 </b></td></tr></table>
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation Method/Type Code
-    : {{TD5/TD505}}
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hierarchical Structure Code
+    : {{BHT/BHT01}}
     </td></tr>
-</table><br/>
-<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
-<td valign="top" width="50%">
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Ship To: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transaction Set Purpose Code
+    : {{BHT/BHT02}}
+    </td></tr>
   <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'ST'}}({{N1/N103-N101 = 'ST'}}: {{N1/N104-N101 = 'ST'}})</td> 
-</tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
+    : {{BHT/BHT03}}
+    </td></tr>
+  <tr> 
+    <td width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date
+    : {{BHT/BHT04}}
+    </td></tr>
 </table>
-</td>
-
+<br/>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
 <td valign="top" width="50%">
 <table border="0" width="100%" cellspacing="0" cellpadding="0" > 
   <tr> 
     <td width="100%" valign="top" align="left">
-<b>Ship From: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101 = 'SF'}}</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N401 = 'SF'}},  {{N4/N402-N401 = 'SF'}} {{N4/N403-N401 = 'SF'}} </td></tr>
-	</table>
+<b>Message From: </b>
 </td>
-
-</tr><tr>
-</tr></table><br/>
-
-
-
-
-
-
-<table cellpadding="0" border="0" width="100%">
-<tr>
-<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">Line Item Information</td>
 </tr>
 </table>
-<table border="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" HEIGHT="1">
-   <tr> 
-     <td width="10%"><b>Line</b></td> 
-     <td width="47%"><b>Description</b></td> 
-     <td width="10%"><b>Quan</b></td> 
-     <td width="5%"><b>UI</b></td> 
-     <td width="10%"><b>Price($)</b></td> 
-     <td width="15%"><b>  Total($)</b></td> 
-   </tr> 
-{{LineItemHtml}}
- 
-</table><br/><br/><br/><br/></body>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
+  <tr> 
+    <td border="0" width="100%" valign="top" align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1Loop1/N1/N102}}</td> 
+</tr> 
+</table>
+</td>
+</tr></table>
+<br/>
+{{TransactionHeaderInformationHtml}}
+{{TransactionInformationHtml}}
 
+<br/><br/><br/><br/></body>
 </html>

@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Liaison EDINotepad EDI Render</title>
+<style type='text/css'>
+body {
+	font-family: Arial;
+	font-size: .7em;
+}
+h2 {
+	font-size: 1.2em !important;
+}
+.sectionTitle {
+	border: 2px solid DarkGray;
+	border-radius: 3px;
+	background: LightGrey;
+	color: Black;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+hr {
+	color: LightGrey;
+}
+.color {
+	color: LightGrey;
+}
+.error, .error a {
+	color: red !important;
+}
+.debug {
+	color: purple !important;
+	display:none;
+	visibility: hidden;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 1em;
+}
+th {
+	text-align: left;
+}
+td {
+	vertical-align: top;
+}
+table.borders {
+	width: 90%;
+}
+table.borders th {
+	border: 2px solid DarkGray;
+	background: LightGrey;
+	color: Black;
+	text-align: left;
+}
+table.borders td {
+	border: 2px solid DarkGray;
+}
+table.borders {
+	width: 90%;
+}
+table.bordersSm th {
+	border: 1px solid #E8E8E8;
+	text-align: left;
+}
+table.bordersSm td {
+	border: 1px solid #E8E8E8;
+}
+tr.lineItem td {
+	padding-top: 20px;
+}
+.tab1 {
+	padding-left: 10px;
+}
+.tab2 { 
+	padding-left: 20px;
+}
+.title {
+	font-weight: bold;
+}
+.subInfo {
+	padding: 5px;
+	background: #E8E8E8;
+	margin-left: 20px;
+}
+a.expander {
+	border: 1px solid black;
+	border-radius: 3px;
+	text-decoration: none;
+	color: black;
+	background: lightgrey;
+	font-size: 10px !important;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	text-align: center;
+	margin-top: 3px;
+	margin-bottom: 2px;
+	margin-right: 3px;
+}
+.hidden {
+	display: none;
+}
+</style>
+
+</head>
+<body>
+<h3>Receiving Advice/Acceptance Certificate</h3>
+<div class='sectionTitle'>General Information</div>
+
+<b>Beginning Segment for Receiving Advice or Acceptance Certificate</b><br/>
+   <span class='tab1'>Reference Identification: {{BRA/BRA01}}</span><br/>
+   <span class='tab1'>Date: {{BRA/BRA02}}</span><br/>
+   <span class='tab1'>Transaction Set Purpose Code: {{BRA/BRA03}}</span><br/>
+   <span class='tab1'>Receiving Advice or Acceptance Certificate Type Code: {{BRA/BRA04}}</span><br/>
+<br/>
+<span class='debug'>On_First_REF<br/></span>
+<b>Reference Identification</b><br/>
+
+    <span class='tab1'>Internal Vendor Number: {{REFREF01IAREF02}}</span><br/>
+
+    <span class='tab1'>Invoice Number: {{REFREF01REF02}}</span><br/>
+<span class='debug'>On_Last_REF<br/></span>
+<br/>
+<span class='debug'>On_First_DTM<br/></span>
+<b>Date/Time Reference</b><br/>
+<span class='tab1'>Posted: {{DTM/DTM02-DTM01 = '809'}} </span><br/>
+<span class='tab1'>Invoice: {{DTM/DTM02/003}}</span><br/>
+<br/>
+
+<b>Purchase Order Reference</b><br/>
+   <span class='tab1'>Purchase Order Number: {{PRF/PRF01}}</span><br/>
+   <span class='tab1'>Date: {{PRF/PRF04}}</span><br/>
+<br/>
+
+{{WarehouseInformationHtml}}
+
+
+{{LoopInformationHtml}}
+
+<br/><br/></body>
+</html>

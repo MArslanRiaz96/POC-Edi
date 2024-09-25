@@ -37,6 +37,7 @@ namespace POC
         public string PlaceHolder { get; set; }
         public string DefaultValue { get; set; }
         public bool MappingRequired { get; set; }
+        public bool isDecimal { get; set; }
         public DateFormat DateFormat { get; set; }
         public TimeFormat TimeFormat { get; set; }
         public List<string> MutiplcationUsingXPath { get; set; }

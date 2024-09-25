@@ -28,14 +28,31 @@ namespace POC
                     XmlNodeList baseNodes = doc.SelectNodes(listEdiXpath.LineLevel.LineLevelXPath);
                     int i = 0;
                     int n = 0;
+
+                    //// Check if the XPath is "//HLLoop1[position()>1]"
+                    //if (listEdiXpath.LineLevel.LineLevelXPath == "//HLLoop1[position()>1]")
+                    //{
+                    //    i++; // Increment i by 1 for each iteration
+                    //}
+
+                    //if (listEdiXpath.LineLevel.LineLevelXPath == "//HLLoop1/HL[HL03 = '36']")
+                    //{
+                    //    // You may want to use a node-specific logic here.
+                    //    // Increment i based on a condition or just increment after each iteration
+                    //    i++;
+                    //}
+                    //int index = 0;
+                    
                     foreach (XmlNode baseNode in baseNodes)
                     {
+                        //int currentIndex = 0;
+                        //bool isDetermined = false;
                         var htmltemplate = listEdiXpath.LineLevel.HTML;
-                        
                         foreach (var XPathConnfig in listEdiXpath.LineLevel.XPathConnfigs)
                         {
                             string node = "";
                             bool identifierOneStepHead = XPathConnfig.GetXPathUsingIdentifierOneStepHead;
+
                             if (XPathConnfig.PreferedXpaths != null)
                             {
                                 foreach (var preferedXpath in XPathConnfig.PreferedXpaths)
@@ -65,7 +82,108 @@ namespace POC
                                 }
                             }
 
-                            var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[!string.IsNullOrEmpty(node) ? Convert.ToInt32(node) : i];
+                            ////var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[!string.IsNullOrEmpty(node) ? Convert.ToInt32(node) : i];
+                            //XmlNode elemList = null;
+                            //var allNodes = baseNode.SelectNodes(XPathConnfig.XPath);
+                            //if (!isDetermined)
+                            //{
+                            //    for (int z = index; z < baseNodes.Count; z++)
+                            //    {
+                            //        var element = baseNode.SelectNodes(XPathConnfig.XPath)[z];
+                            //        XmlNode hl03Node = element;
+                            //        if (hl03Node != null && hl03Node.InnerText == "35")
+                            //        {
+                            //            currentIndex = z;
+                            //            isDetermined = true;
+                            //            break;
+                            //        }
+                            //    }
+                            //}
+
+
+                            //var selectedNodes = baseNode.SelectNodes(XPathConnfig.XPath)[currentIndex];
+
+                            ////if (selectedNodes != null && selectedNodes.Count > index) // Ensure there are more than 3 nodes
+                            //if (selectedNodes != null) // Ensure there are more than 3 nodes
+                            //{
+                            //    XmlNode hl03Node = selectedNodes;
+                            //    elemList = (XmlElement)selectedNodes;
+                            //    htmltemplate = htmltemplate.Replace(XPathConnfig.PlaceHolder, elemList.InnerText);
+                            //    //bool found = false;
+                            //    //for (int idx = index; idx < selectedNodes.Count; idx++) // Start from index 3 (4th node)
+                            //    //{
+                            //    //    XmlNode item = selectedNodes[idx];
+
+                            //    //    // Check if the HL03 element has the required value "35"
+                            //    //    //XmlNode hl03Node = baseNode.SelectSingleNode("HL03");
+                            //    //    XmlNode hl03Node = selectedNodes;
+                            //    //    if (hl03Node != null && hl03Node.InnerText == "35")
+                            //    //    {
+                            //    //        elemList = (XmlElement)item;
+                            //    //        found = true;
+                            //    //        // Process the element that meets the condition
+                            //    //        htmltemplate = htmltemplate.Replace(XPathConnfig.PlaceHolder, item.InnerText);
+                            //    //        break; // Exit the loop once the condition is met
+                            //    //    }
+                            //    //    //index++;
+
+                            //    //}
+
+                            //}
+                            //else
+                            //{
+                            //    // Use relative XPath, scoped to the current baseNode
+                            //    var scopedXPath = "." + XPathConnfig.XPath;
+
+                            //    // Get all matching nodes within the current baseNode context
+                            //    var scopeSelectedNodes = baseNode.SelectNodes(scopedXPath);
+
+                            //    // Check if the XPath exists and nodes are returned
+                            //    if (scopeSelectedNodes != null && scopeSelectedNodes.Count > 0)
+                            //    {
+                            //        elemList = scopeSelectedNodes[0];
+                            //    }
+                            //    else
+                            //    {
+                            //        // If no nodes are found, replace the placeholder with an empty string
+                            //        htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, string.Empty);
+                            //        continue;
+                            //    }
+                            //}
+
+                            //// Further processing of elemList, replacing placeholders in the template
+                            //if (elemList != null)
+                            //{
+                            //    htmltemplate = htmltemplate.Replace(XPathConnfig.PlaceHolder, elemList.InnerText);
+                            //}
+
+                            //var elemList = baseNode.SelectNodes(XPathConnfig.XPath)[!string.IsNullOrEmpty(node) ? Convert.ToInt32(node) : i];
+
+                            XmlNode elemList = null;
+                            if (humanReadableConfiguration.TemplateSetCode == 816)
+                            {
+                                // Scope the XPath to the current baseNode context
+                                var scopedXPath = "." + XPathConnfig.XPath; // Use relative XPath, starting with '.'
+
+                                // Get all matching nodes for the current baseNode only
+                                var selectedNodes = baseNode.SelectNodes(scopedXPath);
+
+                                // Check if the XPath exists and nodes are returned
+                                if (selectedNodes != null && selectedNodes.Count > 0)
+                                {
+                                    elemList = selectedNodes[0];
+                                }
+                                else
+                                {
+                                    // If no nodes are found, handle it (skip this baseNode or insert a placeholder)
+                                    htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, string.Empty);
+                                    continue;
+                                }
+                            }
+                            else
+                            {
+                                elemList = baseNode.SelectNodes(XPathConnfig.XPath)[!string.IsNullOrEmpty(node) ? Convert.ToInt32(node) : i];
+                            }
 
                             if (elemList == null && XPathConnfig.AllowNodeSameRepetation)
                             {
@@ -78,7 +196,7 @@ namespace POC
                                 {
                                     htmltemplate = Regex.Replace(htmltemplate, listEdiXpath.LineLevel.ChildLineLevel.PlaceHolder, $"{listEdiXpath.LineLevel.ChildLineLevel.PlaceHolder}-{elemList.InnerXml}");
                                 }
-                                if (XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
+                                if (XPathConnfig.isDecimal == false && XPathConnfig.MappingRequired == false && XPathConnfig.DateFormat == null && XPathConnfig.TimeFormat == null && XPathConnfig.MutiplcationUsingXPath == null && XPathConnfig.ConcatinationUsingSameXPath == false && string.IsNullOrEmpty(XPathConnfig.GetXPathUsingIdentifier))
                                 {
                                     Console.WriteLine(elemList.InnerXml);
                                     htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
@@ -89,6 +207,18 @@ namespace POC
                                     {
                                         htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, "db");
 
+                                    }
+                                    else if (XPathConnfig.isDecimal == true)
+                                    {
+                                        try
+                                        {
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, (int.Parse(elemList.InnerXml) / 100.0).ToString("F2"));
+                                        }
+                                        catch
+                                        {
+                                            htmltemplate = Regex.Replace(htmltemplate, XPathConnfig.PlaceHolder, elemList.InnerXml);
+                                        }
+                                        
                                     }
                                     else if (XPathConnfig.DateFormat != null)
                                     {
@@ -276,6 +406,7 @@ namespace POC
                         }
                         htmlArray = htmlArray + htmltemplate;
                         i++;
+                        //index++;
                     }
 
                     listEdiXPathValues.Add(Tuple.Create(listEdiXpath.LineLevel.PlaceHolder, htmlArray));

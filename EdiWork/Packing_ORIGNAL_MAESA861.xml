@@ -1,0 +1,592 @@
+<X12_00401_861 ID="1">
+	<ST ID="2" SegmentPosition="00">
+		<ST01 ID="00:3">861</ST01>
+		<ST02 ID="00:4">2524</ST02>
+	</ST>
+	<BRA ID="5" SegmentPosition="00">
+		<BRA01 ID="00:6">5199045575</BRA01>
+		<BRA02 ID="00:7">20240919</BRA02>
+		<BRA03 ID="00:8">5C</BRA03>
+		<BRA04 ID="00:9">2</BRA04>
+	</BRA>
+	<REF ID="10" SegmentPosition="00">
+		<REF01 ID="00:11">IA</REF01>
+		<REF02 ID="00:12">0001125462</REF02>
+	</REF>
+	<REF ID="13" SegmentPosition="00">
+		<REF01 ID="00:14">IK</REF01>
+		<REF02 ID="00:15">388169K2</REF02>
+	</REF>
+	<DTM ID="16" SegmentPosition="00">
+		<DTM01 ID="00:17">809</DTM01>
+		<DTM02 ID="00:18">20240730</DTM02>
+	</DTM>
+	<DTM ID="19" SegmentPosition="00">
+		<DTM01 ID="00:20">003</DTM01>
+		<DTM02 ID="00:21">20240722</DTM02>
+	</DTM>
+	<PRF ID="22" SegmentPosition="00">
+		<PRF01 ID="00:23">4547320921</PRF01>
+		<PRF02 ID="00:24"/>
+		<PRF03 ID="00:25"/>
+		<PRF04 ID="00:26">20240919</PRF04>
+	</PRF>
+	<N1Loop1 ID="27" SegmentPosition="00">
+		<N1 ID="28" SegmentPosition="00">
+			<N101 ID="00:29">WH</N101>
+			<N102 ID="00:30"/>
+			<N103 ID="00:31">92</N103>
+			<N104 ID="00:32">ZD68</N104>
+		</N1>
+	</N1Loop1>
+	<RCDLoop1 ID="33" SegmentPosition="00">
+		<RCD ID="34" SegmentPosition="00">
+			<RCD01 ID="00:35"/>
+			<RCD02 ID="00:36">81</RCD02>
+			<RCD03 ID="00:37">CA</RCD03>
+		</RCD>
+		<LIN ID="38" SegmentPosition="00">
+			<LIN01 ID="00:39">00010</LIN01>
+			<LIN02 ID="00:40">UP</LIN02>
+			<LIN03 ID="00:41">840797129672</LIN03>
+			<LIN04 ID="00:42">UP</LIN04>
+			<LIN05 ID="00:43">840797129672</LIN05>
+		</LIN>
+		<SAC ID="44" SegmentPosition="00">
+			<SAC01 ID="00:45">N</SAC01>
+			<SAC02 ID="00:46">F680</SAC02>
+			<SAC03 ID="00:47"/>
+			<SAC04 ID="00:48"/>
+			<SAC05 ID="00:49">1954</SAC05>
+			<SAC06 ID="00:50"/>
+			<SAC07 ID="00:51"/>
+			<SAC08 ID="00:52">2.1711</SAC08>
+			<SAC09 ID="00:53">CA</SAC09>
+			<SAC10 ID="00:54">9</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="55" SegmentPosition="00">
+		<RCD ID="56" SegmentPosition="00">
+			<RCD01 ID="00:57"/>
+			<RCD02 ID="00:58">36</RCD02>
+			<RCD03 ID="00:59">CA</RCD03>
+		</RCD>
+		<LIN ID="60" SegmentPosition="00">
+			<LIN01 ID="00:61">00020</LIN01>
+			<LIN02 ID="00:62">UK</LIN02>
+			<LIN03 ID="00:63">20840797129393</LIN03>
+			<LIN04 ID="00:64">UK</LIN04>
+			<LIN05 ID="00:65">20840797129393</LIN05>
+		</LIN>
+		<SAC ID="66" SegmentPosition="00">
+			<SAC01 ID="00:67">N</SAC01>
+			<SAC02 ID="00:68">F680</SAC02>
+			<SAC03 ID="00:69"/>
+			<SAC04 ID="00:70"/>
+			<SAC05 ID="00:71">700</SAC05>
+			<SAC06 ID="00:72"/>
+			<SAC07 ID="00:73"/>
+			<SAC08 ID="00:74">1.75</SAC08>
+			<SAC09 ID="00:75">CA</SAC09>
+			<SAC10 ID="00:76">4</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="77" SegmentPosition="00">
+		<RCD ID="78" SegmentPosition="00">
+			<RCD01 ID="00:79"/>
+			<RCD02 ID="00:80">36</RCD02>
+			<RCD03 ID="00:81">CA</RCD03>
+		</RCD>
+		<LIN ID="82" SegmentPosition="00">
+			<LIN01 ID="00:83">00030</LIN01>
+			<LIN02 ID="00:84">UK</LIN02>
+			<LIN03 ID="00:85">30840797129284</LIN03>
+			<LIN04 ID="00:86">UK</LIN04>
+			<LIN05 ID="00:87">30840797129284</LIN05>
+		</LIN>
+		<SAC ID="88" SegmentPosition="00">
+			<SAC01 ID="00:89">N</SAC01>
+			<SAC02 ID="00:90">F680</SAC02>
+			<SAC03 ID="00:91"/>
+			<SAC04 ID="00:92"/>
+			<SAC05 ID="00:93">700</SAC05>
+			<SAC06 ID="00:94"/>
+			<SAC07 ID="00:95"/>
+			<SAC08 ID="00:96">2.3333</SAC08>
+			<SAC09 ID="00:97">CA</SAC09>
+			<SAC10 ID="00:98">3</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="99" SegmentPosition="00">
+		<RCD ID="100" SegmentPosition="00">
+			<RCD01 ID="00:101"/>
+			<RCD02 ID="00:102">60</RCD02>
+			<RCD03 ID="00:103">CA</RCD03>
+		</RCD>
+		<LIN ID="104" SegmentPosition="00">
+			<LIN01 ID="00:105">00040</LIN01>
+			<LIN02 ID="00:106">UP</LIN02>
+			<LIN03 ID="00:107">840797105911</LIN03>
+			<LIN04 ID="00:108">UP</LIN04>
+			<LIN05 ID="00:109">840797105911</LIN05>
+		</LIN>
+		<SAC ID="110" SegmentPosition="00">
+			<SAC01 ID="00:111">N</SAC01>
+			<SAC02 ID="00:112">F680</SAC02>
+			<SAC03 ID="00:113"/>
+			<SAC04 ID="00:114"/>
+			<SAC05 ID="00:115">1447</SAC05>
+			<SAC06 ID="00:116"/>
+			<SAC07 ID="00:117"/>
+			<SAC08 ID="00:118">2.894</SAC08>
+			<SAC09 ID="00:119">CA</SAC09>
+			<SAC10 ID="00:120">5</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="121" SegmentPosition="00">
+		<RCD ID="122" SegmentPosition="00">
+			<RCD01 ID="00:123"/>
+			<RCD02 ID="00:124">24</RCD02>
+			<RCD03 ID="00:125">CA</RCD03>
+		</RCD>
+		<LIN ID="126" SegmentPosition="00">
+			<LIN01 ID="00:127">00050</LIN01>
+			<LIN02 ID="00:128">UP</LIN02>
+			<LIN03 ID="00:129">840797105843</LIN03>
+			<LIN04 ID="00:130">UP</LIN04>
+			<LIN05 ID="00:131">840797105843</LIN05>
+		</LIN>
+		<SAC ID="132" SegmentPosition="00">
+			<SAC01 ID="00:133">N</SAC01>
+			<SAC02 ID="00:134">F680</SAC02>
+			<SAC03 ID="00:135"/>
+			<SAC04 ID="00:136"/>
+			<SAC05 ID="00:137">579</SAC05>
+			<SAC06 ID="00:138"/>
+			<SAC07 ID="00:139"/>
+			<SAC08 ID="00:140">2.895</SAC08>
+			<SAC09 ID="00:141">CA</SAC09>
+			<SAC10 ID="00:142">2</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="143" SegmentPosition="00">
+		<RCD ID="144" SegmentPosition="00">
+			<RCD01 ID="00:145"/>
+			<RCD02 ID="00:146">48</RCD02>
+			<RCD03 ID="00:147">CA</RCD03>
+		</RCD>
+		<LIN ID="148" SegmentPosition="00">
+			<LIN01 ID="00:149">00060</LIN01>
+			<LIN02 ID="00:150">UP</LIN02>
+			<LIN03 ID="00:151">840797112278</LIN03>
+			<LIN04 ID="00:152">UP</LIN04>
+			<LIN05 ID="00:153">840797112278</LIN05>
+		</LIN>
+		<SAC ID="154" SegmentPosition="00">
+			<SAC01 ID="00:155">N</SAC01>
+			<SAC02 ID="00:156">F680</SAC02>
+			<SAC03 ID="00:157"/>
+			<SAC04 ID="00:158"/>
+			<SAC05 ID="00:159">1158</SAC05>
+			<SAC06 ID="00:160"/>
+			<SAC07 ID="00:161"/>
+			<SAC08 ID="00:162">2.895</SAC08>
+			<SAC09 ID="00:163">CA</SAC09>
+			<SAC10 ID="00:164">4</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="165" SegmentPosition="00">
+		<RCD ID="166" SegmentPosition="00">
+			<RCD01 ID="00:167"/>
+			<RCD02 ID="00:168">120</RCD02>
+			<RCD03 ID="00:169">CA</RCD03>
+		</RCD>
+		<LIN ID="170" SegmentPosition="00">
+			<LIN01 ID="00:171">00070</LIN01>
+			<LIN02 ID="00:172">UK</LIN02>
+			<LIN03 ID="00:173">30840797105738</LIN03>
+			<LIN04 ID="00:174">UK</LIN04>
+			<LIN05 ID="00:175">30840797105738</LIN05>
+		</LIN>
+		<SAC ID="176" SegmentPosition="00">
+			<SAC01 ID="00:177">N</SAC01>
+			<SAC02 ID="00:178">F680</SAC02>
+			<SAC03 ID="00:179"/>
+			<SAC04 ID="00:180"/>
+			<SAC05 ID="00:181">2270</SAC05>
+			<SAC06 ID="00:182"/>
+			<SAC07 ID="00:183"/>
+			<SAC08 ID="00:184">2.27</SAC08>
+			<SAC09 ID="00:185">CA</SAC09>
+			<SAC10 ID="00:186">10</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="187" SegmentPosition="00">
+		<RCD ID="188" SegmentPosition="00">
+			<RCD01 ID="00:189"/>
+			<RCD02 ID="00:190">24</RCD02>
+			<RCD03 ID="00:191">CA</RCD03>
+		</RCD>
+		<LIN ID="192" SegmentPosition="00">
+			<LIN01 ID="00:193">00080</LIN01>
+			<LIN02 ID="00:194">UP</LIN02>
+			<LIN03 ID="00:195">840797105836</LIN03>
+			<LIN04 ID="00:196">UP</LIN04>
+			<LIN05 ID="00:197">840797105836</LIN05>
+		</LIN>
+		<SAC ID="198" SegmentPosition="00">
+			<SAC01 ID="00:199">N</SAC01>
+			<SAC02 ID="00:200">F680</SAC02>
+			<SAC03 ID="00:201"/>
+			<SAC04 ID="00:202"/>
+			<SAC05 ID="00:203">579</SAC05>
+			<SAC06 ID="00:204"/>
+			<SAC07 ID="00:205"/>
+			<SAC08 ID="00:206">2.895</SAC08>
+			<SAC09 ID="00:207">CA</SAC09>
+			<SAC10 ID="00:208">2</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="209" SegmentPosition="00">
+		<RCD ID="210" SegmentPosition="00">
+			<RCD01 ID="00:211"/>
+			<RCD02 ID="00:212">12</RCD02>
+			<RCD03 ID="00:213">CA</RCD03>
+		</RCD>
+		<LIN ID="214" SegmentPosition="00">
+			<LIN01 ID="00:215">00100</LIN01>
+			<LIN02 ID="00:216">UP</LIN02>
+			<LIN03 ID="00:217">840797105928</LIN03>
+			<LIN04 ID="00:218">UP</LIN04>
+			<LIN05 ID="00:219">840797105928</LIN05>
+		</LIN>
+		<SAC ID="220" SegmentPosition="00">
+			<SAC01 ID="00:221">N</SAC01>
+			<SAC02 ID="00:222">F680</SAC02>
+			<SAC03 ID="00:223"/>
+			<SAC04 ID="00:224"/>
+			<SAC05 ID="00:225">289</SAC05>
+			<SAC06 ID="00:226"/>
+			<SAC07 ID="00:227"/>
+			<SAC08 ID="00:228">2.89</SAC08>
+			<SAC09 ID="00:229">CA</SAC09>
+			<SAC10 ID="00:230">1</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="231" SegmentPosition="00">
+		<RCD ID="232" SegmentPosition="00">
+			<RCD01 ID="00:233"/>
+			<RCD02 ID="00:234">48</RCD02>
+			<RCD03 ID="00:235">CA</RCD03>
+		</RCD>
+		<LIN ID="236" SegmentPosition="00">
+			<LIN01 ID="00:237">00110</LIN01>
+			<LIN02 ID="00:238">UK</LIN02>
+			<LIN03 ID="00:239">30840797112194</LIN03>
+			<LIN04 ID="00:240">UK</LIN04>
+			<LIN05 ID="00:241">30840797112194</LIN05>
+		</LIN>
+		<SAC ID="242" SegmentPosition="00">
+			<SAC01 ID="00:243">N</SAC01>
+			<SAC02 ID="00:244">F680</SAC02>
+			<SAC03 ID="00:245"/>
+			<SAC04 ID="00:246"/>
+			<SAC05 ID="00:247">933</SAC05>
+			<SAC06 ID="00:248"/>
+			<SAC07 ID="00:249"/>
+			<SAC08 ID="00:250">2.3325</SAC08>
+			<SAC09 ID="00:251">CA</SAC09>
+			<SAC10 ID="00:252">4</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="253" SegmentPosition="00">
+		<RCD ID="254" SegmentPosition="00">
+			<RCD01 ID="00:255"/>
+			<RCD02 ID="00:256">84</RCD02>
+			<RCD03 ID="00:257">CA</RCD03>
+		</RCD>
+		<LIN ID="258" SegmentPosition="00">
+			<LIN01 ID="00:259">00120</LIN01>
+			<LIN02 ID="00:260">UK</LIN02>
+			<LIN03 ID="00:261">30840797129406</LIN03>
+			<LIN04 ID="00:262">UK</LIN04>
+			<LIN05 ID="00:263">30840797129406</LIN05>
+		</LIN>
+		<SAC ID="264" SegmentPosition="00">
+			<SAC01 ID="00:265">N</SAC01>
+			<SAC02 ID="00:266">F680</SAC02>
+			<SAC03 ID="00:267"/>
+			<SAC04 ID="00:268"/>
+			<SAC05 ID="00:269">1633</SAC05>
+			<SAC06 ID="00:270"/>
+			<SAC07 ID="00:271"/>
+			<SAC08 ID="00:272">2.3329</SAC08>
+			<SAC09 ID="00:273">CA</SAC09>
+			<SAC10 ID="00:274">7</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="275" SegmentPosition="00">
+		<RCD ID="276" SegmentPosition="00">
+			<RCD01 ID="00:277"/>
+			<RCD02 ID="00:278">24</RCD02>
+			<RCD03 ID="00:279">CA</RCD03>
+		</RCD>
+		<LIN ID="280" SegmentPosition="00">
+			<LIN01 ID="00:281">00130</LIN01>
+			<LIN02 ID="00:282">UK</LIN02>
+			<LIN03 ID="00:283">10840797169064</LIN03>
+			<LIN04 ID="00:284">UK</LIN04>
+			<LIN05 ID="00:285">10840797169064</LIN05>
+		</LIN>
+		<SAC ID="286" SegmentPosition="00">
+			<SAC01 ID="00:287">N</SAC01>
+			<SAC02 ID="00:288">F680</SAC02>
+			<SAC03 ID="00:289"/>
+			<SAC04 ID="00:290"/>
+			<SAC05 ID="00:291">668</SAC05>
+			<SAC06 ID="00:292"/>
+			<SAC07 ID="00:293"/>
+			<SAC08 ID="00:294">3.34</SAC08>
+			<SAC09 ID="00:295">CA</SAC09>
+			<SAC10 ID="00:296">2</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="297" SegmentPosition="00">
+		<RCD ID="298" SegmentPosition="00">
+			<RCD01 ID="00:299"/>
+			<RCD02 ID="00:300">84</RCD02>
+			<RCD03 ID="00:301">CA</RCD03>
+		</RCD>
+		<LIN ID="302" SegmentPosition="00">
+			<LIN01 ID="00:303">00140</LIN01>
+			<LIN02 ID="00:304">UK</LIN02>
+			<LIN03 ID="00:305">30840797105745</LIN03>
+			<LIN04 ID="00:306">UK</LIN04>
+			<LIN05 ID="00:307">30840797105745</LIN05>
+		</LIN>
+		<SAC ID="308" SegmentPosition="00">
+			<SAC01 ID="00:309">N</SAC01>
+			<SAC02 ID="00:310">F680</SAC02>
+			<SAC03 ID="00:311"/>
+			<SAC04 ID="00:312"/>
+			<SAC05 ID="00:313">1589</SAC05>
+			<SAC06 ID="00:314"/>
+			<SAC07 ID="00:315"/>
+			<SAC08 ID="00:316">2.27</SAC08>
+			<SAC09 ID="00:317">CA</SAC09>
+			<SAC10 ID="00:318">7</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="319" SegmentPosition="00">
+		<RCD ID="320" SegmentPosition="00">
+			<RCD01 ID="00:321"/>
+			<RCD02 ID="00:322">60</RCD02>
+			<RCD03 ID="00:323">CA</RCD03>
+		</RCD>
+		<LIN ID="324" SegmentPosition="00">
+			<LIN01 ID="00:325">00150</LIN01>
+			<LIN02 ID="00:326">UK</LIN02>
+			<LIN03 ID="00:327">30840797105806</LIN03>
+			<LIN04 ID="00:328">UK</LIN04>
+			<LIN05 ID="00:329">30840797105806</LIN05>
+		</LIN>
+		<SAC ID="330" SegmentPosition="00">
+			<SAC01 ID="00:331">N</SAC01>
+			<SAC02 ID="00:332">F680</SAC02>
+			<SAC03 ID="00:333"/>
+			<SAC04 ID="00:334"/>
+			<SAC05 ID="00:335">1135</SAC05>
+			<SAC06 ID="00:336"/>
+			<SAC07 ID="00:337"/>
+			<SAC08 ID="00:338">2.27</SAC08>
+			<SAC09 ID="00:339">CA</SAC09>
+			<SAC10 ID="00:340">5</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="341" SegmentPosition="00">
+		<RCD ID="342" SegmentPosition="00">
+			<RCD01 ID="00:343"/>
+			<RCD02 ID="00:344">36</RCD02>
+			<RCD03 ID="00:345">CA</RCD03>
+		</RCD>
+		<LIN ID="346" SegmentPosition="00">
+			<LIN01 ID="00:347">00160</LIN01>
+			<LIN02 ID="00:348">UK</LIN02>
+			<LIN03 ID="00:349">30840797105776</LIN03>
+			<LIN04 ID="00:350">UK</LIN04>
+			<LIN05 ID="00:351">30840797105776</LIN05>
+		</LIN>
+		<SAC ID="352" SegmentPosition="00">
+			<SAC01 ID="00:353">N</SAC01>
+			<SAC02 ID="00:354">F680</SAC02>
+			<SAC03 ID="00:355"/>
+			<SAC04 ID="00:356"/>
+			<SAC05 ID="00:357">868</SAC05>
+			<SAC06 ID="00:358"/>
+			<SAC07 ID="00:359"/>
+			<SAC08 ID="00:360">2.8933</SAC08>
+			<SAC09 ID="00:361">CA</SAC09>
+			<SAC10 ID="00:362">3</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="363" SegmentPosition="00">
+		<RCD ID="364" SegmentPosition="00">
+			<RCD01 ID="00:365"/>
+			<RCD02 ID="00:366">252</RCD02>
+			<RCD03 ID="00:367">CA</RCD03>
+		</RCD>
+		<LIN ID="368" SegmentPosition="00">
+			<LIN01 ID="00:369">00170</LIN01>
+			<LIN02 ID="00:370">UK</LIN02>
+			<LIN03 ID="00:371">30840797129697</LIN03>
+			<LIN04 ID="00:372">UK</LIN04>
+			<LIN05 ID="00:373">30840797129697</LIN05>
+		</LIN>
+		<SAC ID="374" SegmentPosition="00">
+			<SAC01 ID="00:375">N</SAC01>
+			<SAC02 ID="00:376">F680</SAC02>
+			<SAC03 ID="00:377"/>
+			<SAC04 ID="00:378"/>
+			<SAC05 ID="00:379">6078</SAC05>
+			<SAC06 ID="00:380"/>
+			<SAC07 ID="00:381"/>
+			<SAC08 ID="00:382">2.8943</SAC08>
+			<SAC09 ID="00:383">CA</SAC09>
+			<SAC10 ID="00:384">21</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="385" SegmentPosition="00">
+		<RCD ID="386" SegmentPosition="00">
+			<RCD01 ID="00:387"/>
+			<RCD02 ID="00:388">24</RCD02>
+			<RCD03 ID="00:389">CA</RCD03>
+		</RCD>
+		<LIN ID="390" SegmentPosition="00">
+			<LIN01 ID="00:391">00180</LIN01>
+			<LIN02 ID="00:392">UK</LIN02>
+			<LIN03 ID="00:393">30840797129345</LIN03>
+			<LIN04 ID="00:394">UK</LIN04>
+			<LIN05 ID="00:395">30840797129345</LIN05>
+		</LIN>
+		<SAC ID="396" SegmentPosition="00">
+			<SAC01 ID="00:397">N</SAC01>
+			<SAC02 ID="00:398">F680</SAC02>
+			<SAC03 ID="00:399"/>
+			<SAC04 ID="00:400"/>
+			<SAC05 ID="00:401">467</SAC05>
+			<SAC06 ID="00:402"/>
+			<SAC07 ID="00:403"/>
+			<SAC08 ID="00:404">2.335</SAC08>
+			<SAC09 ID="00:405">CA</SAC09>
+			<SAC10 ID="00:406">2</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="407" SegmentPosition="00">
+		<RCD ID="408" SegmentPosition="00">
+			<RCD01 ID="00:409"/>
+			<RCD02 ID="00:410">72</RCD02>
+			<RCD03 ID="00:411">CA</RCD03>
+		</RCD>
+		<LIN ID="412" SegmentPosition="00">
+			<LIN01 ID="00:413">00190</LIN01>
+			<LIN02 ID="00:414">UK</LIN02>
+			<LIN03 ID="00:415">30840797112248</LIN03>
+			<LIN04 ID="00:416">UK</LIN04>
+			<LIN05 ID="00:417">30840797112248</LIN05>
+		</LIN>
+		<SAC ID="418" SegmentPosition="00">
+			<SAC01 ID="00:419">N</SAC01>
+			<SAC02 ID="00:420">F680</SAC02>
+			<SAC03 ID="00:421"/>
+			<SAC04 ID="00:422"/>
+			<SAC05 ID="00:423">1362</SAC05>
+			<SAC06 ID="00:424"/>
+			<SAC07 ID="00:425"/>
+			<SAC08 ID="00:426">2.27</SAC08>
+			<SAC09 ID="00:427">CA</SAC09>
+			<SAC10 ID="00:428">6</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="429" SegmentPosition="00">
+		<RCD ID="430" SegmentPosition="00">
+			<RCD01 ID="00:431"/>
+			<RCD02 ID="00:432">48</RCD02>
+			<RCD03 ID="00:433">CA</RCD03>
+		</RCD>
+		<LIN ID="434" SegmentPosition="00">
+			<LIN01 ID="00:435">00200</LIN01>
+			<LIN02 ID="00:436">UK</LIN02>
+			<LIN03 ID="00:437">30840797105790</LIN03>
+			<LIN04 ID="00:438">UK</LIN04>
+			<LIN05 ID="00:439">30840797105790</LIN05>
+		</LIN>
+		<SAC ID="440" SegmentPosition="00">
+			<SAC01 ID="00:441">N</SAC01>
+			<SAC02 ID="00:442">F680</SAC02>
+			<SAC03 ID="00:443"/>
+			<SAC04 ID="00:444"/>
+			<SAC05 ID="00:445">1158</SAC05>
+			<SAC06 ID="00:446"/>
+			<SAC07 ID="00:447"/>
+			<SAC08 ID="00:448">2.895</SAC08>
+			<SAC09 ID="00:449">CA</SAC09>
+			<SAC10 ID="00:450">4</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="451" SegmentPosition="00">
+		<RCD ID="452" SegmentPosition="00">
+			<RCD01 ID="00:453"/>
+			<RCD02 ID="00:454">36</RCD02>
+			<RCD03 ID="00:455">CA</RCD03>
+		</RCD>
+		<LIN ID="456" SegmentPosition="00">
+			<LIN01 ID="00:457">00210</LIN01>
+			<LIN02 ID="00:458">UK</LIN02>
+			<LIN03 ID="00:459">30840797119445</LIN03>
+			<LIN04 ID="00:460">UK</LIN04>
+			<LIN05 ID="00:461">30840797119445</LIN05>
+		</LIN>
+		<SAC ID="462" SegmentPosition="00">
+			<SAC01 ID="00:463">N</SAC01>
+			<SAC02 ID="00:464">F680</SAC02>
+			<SAC03 ID="00:465"/>
+			<SAC04 ID="00:466"/>
+			<SAC05 ID="00:467">700</SAC05>
+			<SAC06 ID="00:468"/>
+			<SAC07 ID="00:469"/>
+			<SAC08 ID="00:470">2.3333</SAC08>
+			<SAC09 ID="00:471">CA</SAC09>
+			<SAC10 ID="00:472">3</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<RCDLoop1 ID="473" SegmentPosition="00">
+		<RCD ID="474" SegmentPosition="00">
+			<RCD01 ID="00:475"/>
+			<RCD02 ID="00:476">24</RCD02>
+			<RCD03 ID="00:477">CA</RCD03>
+		</RCD>
+		<LIN ID="478" SegmentPosition="00">
+			<LIN01 ID="00:479">00220</LIN01>
+			<LIN02 ID="00:480">UK</LIN02>
+			<LIN03 ID="00:481">30840797129291</LIN03>
+			<LIN04 ID="00:482">UK</LIN04>
+			<LIN05 ID="00:483">30840797129291</LIN05>
+		</LIN>
+		<SAC ID="484" SegmentPosition="00">
+			<SAC01 ID="00:485">N</SAC01>
+			<SAC02 ID="00:486">F680</SAC02>
+			<SAC03 ID="00:487"/>
+			<SAC04 ID="00:488"/>
+			<SAC05 ID="00:489">454</SAC05>
+			<SAC06 ID="00:490"/>
+			<SAC07 ID="00:491"/>
+			<SAC08 ID="00:492">2.27</SAC08>
+			<SAC09 ID="00:493">CA</SAC09>
+			<SAC10 ID="00:494">2</SAC10>
+		</SAC>
+	</RCDLoop1>
+	<SE ID="495" SegmentPosition="00">
+		<SE01 ID="00:496">72</SE01>
+		<SE02 ID="00:497">2524</SE02>
+	</SE>
+</X12_00401_861>

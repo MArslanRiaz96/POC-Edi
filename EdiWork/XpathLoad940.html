@@ -1,5 +1,6 @@
 <HTML>
-<style type="text/css"><!--BODY
+	<style type="text/css">
+		<!--BODY
 {
     BACKGROUND-COLOR: white;
     FONT-FAMILY: Arial;
@@ -230,347 +231,398 @@ H6
 @media print {
 	BODY { margin-left: 30px; }
 }
-//--></style><style type="text/css">
-<!--
+//-->
+	</style>
+	<style type="text/css">
+		<!--
 	.clsBlurb { display:none; }
 //-->
-</style>
-<BODY link="" background="000000">
-<!--TOOLBAR_START--> 
-<!--TOOLBAR_EXEMPT--> 
-<!--TOOLBAR_END--> 
-<script LANGUAGE="JavaScript"> 
-<!-- 
-  // IF THE BROWSER IS MSIE4.0 FOR WINDOWS NT AND 95 ONLY, THEN bClickable = TRUE 
- 
-	var sAgent = navigator.userAgent 
-   	var bIs95NT = sAgent.indexOf("Windows 95") > -1 || sAgent.indexOf("Windows 98") > -1 || sAgent.indexOf("Windows NT") > -1 || sAgent.indexOf("Win32") > -1  
-	var bIsIE4 = sAgent.indexOf("IE 4")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
-	var bIsIE5 = sAgent.indexOf("IE 5")  > -1 && sAgent.indexOf("b1") <= -1 && sAgent.indexOf("p1") <= -1 
-	var bClickable = true; //User will always have IE4 or greater 
-   
-  // DEFINE GLOBAL VARIABLES HERE 
- 
-  document.onclick = doDocumentOnClick ; 
-  document.onmouseover = doDocumentOnMouseOver ; 
-  document.onmouseout = doDocumentOnMouseOut ; 
-   
-	function HideButton()  
-	{ 
-		var myvar = 999 
-		var itemnum
-		var hdrbtn = "IdHeaderButton" 
-		var sButtonId
-		if (bClickable)  
-		{ 
-			for(i=0; i<document.all.length; i++)  
-			{ 
-				if (document.all(i).id.indexOf("idButton") != -1) 
-				{
-					document.all(i).style.display = "none"; 
-				}
-				if (document.all(i).id.indexOf("idButtonImage") != -1) 
-				{
-					document.all(i).style.display = "none"; 
-				}
-			} 
-		} 
-	} 
- 
- 
-  /* 	IF bClickable IS TRUE, FIND OUT WHICH BLURB IS AFFECTED ONCLICK.  
-	 	IF THE BLURB'S DISPLAY IS NONE, DISPLAY BLURB.  
-		IF THE BLURB IS DISPLAYING, SET IT TO NOT DISPLAY.*/ 
- 
-	function doDocumentOnClick()  
-	{ 
-		if (bClickable)  
-		{ 
-                  var eSrc = window.event.srcElement ; 
-			if (eSrc.className == "clsHeader" || eSrc.className == "clsHeaderButton" )  
-			{ 
-			 
-				var sId = "idBlurb" + eSrc.id.substring(eSrc.id.length-4,eSrc.id.length) ; 
-				if (document.all(sId).style.display == "block")  
-				{ 
-					document.all(sId).style.display = "none" ; 
-					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
-				} 
-        			else  
-		 		{ 
-          				document.all(sId).style.display = "block" ; 
-					sButtonId = "idHeaderButton" + sId.substring(sId.length-4,sId.length) 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
-        			} 
-    		} 
-    		window.event.cancelBubble = true ; 
-    	} 
-  } 
- 
-  // CHANGE HEADLINE COLOR ONMOUSEOVER 
- 
-  function doDocumentOnMouseOver()  
-  { 
-  		var eSrc = window.event.srcElement ;  
-    	if (eSrc.className == "clsHeader") 
-		{
-      		document.all(eSrc.id).style.color= "" 
-    	}
-  }
- 
-  // CHANGE HEADLINE COLOR ONMOUSEOUT
- 
-  function doDocumentOnMouseOut() 
-  {
-  		var eSrc = window.event.srcElement ;
-    	if (eSrc.className == "clsHeader")
-		{
-      		document.all(eSrc.id).style.color= "#000000" 
-    	}
-  }
-//-->
-</script>
-<body>
- <table border="0" width="100%" >
-   <tr>
-     <td width="100%">
-     <H1>Warehouse Shipping Order</H1>
-     </td>
-   </tr>
- </table>
-<table cellpadding="0" border="0" width="100%">
-<tr>
-<td width="638" valign="top" class="sectiontitle" style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">General Information</td>
-</tr>
-</table>
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Shipping Order Identification:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
+	</style>
+	<body>
+		<table border="0"
+		       width="100%">
+			<tr>
+				<td width="100%">
+					<H1>Warehouse Shipping Order</H1>
+				</td>
+			</tr>
+		</table>
+		<table cellpadding="0"
+		       border="0"
+		       width="100%">
+			<tr>
+				<td width="638"
+				    valign="top"
+				    class="sectiontitle"
+				    style="border: 2px; border-style: solid; border-color: DarkGray; background-color:LightGrey; padding: 2pt; color: Black">General Information</td>
+			</tr>
+		</table>
+		<table border="0"
+		       cellspacing="0"
+		       cellpadding="0"
+		       width="100%"
+		       cellspacing="0"
+		       cellpadding="0">
+			<tr>
+				<td width="100%"
+				    valign="top"
+				    align="left">
+					<b>Shipping Order Identification:
+</b>
+				</td>
+			</tr>
+		</table>
+		<table border="0"
+		       width="100%"
+		       cellspacing="0"
+		       cellpadding="0">
+			<tr>
+				<td width="100%"
+				    valign="top"
+				    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order Status Code
     : {{W05/W0501-W0501 = 'N'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+			</tr>
+			<tr>
+				<td width="100%"
+				    valign="top"
+				    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depositor Order Number
     : {{W05/W0502-W0501 = 'N'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+			</tr>
+			<tr>
+				<td width="100%"
+				    valign="top"
+				    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link Sequence Number
     : {{W05/W0504-W0501 = 'N'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+			</tr>
+			<tr>
+				<td width="100%"
+				    valign="top"
+				    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Master Reference (Link) Number
     : {{W05/W0505-W0501 = 'N'}}
-    </td></tr>
-</table><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Ship To: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101= 'ST'}} ({{N1/N103-N101= 'ST'}}: {{N1/N104-N101= 'ST'}})</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'ST'}}</td></tr>  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} </td></tr></table>
-</td>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Depositor: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101= 'DE'}} ({{N1/N103-N101= 'DE'}}: {{N1/N104-N101= 'DE'}})</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'DE'}}</td></tr>  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'DE'}},  {{N4/N402-N101 = 'DE'}} {{N4/N403-N101 = 'DE'}} </td></tr></table>
-</td>
-</tr><tr>
-<td valign="top" width="50%"><table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Warehouse: </b>
-</td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td border="0" width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101= 'WH'}} ({{N1/N103-N101= 'WH'}}: {{N1/N104-N101= 'WH'}})</td> 
-</tr> 
-  <tr> 
-    <td width="100%" valign="top" align="left">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'WH'}},  {{N4/N402-N101 = 'WH'}} {{N4/N403-N101 = 'WH'}} </td></tr></table>
-</td>
-</tr></table><BR>
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Reference Identification:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+			</tr>
+		</table>
+		<br/>
+		<table border="0"
+		       cellspacing="0"
+		       cellpadding="0"
+		       width="100%">
+			<tr>
+				<td valign="top"
+				    width="50%">
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+								<b>Ship To: </b>
+							</td>
+						</tr>
+					</table>
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td border="0"
+							    width="100%"
+							    valign="top"
+							    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101= 'ST'}} ({{N1/N103-N101= 'ST'}}: {{N1/N104-N101= 'ST'}})</td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'ST'}}</td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'ST'}},  {{N4/N402-N101 = 'ST'}} {{N4/N403-N101 = 'ST'}} </td>
+						</tr>
+					</table>
+				</td>
+				<td valign="top"
+				    width="50%">
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+								<b>Depositor: </b>
+							</td>
+						</tr>
+					</table>
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td border="0"
+							    width="100%"
+							    valign="top"
+							    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101= 'DE'}} ({{N1/N103-N101= 'DE'}}: {{N1/N104-N101= 'DE'}})</td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N3/N301-N101 = 'DE'}}</td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'DE'}},  {{N4/N402-N101 = 'DE'}} {{N4/N403-N101 = 'DE'}} </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top"
+				    width="50%">
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+								<b>Warehouse: </b>
+							</td>
+						</tr>
+					</table>
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td border="0"
+							    width="100%"
+							    valign="top"
+							    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N1/N102-N101= 'WH'}} ({{N1/N103-N101= 'WH'}}: {{N1/N104-N101= 'WH'}})</td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{N4/N401-N101 = 'WH'}},  {{N4/N402-N101 = 'WH'}} {{N4/N403-N101 = 'WH'}} </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<table border="0"
+		       cellspacing="0"
+		       cellpadding="0"
+		       width="100%"
+		       cellspacing="0"
+		       cellpadding="0">
+			<tr>
+				<td width="100%"
+				    valign="top"
+				    align="left">
+					<b>Reference Identification:
+</b>
+				</td>
+			</tr>
+		</table>
+		<table border="0"
+		       width="100%"
+		       cellspacing="0"
+		       cellpadding="0">
+			<tr>
+				<td width="100%"
+				    valign="top"
+				    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification Qualifier
     : {{N9/N901-N901 = 'BR'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+			</tr>
+			<tr>
+				<td width="100%"
+				    valign="top"
+				    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Identification
     : {{N9/N902-N901 = 'BR'}}
-    </td></tr>
-</table><br>
+    </td>
+			</tr>
+		</table>
+		<br/>
 
 {{DateTimeHtml}}
- <div ID="idHeader1000" CLASS="clsHeader" STYLE="text-decoration:none" TITLE="Notes"
- align="left"><img ID="idHeaderButton1000" CLASS="clsHeaderButton" SRC=res://VistaRes.Dll/bullet-plus2.gif
- WIDTH="11" HEIGHT="11" ALT="Click to Expand"> 
-<b>Notes 
- </b></div> 
- <div ID="idBlurb1000" CLASS="clsBlurb"
-><b><div align="left"> <table border="0" width="100%" 
-    background="res://VistaRes.Dll/legalpad.gif" cellspacing="1" cellpadding="0" > 
-      <tr> 
-        <td width="5%" ></td> 
-        <td width="90%"> 
-		<b>Note -- Warehouse Instruction<br></b>
-<table border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+ <div ID="idHeader1000"
+		     CLASS="clsHeader"
+		     STYLE="text-decoration:none"
+		     TITLE="Notes"
+		     align="left">
+			<!-- <img ID="idHeaderButton1000" -->
+			     <!-- CLASS="clsHeaderButton" -->
+			     <!-- SRC=res://VistaRes.Dll/bullet-plus2.gif -->
+			     <!-- WIDTH="11" -->
+			     <!-- HEIGHT="11" -->
+			     <!-- ALT="Click to Expand"> -->
+				<b>Notes 
+ </b>
+			</div>
+			<div ID="idBlurb1000"
+			     CLASS="clsBlurb">
+				
+					<div align="left">
+						<table border="0"
+						       width="100%"
+						       background="res://VistaRes.Dll/legalpad.gif"
+						       cellspacing="1"
+						       cellpadding="0">
+							<tr>
+								<td width="5%"/>
+								<td width="90%">
+									<b>Note -- Warehouse Instruction</b>
+										<table border="0"
+										       cellspacing="0"
+										       cellpadding="0">
+											<tr>
+												<td/>
+											</tr>
+										</table>
 {{NTE/NTE02-NTE01 = 'WHI'}}
         
-        </td> 
-      </tr> 
-</table> 
-</DIV></DIV><br>
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Warehouse Carrier Information:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
+        </td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<br/>
+					<table border="0"
+					       cellspacing="0"
+					       cellpadding="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+								<b>Warehouse Carrier Information:
+</b>
+							</td>
+						</tr>
+					</table>
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shipment Method of Payment
     : {{W66/W6601-W6601 = 'PP'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation Method/Type Code
     : {{W66/W6602-W6601 = 'PP'}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Routing
     : {{W66/W6605-W6601 = 'PP'}}
-    </td></tr>
-</table><br>
+    </td>
+						</tr>
+					</table>
+					<br/>
 
 {{LinesItemHtml}}
-<table border="0" cellspacing="0" cellpadding="0" width="100%" cellspacing="0" cellpadding="0">
-  <tr> 
-    <td width="100%" valign="top" align="left">
-<b>Total Shipping Order:
-</b></td></tr></table>
-<table border="0" width="100%" cellspacing="0" cellpadding="0" > 
-  <tr> 
-    <td width="100%" valign="top" align="left">
+<table border="0"
+					       cellspacing="0"
+					       cellpadding="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
+								<b>Total Shipping Order:
+</b>
+							</td>
+						</tr>
+					</table>
+					<table border="0"
+					       width="100%"
+					       cellspacing="0"
+					       cellpadding="0">
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Ordered
     : {{W76/W7601}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weight
     : {{W76/W7602}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code
     : {{W76/W7603}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Volume
     : {{W76/W7604}}
-    </td></tr>
-  <tr> 
-    <td width="100%" valign="top" align="left">
+    </td>
+						</tr>
+						<tr>
+							<td width="100%"
+							    valign="top"
+							    align="left">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unit or Basis for Measurement Code
     : {{W76/W7605}}
-    </td></tr>
-</table><br>
-</table></table></table><BR><BR><BR><BR></BODY>
-</HTML><script LANGUAGE="JavaScript"> 
-	function collapseAll()  
-	{ 
-		var myvar = 999 
-		var itemnum
-		var hdrbtn = "IdHeaderButton" 
-		var sButtonId
-		if (bClickable)  
-		{ 
-			for(i=0; i<document.all.length; i++)  
-			{ 
-				if (document.all(i).id.indexOf("idHeader") != -1) 
-				{
-				}
-				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
-				{
-					myvar = myvar + 1 
-					itemnum = (myvar).toString()
-					sButtonId = hdrbtn + itemnum 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-plus2.gif" 
-				}
-				if (document.all(i).id.indexOf("idBlurb") != -1) 
-				{
-					document.all(i).style.display = "none"; 
-				}
-			} 
-		} 
-	} 
-	function bExpandAll()  
-	{ 
-		var myvar = 999 
-		var itemnum
-		var hdrbtn = "IdHeaderButton" 
-		var sButtonId
-		if (bClickable)  
-		{ 
-			for(i=0; i<document.all.length; i++)  
-			{ 
-				if (document.all(i).id.indexOf("idHeader") != -1) 
-				{
-					document.all(i).style.display = "block"; 
-				}
-				if (document.all(i).id.indexOf("idHeaderButton") != -1) 
-				{
-					document.all(i).style.display = "block"; 
-					myvar = myvar + 1 
-					itemnum = (myvar).toString()
-					sButtonId = hdrbtn + itemnum 
-					document.all(sButtonId).src = "res://VistaRes.Dll/bullet-minus2.gif" 
-				}
-				if (document.all(i).id.indexOf("idBlurb") != -1) 
-				{
-					document.all(i).style.display = "block"; 
-				}
-			} 
-		} 
-	} 
-</script>
-</HTML>
+    </td>
+						</tr>
+					</table>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+				</body>
+			</HTML>
